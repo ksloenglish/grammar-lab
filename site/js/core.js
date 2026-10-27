@@ -135,8 +135,8 @@ export function wrongQuestions(report) {
 }
 
 export function scoreComment(percentage) {
-  if (percentage >= 90) return 'Excellent reactions. Your grammar is looking precise and confident.';
-  if (percentage >= 70) return 'Strong work. A little revision will make your reactions even more reliable.';
-  if (percentage >= 50) return 'You are finding the patterns. Revisit the rules, then try the missed trials.';
-  return 'Every experiment teaches you something. Start with Learn, then test one rule at a time.';
+  if (percentage >= 90) return 'Excellent work! You know these rules well.';
+  if (percentage >= 70) return 'Good work! Try the questions you missed to learn even more.';
+  if (percentage >= 50) return 'You are making progress. Read the rules and try the questions you missed.';
+  return 'Keep trying! Read the rules first, then practise one step at a time.';
 }

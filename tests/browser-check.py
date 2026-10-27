@@ -39,7 +39,7 @@ with sync_playwright() as p:
         page.goto(BASE)
         expect(page.locator('.module-card')).to_have_count(2)
         check(page.locator('#sound-toggle').get_attribute('aria-pressed') == 'false', f'{engine}: sound initially off')
-        check('resetting' in page.locator('#storage-notice').inner_text(), f'{engine}: browser reset notice visible')
+        check('reset the browser' in page.locator('#storage-notice').inner_text(), f'{engine}: browser reset notice visible')
         page.screenshot(path=str(OUT / f'{engine}-home-desktop.png'), full_page=True)
         for module in ['adjectives', 'adverbs']:
             page.goto(BASE + f'?module={module}&n=10')
@@ -175,7 +175,7 @@ with sync_playwright() as p:
     context.add_init_script("Storage.prototype.setItem = function(){throw new DOMException('Blocked','SecurityError')}")
     page = context.new_page()
     page.goto(BASE)
-    expect(page.locator('#storage-notice')).to_contain_text('unavailable')
+    expect(page.locator('#storage-notice')).to_contain_text('cannot save')
     page.locator('[data-route="setup/adjectives"]').click()
     page.locator('[data-action="start"]').click()
     page.locator('[data-action="add-block"]').first.tap()

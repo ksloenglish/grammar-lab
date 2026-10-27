@@ -4,7 +4,7 @@ A browser-only grammar workbench for K S Lo English. Students combine word parts
 
 ## Live app
 
-The intended GitHub Pages address is `https://ksloenglish.github.io/grammar-lab/`. Teacher assignment links use `?module=adjectives&n=20` or `?module=adverbs&n=30`; these open setup with the module and trial count preselected, not the first trial. To create a fresh assignment link, do not append an experiment/report hash.
+The GitHub Pages address is `https://ksloenglish.github.io/grammar-lab/`. Teacher assignment links use `?module=adjectives&n=20` or `?module=adverbs&n=30`; these open setup with the module and trial count preselected, not the first trial. To create a fresh assignment link, do not append an experiment/report hash.
 
 ## Files
 
@@ -42,6 +42,8 @@ Include 2–3 distinct, plausible distractor blocks beyond the parts needed for 
 
 Keep each bank at 60 or more questions, approximately half comparative and half superlative, with balanced regular, spelling-change, longer-form and irregular patterns as appropriate to the part of speech. Short adverbs and early are not governed by the regular long -ly pattern. Do not invent doubling examples for adverbs simply to match the adjective bank. Run `npm run validate` and `npm test` after editing.
 
+The initial banks contain 96 questions each, evenly divided between comparative and superlative forms and four rule groups. Keep every question sentence, explanation and feedback message at CEFR B1 or below: short sentences, familiar school and everyday contexts, and direct instructions. Check vocabulary against the bundled CEFR source data when authoring; do not assign a level to an unlisted derivative by guessing its root's level. Grammar target forms and place/person names are handled separately from prose difficulty. The content audit in `tests/content-b1-audit.json` records the checks used for this release.
+
 ## Edit Learn content
 
 A Learn JSON document has `module`, `intro`, `sections`, `miniCheck` and `sources`. Sections use `title`, plain-text `text`, an `examples` array and optional `note`. Include exactly three mini-checks, each with `sentence`, unique `options`, an `answer` found among those options, and `explanation`. Content is escaped and displayed as text, not executed as HTML.
@@ -73,5 +75,7 @@ All runtime assets use relative URLs, and views use hashes, so `/grammar-lab/` w
 ## Accessibility and printing
 
 Tap and native HTML drag/drop both work; keyboard users can place/return with Enter or Space and reorder with the visible arrow buttons or Left/Right on a placed block. Results are announced in a live region. Focus is visible, colours are high-contrast, and reduced-motion preferences disable effects. The report print stylesheet removes navigation and action controls, displays name/class if supplied, and preserves every practised question and rule breakdown. Choose the browser's Save as PDF destination when printing.
+
+Use the student-facing labels **Build your answer** and **Word blocks**. Keep word-block text at least 20px on desktop and 18px on phones, in normal-case sans-serif. Cards and dialogues need deliberate padding; button groups need gaps, with at least 16px before the next text or callout. Run the optional full-site visual-spacing check as well as the interaction tests after changing styles. An absence of horizontal overflow alone does not establish a good layout.
 
 © 2026 K S Lo English. All Rights Reserved.

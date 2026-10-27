@@ -3,7 +3,7 @@
   "questions": [
     {
       "id": "adv-001",
-      "sentence": "During the relay practice, Eva ran _____ than she did in the first round.",
+      "sentence": "Ming ran _____ than Tom in PE.",
       "base": "fast",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -54,29 +54,29 @@
           "answers": [
             "fast than"
           ],
-          "message": "The base form fast does not show a comparison. Use faster than."
+          "message": "Fast than is not right. Use faster than to compare two things."
         },
         {
           "answers": [
             "more fast than"
           ],
-          "message": "Fast is being practised as a short form here, so use faster, not more fast."
+          "message": "More fast than is not right. Use faster than to compare two things."
         },
         {
           "answers": [
             "fastest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Fastest than is not right. Use faster than to compare two things."
         },
         {
-          "message": "For this comparison, build faster and then add than."
+          "message": "Use faster than to compare two things."
         }
       ],
-      "explanation": "Use faster than for this comparative form."
+      "explanation": "Use faster than to compare two things."
     },
     {
       "id": "adv-002",
-      "sentence": "Of the four runners in the practice race, Eva ran _____.",
+      "sentence": "Of the runners, Ming ran _____.",
       "base": "fast",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -132,29 +132,29 @@
           "answers": [
             "faster"
           ],
-          "message": "Faster is comparative. This sentence asks for the highest degree."
+          "message": "Faster is not right. Use the fastest or fastest for the top one in a group."
         },
         {
           "answers": [
             "more fast"
           ],
-          "message": "Use the short adverb superlative fastest, not more fast."
+          "message": "More fast is not right. Use the fastest or fastest for the top one in a group."
         },
         {
           "answers": [
             "fastest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Fastest than is not right. Use the fastest or fastest for the top one in a group."
         },
         {
-          "message": "Both the fastest and fastest are natural after this verb."
+          "message": "Use the fastest or fastest for the top one in a group."
         }
       ],
-      "explanation": "Both the fastest and fastest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the fastest or fastest for the top one in a group."
     },
     {
       "id": "adv-003",
-      "sentence": "Ming worked _____ than usual on the model bridge.",
+      "sentence": "I worked _____ than my friend today.",
       "base": "hard",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -205,29 +205,29 @@
           "answers": [
             "hard than"
           ],
-          "message": "The base form hard does not show a comparison. Use harder than."
+          "message": "Hard than is not right. Use harder than to compare two things."
         },
         {
           "answers": [
             "more hard than"
           ],
-          "message": "Hard is being practised as a short form here, so use harder, not more hard."
+          "message": "More hard than is not right. Use harder than to compare two things."
         },
         {
           "answers": [
             "hardest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Hardest than is not right. Use harder than to compare two things."
         },
         {
-          "message": "For this comparison, build harder and then add than."
+          "message": "Use harder than to compare two things."
         }
       ],
-      "explanation": "Use harder than for this comparative form."
+      "explanation": "Use harder than to compare two things."
     },
     {
       "id": "adv-004",
-      "sentence": "Of the team members, Ming worked _____ on the display.",
+      "sentence": "Of the students, I worked _____.",
       "base": "hard",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -283,29 +283,29 @@
           "answers": [
             "harder"
           ],
-          "message": "Harder is comparative. This sentence asks for the highest degree."
+          "message": "Harder is not right. Use the hardest or hardest for the top one in a group."
         },
         {
           "answers": [
             "more hard"
           ],
-          "message": "Use the short adverb superlative hardest, not more hard."
+          "message": "More hard is not right. Use the hardest or hardest for the top one in a group."
         },
         {
           "answers": [
             "hardest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Hardest than is not right. Use the hardest or hardest for the top one in a group."
         },
         {
-          "message": "Both the hardest and hardest are natural after this verb."
+          "message": "Use the hardest or hardest for the top one in a group."
         }
       ],
-      "explanation": "Both the hardest and hardest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the hardest or hardest for the top one in a group."
     },
     {
       "id": "adv-005",
-      "sentence": "During the game, Jin threw the ball _____ than before.",
+      "sentence": "Ming threw the ball _____ than Tom.",
       "base": "high",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -356,29 +356,29 @@
           "answers": [
             "high than"
           ],
-          "message": "The base form high does not show a comparison. Use higher than."
+          "message": "High than is not right. Use higher than to compare two things."
         },
         {
           "answers": [
             "more high than"
           ],
-          "message": "High is being practised as a short form here, so use higher, not more high."
+          "message": "More high than is not right. Use higher than to compare two things."
         },
         {
           "answers": [
             "highest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Highest than is not right. Use higher than to compare two things."
         },
         {
-          "message": "For this comparison, build higher and then add than."
+          "message": "Use higher than to compare two things."
         }
       ],
-      "explanation": "Use higher than for this comparative form."
+      "explanation": "Use higher than to compare two things."
     },
     {
       "id": "adv-006",
-      "sentence": "Of the three jumps, Jin jumped _____ on the final attempt.",
+      "sentence": "Of the players, Ming threw the ball _____.",
       "base": "high",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -434,29 +434,29 @@
           "answers": [
             "higher"
           ],
-          "message": "Higher is comparative. This sentence asks for the highest degree."
+          "message": "Higher is not right. Use the highest or highest for the top one in a group."
         },
         {
           "answers": [
             "more high"
           ],
-          "message": "Use the short adverb superlative highest, not more high."
+          "message": "More high is not right. Use the highest or highest for the top one in a group."
         },
         {
           "answers": [
             "highest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Highest than is not right. Use the highest or highest for the top one in a group."
         },
         {
-          "message": "Both the highest and highest are natural after this verb."
+          "message": "Use the highest or highest for the top one in a group."
         }
       ],
-      "explanation": "Both the highest and highest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the highest or highest for the top one in a group."
     },
     {
       "id": "adv-007",
-      "sentence": "During the sound check, the group spoke _____ than the previous group.",
+      "sentence": "The class spoke _____ than the teacher.",
       "base": "low",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -507,29 +507,29 @@
           "answers": [
             "low than"
           ],
-          "message": "The base form low does not show a comparison. Use lower than."
+          "message": "Low than is not right. Use lower than to compare two things."
         },
         {
           "answers": [
             "more low than"
           ],
-          "message": "Low is being practised as a short form here, so use lower, not more low."
+          "message": "More low than is not right. Use lower than to compare two things."
         },
         {
           "answers": [
             "lowest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Lowest than is not right. Use lower than to compare two things."
         },
         {
-          "message": "For this comparison, build lower and then add than."
+          "message": "Use lower than to compare two things."
         }
       ],
-      "explanation": "Use lower than for this comparative form."
+      "explanation": "Use lower than to compare two things."
     },
     {
       "id": "adv-008",
-      "sentence": "Of the groups in the sound check, they spoke _____.",
+      "sentence": "Of the groups, this group spoke _____.",
       "base": "low",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -585,29 +585,29 @@
           "answers": [
             "lower"
           ],
-          "message": "Lower is comparative. This sentence asks for the highest degree."
+          "message": "Lower is not right. Use the lowest or lowest for the top one in a group."
         },
         {
           "answers": [
             "more low"
           ],
-          "message": "Use the short adverb superlative lowest, not more low."
+          "message": "More low is not right. Use the lowest or lowest for the top one in a group."
         },
         {
           "answers": [
             "lowest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Lowest than is not right. Use the lowest or lowest for the top one in a group."
         },
         {
-          "message": "Both the lowest and lowest are natural after this verb."
+          "message": "Use the lowest or lowest for the top one in a group."
         }
       ],
-      "explanation": "Both the lowest and lowest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the lowest or lowest for the top one in a group."
     },
     {
       "id": "adv-009",
-      "sentence": "For the final note, the bell rang _____ than it did at lunchtime.",
+      "sentence": "The bell rang _____ than yesterday.",
       "base": "long",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -658,29 +658,29 @@
           "answers": [
             "long than"
           ],
-          "message": "The base form long does not show a comparison. Use longer than."
+          "message": "Long than is not right. Use longer than to compare two things."
         },
         {
           "answers": [
             "more long than"
           ],
-          "message": "Long is being practised as a short form here, so use longer, not more long."
+          "message": "More long than is not right. Use longer than to compare two things."
         },
         {
           "answers": [
             "longest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Longest than is not right. Use longer than to compare two things."
         },
         {
-          "message": "For this comparison, build longer and then add than."
+          "message": "Use longer than to compare two things."
         }
       ],
-      "explanation": "Use longer than for this comparative form."
+      "explanation": "Use longer than to compare two things."
     },
     {
       "id": "adv-010",
-      "sentence": "Of the alarms tested, the bell rang _____.",
+      "sentence": "Of the bells, this one rang _____.",
       "base": "long",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -736,29 +736,29 @@
           "answers": [
             "longer"
           ],
-          "message": "Longer is comparative. This sentence asks for the highest degree."
+          "message": "Longer is not right. Use the longest or longest for the top one in a group."
         },
         {
           "answers": [
             "more long"
           ],
-          "message": "Use the short adverb superlative longest, not more long."
+          "message": "More long is not right. Use the longest or longest for the top one in a group."
         },
         {
           "answers": [
             "longest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Longest than is not right. Use the longest or longest for the top one in a group."
         },
         {
-          "message": "Both the longest and longest are natural after this verb."
+          "message": "Use the longest or longest for the top one in a group."
         }
       ],
-      "explanation": "Both the longest and longest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the longest or longest for the top one in a group."
     },
     {
       "id": "adv-011",
-      "sentence": "In the second drill, the green team packed its kit _____ than the blue team.",
+      "sentence": "Our team packed _____ than the other team.",
       "base": "fast",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -809,29 +809,29 @@
           "answers": [
             "fast than"
           ],
-          "message": "The base form fast does not show a comparison. Use faster than."
+          "message": "Fast than is not right. Use faster than to compare two things."
         },
         {
           "answers": [
             "more fast than"
           ],
-          "message": "Fast is being practised as a short form here, so use faster, not more fast."
+          "message": "More fast than is not right. Use faster than to compare two things."
         },
         {
           "answers": [
             "fastest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Fastest than is not right. Use faster than to compare two things."
         },
         {
-          "message": "For this comparison, build faster and then add than."
+          "message": "Use faster than to compare two things."
         }
       ],
-      "explanation": "Use faster than for this comparative form."
+      "explanation": "Use faster than to compare two things."
     },
     {
       "id": "adv-012",
-      "sentence": "Of the teams in the packing drill, the green team packed its kit _____.",
+      "sentence": "Of the teams, our team packed _____.",
       "base": "fast",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -887,29 +887,29 @@
           "answers": [
             "faster"
           ],
-          "message": "Faster is comparative. This sentence asks for the highest degree."
+          "message": "Faster is not right. Use the fastest or fastest for the top one in a group."
         },
         {
           "answers": [
             "more fast"
           ],
-          "message": "Use the short adverb superlative fastest, not more fast."
+          "message": "More fast is not right. Use the fastest or fastest for the top one in a group."
         },
         {
           "answers": [
             "fastest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Fastest than is not right. Use the fastest or fastest for the top one in a group."
         },
         {
-          "message": "Both the fastest and fastest are natural after this verb."
+          "message": "Use the fastest or fastest for the top one in a group."
         }
       ],
-      "explanation": "Both the fastest and fastest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the fastest or fastest for the top one in a group."
     },
     {
       "id": "adv-013",
-      "sentence": "Tara worked _____ than before on the practice model.",
+      "sentence": "Tom studied _____ than before the test.",
       "base": "hard",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -960,29 +960,29 @@
           "answers": [
             "hard than"
           ],
-          "message": "The base form hard does not show a comparison. Use harder than."
+          "message": "Hard than is not right. Use harder than to compare two things."
         },
         {
           "answers": [
             "more hard than"
           ],
-          "message": "Hard is being practised as a short form here, so use harder, not more hard."
+          "message": "More hard than is not right. Use harder than to compare two things."
         },
         {
           "answers": [
             "hardest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Hardest than is not right. Use harder than to compare two things."
         },
         {
-          "message": "For this comparison, build harder and then add than."
+          "message": "Use harder than to compare two things."
         }
       ],
-      "explanation": "Use harder than for this comparative form."
+      "explanation": "Use harder than to compare two things."
     },
     {
       "id": "adv-014",
-      "sentence": "Of the team members, Tara worked _____ on the practice model.",
+      "sentence": "Of the class, Tom studied _____.",
       "base": "hard",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -1038,29 +1038,29 @@
           "answers": [
             "harder"
           ],
-          "message": "Harder is comparative. This sentence asks for the highest degree."
+          "message": "Harder is not right. Use the hardest or hardest for the top one in a group."
         },
         {
           "answers": [
             "more hard"
           ],
-          "message": "Use the short adverb superlative hardest, not more hard."
+          "message": "More hard is not right. Use the hardest or hardest for the top one in a group."
         },
         {
           "answers": [
             "hardest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Hardest than is not right. Use the hardest or hardest for the top one in a group."
         },
         {
-          "message": "Both the hardest and hardest are natural after this verb."
+          "message": "Use the hardest or hardest for the top one in a group."
         }
       ],
-      "explanation": "Both the hardest and hardest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the hardest or hardest for the top one in a group."
     },
     {
       "id": "adv-015",
-      "sentence": "In the second trial, the foam ball bounced _____ than in the first trial.",
+      "sentence": "The ball bounced _____ than before.",
       "base": "high",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -1111,29 +1111,29 @@
           "answers": [
             "high than"
           ],
-          "message": "The base form high does not show a comparison. Use higher than."
+          "message": "High than is not right. Use higher than to compare two things."
         },
         {
           "answers": [
             "more high than"
           ],
-          "message": "High is being practised as a short form here, so use higher, not more high."
+          "message": "More high than is not right. Use higher than to compare two things."
         },
         {
           "answers": [
             "highest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Highest than is not right. Use higher than to compare two things."
         },
         {
-          "message": "For this comparison, build higher and then add than."
+          "message": "Use higher than to compare two things."
         }
       ],
-      "explanation": "Use higher than for this comparative form."
+      "explanation": "Use higher than to compare two things."
     },
     {
       "id": "adv-016",
-      "sentence": "Of the foam balls, the orange one bounced _____.",
+      "sentence": "Of the balls, the red ball bounced _____.",
       "base": "high",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -1189,29 +1189,29 @@
           "answers": [
             "higher"
           ],
-          "message": "Higher is comparative. This sentence asks for the highest degree."
+          "message": "Higher is not right. Use the highest or highest for the top one in a group."
         },
         {
           "answers": [
             "more high"
           ],
-          "message": "Use the short adverb superlative highest, not more high."
+          "message": "More high is not right. Use the highest or highest for the top one in a group."
         },
         {
           "answers": [
             "highest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Highest than is not right. Use the highest or highest for the top one in a group."
         },
         {
-          "message": "Both the highest and highest are natural after this verb."
+          "message": "Use the highest or highest for the top one in a group."
         }
       ],
-      "explanation": "Both the highest and highest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the highest or highest for the top one in a group."
     },
     {
       "id": "adv-017",
-      "sentence": "During the quiet-reading challenge, Group B spoke _____ than Group A.",
+      "sentence": "The music played _____ than before.",
       "base": "low",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -1262,29 +1262,29 @@
           "answers": [
             "low than"
           ],
-          "message": "The base form low does not show a comparison. Use lower than."
+          "message": "Low than is not right. Use lower than to compare two things."
         },
         {
           "answers": [
             "more low than"
           ],
-          "message": "Low is being practised as a short form here, so use lower, not more low."
+          "message": "More low than is not right. Use lower than to compare two things."
         },
         {
           "answers": [
             "lowest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Lowest than is not right. Use lower than to compare two things."
         },
         {
-          "message": "For this comparison, build lower and then add than."
+          "message": "Use lower than to compare two things."
         }
       ],
-      "explanation": "Use lower than for this comparative form."
+      "explanation": "Use lower than to compare two things."
     },
     {
       "id": "adv-018",
-      "sentence": "Of the groups in the quiet-reading challenge, Group B spoke _____.",
+      "sentence": "Of the songs, this song played _____.",
       "base": "low",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -1340,29 +1340,29 @@
           "answers": [
             "lower"
           ],
-          "message": "Lower is comparative. This sentence asks for the highest degree."
+          "message": "Lower is not right. Use the lowest or lowest for the top one in a group."
         },
         {
           "answers": [
             "more low"
           ],
-          "message": "Use the short adverb superlative lowest, not more low."
+          "message": "More low is not right. Use the lowest or lowest for the top one in a group."
         },
         {
           "answers": [
             "lowest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Lowest than is not right. Use the lowest or lowest for the top one in a group."
         },
         {
-          "message": "Both the lowest and lowest are natural after this verb."
+          "message": "Use the lowest or lowest for the top one in a group."
         }
       ],
-      "explanation": "Both the lowest and lowest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the lowest or lowest for the top one in a group."
     },
     {
       "id": "adv-019",
-      "sentence": "The final video clip played _____ than the preview clip.",
+      "sentence": "The bus waited _____ than usual.",
       "base": "long",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -1413,29 +1413,29 @@
           "answers": [
             "long than"
           ],
-          "message": "The base form long does not show a comparison. Use longer than."
+          "message": "Long than is not right. Use longer than to compare two things."
         },
         {
           "answers": [
             "more long than"
           ],
-          "message": "Long is being practised as a short form here, so use longer, not more long."
+          "message": "More long than is not right. Use longer than to compare two things."
         },
         {
           "answers": [
             "longest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Longest than is not right. Use longer than to compare two things."
         },
         {
-          "message": "For this comparison, build longer and then add than."
+          "message": "Use longer than to compare two things."
         }
       ],
-      "explanation": "Use longer than for this comparative form."
+      "explanation": "Use longer than to compare two things."
     },
     {
       "id": "adv-020",
-      "sentence": "Of the sample clips, the final clip played _____.",
+      "sentence": "Of the buses, this bus waited _____.",
       "base": "long",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -1491,29 +1491,29 @@
           "answers": [
             "longer"
           ],
-          "message": "Longer is comparative. This sentence asks for the highest degree."
+          "message": "Longer is not right. Use the longest or longest for the top one in a group."
         },
         {
           "answers": [
             "more long"
           ],
-          "message": "Use the short adverb superlative longest, not more long."
+          "message": "More long is not right. Use the longest or longest for the top one in a group."
         },
         {
           "answers": [
             "longest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Longest than is not right. Use the longest or longest for the top one in a group."
         },
         {
-          "message": "Both the longest and longest are natural after this verb."
+          "message": "Use the longest or longest for the top one in a group."
         }
       ],
-      "explanation": "Both the longest and longest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the longest or longest for the top one in a group."
     },
     {
       "id": "adv-021",
-      "sentence": "For the photo, Amir stood _____ to the board than Jia did.",
+      "sentence": "Ming stood _____ to the door than Tom.",
       "base": "near",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -1564,29 +1564,29 @@
           "answers": [
             "near than"
           ],
-          "message": "The base form near does not show a comparison. Use nearer than."
+          "message": "Near than is not right. Use nearer than to compare two things."
         },
         {
           "answers": [
             "more near than"
           ],
-          "message": "Near is being practised as a short form here, so use nearer, not more near."
+          "message": "More near than is not right. Use nearer than to compare two things."
         },
         {
           "answers": [
             "nearest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Nearest than is not right. Use nearer than to compare two things."
         },
         {
-          "message": "For this comparison, build nearer and then add than."
+          "message": "Use nearer than to compare two things."
         }
       ],
-      "explanation": "Use nearer than for this comparative form."
+      "explanation": "Use nearer than to compare two things."
     },
     {
       "id": "adv-022",
-      "sentence": "Of the pupils in the photo, Amir stood _____ to the board.",
+      "sentence": "Of the students, Ming stood _____ to the door.",
       "base": "near",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -1642,29 +1642,29 @@
           "answers": [
             "nearer"
           ],
-          "message": "Nearer is comparative. This sentence asks for the highest degree."
+          "message": "Nearer is not right. Use the nearest or nearest for the top one in a group."
         },
         {
           "answers": [
             "more near"
           ],
-          "message": "Use the short adverb superlative nearest, not more near."
+          "message": "More near is not right. Use the nearest or nearest for the top one in a group."
         },
         {
           "answers": [
             "nearest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Nearest than is not right. Use the nearest or nearest for the top one in a group."
         },
         {
-          "message": "Both the nearest and nearest are natural after this verb."
+          "message": "Use the nearest or nearest for the top one in a group."
         }
       ],
-      "explanation": "Both the nearest and nearest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the nearest or nearest for the top one in a group."
     },
     {
       "id": "adv-023",
-      "sentence": "The second reminder appeared _____ than the first reminder.",
+      "sentence": "Bus 2 came _____ than Bus 1.",
       "base": "soon",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -1715,29 +1715,29 @@
           "answers": [
             "soon than"
           ],
-          "message": "The base form soon does not show a comparison. Use sooner than."
+          "message": "Soon than is not right. Use sooner than to compare two things."
         },
         {
           "answers": [
             "more soon than"
           ],
-          "message": "Soon is being practised as a short form here, so use sooner, not more soon."
+          "message": "More soon than is not right. Use sooner than to compare two things."
         },
         {
           "answers": [
             "soonest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Soonest than is not right. Use sooner than to compare two things."
         },
         {
-          "message": "For this comparison, build sooner and then add than."
+          "message": "Use sooner than to compare two things."
         }
       ],
-      "explanation": "Use sooner than for this comparative form."
+      "explanation": "Use sooner than to compare two things."
     },
     {
       "id": "adv-024",
-      "sentence": "Of the reminders, the second one appeared _____.",
+      "sentence": "Of the buses, Bus 2 came _____.",
       "base": "soon",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -1793,29 +1793,29 @@
           "answers": [
             "sooner"
           ],
-          "message": "Sooner is comparative. This sentence asks for the highest degree."
+          "message": "Sooner is not right. Use the soonest or soonest for the top one in a group."
         },
         {
           "answers": [
             "more soon"
           ],
-          "message": "Use the short adverb superlative soonest, not more soon."
+          "message": "More soon is not right. Use the soonest or soonest for the top one in a group."
         },
         {
           "answers": [
             "soonest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Soonest than is not right. Use the soonest or soonest for the top one in a group."
         },
         {
-          "message": "Both the soonest and soonest are natural after this verb."
+          "message": "Use the soonest or soonest for the top one in a group."
         }
       ],
-      "explanation": "Both the soonest and soonest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the soonest or soonest for the top one in a group."
     },
     {
       "id": "adv-025",
-      "sentence": "On Tuesday, the shuttle arrived _____ than expected.",
+      "sentence": "Bus 1 arrived _____ than Bus 2.",
       "base": "late",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -1866,29 +1866,29 @@
           "answers": [
             "late than"
           ],
-          "message": "The base form late does not show a comparison. Use later than."
+          "message": "Late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "more late than"
           ],
-          "message": "Late is being practised as a short form here, so use later, not more late."
+          "message": "More late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Latest than is not right. Use later than to compare two things."
         },
         {
-          "message": "For this comparison, build later and then add than."
+          "message": "Use later than to compare two things."
         }
       ],
-      "explanation": "Use later than for this comparative form."
+      "explanation": "Use later than to compare two things."
     },
     {
       "id": "adv-026",
-      "sentence": "Of the three buses, route 2 arrived _____.",
+      "sentence": "Of the buses, Bus 1 arrived _____.",
       "base": "late",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -1944,29 +1944,29 @@
           "answers": [
             "later"
           ],
-          "message": "Later is comparative. This sentence asks for the highest degree."
+          "message": "Later is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "more late"
           ],
-          "message": "Use the short adverb superlative latest, not more late."
+          "message": "More late is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Latest than is not right. Use the latest or latest for the top one in a group."
         },
         {
-          "message": "Both the latest and latest are natural after this verb."
+          "message": "Use the latest or latest for the top one in a group."
         }
       ],
-      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the latest or latest for the top one in a group."
     },
     {
       "id": "adv-027",
-      "sentence": "The drama group finished _____ than the music group.",
+      "sentence": "My group finished _____ than your group.",
       "base": "late",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2017,29 +2017,29 @@
           "answers": [
             "late than"
           ],
-          "message": "The base form late does not show a comparison. Use later than."
+          "message": "Late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "more late than"
           ],
-          "message": "Late is being practised as a short form here, so use later, not more late."
+          "message": "More late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Latest than is not right. Use later than to compare two things."
         },
         {
-          "message": "For this comparison, build later and then add than."
+          "message": "Use later than to compare two things."
         }
       ],
-      "explanation": "Use later than for this comparative form."
+      "explanation": "Use later than to compare two things."
     },
     {
       "id": "adv-028",
-      "sentence": "Of the rehearsal groups, the drama group finished _____.",
+      "sentence": "Of the groups, my group finished _____.",
       "base": "late",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2095,29 +2095,29 @@
           "answers": [
             "later"
           ],
-          "message": "Later is comparative. This sentence asks for the highest degree."
+          "message": "Later is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "more late"
           ],
-          "message": "Use the short adverb superlative latest, not more late."
+          "message": "More late is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Latest than is not right. Use the latest or latest for the top one in a group."
         },
         {
-          "message": "Both the latest and latest are natural after this verb."
+          "message": "Use the latest or latest for the top one in a group."
         }
       ],
-      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the latest or latest for the top one in a group."
     },
     {
       "id": "adv-029",
-      "sentence": "The reminder appeared _____ than the first notice.",
+      "sentence": "Tom came home _____ than May.",
       "base": "late",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2168,29 +2168,29 @@
           "answers": [
             "late than"
           ],
-          "message": "The base form late does not show a comparison. Use later than."
+          "message": "Late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "more late than"
           ],
-          "message": "Late is being practised as a short form here, so use later, not more late."
+          "message": "More late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Latest than is not right. Use later than to compare two things."
         },
         {
-          "message": "For this comparison, build later and then add than."
+          "message": "Use later than to compare two things."
         }
       ],
-      "explanation": "Use later than for this comparative form."
+      "explanation": "Use later than to compare two things."
     },
     {
       "id": "adv-030",
-      "sentence": "Of the notices, the final reminder appeared _____.",
+      "sentence": "Of my friends, Tom came home _____.",
       "base": "late",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2246,29 +2246,29 @@
           "answers": [
             "later"
           ],
-          "message": "Later is comparative. This sentence asks for the highest degree."
+          "message": "Later is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "more late"
           ],
-          "message": "Use the short adverb superlative latest, not more late."
+          "message": "More late is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Latest than is not right. Use the latest or latest for the top one in a group."
         },
         {
-          "message": "Both the latest and latest are natural after this verb."
+          "message": "Use the latest or latest for the top one in a group."
         }
       ],
-      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the latest or latest for the top one in a group."
     },
     {
       "id": "adv-031",
-      "sentence": "The delivery reached the office _____ than planned in the fictional timetable.",
+      "sentence": "The shop opened _____ than we thought.",
       "base": "late",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2319,29 +2319,29 @@
           "answers": [
             "late than"
           ],
-          "message": "The base form late does not show a comparison. Use later than."
+          "message": "Late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "more late than"
           ],
-          "message": "Late is being practised as a short form here, so use later, not more late."
+          "message": "More late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Latest than is not right. Use later than to compare two things."
         },
         {
-          "message": "For this comparison, build later and then add than."
+          "message": "Use later than to compare two things."
         }
       ],
-      "explanation": "Use later than for this comparative form."
+      "explanation": "Use later than to compare two things."
     },
     {
       "id": "adv-032",
-      "sentence": "Of the sample deliveries, the blue-box delivery arrived _____.",
+      "sentence": "Of the shops, the small shop opened _____.",
       "base": "late",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2397,29 +2397,29 @@
           "answers": [
             "later"
           ],
-          "message": "Later is comparative. This sentence asks for the highest degree."
+          "message": "Later is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "more late"
           ],
-          "message": "Use the short adverb superlative latest, not more late."
+          "message": "More late is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Latest than is not right. Use the latest or latest for the top one in a group."
         },
         {
-          "message": "Both the latest and latest are natural after this verb."
+          "message": "Use the latest or latest for the top one in a group."
         }
       ],
-      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the latest or latest for the top one in a group."
     },
     {
       "id": "adv-033",
-      "sentence": "The final bell rang _____ than the practice bell.",
+      "sentence": "The bell rang _____ than usual.",
       "base": "late",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2470,29 +2470,29 @@
           "answers": [
             "late than"
           ],
-          "message": "The base form late does not show a comparison. Use later than."
+          "message": "Late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "more late than"
           ],
-          "message": "Late is being practised as a short form here, so use later, not more late."
+          "message": "More late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Latest than is not right. Use later than to compare two things."
         },
         {
-          "message": "For this comparison, build later and then add than."
+          "message": "Use later than to compare two things."
         }
       ],
-      "explanation": "Use later than for this comparative form."
+      "explanation": "Use later than to compare two things."
     },
     {
       "id": "adv-034",
-      "sentence": "Of the bells in the sound test, the final bell rang _____.",
+      "sentence": "Of the bells, this bell rang _____.",
       "base": "late",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2548,29 +2548,29 @@
           "answers": [
             "later"
           ],
-          "message": "Later is comparative. This sentence asks for the highest degree."
+          "message": "Later is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "more late"
           ],
-          "message": "Use the short adverb superlative latest, not more late."
+          "message": "More late is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Latest than is not right. Use the latest or latest for the top one in a group."
         },
         {
-          "message": "Both the latest and latest are natural after this verb."
+          "message": "Use the latest or latest for the top one in a group."
         }
       ],
-      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the latest or latest for the top one in a group."
     },
     {
       "id": "adv-035",
-      "sentence": "The second group submitted its chart _____ than the first group.",
+      "sentence": "I got home _____ than my sister.",
       "base": "late",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2621,29 +2621,29 @@
           "answers": [
             "late than"
           ],
-          "message": "The base form late does not show a comparison. Use later than."
+          "message": "Late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "more late than"
           ],
-          "message": "Late is being practised as a short form here, so use later, not more late."
+          "message": "More late than is not right. Use later than to compare two things."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Latest than is not right. Use later than to compare two things."
         },
         {
-          "message": "For this comparison, build later and then add than."
+          "message": "Use later than to compare two things."
         }
       ],
-      "explanation": "Use later than for this comparative form."
+      "explanation": "Use later than to compare two things."
     },
     {
       "id": "adv-036",
-      "sentence": "Of the groups, the second group submitted its chart _____.",
+      "sentence": "Of my family, I got home _____.",
       "base": "late",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2699,29 +2699,29 @@
           "answers": [
             "later"
           ],
-          "message": "Later is comparative. This sentence asks for the highest degree."
+          "message": "Later is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "more late"
           ],
-          "message": "Use the short adverb superlative latest, not more late."
+          "message": "More late is not right. Use the latest or latest for the top one in a group."
         },
         {
           "answers": [
             "latest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Latest than is not right. Use the latest or latest for the top one in a group."
         },
         {
-          "message": "Both the latest and latest are natural after this verb."
+          "message": "Use the latest or latest for the top one in a group."
         }
       ],
-      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the latest or latest for the top one in a group."
     },
     {
       "id": "adv-037",
-      "sentence": "On Wednesday, the library opened _____ than on Tuesday.",
+      "sentence": "The library opened _____ than yesterday.",
       "base": "early",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2778,29 +2778,29 @@
           "answers": [
             "early than"
           ],
-          "message": "The base form early does not show a comparison. Use earlier than."
+          "message": "Early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "more early than"
           ],
-          "message": "Early is being practised as a short form here, so use earlier, not more early."
+          "message": "More early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Earliest than is not right. Use earlier than to compare two things."
         },
         {
-          "message": "For this comparison, build earlier and then add than."
+          "message": "Use earlier than to compare two things."
         }
       ],
-      "explanation": "Use earlier than for this comparative form."
+      "explanation": "Use earlier than to compare two things."
     },
     {
       "id": "adv-038",
-      "sentence": "Of the four days, the library opened _____ on Thursday.",
+      "sentence": "Of the days, the library opened _____ on Monday.",
       "base": "early",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2862,29 +2862,29 @@
           "answers": [
             "earlier"
           ],
-          "message": "Earlier is comparative. This sentence asks for the highest degree."
+          "message": "Earlier is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "more early"
           ],
-          "message": "Use the short adverb superlative earliest, not more early."
+          "message": "More early is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Earliest than is not right. Use the earliest or earliest for the top one in a group."
         },
         {
-          "message": "Both the earliest and earliest are natural after this verb."
+          "message": "Use the earliest or earliest for the top one in a group."
         }
       ],
-      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the earliest or earliest for the top one in a group."
     },
     {
       "id": "adv-039",
-      "sentence": "The first practice bus arrived _____ than the second bus.",
+      "sentence": "The bus left _____ than usual.",
       "base": "early",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2941,29 +2941,29 @@
           "answers": [
             "early than"
           ],
-          "message": "The base form early does not show a comparison. Use earlier than."
+          "message": "Early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "more early than"
           ],
-          "message": "Early is being practised as a short form here, so use earlier, not more early."
+          "message": "More early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Earliest than is not right. Use earlier than to compare two things."
         },
         {
-          "message": "For this comparison, build earlier and then add than."
+          "message": "Use earlier than to compare two things."
         }
       ],
-      "explanation": "Use earlier than for this comparative form."
+      "explanation": "Use earlier than to compare two things."
     },
     {
       "id": "adv-040",
-      "sentence": "Of the practice buses, the first bus arrived _____.",
+      "sentence": "Of the buses, Bus 1 left _____.",
       "base": "early",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -3025,29 +3025,29 @@
           "answers": [
             "earlier"
           ],
-          "message": "Earlier is comparative. This sentence asks for the highest degree."
+          "message": "Earlier is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "more early"
           ],
-          "message": "Use the short adverb superlative earliest, not more early."
+          "message": "More early is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Earliest than is not right. Use the earliest or earliest for the top one in a group."
         },
         {
-          "message": "Both the earliest and earliest are natural after this verb."
+          "message": "Use the earliest or earliest for the top one in a group."
         }
       ],
-      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the earliest or earliest for the top one in a group."
     },
     {
       "id": "adv-041",
-      "sentence": "The caretaker unlocked the hall _____ than on the previous day.",
+      "sentence": "Ming came to school _____ than Tom.",
       "base": "early",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -3104,29 +3104,29 @@
           "answers": [
             "early than"
           ],
-          "message": "The base form early does not show a comparison. Use earlier than."
+          "message": "Early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "more early than"
           ],
-          "message": "Early is being practised as a short form here, so use earlier, not more early."
+          "message": "More early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Earliest than is not right. Use earlier than to compare two things."
         },
         {
-          "message": "For this comparison, build earlier and then add than."
+          "message": "Use earlier than to compare two things."
         }
       ],
-      "explanation": "Use earlier than for this comparative form."
+      "explanation": "Use earlier than to compare two things."
     },
     {
       "id": "adv-042",
-      "sentence": "Of the days in the schedule, the hall opened _____.",
+      "sentence": "Of the students, Ming came _____.",
       "base": "early",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -3188,29 +3188,29 @@
           "answers": [
             "earlier"
           ],
-          "message": "Earlier is comparative. This sentence asks for the highest degree."
+          "message": "Earlier is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "more early"
           ],
-          "message": "Use the short adverb superlative earliest, not more early."
+          "message": "More early is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Earliest than is not right. Use the earliest or earliest for the top one in a group."
         },
         {
-          "message": "Both the earliest and earliest are natural after this verb."
+          "message": "Use the earliest or earliest for the top one in a group."
         }
       ],
-      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the earliest or earliest for the top one in a group."
     },
     {
       "id": "adv-043",
-      "sentence": "The class started its warm-up _____ than the other class.",
+      "sentence": "Our class started _____ than the other class.",
       "base": "early",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -3267,29 +3267,29 @@
           "answers": [
             "early than"
           ],
-          "message": "The base form early does not show a comparison. Use earlier than."
+          "message": "Early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "more early than"
           ],
-          "message": "Early is being practised as a short form here, so use earlier, not more early."
+          "message": "More early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Earliest than is not right. Use earlier than to compare two things."
         },
         {
-          "message": "For this comparison, build earlier and then add than."
+          "message": "Use earlier than to compare two things."
         }
       ],
-      "explanation": "Use earlier than for this comparative form."
+      "explanation": "Use earlier than to compare two things."
     },
     {
       "id": "adv-044",
-      "sentence": "Of the classes, this class started its warm-up _____.",
+      "sentence": "Of the classes, our class started _____.",
       "base": "early",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -3351,29 +3351,29 @@
           "answers": [
             "earlier"
           ],
-          "message": "Earlier is comparative. This sentence asks for the highest degree."
+          "message": "Earlier is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "more early"
           ],
-          "message": "Use the short adverb superlative earliest, not more early."
+          "message": "More early is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Earliest than is not right. Use the earliest or earliest for the top one in a group."
         },
         {
-          "message": "Both the earliest and earliest are natural after this verb."
+          "message": "Use the earliest or earliest for the top one in a group."
         }
       ],
-      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the earliest or earliest for the top one in a group."
     },
     {
       "id": "adv-045",
-      "sentence": "The first notice appeared _____ than the follow-up notice.",
+      "sentence": "The shop opened _____ than the bank.",
       "base": "early",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -3430,29 +3430,29 @@
           "answers": [
             "early than"
           ],
-          "message": "The base form early does not show a comparison. Use earlier than."
+          "message": "Early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "more early than"
           ],
-          "message": "Early is being practised as a short form here, so use earlier, not more early."
+          "message": "More early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Earliest than is not right. Use earlier than to compare two things."
         },
         {
-          "message": "For this comparison, build earlier and then add than."
+          "message": "Use earlier than to compare two things."
         }
       ],
-      "explanation": "Use earlier than for this comparative form."
+      "explanation": "Use earlier than to compare two things."
     },
     {
       "id": "adv-046",
-      "sentence": "Of the notices, the first notice appeared _____.",
+      "sentence": "Of the shops, this one opened _____.",
       "base": "early",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -3514,29 +3514,29 @@
           "answers": [
             "earlier"
           ],
-          "message": "Earlier is comparative. This sentence asks for the highest degree."
+          "message": "Earlier is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "more early"
           ],
-          "message": "Use the short adverb superlative earliest, not more early."
+          "message": "More early is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Earliest than is not right. Use the earliest or earliest for the top one in a group."
         },
         {
-          "message": "Both the earliest and earliest are natural after this verb."
+          "message": "Use the earliest or earliest for the top one in a group."
         }
       ],
-      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the earliest or earliest for the top one in a group."
     },
     {
       "id": "adv-047",
-      "sentence": "The sun rose _____ in the chart's summer example than in its winter example.",
+      "sentence": "The sun came up _____ in summer than in winter.",
       "base": "early",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -3593,29 +3593,29 @@
           "answers": [
             "early than"
           ],
-          "message": "The base form early does not show a comparison. Use earlier than."
+          "message": "Early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "more early than"
           ],
-          "message": "Early is being practised as a short form here, so use earlier, not more early."
+          "message": "More early than is not right. Use earlier than to compare two things."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Earliest than is not right. Use earlier than to compare two things."
         },
         {
-          "message": "For this comparison, build earlier and then add than."
+          "message": "Use earlier than to compare two things."
         }
       ],
-      "explanation": "Use earlier than for this comparative form."
+      "explanation": "Use earlier than to compare two things."
     },
     {
       "id": "adv-048",
-      "sentence": "Of the dates on the mock chart, the sun rose _____.",
+      "sentence": "Of the days, the sun came up _____.",
       "base": "early",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -3677,29 +3677,29 @@
           "answers": [
             "earlier"
           ],
-          "message": "Earlier is comparative. This sentence asks for the highest degree."
+          "message": "Earlier is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "more early"
           ],
-          "message": "Use the short adverb superlative earliest, not more early."
+          "message": "More early is not right. Use the earliest or earliest for the top one in a group."
         },
         {
           "answers": [
             "earliest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Earliest than is not right. Use the earliest or earliest for the top one in a group."
         },
         {
-          "message": "Both the earliest and earliest are natural after this verb."
+          "message": "Use the earliest or earliest for the top one in a group."
         }
       ],
-      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+      "explanation": "Use the earliest or earliest for the top one in a group."
     },
     {
       "id": "adv-049",
-      "sentence": "The second pair checked the measurements _____ than the first pair.",
+      "sentence": "Ming wrote _____ than Tom.",
       "base": "carefully",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -3750,29 +3750,29 @@
           "answers": [
             "carefullyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as carefully. Use more carefully."
+          "message": "Carefullyer than is not right. Use more carefully than to compare two things."
         },
         {
           "answers": [
             "most carefully than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most carefully than is not right. Use more carefully than to compare two things."
         },
         {
           "answers": [
             "carefully than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Carefully than is not right. Use more carefully than to compare two things."
         },
         {
-          "message": "Use more carefully than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more carefully than to compare two things."
         }
       ],
-      "explanation": "Use more carefully than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more carefully than to compare two things."
     },
     {
       "id": "adv-050",
-      "sentence": "Of the pairs, the second pair checked the measurements _____.",
+      "sentence": "Of the students, Ming wrote _____.",
       "base": "carefully",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -3828,29 +3828,29 @@
           "answers": [
             "carefullyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as carefully. Use most carefully."
+          "message": "Carefullyest is not right. Use the most carefully or most carefully for the top one in a group."
         },
         {
           "answers": [
             "more carefully"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More carefully is not right. Use the most carefully or most carefully for the top one in a group."
         },
         {
           "answers": [
             "most carefully than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most carefully than is not right. Use the most carefully or most carefully for the top one in a group."
         },
         {
-          "message": "Both the most carefully and most carefully are natural in this adverbial position."
+          "message": "Use the most carefully or most carefully for the top one in a group."
         }
       ],
-      "explanation": "Both the most carefully and most carefully are accepted adverbial superlatives."
+      "explanation": "Use the most carefully or most carefully for the top one in a group."
     },
     {
       "id": "adv-051",
-      "sentence": "The group entered the reading room _____ than the earlier group.",
+      "sentence": "The class walked _____ than before.",
       "base": "quietly",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -3901,29 +3901,29 @@
           "answers": [
             "quietlyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as quietly. Use more quietly."
+          "message": "Quietlyer than is not right. Use more quietly than to compare two things."
         },
         {
           "answers": [
             "most quietly than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most quietly than is not right. Use more quietly than to compare two things."
         },
         {
           "answers": [
             "quietly than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Quietly than is not right. Use more quietly than to compare two things."
         },
         {
-          "message": "Use more quietly than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more quietly than to compare two things."
         }
       ],
-      "explanation": "Use more quietly than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more quietly than to compare two things."
     },
     {
       "id": "adv-052",
-      "sentence": "Of the groups, they entered the reading room _____.",
+      "sentence": "Of the groups, this group walked _____.",
       "base": "quietly",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -3979,29 +3979,29 @@
           "answers": [
             "quietlyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as quietly. Use most quietly."
+          "message": "Quietlyest is not right. Use the most quietly or most quietly for the top one in a group."
         },
         {
           "answers": [
             "more quietly"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More quietly is not right. Use the most quietly or most quietly for the top one in a group."
         },
         {
           "answers": [
             "most quietly than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most quietly than is not right. Use the most quietly or most quietly for the top one in a group."
         },
         {
-          "message": "Both the most quietly and most quietly are natural in this adverbial position."
+          "message": "Use the most quietly or most quietly for the top one in a group."
         }
       ],
-      "explanation": "Both the most quietly and most quietly are accepted adverbial superlatives."
+      "explanation": "Use the most quietly or most quietly for the top one in a group."
     },
     {
       "id": "adv-053",
-      "sentence": "Asha explained the instructions _____ than in her first attempt.",
+      "sentence": "The teacher spoke _____ than before.",
       "base": "clearly",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -4052,29 +4052,29 @@
           "answers": [
             "clearlyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as clearly. Use more clearly."
+          "message": "Clearlyer than is not right. Use more clearly than to compare two things."
         },
         {
           "answers": [
             "most clearly than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most clearly than is not right. Use more clearly than to compare two things."
         },
         {
           "answers": [
             "clearly than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Clearly than is not right. Use more clearly than to compare two things."
         },
         {
-          "message": "Use more clearly than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more clearly than to compare two things."
         }
       ],
-      "explanation": "Use more clearly than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more clearly than to compare two things."
     },
     {
       "id": "adv-054",
-      "sentence": "Of the presenters, Asha explained the instructions _____.",
+      "sentence": "Of the teachers, this teacher spoke _____.",
       "base": "clearly",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -4130,36 +4130,36 @@
           "answers": [
             "clearlyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as clearly. Use most clearly."
+          "message": "Clearlyest is not right. Use the most clearly or most clearly for the top one in a group."
         },
         {
           "answers": [
             "more clearly"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More clearly is not right. Use the most clearly or most clearly for the top one in a group."
         },
         {
           "answers": [
             "most clearly than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most clearly than is not right. Use the most clearly or most clearly for the top one in a group."
         },
         {
-          "message": "Both the most clearly and most clearly are natural in this adverbial position."
+          "message": "Use the most clearly or most clearly for the top one in a group."
         }
       ],
-      "explanation": "Both the most clearly and most clearly are accepted adverbial superlatives."
+      "explanation": "Use the most clearly or most clearly for the top one in a group."
     },
     {
       "id": "adv-055",
-      "sentence": "The student asked for help _____ than before.",
-      "base": "politely",
+      "sentence": "Jia found the new bus stop _____ than the old one.",
+      "base": "easily",
       "degree": "comparative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "politely",
+          "label": "easily",
           "kind": "word"
         },
         {
@@ -4189,7 +4189,7 @@
         }
       ],
       "answers": [
-        "more politely than"
+        "more easily than"
       ],
       "correctSequences": [
         [
@@ -4201,38 +4201,38 @@
       "feedback": [
         {
           "answers": [
-            "politelyer than"
+            "easilyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as politely. Use more politely."
+          "message": "Easilyer than is not right. Use more easily than to compare two things."
         },
         {
           "answers": [
-            "most politely than"
+            "most easily than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most easily than is not right. Use more easily than to compare two things."
         },
         {
           "answers": [
-            "politely than"
+            "easily than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Easily than is not right. Use more easily than to compare two things."
         },
         {
-          "message": "Use more politely than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more easily than to compare two things."
         }
       ],
-      "explanation": "Use more politely than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more easily than to compare two things."
     },
     {
       "id": "adv-056",
-      "sentence": "Of the role-play groups, this group asked for help _____.",
-      "base": "politely",
+      "sentence": "Of the bus stops, this one was found _____.",
+      "base": "easily",
       "degree": "superlative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "politely",
+          "label": "easily",
           "kind": "word"
         },
         {
@@ -4262,8 +4262,8 @@
         }
       ],
       "answers": [
-        "the most politely",
-        "most politely"
+        "the most easily",
+        "most easily"
       ],
       "correctSequences": [
         [
@@ -4279,31 +4279,31 @@
       "feedback": [
         {
           "answers": [
-            "politelyest"
+            "easilyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as politely. Use most politely."
+          "message": "Easilyest is not right. Use the most easily or most easily for the top one in a group."
         },
         {
           "answers": [
-            "more politely"
+            "more easily"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More easily is not right. Use the most easily or most easily for the top one in a group."
         },
         {
           "answers": [
-            "most politely than"
+            "most easily than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most easily than is not right. Use the most easily or most easily for the top one in a group."
         },
         {
-          "message": "Both the most politely and most politely are natural in this adverbial position."
+          "message": "Use the most easily or most easily for the top one in a group."
         }
       ],
-      "explanation": "Both the most politely and most politely are accepted adverbial superlatives."
+      "explanation": "Use the most easily or most easily for the top one in a group."
     },
     {
       "id": "adv-057",
-      "sentence": "The team completed the sorting task _____ than the other team.",
+      "sentence": "My team finished _____ than the other team.",
       "base": "quickly",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -4354,29 +4354,29 @@
           "answers": [
             "quicklyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as quickly. Use more quickly."
+          "message": "Quicklyer than is not right. Use more quickly than to compare two things."
         },
         {
           "answers": [
             "most quickly than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most quickly than is not right. Use more quickly than to compare two things."
         },
         {
           "answers": [
             "quickly than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Quickly than is not right. Use more quickly than to compare two things."
         },
         {
-          "message": "Use more quickly than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more quickly than to compare two things."
         }
       ],
-      "explanation": "Use more quickly than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more quickly than to compare two things."
     },
     {
       "id": "adv-058",
-      "sentence": "Of the trial teams, this team completed the sorting task _____.",
+      "sentence": "Of the teams, my team finished _____.",
       "base": "quickly",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -4432,29 +4432,29 @@
           "answers": [
             "quicklyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as quickly. Use most quickly."
+          "message": "Quicklyest is not right. Use the most quickly or most quickly for the top one in a group."
         },
         {
           "answers": [
             "more quickly"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More quickly is not right. Use the most quickly or most quickly for the top one in a group."
         },
         {
           "answers": [
             "most quickly than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most quickly than is not right. Use the most quickly or most quickly for the top one in a group."
         },
         {
-          "message": "Both the most quickly and most quickly are natural in this adverbial position."
+          "message": "Use the most quickly or most quickly for the top one in a group."
         }
       ],
-      "explanation": "Both the most quickly and most quickly are accepted adverbial superlatives."
+      "explanation": "Use the most quickly or most quickly for the top one in a group."
     },
     {
       "id": "adv-059",
-      "sentence": "The class walked across the wet-floor practice mat _____ than before.",
+      "sentence": "The bus moved _____ than before.",
       "base": "slowly",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -4505,29 +4505,29 @@
           "answers": [
             "slowlyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as slowly. Use more slowly."
+          "message": "Slowlyer than is not right. Use more slowly than to compare two things."
         },
         {
           "answers": [
             "most slowly than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most slowly than is not right. Use more slowly than to compare two things."
         },
         {
           "answers": [
             "slowly than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Slowly than is not right. Use more slowly than to compare two things."
         },
         {
-          "message": "Use more slowly than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more slowly than to compare two things."
         }
       ],
-      "explanation": "Use more slowly than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more slowly than to compare two things."
     },
     {
       "id": "adv-060",
-      "sentence": "Of the groups, this group walked across the practice mat _____.",
+      "sentence": "Of the buses, this bus moved _____.",
       "base": "slowly",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -4583,36 +4583,36 @@
           "answers": [
             "slowlyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as slowly. Use most slowly."
+          "message": "Slowlyest is not right. Use the most slowly or most slowly for the top one in a group."
         },
         {
           "answers": [
             "more slowly"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More slowly is not right. Use the most slowly or most slowly for the top one in a group."
         },
         {
           "answers": [
             "most slowly than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most slowly than is not right. Use the most slowly or most slowly for the top one in a group."
         },
         {
-          "message": "Both the most slowly and most slowly are natural in this adverbial position."
+          "message": "Use the most slowly or most slowly for the top one in a group."
         }
       ],
-      "explanation": "Both the most slowly and most slowly are accepted adverbial superlatives."
+      "explanation": "Use the most slowly or most slowly for the top one in a group."
     },
     {
       "id": "adv-061",
-      "sentence": "Nora presented her idea _____ than in the rehearsal.",
-      "base": "confidently",
+      "sentence": "Tom smiled _____ after the game than before it.",
+      "base": "happily",
       "degree": "comparative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "confidently",
+          "label": "happily",
           "kind": "word"
         },
         {
@@ -4642,7 +4642,7 @@
         }
       ],
       "answers": [
-        "more confidently than"
+        "more happily than"
       ],
       "correctSequences": [
         [
@@ -4654,38 +4654,38 @@
       "feedback": [
         {
           "answers": [
-            "confidentlyer than"
+            "happilyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as confidently. Use more confidently."
+          "message": "Happilyer than is not right. Use more happily than to compare two things."
         },
         {
           "answers": [
-            "most confidently than"
+            "most happily than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most happily than is not right. Use more happily than to compare two things."
         },
         {
           "answers": [
-            "confidently than"
+            "happily than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Happily than is not right. Use more happily than to compare two things."
         },
         {
-          "message": "Use more confidently than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more happily than to compare two things."
         }
       ],
-      "explanation": "Use more confidently than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more happily than to compare two things."
     },
     {
       "id": "adv-062",
-      "sentence": "Of the presenters, Nora presented her idea _____.",
-      "base": "confidently",
+      "sentence": "Of the students, Tom smiled _____.",
+      "base": "happily",
       "degree": "superlative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "confidently",
+          "label": "happily",
           "kind": "word"
         },
         {
@@ -4715,8 +4715,8 @@
         }
       ],
       "answers": [
-        "the most confidently",
-        "most confidently"
+        "the most happily",
+        "most happily"
       ],
       "correctSequences": [
         [
@@ -4732,38 +4732,38 @@
       "feedback": [
         {
           "answers": [
-            "confidentlyest"
+            "happilyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as confidently. Use most confidently."
+          "message": "Happilyest is not right. Use the most happily or most happily for the top one in a group."
         },
         {
           "answers": [
-            "more confidently"
+            "more happily"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More happily is not right. Use the most happily or most happily for the top one in a group."
         },
         {
           "answers": [
-            "most confidently than"
+            "most happily than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most happily than is not right. Use the most happily or most happily for the top one in a group."
         },
         {
-          "message": "Both the most confidently and most confidently are natural in this adverbial position."
+          "message": "Use the most happily or most happily for the top one in a group."
         }
       ],
-      "explanation": "Both the most confidently and most confidently are accepted adverbial superlatives."
+      "explanation": "Use the most happily or most happily for the top one in a group."
     },
     {
       "id": "adv-063",
-      "sentence": "Kai waited for the equipment _____ than his partner.",
-      "base": "patiently",
+      "sentence": "The school bus came _____ this month than last month.",
+      "base": "regularly",
       "degree": "comparative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "patiently",
+          "label": "regularly",
           "kind": "word"
         },
         {
@@ -4793,7 +4793,7 @@
         }
       ],
       "answers": [
-        "more patiently than"
+        "more regularly than"
       ],
       "correctSequences": [
         [
@@ -4805,38 +4805,38 @@
       "feedback": [
         {
           "answers": [
-            "patientlyer than"
+            "regularlyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as patiently. Use more patiently."
+          "message": "Regularlyer than is not right. Use more regularly than to compare two things."
         },
         {
           "answers": [
-            "most patiently than"
+            "most regularly than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most regularly than is not right. Use more regularly than to compare two things."
         },
         {
           "answers": [
-            "patiently than"
+            "regularly than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Regularly than is not right. Use more regularly than to compare two things."
         },
         {
-          "message": "Use more patiently than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more regularly than to compare two things."
         }
       ],
-      "explanation": "Use more patiently than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more regularly than to compare two things."
     },
     {
       "id": "adv-064",
-      "sentence": "Of the pairs, Kai waited for the equipment _____.",
-      "base": "patiently",
+      "sentence": "Of the buses, this bus came _____.",
+      "base": "regularly",
       "degree": "superlative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "patiently",
+          "label": "regularly",
           "kind": "word"
         },
         {
@@ -4866,8 +4866,8 @@
         }
       ],
       "answers": [
-        "the most patiently",
-        "most patiently"
+        "the most regularly",
+        "most regularly"
       ],
       "correctSequences": [
         [
@@ -4883,31 +4883,31 @@
       "feedback": [
         {
           "answers": [
-            "patientlyest"
+            "regularlyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as patiently. Use most patiently."
+          "message": "Regularlyest is not right. Use the most regularly or most regularly for the top one in a group."
         },
         {
           "answers": [
-            "more patiently"
+            "more regularly"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More regularly is not right. Use the most regularly or most regularly for the top one in a group."
         },
         {
           "answers": [
-            "most patiently than"
+            "most regularly than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most regularly than is not right. Use the most regularly or most regularly for the top one in a group."
         },
         {
-          "message": "Both the most patiently and most patiently are natural in this adverbial position."
+          "message": "Use the most regularly or most regularly for the top one in a group."
         }
       ],
-      "explanation": "Both the most patiently and most patiently are accepted adverbial superlatives."
+      "explanation": "Use the most regularly or most regularly for the top one in a group."
     },
     {
       "id": "adv-065",
-      "sentence": "The group discussed the safety rule _____ than in the first meeting.",
+      "sentence": "Ming listened _____ than before.",
       "base": "seriously",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -4958,29 +4958,29 @@
           "answers": [
             "seriouslyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as seriously. Use more seriously."
+          "message": "Seriouslyer than is not right. Use more seriously than to compare two things."
         },
         {
           "answers": [
             "most seriously than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most seriously than is not right. Use more seriously than to compare two things."
         },
         {
           "answers": [
             "seriously than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Seriously than is not right. Use more seriously than to compare two things."
         },
         {
-          "message": "Use more seriously than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more seriously than to compare two things."
         }
       ],
-      "explanation": "Use more seriously than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more seriously than to compare two things."
     },
     {
       "id": "adv-066",
-      "sentence": "Of the groups, this group discussed the safety rule _____.",
+      "sentence": "Of the students, Ming listened _____.",
       "base": "seriously",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -5036,36 +5036,36 @@
           "answers": [
             "seriouslyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as seriously. Use most seriously."
+          "message": "Seriouslyest is not right. Use the most seriously or most seriously for the top one in a group."
         },
         {
           "answers": [
             "more seriously"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More seriously is not right. Use the most seriously or most seriously for the top one in a group."
         },
         {
           "answers": [
             "most seriously than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most seriously than is not right. Use the most seriously or most seriously for the top one in a group."
         },
         {
-          "message": "Both the most seriously and most seriously are natural in this adverbial position."
+          "message": "Use the most seriously or most seriously for the top one in a group."
         }
       ],
-      "explanation": "Both the most seriously and most seriously are accepted adverbial superlatives."
+      "explanation": "Use the most seriously or most seriously for the top one in a group."
     },
     {
       "id": "adv-067",
-      "sentence": "Mina arranged the labels _____ than before.",
-      "base": "neatly",
+      "sentence": "Our team finished the game _____ than last time.",
+      "base": "successfully",
       "degree": "comparative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "neatly",
+          "label": "successfully",
           "kind": "word"
         },
         {
@@ -5095,7 +5095,7 @@
         }
       ],
       "answers": [
-        "more neatly than"
+        "more successfully than"
       ],
       "correctSequences": [
         [
@@ -5107,38 +5107,38 @@
       "feedback": [
         {
           "answers": [
-            "neatlyer than"
+            "successfullyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as neatly. Use more neatly."
+          "message": "Successfullyer than is not right. Use more successfully than to compare two things."
         },
         {
           "answers": [
-            "most neatly than"
+            "most successfully than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most successfully than is not right. Use more successfully than to compare two things."
         },
         {
           "answers": [
-            "neatly than"
+            "successfully than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Successfully than is not right. Use more successfully than to compare two things."
         },
         {
-          "message": "Use more neatly than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more successfully than to compare two things."
         }
       ],
-      "explanation": "Use more neatly than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more successfully than to compare two things."
     },
     {
       "id": "adv-068",
-      "sentence": "Of the teams, Mina arranged the labels _____.",
-      "base": "neatly",
+      "sentence": "Of the teams, our team finished the game _____.",
+      "base": "successfully",
       "degree": "superlative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "neatly",
+          "label": "successfully",
           "kind": "word"
         },
         {
@@ -5168,8 +5168,8 @@
         }
       ],
       "answers": [
-        "the most neatly",
-        "most neatly"
+        "the most successfully",
+        "most successfully"
       ],
       "correctSequences": [
         [
@@ -5185,31 +5185,31 @@
       "feedback": [
         {
           "answers": [
-            "neatlyest"
+            "successfullyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as neatly. Use most neatly."
+          "message": "Successfullyest is not right. Use the most successfully or most successfully for the top one in a group."
         },
         {
           "answers": [
-            "more neatly"
+            "more successfully"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More successfully is not right. Use the most successfully or most successfully for the top one in a group."
         },
         {
           "answers": [
-            "most neatly than"
+            "most successfully than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most successfully than is not right. Use the most successfully or most successfully for the top one in a group."
         },
         {
-          "message": "Both the most neatly and most neatly are natural in this adverbial position."
+          "message": "Use the most successfully or most successfully for the top one in a group."
         }
       ],
-      "explanation": "Both the most neatly and most neatly are accepted adverbial superlatives."
+      "explanation": "Use the most successfully or most successfully for the top one in a group."
     },
     {
       "id": "adv-069",
-      "sentence": "The announcer read the notice _____ than during the first sound check.",
+      "sentence": "The boy spoke _____ than before.",
       "base": "loudly",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -5260,29 +5260,29 @@
           "answers": [
             "loudlyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as loudly. Use more loudly."
+          "message": "Loudlyer than is not right. Use more loudly than to compare two things."
         },
         {
           "answers": [
             "most loudly than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most loudly than is not right. Use more loudly than to compare two things."
         },
         {
           "answers": [
             "loudly than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Loudly than is not right. Use more loudly than to compare two things."
         },
         {
-          "message": "Use more loudly than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more loudly than to compare two things."
         }
       ],
-      "explanation": "Use more loudly than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more loudly than to compare two things."
     },
     {
       "id": "adv-070",
-      "sentence": "Of the speakers, the announcer read the notice _____.",
+      "sentence": "Of the children, this boy spoke _____.",
       "base": "loudly",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -5338,36 +5338,36 @@
           "answers": [
             "loudlyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as loudly. Use most loudly."
+          "message": "Loudlyest is not right. Use the most loudly or most loudly for the top one in a group."
         },
         {
           "answers": [
             "more loudly"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More loudly is not right. Use the most loudly or most loudly for the top one in a group."
         },
         {
           "answers": [
             "most loudly than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most loudly than is not right. Use the most loudly or most loudly for the top one in a group."
         },
         {
-          "message": "Both the most loudly and most loudly are natural in this adverbial position."
+          "message": "Use the most loudly or most loudly for the top one in a group."
         }
       ],
-      "explanation": "Both the most loudly and most loudly are accepted adverbial superlatives."
+      "explanation": "Use the most loudly or most loudly for the top one in a group."
     },
     {
       "id": "adv-071",
-      "sentence": "The helper copied the timetable _____ than in the first trial.",
-      "base": "accurately",
+      "sentence": "The new clock showed the time _____ than the old clock.",
+      "base": "correctly",
       "degree": "comparative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "accurately",
+          "label": "correctly",
           "kind": "word"
         },
         {
@@ -5397,7 +5397,7 @@
         }
       ],
       "answers": [
-        "more accurately than"
+        "more correctly than"
       ],
       "correctSequences": [
         [
@@ -5409,38 +5409,38 @@
       "feedback": [
         {
           "answers": [
-            "accuratelyer than"
+            "correctlyer than"
           ],
-          "message": "Do not add -er to an -ly adverb such as accurately. Use more accurately."
+          "message": "Correctlyer than is not right. Use more correctly than to compare two things."
         },
         {
           "answers": [
-            "most accurately than"
+            "most correctly than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most correctly than is not right. Use more correctly than to compare two things."
         },
         {
           "answers": [
-            "accurately than"
+            "correctly than"
           ],
-          "message": "The base adverb needs more to make this comparison."
+          "message": "Correctly than is not right. Use more correctly than to compare two things."
         },
         {
-          "message": "Use more accurately than. Do not change the y to i or double an ending on an -ly adverb."
+          "message": "Use more correctly than to compare two things."
         }
       ],
-      "explanation": "Use more accurately than. Most -ly adverbs use more and most, without changing y to i."
+      "explanation": "Use more correctly than to compare two things."
     },
     {
       "id": "adv-072",
-      "sentence": "Of the helpers, the student copied the timetable _____.",
-      "base": "accurately",
+      "sentence": "Of the clocks, this clock showed the time _____.",
+      "base": "correctly",
       "degree": "superlative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "accurately",
+          "label": "correctly",
           "kind": "word"
         },
         {
@@ -5470,8 +5470,8 @@
         }
       ],
       "answers": [
-        "the most accurately",
-        "most accurately"
+        "the most correctly",
+        "most correctly"
       ],
       "correctSequences": [
         [
@@ -5487,27 +5487,27 @@
       "feedback": [
         {
           "answers": [
-            "accuratelyest"
+            "correctlyest"
           ],
-          "message": "Do not add -est to an -ly adverb such as accurately. Use most accurately."
+          "message": "Correctlyest is not right. Use the most correctly or most correctly for the top one in a group."
         },
         {
           "answers": [
-            "more accurately"
+            "more correctly"
           ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
+          "message": "More correctly is not right. Use the most correctly or most correctly for the top one in a group."
         },
         {
           "answers": [
-            "most accurately than"
+            "most correctly than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Most correctly than is not right. Use the most correctly or most correctly for the top one in a group."
         },
         {
-          "message": "Both the most accurately and most accurately are natural in this adverbial position."
+          "message": "Use the most correctly or most correctly for the top one in a group."
         }
       ],
-      "explanation": "Both the most accurately and most accurately are accepted adverbial superlatives."
+      "explanation": "Use the most correctly or most correctly for the top one in a group."
     },
     {
       "id": "adv-073",
@@ -5556,29 +5556,29 @@
           "answers": [
             "weller than"
           ],
-          "message": "Well is irregular as an adverb: use better, not weller."
+          "message": "Weller than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "more well than"
           ],
-          "message": "For how an action is done here, the standard comparative is better."
+          "message": "More well than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "well than"
           ],
-          "message": "The base adverb alone does not make a comparison."
+          "message": "Well than is not right. Use better than to compare two things."
         },
         {
-          "message": "Use better than. Well describes how an action is done; good is the related adjective."
+          "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Use better than. Well is an adverb here, describing how the plan was explained."
+      "explanation": "Use better than to compare two things."
     },
     {
       "id": "adv-074",
-      "sentence": "Of the groups, the first team explained its plan _____.",
+      "sentence": "Of the teams, the blue team explained its plan _____.",
       "base": "well",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -5627,29 +5627,29 @@
           "answers": [
             "wellest"
           ],
-          "message": "Well is irregular as an adverb: use best, not wellest."
+          "message": "Wellest is not right. Use the best or best for the top one in a group."
         },
         {
           "answers": [
             "more well"
           ],
-          "message": "This sentence needs a superlative, and the standard form is best."
+          "message": "More well is not right. Use the best or best for the top one in a group."
         },
         {
           "answers": [
             "well"
           ],
-          "message": "The base adverb alone does not show the highest degree."
+          "message": "Well is not right. Use the best or best for the top one in a group."
         },
         {
-          "message": "Both the best and best are natural adverbial superlatives here."
+          "message": "Use the best or best for the top one in a group."
         }
       ],
-      "explanation": "Use the best or best. Well is an adverb here, not the adjective good."
+      "explanation": "Use the best or best for the top one in a group."
     },
     {
       "id": "adv-075",
-      "sentence": "Jia answered the visitor's question _____ than in the first rehearsal.",
+      "sentence": "Jia answered the question _____ than before.",
       "base": "well",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -5694,29 +5694,29 @@
           "answers": [
             "weller than"
           ],
-          "message": "Well is irregular as an adverb: use better, not weller."
+          "message": "Weller than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "more well than"
           ],
-          "message": "For how an action is done here, the standard comparative is better."
+          "message": "More well than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "well than"
           ],
-          "message": "The base adverb alone does not make a comparison."
+          "message": "Well than is not right. Use better than to compare two things."
         },
         {
-          "message": "Use better than. Well describes how an action is done; good is the related adjective."
+          "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Use better than. Well is an adverb here, describing how the plan was explained."
+      "explanation": "Use better than to compare two things."
     },
     {
       "id": "adv-076",
-      "sentence": "Of the presenters, Jia answered the visitor's question _____.",
+      "sentence": "Of the students, Jia answered the question _____.",
       "base": "well",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -5765,29 +5765,29 @@
           "answers": [
             "wellest"
           ],
-          "message": "Well is irregular as an adverb: use best, not wellest."
+          "message": "Wellest is not right. Use the best or best for the top one in a group."
         },
         {
           "answers": [
             "more well"
           ],
-          "message": "This sentence needs a superlative, and the standard form is best."
+          "message": "More well is not right. Use the best or best for the top one in a group."
         },
         {
           "answers": [
             "well"
           ],
-          "message": "The base adverb alone does not show the highest degree."
+          "message": "Well is not right. Use the best or best for the top one in a group."
         },
         {
-          "message": "Both the best and best are natural adverbial superlatives here."
+          "message": "Use the best or best for the top one in a group."
         }
       ],
-      "explanation": "Use the best or best. Well is an adverb here, not the adjective good."
+      "explanation": "Use the best or best for the top one in a group."
     },
     {
       "id": "adv-077",
-      "sentence": "The group used the microphone _____ than before during the sound check.",
+      "sentence": "The class used the new microphone _____ than before.",
       "base": "well",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -5832,25 +5832,25 @@
           "answers": [
             "weller than"
           ],
-          "message": "Well is irregular as an adverb: use better, not weller."
+          "message": "Weller than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "more well than"
           ],
-          "message": "For how an action is done here, the standard comparative is better."
+          "message": "More well than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "well than"
           ],
-          "message": "The base adverb alone does not make a comparison."
+          "message": "Well than is not right. Use better than to compare two things."
         },
         {
-          "message": "Use better than. Well describes how an action is done; good is the related adjective."
+          "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Use better than. Well is an adverb here, describing how the plan was explained."
+      "explanation": "Use better than to compare two things."
     },
     {
       "id": "adv-078",
@@ -5903,29 +5903,29 @@
           "answers": [
             "wellest"
           ],
-          "message": "Well is irregular as an adverb: use best, not wellest."
+          "message": "Wellest is not right. Use the best or best for the top one in a group."
         },
         {
           "answers": [
             "more well"
           ],
-          "message": "This sentence needs a superlative, and the standard form is best."
+          "message": "More well is not right. Use the best or best for the top one in a group."
         },
         {
           "answers": [
             "well"
           ],
-          "message": "The base adverb alone does not show the highest degree."
+          "message": "Well is not right. Use the best or best for the top one in a group."
         },
         {
-          "message": "Both the best and best are natural adverbial superlatives here."
+          "message": "Use the best or best for the top one in a group."
         }
       ],
-      "explanation": "Use the best or best. Well is an adverb here, not the adjective good."
+      "explanation": "Use the best or best for the top one in a group."
     },
     {
       "id": "adv-079",
-      "sentence": "The second tutor demonstrated the task _____ than the first tutor.",
+      "sentence": "Tom showed us the game _____ than May.",
       "base": "well",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -5970,29 +5970,29 @@
           "answers": [
             "weller than"
           ],
-          "message": "Well is irregular as an adverb: use better, not weller."
+          "message": "Weller than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "more well than"
           ],
-          "message": "For how an action is done here, the standard comparative is better."
+          "message": "More well than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "well than"
           ],
-          "message": "The base adverb alone does not make a comparison."
+          "message": "Well than is not right. Use better than to compare two things."
         },
         {
-          "message": "Use better than. Well describes how an action is done; good is the related adjective."
+          "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Use better than. Well is an adverb here, describing how the plan was explained."
+      "explanation": "Use better than to compare two things."
     },
     {
       "id": "adv-080",
-      "sentence": "Of the tutors, the second tutor demonstrated the task _____.",
+      "sentence": "Of the students, Tom showed us the game _____.",
       "base": "well",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6041,29 +6041,29 @@
           "answers": [
             "wellest"
           ],
-          "message": "Well is irregular as an adverb: use best, not wellest."
+          "message": "Wellest is not right. Use the best or best for the top one in a group."
         },
         {
           "answers": [
             "more well"
           ],
-          "message": "This sentence needs a superlative, and the standard form is best."
+          "message": "More well is not right. Use the best or best for the top one in a group."
         },
         {
           "answers": [
             "well"
           ],
-          "message": "The base adverb alone does not show the highest degree."
+          "message": "Well is not right. Use the best or best for the top one in a group."
         },
         {
-          "message": "Both the best and best are natural adverbial superlatives here."
+          "message": "Use the best or best for the top one in a group."
         }
       ],
-      "explanation": "Use the best or best. Well is an adverb here, not the adjective good."
+      "explanation": "Use the best or best for the top one in a group."
     },
     {
       "id": "adv-081",
-      "sentence": "The rain damaged the paper display _____ than it damaged the plastic sign.",
+      "sentence": "The rain damaged the paper sign _____ than the plastic sign.",
       "base": "badly",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6124,29 +6124,29 @@
           "answers": [
             "badlier than"
           ],
-          "message": "Do not change badly to badlier. Use worse, or more badly in this manner context."
+          "message": "Badlier than is not right. Use worse than or more badly than to compare two things."
         },
         {
           "answers": [
             "worser than"
           ],
-          "message": "Worse is already the irregular comparative; worser is not standard here."
+          "message": "Worser than is not right. Use worse than or more badly than to compare two things."
         },
         {
           "answers": [
             "worst than"
           ],
-          "message": "Worst is a superlative, not a comparison with than."
+          "message": "Worst than is not right. Use worse than or more badly than to compare two things."
         },
         {
-          "message": "Both worse than and more badly than are accepted in this context."
+          "message": "Use worse than or more badly than to compare two things."
         }
       ],
-      "explanation": "Worse than is the usual irregular form. More badly than is also natural when focusing on the manner or extent of damage."
+      "explanation": "Use worse than or more badly than to compare two things."
     },
     {
       "id": "adv-082",
-      "sentence": "Of the notices left outside, the paper one was damaged _____.",
+      "sentence": "Of the signs, the paper one was damaged _____.",
       "base": "badly",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6216,29 +6216,29 @@
           "answers": [
             "badlier"
           ],
-          "message": "Do not make badly into badlier. Use worst, or most badly in this manner context."
+          "message": "Badlier is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
           "answers": [
             "worse"
           ],
-          "message": "Worse is comparative; this sentence needs the highest degree."
+          "message": "Worse is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
           "answers": [
             "worst than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Worst than is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
-          "message": "Worst and most badly are both accepted here; the is optional with these adverbial superlatives."
+          "message": "Use the worst or worst or the most badly or most badly for the top one in a group."
         }
       ],
-      "explanation": "Use worst or most badly. With an adverbial superlative, the may be included or omitted when natural."
+      "explanation": "Use the worst or worst or the most badly or most badly for the top one in a group."
     },
     {
       "id": "adv-083",
-      "sentence": "In the fictional storm test, water marked the blue card _____ than the laminated card.",
+      "sentence": "Water marked the blue card _____ than the red card.",
       "base": "badly",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6299,29 +6299,29 @@
           "answers": [
             "badlier than"
           ],
-          "message": "Do not change badly to badlier. Use worse, or more badly in this manner context."
+          "message": "Badlier than is not right. Use worse than or more badly than to compare two things."
         },
         {
           "answers": [
             "worser than"
           ],
-          "message": "Worse is already the irregular comparative; worser is not standard here."
+          "message": "Worser than is not right. Use worse than or more badly than to compare two things."
         },
         {
           "answers": [
             "worst than"
           ],
-          "message": "Worst is a superlative, not a comparison with than."
+          "message": "Worst than is not right. Use worse than or more badly than to compare two things."
         },
         {
-          "message": "Both worse than and more badly than are accepted in this context."
+          "message": "Use worse than or more badly than to compare two things."
         }
       ],
-      "explanation": "Worse than is the usual irregular form. More badly than is also natural when focusing on the manner or extent of damage."
+      "explanation": "Use worse than or more badly than to compare two things."
     },
     {
       "id": "adv-084",
-      "sentence": "Of the cards in the storm test, the blue card was marked _____.",
+      "sentence": "Of the cards, the blue card was marked _____.",
       "base": "badly",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6391,29 +6391,29 @@
           "answers": [
             "badlier"
           ],
-          "message": "Do not make badly into badlier. Use worst, or most badly in this manner context."
+          "message": "Badlier is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
           "answers": [
             "worse"
           ],
-          "message": "Worse is comparative; this sentence needs the highest degree."
+          "message": "Worse is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
           "answers": [
             "worst than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Worst than is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
-          "message": "Worst and most badly are both accepted here; the is optional with these adverbial superlatives."
+          "message": "Use the worst or worst or the most badly or most badly for the top one in a group."
         }
       ],
-      "explanation": "Use worst or most badly. With an adverbial superlative, the may be included or omitted when natural."
+      "explanation": "Use the worst or worst or the most badly or most badly for the top one in a group."
     },
     {
       "id": "adv-085",
-      "sentence": "The old trolley performed _____ than the new trolley in the route trial.",
+      "sentence": "The old bus worked _____ than the new bus.",
       "base": "badly",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6474,29 +6474,29 @@
           "answers": [
             "badlier than"
           ],
-          "message": "Do not change badly to badlier. Use worse, or more badly in this manner context."
+          "message": "Badlier than is not right. Use worse than or more badly than to compare two things."
         },
         {
           "answers": [
             "worser than"
           ],
-          "message": "Worse is already the irregular comparative; worser is not standard here."
+          "message": "Worser than is not right. Use worse than or more badly than to compare two things."
         },
         {
           "answers": [
             "worst than"
           ],
-          "message": "Worst is a superlative, not a comparison with than."
+          "message": "Worst than is not right. Use worse than or more badly than to compare two things."
         },
         {
-          "message": "Both worse than and more badly than are accepted in this context."
+          "message": "Use worse than or more badly than to compare two things."
         }
       ],
-      "explanation": "Worse than is the usual irregular form. More badly than is also natural when focusing on the manner or extent of damage."
+      "explanation": "Use worse than or more badly than to compare two things."
     },
     {
       "id": "adv-086",
-      "sentence": "Of the trolleys in the route trial, the old one performed _____.",
+      "sentence": "Of the buses, the old bus worked _____.",
       "base": "badly",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6566,29 +6566,29 @@
           "answers": [
             "badlier"
           ],
-          "message": "Do not make badly into badlier. Use worst, or most badly in this manner context."
+          "message": "Badlier is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
           "answers": [
             "worse"
           ],
-          "message": "Worse is comparative; this sentence needs the highest degree."
+          "message": "Worse is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
           "answers": [
             "worst than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Worst than is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
-          "message": "Worst and most badly are both accepted here; the is optional with these adverbial superlatives."
+          "message": "Use the worst or worst or the most badly or most badly for the top one in a group."
         }
       ],
-      "explanation": "Use worst or most badly. With an adverbial superlative, the may be included or omitted when natural."
+      "explanation": "Use the worst or worst or the most badly or most badly for the top one in a group."
     },
     {
       "id": "adv-087",
-      "sentence": "The microphone worked _____ than it did in the first sound check.",
+      "sentence": "The old microphone worked _____ than before.",
       "base": "badly",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6649,25 +6649,25 @@
           "answers": [
             "badlier than"
           ],
-          "message": "Do not change badly to badlier. Use worse, or more badly in this manner context."
+          "message": "Badlier than is not right. Use worse than or more badly than to compare two things."
         },
         {
           "answers": [
             "worser than"
           ],
-          "message": "Worse is already the irregular comparative; worser is not standard here."
+          "message": "Worser than is not right. Use worse than or more badly than to compare two things."
         },
         {
           "answers": [
             "worst than"
           ],
-          "message": "Worst is a superlative, not a comparison with than."
+          "message": "Worst than is not right. Use worse than or more badly than to compare two things."
         },
         {
-          "message": "Both worse than and more badly than are accepted in this context."
+          "message": "Use worse than or more badly than to compare two things."
         }
       ],
-      "explanation": "Worse than is the usual irregular form. More badly than is also natural when focusing on the manner or extent of damage."
+      "explanation": "Use worse than or more badly than to compare two things."
     },
     {
       "id": "adv-088",
@@ -6741,29 +6741,29 @@
           "answers": [
             "badlier"
           ],
-          "message": "Do not make badly into badlier. Use worst, or most badly in this manner context."
+          "message": "Badlier is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
           "answers": [
             "worse"
           ],
-          "message": "Worse is comparative; this sentence needs the highest degree."
+          "message": "Worse is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
           "answers": [
             "worst than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Worst than is not right. Use the worst or worst or the most badly or most badly for the top one in a group."
         },
         {
-          "message": "Worst and most badly are both accepted here; the is optional with these adverbial superlatives."
+          "message": "Use the worst or worst or the most badly or most badly for the top one in a group."
         }
       ],
-      "explanation": "Use worst or most badly. With an adverbial superlative, the may be included or omitted when natural."
+      "explanation": "Use the worst or worst or the most badly or most badly for the top one in a group."
     },
     {
       "id": "adv-089",
-      "sentence": "In the route challenge, the orange token rolled _____ than the blue token did.",
+      "sentence": "The red ball rolled _____ than the blue ball.",
       "base": "far",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6818,29 +6818,29 @@
           "answers": [
             "farer than"
           ],
-          "message": "Far does not normally take a plain -er ending in standard English."
+          "message": "Farer than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "farthest than"
           ],
-          "message": "Farthest is a superlative, so it does not compare two actions with than."
+          "message": "Farthest than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "far than"
           ],
-          "message": "The base adverb far does not make the comparison."
+          "message": "Far than is not right. Use farther than or further than to compare two things."
         },
         {
-          "message": "Both farther than and further than are accepted in this distance context."
+          "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Both farther than and further than are accepted. Farther often stresses physical distance."
+      "explanation": "Use farther than or further than to compare two things."
     },
     {
       "id": "adv-090",
-      "sentence": "Of the tokens in the route challenge, the orange token rolled _____.",
+      "sentence": "Of the balls, the red ball rolled _____.",
       "base": "far",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6903,29 +6903,29 @@
           "answers": [
             "farther"
           ],
-          "message": "Farther is comparative; this sentence needs the greatest distance."
+          "message": "Farther is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
           "answers": [
             "further"
           ],
-          "message": "Further is comparative; this sentence needs the greatest distance."
+          "message": "Further is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
           "answers": [
             "farthest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Farthest than is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
-          "message": "Both (the) farthest and (the) furthest are accepted adverbial superlatives here."
+          "message": "Use the farthest or farthest or the furthest or furthest for the top one in a group."
         }
       ],
-      "explanation": "Both the farthest/farthest and the furthest/furthest are accepted adverbial superlatives."
+      "explanation": "Use the farthest or farthest or the furthest or furthest for the top one in a group."
     },
     {
       "id": "adv-091",
-      "sentence": "In the ramp trial, the green marble rolled _____ than the red marble did.",
+      "sentence": "The green marble rolled _____ than the red marble.",
       "base": "far",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6980,29 +6980,29 @@
           "answers": [
             "farer than"
           ],
-          "message": "Far does not normally take a plain -er ending in standard English."
+          "message": "Farer than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "farthest than"
           ],
-          "message": "Farthest is a superlative, so it does not compare two actions with than."
+          "message": "Farthest than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "far than"
           ],
-          "message": "The base adverb far does not make the comparison."
+          "message": "Far than is not right. Use farther than or further than to compare two things."
         },
         {
-          "message": "Both farther than and further than are accepted in this distance context."
+          "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Both farther than and further than are accepted. Farther often stresses physical distance."
+      "explanation": "Use farther than or further than to compare two things."
     },
     {
       "id": "adv-092",
-      "sentence": "Of the marbles in the ramp trial, the green marble rolled _____.",
+      "sentence": "Of the marbles, the green marble rolled _____.",
       "base": "far",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -7065,29 +7065,29 @@
           "answers": [
             "farther"
           ],
-          "message": "Farther is comparative; this sentence needs the greatest distance."
+          "message": "Farther is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
           "answers": [
             "further"
           ],
-          "message": "Further is comparative; this sentence needs the greatest distance."
+          "message": "Further is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
           "answers": [
             "farthest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Farthest than is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
-          "message": "Both (the) farthest and (the) furthest are accepted adverbial superlatives here."
+          "message": "Use the farthest or farthest or the furthest or furthest for the top one in a group."
         }
       ],
-      "explanation": "Both the farthest/farthest and the furthest/furthest are accepted adverbial superlatives."
+      "explanation": "Use the farthest or farthest or the furthest or furthest for the top one in a group."
     },
     {
       "id": "adv-093",
-      "sentence": "In the throw challenge, Jia's beanbag travelled _____ than Kai's did.",
+      "sentence": "Jia's beanbag travelled _____ than Kai's beanbag.",
       "base": "far",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -7142,29 +7142,29 @@
           "answers": [
             "farer than"
           ],
-          "message": "Far does not normally take a plain -er ending in standard English."
+          "message": "Farer than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "farthest than"
           ],
-          "message": "Farthest is a superlative, so it does not compare two actions with than."
+          "message": "Farthest than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "far than"
           ],
-          "message": "The base adverb far does not make the comparison."
+          "message": "Far than is not right. Use farther than or further than to compare two things."
         },
         {
-          "message": "Both farther than and further than are accepted in this distance context."
+          "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Both farther than and further than are accepted. Farther often stresses physical distance."
+      "explanation": "Use farther than or further than to compare two things."
     },
     {
       "id": "adv-094",
-      "sentence": "Of the beanbags in the throw challenge, Jia's travelled _____.",
+      "sentence": "Of the beanbags, Jia's travelled _____.",
       "base": "far",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -7227,29 +7227,29 @@
           "answers": [
             "farther"
           ],
-          "message": "Farther is comparative; this sentence needs the greatest distance."
+          "message": "Farther is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
           "answers": [
             "further"
           ],
-          "message": "Further is comparative; this sentence needs the greatest distance."
+          "message": "Further is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
           "answers": [
             "farthest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Farthest than is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
-          "message": "Both (the) farthest and (the) furthest are accepted adverbial superlatives here."
+          "message": "Use the farthest or farthest or the furthest or furthest for the top one in a group."
         }
       ],
-      "explanation": "Both the farthest/farthest and the furthest/furthest are accepted adverbial superlatives."
+      "explanation": "Use the farthest or farthest or the furthest or furthest for the top one in a group."
     },
     {
       "id": "adv-095",
-      "sentence": "On the route chart, the blue counter moved _____ than the yellow counter did.",
+      "sentence": "The blue counter moved _____ than the yellow counter.",
       "base": "far",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -7304,29 +7304,29 @@
           "answers": [
             "farer than"
           ],
-          "message": "Far does not normally take a plain -er ending in standard English."
+          "message": "Farer than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "farthest than"
           ],
-          "message": "Farthest is a superlative, so it does not compare two actions with than."
+          "message": "Farthest than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "far than"
           ],
-          "message": "The base adverb far does not make the comparison."
+          "message": "Far than is not right. Use farther than or further than to compare two things."
         },
         {
-          "message": "Both farther than and further than are accepted in this distance context."
+          "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Both farther than and further than are accepted. Farther often stresses physical distance."
+      "explanation": "Use farther than or further than to compare two things."
     },
     {
       "id": "adv-096",
-      "sentence": "Of the counters on the route chart, the blue counter moved _____.",
+      "sentence": "Of the counters, the blue counter moved _____.",
       "base": "far",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -7389,25 +7389,25 @@
           "answers": [
             "farther"
           ],
-          "message": "Farther is comparative; this sentence needs the greatest distance."
+          "message": "Farther is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
           "answers": [
             "further"
           ],
-          "message": "Further is comparative; this sentence needs the greatest distance."
+          "message": "Further is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
           "answers": [
             "farthest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Farthest than is not right. Use the farthest or farthest or the furthest or furthest for the top one in a group."
         },
         {
-          "message": "Both (the) farthest and (the) furthest are accepted adverbial superlatives here."
+          "message": "Use the farthest or farthest or the furthest or furthest for the top one in a group."
         }
       ],
-      "explanation": "Both the farthest/farthest and the furthest/furthest are accepted adverbial superlatives."
+      "explanation": "Use the farthest or farthest or the furthest or furthest for the top one in a group."
     }
   ]
 }

@@ -1,72 +1,72 @@
 {
   "module": "adjectives",
-  "intro": "Use comparative adjectives to compare two things and superlative adjectives to identify the highest or lowest degree in a group of three or more. Build the form that matches the adjective and the sentence.",
+  "intro": "Use a comparative to compare two things: tall → taller. Use a superlative to show the top one in a group: tall → tallest.",
   "sections": [
     {
       "title": "Short adjectives: -er and -est",
-      "text": "Most short adjectives take -er for a comparison and -est for a superlative: tall → taller → tallest. If the adjective ends in -e, add -r or -st: large → larger → largest. For a short consonant-vowel-consonant word, double the final consonant: big → bigger → biggest.",
+      "text": "For many short adjectives, add -er or -est: tall → taller → tallest. If the word ends in -e, add -r or -st: large → larger → largest. Double the last letter in short words such as big → bigger → biggest.",
       "examples": [
-        "This box is bigger than that tray.",
-        "This is the largest poster in the hall."
+        "My bag is bigger than your bag.",
+        "This is the largest room in the school."
       ],
-      "note": "Do not double after two consonants or after w, x or y."
+      "note": "Do not double w, x or y."
     },
     {
       "title": "Adjectives ending in -y",
-      "text": "Many common two-syllable adjectives ending in consonant + y change y to i before -er and -est: easy → easier → easiest; busy → busier → busiest. This is not every final-y word: shy → shyer → shyest is a standard exception.",
+      "text": "For easy, busy, noisy, happy and heavy, change y to i: easy → easier → easiest. But shy keeps y: shy → shyer → shyest.",
       "examples": [
-        "This clue is easier than the final clue.",
-        "It is the noisiest part of the task."
+        "This question is easier than the last one.",
+        "The canteen is the noisiest place at school."
       ]
     },
     {
-      "title": "Longer adjectives and valid alternatives",
-      "text": "Longer adjectives usually use more and most: more careful, the most interesting. Some two-syllable adjectives have more than one standard form: quieter or more quiet; cleverer or more clever; narrower or more narrow; simpler or more simple.",
+      "title": "Longer adjectives and two correct forms",
+      "text": "Use more and most with longer adjectives: more careful; the most interesting. With quiet, clever, narrow and simple, two forms can be right.",
       "examples": [
-        "The diagram is more useful than the list.",
-        "This is the simplest explanation.",
-        "This is the most simple explanation."
+        "This map is more useful than the old map.",
+        "This is the simplest way home.",
+        "This is the most simple way home."
       ],
-      "note": "Choose a conventional form for the adjective; both listed alternatives are accepted in this course."
+      "note": "Both listed forms are accepted in this course."
     },
     {
       "title": "Irregular forms and far",
-      "text": "Good → better → best and bad → worse → worst. Far has two standard families: farther/farthest and further/furthest. Both are standard for distance; further alone also means additional or broader.",
+      "text": "Good → better → best. Bad → worse → worst. For distance, use farther/farthest or further/furthest. Both are correct.",
       "examples": [
-        "The revised poster is better than the first draft.",
-        "This is the farthest classroom from the hall."
+        "This bus route is better than the old route.",
+        "This is the farthest shop from our school."
       ]
     },
     {
-      "title": "Common mistakes to avoid",
-      "text": "Do not make a double comparison or superlative: say easier, not more easier; say the fastest, not the most fastest. Use one formation pattern only.",
+      "title": "Common mistakes",
+      "text": "Use one pattern only: easier, not more easier; the fastest, not the most fastest.",
       "examples": [
-        "The second clue is easier than the first.",
-        "She chose the most interesting article."
+        "The second question is easier than the first.",
+        "She chose the most interesting book."
       ]
     },
     {
       "title": "Than, the, good and well",
-      "text": "A comparative often uses than: cleaner than the old table. A superlative adjective before a noun normally needs the: the cleanest table, unless another determiner already does the job. Use good for a noun or thing; use well for how an action is done.",
+      "text": "Use than after a comparative: cleaner than the old desk. Use the before a superlative adjective and a noun: the cleanest desk. Use good before a noun. Use well to say how someone does something.",
       "examples": [
-        "The design is good.",
-        "She explained the design well."
+        "The plan is good.",
+        "She explained the plan well."
       ]
     }
   ],
   "miniCheck": [
     {
-      "sentence": "The poster is _____ than the first draft.",
+      "sentence": "The school hall is _____ than our classroom.",
       "options": [
         "larger",
         "largeer",
         "more large"
       ],
       "answer": "larger",
-      "explanation": "Large ends in -e, so add -r: larger than."
+      "explanation": "Large ends in -e, so add -r: larger."
     },
     {
-      "sentence": "Of the three displays, Nia's is the _____.",
+      "sentence": "Of the three bags, the red bag is the _____.",
       "options": [
         "best",
         "goodest",
@@ -76,14 +76,14 @@
       "explanation": "Good is irregular: good → better → best."
     },
     {
-      "sentence": "This is the _____ corner in the library plan.",
+      "sentence": "This is the _____ place in the library.",
       "options": [
         "quietest",
         "quieter",
         "quietiest"
       ],
       "answer": "quietest",
-      "explanation": "Use the superlative quietest. The most quiet is also a valid standard alternative, but it is not an option here."
+      "explanation": "Use quietest. The most quiet is also correct, but it is not an option here."
     }
   ],
   "sources": [

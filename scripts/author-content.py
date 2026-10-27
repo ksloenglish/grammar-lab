@@ -61,6 +61,18 @@ def make_question(
         answer = assemble(blocks, sequence)
         if answer not in answers:
             answers.append(answer)
+    answer_text = " or ".join(answers)
+    purpose = "to compare two things" if degree == "comparative" else "for the top one in a group"
+    short_feedback: list[dict[str, str | list[str]]] = []
+    for item in feedback[:-1]:
+        wrong_answers = item.get("answers")
+        if isinstance(wrong_answers, list):
+            short_feedback.append({"answers": wrong_answers, "message": f"{wrong_answers[0].capitalize()} is not right. Use {answer_text} {purpose}."})
+    if degree == "comparative":
+        short_explanation = f"Use {answer_text} to compare two things."
+    else:
+        short_explanation = f"Use {answer_text} for the top one in a group."
+    short_feedback.append({"message": f"Use {answer_text} {purpose}."})
     return {
         "id": f"{'adj' if module == 'adjectives' else 'adv'}-{number:03d}",
         "sentence": sentence,
@@ -70,8 +82,8 @@ def make_question(
         "blocks": blocks,
         "answers": answers,
         "correctSequences": sequences,
-        "feedback": feedback,
-        "explanation": explanation,
+        "feedback": short_feedback,
+        "explanation": short_explanation,
     }
 
 
@@ -498,33 +510,33 @@ def adjective_bank() -> dict[str, Any]:
     n = 1
 
     regular_pairs = [
-        ("tall", "taller", "tallest", "The drama-room doorway is _____ than the music-room doorway.", "This is the _____ display stand in the corridor."),
-        ("clean", "cleaner", "cleanest", "After the tidy-up, this table is _____ than it was before.", "Of the four worktables, this is the _____ one after the tidy-up."),
-        ("bright", "brighter", "brightest", "The new notice is _____ than the old notice.", "Mina chose the _____ card for the science display."),
-        ("short", "shorter", "shortest", "This route is _____ than the route through the playground.", "This is the _____ queue at the lunchtime rehearsal."),
-        ("warm", "warmer", "warmest", "The library corner feels _____ than the corridor today.", "The sunny bench is the _____ place in this sketch of the playground."),
-        ("old", "older", "oldest", "The printed timetable is _____ than the online copy.", "This is the _____ photo in the class history display."),
-        ("strong", "stronger", "strongest", "The second paper bridge is _____ than the first one.", "This is the _____ glue in our fictional materials test."),
-        ("kind", "kinder", "kindest", "Maya's comment was _____ than the first comment in the role-play.", "This is the _____ reply in the peer-feedback examples."),
+        ("tall", "taller", "tallest", "The school gate is _____ than the side gate.", "This is the _____ boy in the class."),
+        ("clean", "cleaner", "cleanest", "My desk is _____ than your desk.", "This is the _____ classroom in the school."),
+        ("bright", "brighter", "brightest", "This shirt is _____ than that shirt.", "This is the _____ light in the room."),
+        ("short", "shorter", "shortest", "The walk to school is _____ than the walk to the shop.", "This is the _____ road home."),
+        ("warm", "warmer", "warmest", "Today is _____ than yesterday.", "This is the _____ day this week."),
+        ("old", "older", "oldest", "My phone is _____ than my sister's phone.", "This is the _____ photo at home."),
+        ("strong", "stronger", "strongest", "This bag is _____ than that bag.", "Ming is the _____ player on the team."),
+        ("kind", "kinder", "kindest", "May was _____ than Tom today.", "May is the _____ student in the group."),
     ]
     for base, comparative, superlative, comp_sentence, sup_sentence in regular_pairs:
         questions.append(short_comparative("adjectives", n, comp_sentence, base, comparative, "-er", "Regular forms")); n += 1
         questions.append(short_superlative("adjectives", n, sup_sentence, base, superlative, "-est", "Regular forms", article_in_gap=False)); n += 1
 
     e_pairs = [
-        ("large", "larger", "largest", "This classroom is _____ than the art room.", "The hall poster is the _____ item in the display."),
-        ("nice", "nicer", "nicest", "The revised title is _____ than the first title.", "Of the three welcome cards, this is the _____ one."),
-        ("safe", "safer", "safest", "The marked route is _____ than the shortcut beside the store room.", "The teacher chose _____ route for the equipment trolley."),
+        ("large", "larger", "largest", "The school hall is _____ than our classroom.", "The red bag is the _____ bag here."),
+        ("nice", "nicer", "nicest", "This shop is _____ than the old shop.", "This is the _____ cake in the shop."),
+        ("safe", "safer", "safest", "The zebra crossing is _____ than the small road.", "The teacher chose _____ way home."),
     ]
     for base, comparative, superlative, comp_sentence, sup_sentence in e_pairs:
         questions.append(short_comparative("adjectives", n, comp_sentence, base, comparative, "-r", "Spelling changes")); n += 1
         questions.append(short_superlative("adjectives", n, sup_sentence, base, superlative, "-st", "Spelling changes", article_in_gap=base in {"safe", "late"})); n += 1
 
     doubled_pairs = [
-        ("big", "bigger", "biggest", "The cardboard box is _____ than the sample tray.", "The stage model is the _____ object in the design sketch."),
-        ("hot", "hotter", "hottest", "The tea in this flask is _____ than the tea in that flask.", "This is the _____ day in our imaginary weather chart."),
-        ("thin", "thinner", "thinnest", "This marker is _____ than the blue marker.", "This is the _____ line in the poster design."),
-        ("wet", "wetter", "wettest", "The path beside the tap is _____ than the path near the gate.", "This is the _____ part of the pretend playground map after rain."),
+        ("big", "bigger", "biggest", "My lunch box is _____ than yours.", "This is the _____ box in the room."),
+        ("hot", "hotter", "hottest", "This soup is _____ than my tea.", "This is the _____ day in July."),
+        ("thin", "thinner", "thinnest", "This paper is _____ than that paper.", "This is the _____ book on the shelf."),
+        ("wet", "wetter", "wettest", "The floor by the door is _____ than the floor by the window.", "This is the _____ part of the playground."),
     ]
     for base, comparative, superlative, comp_sentence, sup_sentence in doubled_pairs:
         comp_ending = {"big": "-ger", "hot": "-ter", "thin": "-ner", "wet": "-ter"}[base]
@@ -533,66 +545,66 @@ def adjective_bank() -> dict[str, Any]:
         questions.append(short_superlative("adjectives", n, sup_sentence, base, superlative, ending, "Spelling changes", article_in_gap=False)); n += 1
 
     y_pairs = [
-        ("easy", "easier", "easiest", "This clue is _____ than the final clue.", "This is the _____ question on the practice sheet."),
-        ("busy", "busier", "busiest", "The library is _____ than the study room at lunchtime.", "The entrance is the _____ area on this school-event map."),
-        ("noisy", "noisier", "noisiest", "The canteen is _____ than the reading corner during the break.", "This is the _____ part of the sound-recording task."),
-        ("happy", "happier", "happiest", "The class looked _____ after the successful rehearsal.", "This is the _____ face in the illustrated feedback chart."),
-        ("heavy", "heavier", "heaviest", "This bag of textbooks is _____ than the bag of worksheets.", "This is the _____ box in the fictional delivery list."),
+        ("easy", "easier", "easiest", "This question is _____ than the last one.", "This is the _____ question in the test."),
+        ("busy", "busier", "busiest", "The canteen is _____ than the library at lunch time.", "Monday is the _____ day at school."),
+        ("noisy", "noisier", "noisiest", "The bus is _____ than the library.", "This is the _____ room in the school."),
+        ("happy", "happier", "happiest", "Tom was _____ after the game than before it.", "This is the _____ day of my week."),
+        ("heavy", "heavier", "heaviest", "My school bag is _____ than my sister's bag.", "This is the _____ bag in the class."),
     ]
     for base, comparative, superlative, comp_sentence, sup_sentence in y_pairs:
         questions.append(short_comparative("adjectives", n, comp_sentence, base, comparative, "-ier", "Spelling changes")); n += 1
         questions.append(short_superlative("adjectives", n, sup_sentence, base, superlative, "-iest", "Spelling changes", article_in_gap=False)); n += 1
 
     long_pairs = [
-        ("careful", "The second pair was _____ than the first pair while carrying the glass beakers.", "This is the _____ set of instructions in the practical booklet.", False),
-        ("interesting", "The visitor's second example was _____ than the first example.", "This is _____ article in the class magazine.", True),
-        ("useful", "The labelled diagram is _____ than the unlabelled diagram.", "The checklist is the _____ page in the revision pack.", False),
-        ("popular", "The chess club was _____ than the board-game club at the fictional activity fair.", "This is _____ choice on the mock survey board.", True),
-        ("practical", "The foldable stand is _____ than the large display frame.", "This is the _____ solution in our design discussion.", False),
-        ("colourful", "The new mural is _____ than the old noticeboard.", "This is _____ poster in the art-club gallery.", True),
-        ("important", "The safety sign is _____ than the decoration for this drill.", "This is the _____ reminder on the laboratory door.", False),
-        ("comfortable", "The padded chair is _____ than the wooden stool.", "This is _____ seat in the reading-corner plan.", True),
-        ("reliable", "The printed checklist is _____ than the memory test for this task.", "This is the _____ source in the class fact-check activity.", False),
-        ("creative", "The second group produced a _____ solution than the first group.", "This is _____ idea in the design showcase.", True),
-        ("expensive", "The metal display frame is _____ than the cardboard stand.", "This is the _____ item in the fictional equipment catalogue.", False),
-        ("dangerous", "The unmarked route is _____ than the marked route in this safety scenario.", "This is _____ route on the emergency-planning map.", True),
+        ("careful", "Ming was _____ than Tom with the glass cups.", "This is the _____ set of rules for the game.", False),
+        ("interesting", "This book is _____ than that book.", "This is _____ story in the book.", True),
+        ("useful", "This map is _____ than the old map.", "The bus card is the _____ card in my bag.", False),
+        ("popular", "Football is _____ than tennis at our school.", "This is _____ game in the class.", True),
+        ("practical", "A small bag is _____ than a large bag for this trip.", "This is the _____ idea for school.", False),
+        ("beautiful", "This new shop sign is _____ than the old one.", "This is _____ picture in the room.", True),
+        ("important", "A school ID card is _____ than a new pen.", "This is the _____ rule in the room.", False),
+        ("comfortable", "This chair is _____ than that chair.", "This is _____ seat on the bus.", True),
+        ("reliable", "This bus is _____ than the old bus.", "This is the _____ bus route home.", False),
+        ("creative", "Ming's poster is _____ than Tom's poster.", "This is _____ idea in the class.", True),
+        ("expensive", "This phone is _____ than that phone.", "This is the _____ thing in the shop.", False),
+        ("dangerous", "Running on a wet floor is _____ than walking.", "This is _____ road near the school.", True),
     ]
     for base, comp_sentence, sup_sentence, article_in_gap in long_pairs:
         questions.append(long_comparative("adjectives", n, comp_sentence, base)); n += 1
         questions.append(long_superlative("adjectives", n, sup_sentence, base, article_in_gap=article_in_gap)); n += 1
 
     alternatives = [
-        ("quiet", "quieter", "quietest", "-er", "The reading room is _____ than the corridor at break time.", "This is the _____ corner in the library plan."),
-        ("clever", "cleverer", "cleverest", "-er", "The revised solution is _____ than the first solution.", "This is _____ idea in the group brainstorm."),
-        ("narrow", "narrower", "narrowest", "-er", "This shelf is _____ than the display shelf.", "This is the _____ aisle in the classroom-layout sketch."),
-        ("simple", "simpler", "simplest", "-r", "The second instruction is _____ than the first instruction.", "This is _____ explanation in the revision guide."),
+        ("quiet", "quieter", "quietest", "-er", "The library is _____ than the canteen.", "This is _____ place in the library."),
+        ("clever", "cleverer", "cleverest", "-er", "Ming's answer is _____ than Tom's answer.", "This is _____ idea in the group."),
+        ("narrow", "narrower", "narrowest", "-er", "This path is _____ than the road.", "This is _____ path in the park."),
+        ("simple", "simpler", "simplest", "-r", "The second rule is _____ than the first rule.", "This is _____ way to go home."),
     ]
     for base, comparative, superlative, ending, comp_sentence, sup_sentence in alternatives:
         questions.append(alternative_comparative("adjectives", n, comp_sentence, base, comparative, ending)); n += 1
         questions.append(alternative_superlative("adjectives", n, sup_sentence, base, superlative, "-st" if base != "simple" else "-st", article_in_gap=sup_sentence.startswith("This is _____"))); n += 1
 
     irregular_pairs = [
-        ("good", "better", "best", "The revised poster is _____ than the first draft.", "This is _____ example in the teacher's model set."),
-        ("good", "better", "best", "The updated plan is _____ than the original plan.", "This is _____ solution in the group-feedback set."),
-        ("bad", "worse", "worst", "The second draft has a _____ layout than the first draft.", "This is _____ layout in the fictional before-and-after set."),
-        ("bad", "worse", "worst", "This explanation is _____ than the labelled example.", "This is _____ spelling mistake in the proofreading set."),
+        ("good", "better", "best", "This new pen is _____ than my old pen.", "This is _____ pen in the shop."),
+        ("good", "better", "best", "The new bus route is _____ than the old route.", "This is _____ way to school."),
+        ("bad", "worse", "worst", "The rain today is _____ than yesterday's rain.", "This is _____ weather this week."),
+        ("bad", "worse", "worst", "This bus ride is _____ than the last one.", "This is _____ bus ride this week."),
     ]
     for base, comparative, superlative, comp_sentence, sup_sentence in irregular_pairs:
         questions.append(irregular_adjective_comparative(n, comp_sentence, base, comparative, superlative)); n += 1
         questions.append(irregular_adjective_superlative(n, sup_sentence, base, superlative)); n += 1
 
-    questions.append(far_adjective_comparative(n, "The sports hall is _____ the library is from the classroom.")); n += 1
-    questions.append(far_adjective_superlative(n, "This is _____ classroom from the hall on the school-map activity.")); n += 1
-    questions.append(far_adjective_comparative(n, "The marker landed _____ the beanbag did from the hoop in the ramp trial.")); n += 1
-    questions.append(far_adjective_superlative(n, "On the route map, this is _____ point from the school.")); n += 1
+    questions.append(far_adjective_comparative(n, "The shop is _____ the school is from my home.")); n += 1
+    questions.append(far_adjective_superlative(n, "This is _____ bus stop from my home.")); n += 1
+    questions.append(far_adjective_comparative(n, "The park is _____ the school is from my home.")); n += 1
+    questions.append(far_adjective_superlative(n, "This is _____ shop from our school.")); n += 1
 
     quantity_sets = [
-        ("little", "less", "least", "There is _____ paper in this box than in the other box.", "This box has the _____ paper in the display."),
-        ("little", "less", "least", "There is _____ paint in the blue tray than in the green tray.", "The blue tray has the _____ paint in the art activity."),
-        ("much", "more", "most", "There is _____ paint in this tray than in that tray.", "This tray has the _____ paint in the materials test."),
-        ("much", "more", "most", "There is _____ time before the second bell than before the first bell.", "This timetable gives us the _____ time for the library task."),
-        ("many", "more", "most", "There are _____ labels on this poster than on that poster.", "This poster has the _____ labels in the display set."),
-        ("many", "more", "most", "There are _____ chairs in Room B than in Room A.", "Room B has the _____ chairs on the seating plan."),
+        ("little", "less", "least", "There is _____ water in this bottle than in that bottle.", "This bottle has the _____ water."),
+        ("little", "less", "least", "There is _____ rice in this bowl than in that bowl.", "This bowl has the _____ rice."),
+        ("much", "more", "most", "There is _____ tea in this cup than in that cup.", "This cup has the _____ tea."),
+        ("much", "more", "most", "There is _____ time before lunch than before class.", "This plan gives us the _____ time."),
+        ("many", "more", "most", "There are _____ books in this bag than in that bag.", "This bag has the _____ books."),
+        ("many", "more", "most", "There are _____ chairs in Room B than in Room A.", "Room B has the _____ chairs."),
     ]
     for base, comparative, superlative, comp_sentence, sup_sentence in quantity_sets:
         questions.append(quantity_adjective_comparative(n, comp_sentence, base, comparative, superlative)); n += 1
@@ -607,84 +619,86 @@ def adverb_bank() -> dict[str, Any]:
     n = 1
 
     flat_pairs = [
-        ("fast", "faster", "fastest", "-er", "-est", "During the relay practice, Eva ran _____ than she did in the first round.", "Of the four runners in the practice race, Eva ran _____."),
-        ("hard", "harder", "hardest", "-er", "-est", "Ming worked _____ than usual on the model bridge.", "Of the team members, Ming worked _____ on the display."),
-        ("high", "higher", "highest", "-er", "-est", "During the game, Jin threw the ball _____ than before.", "Of the three jumps, Jin jumped _____ on the final attempt."),
-        ("low", "lower", "lowest", "-er", "-est", "During the sound check, the group spoke _____ than the previous group.", "Of the groups in the sound check, they spoke _____."),
-        ("long", "longer", "longest", "-er", "-est", "For the final note, the bell rang _____ than it did at lunchtime.", "Of the alarms tested, the bell rang _____."),
-        ("fast", "faster", "fastest", "-er", "-est", "In the second drill, the green team packed its kit _____ than the blue team.", "Of the teams in the packing drill, the green team packed its kit _____."),
-        ("hard", "harder", "hardest", "-er", "-est", "Tara worked _____ than before on the practice model.", "Of the team members, Tara worked _____ on the practice model."),
-        ("high", "higher", "highest", "-er", "-est", "In the second trial, the foam ball bounced _____ than in the first trial.", "Of the foam balls, the orange one bounced _____."),
-        ("low", "lower", "lowest", "-er", "-est", "During the quiet-reading challenge, Group B spoke _____ than Group A.", "Of the groups in the quiet-reading challenge, Group B spoke _____."),
-        ("long", "longer", "longest", "-er", "-est", "The final video clip played _____ than the preview clip.", "Of the sample clips, the final clip played _____."),
-        ("near", "nearer", "nearest", "-er", "-est", "For the photo, Amir stood _____ to the board than Jia did.", "Of the pupils in the photo, Amir stood _____ to the board."),
-        ("soon", "sooner", "soonest", "-er", "-est", "The second reminder appeared _____ than the first reminder.", "Of the reminders, the second one appeared _____."),
+        ("fast", "faster", "fastest", "Ming ran _____ than Tom in PE.", "Of the runners, Ming ran _____."),
+        ("hard", "harder", "hardest", "I worked _____ than my friend today.", "Of the students, I worked _____."),
+        ("high", "higher", "highest", "Ming threw the ball _____ than Tom.", "Of the players, Ming threw the ball _____."),
+        ("low", "lower", "lowest", "The class spoke _____ than the teacher.", "Of the groups, this group spoke _____."),
+        ("long", "longer", "longest", "The bell rang _____ than yesterday.", "Of the bells, this one rang _____."),
+        ("fast", "faster", "fastest", "Our team packed _____ than the other team.", "Of the teams, our team packed _____."),
+        ("hard", "harder", "hardest", "Tom studied _____ than before the test.", "Of the class, Tom studied _____."),
+        ("high", "higher", "highest", "The ball bounced _____ than before.", "Of the balls, the red ball bounced _____."),
+        ("low", "lower", "lowest", "The music played _____ than before.", "Of the songs, this song played _____."),
+        ("long", "longer", "longest", "The bus waited _____ than usual.", "Of the buses, this bus waited _____."),
+        ("near", "nearer", "nearest", "Ming stood _____ to the door than Tom.", "Of the students, Ming stood _____ to the door."),
+        ("soon", "sooner", "soonest", "Bus 2 came _____ than Bus 1.", "Of the buses, Bus 2 came _____."),
     ]
-    for base, comparative, superlative, comp_ending, sup_ending, comp_sentence, sup_sentence in flat_pairs:
+    for base, comparative, superlative, comp_sentence, sup_sentence in flat_pairs:
+        comp_ending, sup_ending = "-er", "-est"
         questions.append(flat_adverb_comparative(n, comp_sentence, base, comparative, comp_ending, "Regular forms")); n += 1
         questions.append(flat_adverb_superlative(n, sup_sentence, base, superlative, sup_ending, "Regular forms")); n += 1
 
     spelling_pairs = [
-        ("late", "later", "latest", "-r", "-st", "On Tuesday, the shuttle arrived _____ than expected.", "Of the three buses, route 2 arrived _____."),
-        ("late", "later", "latest", "-r", "-st", "The drama group finished _____ than the music group.", "Of the rehearsal groups, the drama group finished _____."),
-        ("late", "later", "latest", "-r", "-st", "The reminder appeared _____ than the first notice.", "Of the notices, the final reminder appeared _____."),
-        ("late", "later", "latest", "-r", "-st", "The delivery reached the office _____ than planned in the fictional timetable.", "Of the sample deliveries, the blue-box delivery arrived _____."),
-        ("late", "later", "latest", "-r", "-st", "The final bell rang _____ than the practice bell.", "Of the bells in the sound test, the final bell rang _____."),
-        ("late", "later", "latest", "-r", "-st", "The second group submitted its chart _____ than the first group.", "Of the groups, the second group submitted its chart _____."),
-        ("early", "earlier", "earliest", "-ier", "-iest", "On Wednesday, the library opened _____ than on Tuesday.", "Of the four days, the library opened _____ on Thursday."),
-        ("early", "earlier", "earliest", "-ier", "-iest", "The first practice bus arrived _____ than the second bus.", "Of the practice buses, the first bus arrived _____."),
-        ("early", "earlier", "earliest", "-ier", "-iest", "The caretaker unlocked the hall _____ than on the previous day.", "Of the days in the schedule, the hall opened _____."),
-        ("early", "earlier", "earliest", "-ier", "-iest", "The class started its warm-up _____ than the other class.", "Of the classes, this class started its warm-up _____."),
-        ("early", "earlier", "earliest", "-ier", "-iest", "The first notice appeared _____ than the follow-up notice.", "Of the notices, the first notice appeared _____."),
-        ("early", "earlier", "earliest", "-ier", "-iest", "The sun rose _____ in the chart's summer example than in its winter example.", "Of the dates on the mock chart, the sun rose _____."),
+        ("late", "later", "latest", "Bus 1 arrived _____ than Bus 2.", "Of the buses, Bus 1 arrived _____."),
+        ("late", "later", "latest", "My group finished _____ than your group.", "Of the groups, my group finished _____."),
+        ("late", "later", "latest", "Tom came home _____ than May.", "Of my friends, Tom came home _____."),
+        ("late", "later", "latest", "The shop opened _____ than we thought.", "Of the shops, the small shop opened _____."),
+        ("late", "later", "latest", "The bell rang _____ than usual.", "Of the bells, this bell rang _____."),
+        ("late", "later", "latest", "I got home _____ than my sister.", "Of my family, I got home _____."),
+        ("early", "earlier", "earliest", "The library opened _____ than yesterday.", "Of the days, the library opened _____ on Monday."),
+        ("early", "earlier", "earliest", "The bus left _____ than usual.", "Of the buses, Bus 1 left _____."),
+        ("early", "earlier", "earliest", "Ming came to school _____ than Tom.", "Of the students, Ming came _____."),
+        ("early", "earlier", "earliest", "Our class started _____ than the other class.", "Of the classes, our class started _____."),
+        ("early", "earlier", "earliest", "The shop opened _____ than the bank.", "Of the shops, this one opened _____."),
+        ("early", "earlier", "earliest", "The sun came up _____ in summer than in winter.", "Of the days, the sun came up _____."),
     ]
-    for base, comparative, superlative, comp_ending, sup_ending, comp_sentence, sup_sentence in spelling_pairs:
+    for base, comparative, superlative, comp_sentence, sup_sentence in spelling_pairs:
+        comp_ending, sup_ending = ("-r", "-st") if base == "late" else ("-ier", "-iest")
         questions.append(flat_adverb_comparative(n, comp_sentence, base, comparative, comp_ending, "Spelling changes")); n += 1
         questions.append(flat_adverb_superlative(n, sup_sentence, base, superlative, sup_ending, "Spelling changes")); n += 1
 
     ly_pairs = [
-        ("carefully", "The second pair checked the measurements _____ than the first pair.", "Of the pairs, the second pair checked the measurements _____."),
-        ("quietly", "The group entered the reading room _____ than the earlier group.", "Of the groups, they entered the reading room _____."),
-        ("clearly", "Asha explained the instructions _____ than in her first attempt.", "Of the presenters, Asha explained the instructions _____."),
-        ("politely", "The student asked for help _____ than before.", "Of the role-play groups, this group asked for help _____."),
-        ("quickly", "The team completed the sorting task _____ than the other team.", "Of the trial teams, this team completed the sorting task _____."),
-        ("slowly", "The class walked across the wet-floor practice mat _____ than before.", "Of the groups, this group walked across the practice mat _____."),
-        ("confidently", "Nora presented her idea _____ than in the rehearsal.", "Of the presenters, Nora presented her idea _____."),
-        ("patiently", "Kai waited for the equipment _____ than his partner.", "Of the pairs, Kai waited for the equipment _____."),
-        ("seriously", "The group discussed the safety rule _____ than in the first meeting.", "Of the groups, this group discussed the safety rule _____."),
-        ("neatly", "Mina arranged the labels _____ than before.", "Of the teams, Mina arranged the labels _____."),
-        ("loudly", "The announcer read the notice _____ than during the first sound check.", "Of the speakers, the announcer read the notice _____."),
-        ("accurately", "The helper copied the timetable _____ than in the first trial.", "Of the helpers, the student copied the timetable _____."),
+        ("carefully", "Ming wrote _____ than Tom.", "Of the students, Ming wrote _____."),
+        ("quietly", "The class walked _____ than before.", "Of the groups, this group walked _____."),
+        ("clearly", "The teacher spoke _____ than before.", "Of the teachers, this teacher spoke _____."),
+        ("easily", "Jia found the new bus stop _____ than the old one.", "Of the bus stops, this one was found _____."),
+        ("quickly", "My team finished _____ than the other team.", "Of the teams, my team finished _____."),
+        ("slowly", "The bus moved _____ than before.", "Of the buses, this bus moved _____."),
+        ("happily", "Tom smiled _____ after the game than before it.", "Of the students, Tom smiled _____."),
+        ("regularly", "The school bus came _____ this month than last month.", "Of the buses, this bus came _____."),
+        ("seriously", "Ming listened _____ than before.", "Of the students, Ming listened _____."),
+        ("successfully", "Our team finished the game _____ than last time.", "Of the teams, our team finished the game _____."),
+        ("loudly", "The boy spoke _____ than before.", "Of the children, this boy spoke _____."),
+        ("correctly", "The new clock showed the time _____ than the old clock.", "Of the clocks, this clock showed the time _____."),
     ]
     for base, comp_sentence, sup_sentence in ly_pairs:
         questions.append(ly_adverb_comparative(n, comp_sentence, base)); n += 1
         questions.append(ly_adverb_superlative(n, sup_sentence, base)); n += 1
 
     well_pairs = [
-        ("The blue team explained its plan _____ than the red team.", "Of the groups, the first team explained its plan _____."),
-        ("Jia answered the visitor's question _____ than in the first rehearsal.", "Of the presenters, Jia answered the visitor's question _____."),
-        ("The group used the microphone _____ than before during the sound check.", "Of the groups, this group used the microphone _____."),
-        ("The second tutor demonstrated the task _____ than the first tutor.", "Of the tutors, the second tutor demonstrated the task _____."),
+        ("The blue team explained its plan _____ than the red team.", "Of the teams, the blue team explained its plan _____."),
+        ("Jia answered the question _____ than before.", "Of the students, Jia answered the question _____."),
+        ("The class used the new microphone _____ than before.", "Of the groups, this group used the microphone _____."),
+        ("Tom showed us the game _____ than May.", "Of the students, Tom showed us the game _____."),
     ]
     for comp_sentence, sup_sentence in well_pairs:
         questions.append(well_adverb_comparative(n, comp_sentence)); n += 1
         questions.append(well_adverb_superlative(n, sup_sentence)); n += 1
 
     badly_pairs = [
-        ("The rain damaged the paper display _____ than it damaged the plastic sign.", "Of the notices left outside, the paper one was damaged _____."),
-        ("In the fictional storm test, water marked the blue card _____ than the laminated card.", "Of the cards in the storm test, the blue card was marked _____."),
-        ("The old trolley performed _____ than the new trolley in the route trial.", "Of the trolleys in the route trial, the old one performed _____."),
-        ("The microphone worked _____ than it did in the first sound check.", "Of the microphones, the old one worked _____."),
+        ("The rain damaged the paper sign _____ than the plastic sign.", "Of the signs, the paper one was damaged _____."),
+        ("Water marked the blue card _____ than the red card.", "Of the cards, the blue card was marked _____."),
+        ("The old bus worked _____ than the new bus.", "Of the buses, the old bus worked _____."),
+        ("The old microphone worked _____ than before.", "Of the microphones, the old one worked _____."),
     ]
     for comp_sentence, sup_sentence in badly_pairs:
         questions.append(badly_adverb_comparative(n, comp_sentence)); n += 1
         questions.append(badly_adverb_superlative(n, sup_sentence)); n += 1
 
     far_pairs = [
-        ("In the route challenge, the orange token rolled _____ than the blue token did.", "Of the tokens in the route challenge, the orange token rolled _____."),
-        ("In the ramp trial, the green marble rolled _____ than the red marble did.", "Of the marbles in the ramp trial, the green marble rolled _____."),
-        ("In the throw challenge, Jia's beanbag travelled _____ than Kai's did.", "Of the beanbags in the throw challenge, Jia's travelled _____."),
-        ("On the route chart, the blue counter moved _____ than the yellow counter did.", "Of the counters on the route chart, the blue counter moved _____."),
+        ("The red ball rolled _____ than the blue ball.", "Of the balls, the red ball rolled _____."),
+        ("The green marble rolled _____ than the red marble.", "Of the marbles, the green marble rolled _____."),
+        ("Jia's beanbag travelled _____ than Kai's beanbag.", "Of the beanbags, Jia's travelled _____."),
+        ("The blue counter moved _____ than the yellow counter.", "Of the counters, the blue counter moved _____."),
     ]
     for comp_sentence, sup_sentence in far_pairs:
         questions.append(far_adverb_comparative(n, comp_sentence)); n += 1
@@ -697,59 +711,59 @@ def adverb_bank() -> dict[str, Any]:
 def learn_files() -> tuple[dict[str, Any], dict[str, Any]]:
     adjective_learn = {
         "module": "adjectives",
-        "intro": "Use comparative adjectives to compare two things and superlative adjectives to identify the highest or lowest degree in a group of three or more. Build the form that matches the adjective and the sentence.",
+        "intro": "Use a comparative to compare two things: tall → taller. Use a superlative to show the top one in a group: tall → tallest.",
         "sections": [
             {
                 "title": "Short adjectives: -er and -est",
-                "text": "Most short adjectives take -er for a comparison and -est for a superlative: tall → taller → tallest. If the adjective ends in -e, add -r or -st: large → larger → largest. For a short consonant-vowel-consonant word, double the final consonant: big → bigger → biggest.",
-                "examples": ["This box is bigger than that tray.", "This is the largest poster in the hall."],
-                "note": "Do not double after two consonants or after w, x or y.",
+                "text": "For many short adjectives, add -er or -est: tall → taller → tallest. If the word ends in -e, add -r or -st: large → larger → largest. Double the last letter in short words such as big → bigger → biggest.",
+                "examples": ["My bag is bigger than your bag.", "This is the largest room in the school."],
+                "note": "Do not double w, x or y.",
             },
             {
                 "title": "Adjectives ending in -y",
-                "text": "Many common two-syllable adjectives ending in consonant + y change y to i before -er and -est: easy → easier → easiest; busy → busier → busiest. This is not every final-y word: shy → shyer → shyest is a standard exception.",
-                "examples": ["This clue is easier than the final clue.", "It is the noisiest part of the task."],
+                "text": "For easy, busy, noisy, happy and heavy, change y to i: easy → easier → easiest. But shy keeps y: shy → shyer → shyest.",
+                "examples": ["This question is easier than the last one.", "The canteen is the noisiest place at school."],
             },
             {
-                "title": "Longer adjectives and valid alternatives",
-                "text": "Longer adjectives usually use more and most: more careful, the most interesting. Some two-syllable adjectives have more than one standard form: quieter or more quiet; cleverer or more clever; narrower or more narrow; simpler or more simple.",
-                "examples": ["The diagram is more useful than the list.", "This is the simplest explanation.", "This is the most simple explanation."],
-                "note": "Choose a conventional form for the adjective; both listed alternatives are accepted in this course.",
+                "title": "Longer adjectives and two correct forms",
+                "text": "Use more and most with longer adjectives: more careful; the most interesting. With quiet, clever, narrow and simple, two forms can be right.",
+                "examples": ["This map is more useful than the old map.", "This is the simplest way home.", "This is the most simple way home."],
+                "note": "Both listed forms are accepted in this course.",
             },
             {
                 "title": "Irregular forms and far",
-                "text": "Good → better → best and bad → worse → worst. Far has two standard families: farther/farthest and further/furthest. Both are standard for distance; further alone also means additional or broader.",
-                "examples": ["The revised poster is better than the first draft.", "This is the farthest classroom from the hall."],
+                "text": "Good → better → best. Bad → worse → worst. For distance, use farther/farthest or further/furthest. Both are correct.",
+                "examples": ["This bus route is better than the old route.", "This is the farthest shop from our school."],
             },
             {
-                "title": "Common mistakes to avoid",
-                "text": "Do not make a double comparison or superlative: say easier, not more easier; say the fastest, not the most fastest. Use one formation pattern only.",
-                "examples": ["The second clue is easier than the first.", "She chose the most interesting article."],
+                "title": "Common mistakes",
+                "text": "Use one pattern only: easier, not more easier; the fastest, not the most fastest.",
+                "examples": ["The second question is easier than the first.", "She chose the most interesting book."],
             },
             {
                 "title": "Than, the, good and well",
-                "text": "A comparative often uses than: cleaner than the old table. A superlative adjective before a noun normally needs the: the cleanest table, unless another determiner already does the job. Use good for a noun or thing; use well for how an action is done.",
-                "examples": ["The design is good.", "She explained the design well."],
+                "text": "Use than after a comparative: cleaner than the old desk. Use the before a superlative adjective and a noun: the cleanest desk. Use good before a noun. Use well to say how someone does something.",
+                "examples": ["The plan is good.", "She explained the plan well."],
             },
         ],
         "miniCheck": [
             {
-                "sentence": "The poster is _____ than the first draft.",
+                "sentence": "The school hall is _____ than our classroom.",
                 "options": ["larger", "largeer", "more large"],
                 "answer": "larger",
-                "explanation": "Large ends in -e, so add -r: larger than.",
+                "explanation": "Large ends in -e, so add -r: larger.",
             },
             {
-                "sentence": "Of the three displays, Nia's is the _____.",
+                "sentence": "Of the three bags, the red bag is the _____.",
                 "options": ["best", "goodest", "most good"],
                 "answer": "best",
                 "explanation": "Good is irregular: good → better → best.",
             },
             {
-                "sentence": "This is the _____ corner in the library plan.",
+                "sentence": "This is the _____ place in the library.",
                 "options": ["quietest", "quieter", "quietiest"],
                 "answer": "quietest",
-                "explanation": "Use the superlative quietest. The most quiet is also a valid standard alternative, but it is not an option here.",
+                "explanation": "Use quietest. The most quiet is also correct, but it is not an option here.",
             },
         ],
         "sources": [
@@ -759,53 +773,53 @@ def learn_files() -> tuple[dict[str, Any], dict[str, Any]]:
     }
     adverb_learn = {
         "module": "adverbs",
-        "intro": "Use comparative adverbs to compare how two actions happen and superlative adverbs for the highest or lowest degree of an action in a group. Keep the adverb rule separate from the adjective rule.",
+        "intro": "An adverb tells us how an action happens. Use a comparative adverb to compare two actions. Use a superlative adverb for the top one in a group.",
         "sections": [
             {
                 "title": "Short adverbs: -er and -est",
-                "text": "Fast, hard, high, low and long take -er and -est: faster/fastest and harder/hardest. For spelling, late → later → latest: add -r and -st. Early → earlier → earliest: change y to i before -er/-est.",
-                "examples": ["Eva ran faster than before.", "The library opened earliest on Thursday."],
+                "text": "Fast, hard, high, low and long take -er and -est: faster/fastest and harder/hardest. For late, add -r and -st: later/latest. For early, change y to i: earlier/earliest.",
+                "examples": ["Ming ran faster than Tom.", "The library opened earliest on Monday."],
             },
             {
                 "title": "Most -ly adverbs: more and most",
-                "text": "Most adverbs ending in -ly use more and most: more carefully, most carefully; more easily, most easily. Do not add -er/-est, double letters, or change -ly to -lier/-liest.",
-                "examples": ["Asha explained the instructions more clearly than before.", "The group worked most carefully."],
-                "note": "Early is a conventional exception: earlier/earliest is the usual form in these comparison exercises.",
+                "text": "Most adverbs ending in -ly use more and most: more carefully; most carefully. Do not add -er or -est to these adverbs. Early is different: earlier/earliest.",
+                "examples": ["The teacher spoke more clearly than before.", "Ming wrote most carefully."],
+                "note": "Do not change -ly to -lier or -liest.",
             },
             {
                 "title": "Irregular forms and far",
-                "text": "Well → better → best. Badly usually becomes worse/worst; more badly and most badly can also be natural when the manner or extent of harm is the focus. Both farther/farthest and further/furthest are standard for distance; further alone also means additional or broader.",
-                "examples": ["The team explained the plan better than before.", "The rain damaged the paper sign most badly."],
+                "text": "Well → better → best. Badly → worse → worst. For damage, more badly and most badly can also be right. For distance, use farther/farthest or further/furthest.",
+                "examples": ["Jia answered the question better than before.", "The rain damaged the paper sign most badly."],
             },
             {
-                "title": "Common mistakes to avoid",
-                "text": "Use faster, not more fast. Use more easily, not easilier. Do not combine two comparison patterns, and do not copy the adjective rule onto an -ly adverb.",
-                "examples": ["The team finished faster than before.", "The new instructions can be followed more easily."],
+                "title": "Common mistakes",
+                "text": "Use faster, not more fast. Use more easily, not easilier. Use one pattern only.",
+                "examples": ["Our team finished faster than the other team.", "Jia found the new bus stop more easily."],
             },
             {
                 "title": "Than, optional the, and hardly",
-                "text": "Use than after a comparative: more quickly than the other team. With superlative adverbs, the is often used but can be omitted when both sound natural: She ran the fastest / She ran fastest. Hard means with effort; hardly means almost not, so it is not the comparative of hard.",
-                "examples": ["Kai worked harder than usual.", "Of the runners, Eva ran the fastest.", "I could hardly hear the announcement."],
+                "text": "Use than after a comparative: more quickly than the other team. With a superlative adverb, the is often optional: She ran the fastest / She ran fastest. Hard means with effort. Hardly means almost not.",
+                "examples": ["Tom worked harder than usual.", "Of the runners, Ming ran the fastest.", "I could hardly hear the teacher."],
             },
         ],
         "miniCheck": [
             {
-                "sentence": "Our group spoke _____ than last time.",
+                "sentence": "The teacher spoke _____ than before.",
                 "options": ["more clearly", "clearer", "clearliest"],
                 "answer": "more clearly",
-                "explanation": "Clearly is an -ly adverb, so use more clearly than.",
+                "explanation": "Clearly ends in -ly, so use more clearly.",
             },
             {
-                "sentence": "Of the three teams, Aisha performed _____.",
+                "sentence": "Of the three teams, the blue team played _____.",
                 "options": ["best", "goodest", "more well"],
                 "answer": "best",
-                "explanation": "Well is irregular as an adverb: well → better → best. The is also natural: performed the best.",
+                "explanation": "Well is irregular: well → better → best. The best is also correct here.",
             },
             {
-                "sentence": "Of the three buses, route 2 arrived _____.",
+                "sentence": "Of the three buses, Bus 2 arrived _____.",
                 "options": ["earliest", "earlier", "earlyest"],
                 "answer": "earliest",
-                "explanation": "Early is the -ly exception: early → earlier → earliest. The earliest is also natural in this adverbial position.",
+                "explanation": "Early changes y to i: early → earlier → earliest. The earliest is also correct here.",
             },
         ],
         "sources": [
@@ -953,8 +967,6 @@ def main() -> None:
     adjectives = adjective_bank()
     adverbs = adverb_bank()
     adjective_learn, adverb_learn = learn_files()
-    modules = modules_file()
-
     adjective_report = validate_bank(adjectives)
     adverb_report = validate_bank(adverbs)
     validate_learn(adjective_learn)
@@ -964,7 +976,6 @@ def main() -> None:
     dump("adverbs-questions.json", adverbs)
     dump("adjectives-learn.json", adjective_learn)
     dump("adverbs-learn.json", adverb_learn)
-    dump("modules.json", modules)
 
     print(json.dumps({"adjectives": adjective_report, "adverbs": adverb_report}, indent=2))
 

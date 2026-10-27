@@ -3,7 +3,7 @@
   "questions": [
     {
       "id": "adj-001",
-      "sentence": "The drama-room doorway is _____ than the music-room doorway.",
+      "sentence": "The school gate is _____ than the side gate.",
       "base": "tall",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -54,29 +54,29 @@
           "answers": [
             "tall than"
           ],
-          "message": "The base form tall does not show a comparison. Use taller than."
+          "message": "Tall than is not right. Use taller than to compare two things."
         },
         {
           "answers": [
             "more tall than"
           ],
-          "message": "Tall is being practised as a short form here, so use taller, not more tall."
+          "message": "More tall than is not right. Use taller than to compare two things."
         },
         {
           "answers": [
             "tallest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Tallest than is not right. Use taller than to compare two things."
         },
         {
-          "message": "For this comparison, build taller and then add than."
+          "message": "Use taller than to compare two things."
         }
       ],
-      "explanation": "Use taller than for this comparative form."
+      "explanation": "Use taller than to compare two things."
     },
     {
       "id": "adj-002",
-      "sentence": "This is the _____ display stand in the corridor.",
+      "sentence": "This is the _____ boy in the class.",
       "base": "tall",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -121,29 +121,29 @@
           "answers": [
             "taller"
           ],
-          "message": "Taller is comparative. This sentence needs the highest degree."
+          "message": "Taller is not right. Use tallest for the top one in a group."
         },
         {
           "answers": [
             "more tall"
           ],
-          "message": "Use the short-form superlative tallest, not more tall."
+          "message": "More tall is not right. Use tallest for the top one in a group."
         },
         {
           "answers": [
             "tallest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Tallest than is not right. Use tallest for the top one in a group."
         },
         {
-          "message": "For this superlative, use tallest; the sentence already supplies any other needed word."
+          "message": "Use tallest for the top one in a group."
         }
       ],
-      "explanation": "Use tallest. A superlative identifies the highest degree in a group."
+      "explanation": "Use tallest for the top one in a group."
     },
     {
       "id": "adj-003",
-      "sentence": "After the tidy-up, this table is _____ than it was before.",
+      "sentence": "My desk is _____ than your desk.",
       "base": "clean",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -194,29 +194,29 @@
           "answers": [
             "clean than"
           ],
-          "message": "The base form clean does not show a comparison. Use cleaner than."
+          "message": "Clean than is not right. Use cleaner than to compare two things."
         },
         {
           "answers": [
             "more clean than"
           ],
-          "message": "Clean is being practised as a short form here, so use cleaner, not more clean."
+          "message": "More clean than is not right. Use cleaner than to compare two things."
         },
         {
           "answers": [
             "cleanest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Cleanest than is not right. Use cleaner than to compare two things."
         },
         {
-          "message": "For this comparison, build cleaner and then add than."
+          "message": "Use cleaner than to compare two things."
         }
       ],
-      "explanation": "Use cleaner than for this comparative form."
+      "explanation": "Use cleaner than to compare two things."
     },
     {
       "id": "adj-004",
-      "sentence": "Of the four worktables, this is the _____ one after the tidy-up.",
+      "sentence": "This is the _____ classroom in the school.",
       "base": "clean",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -261,29 +261,29 @@
           "answers": [
             "cleaner"
           ],
-          "message": "Cleaner is comparative. This sentence needs the highest degree."
+          "message": "Cleaner is not right. Use cleanest for the top one in a group."
         },
         {
           "answers": [
             "more clean"
           ],
-          "message": "Use the short-form superlative cleanest, not more clean."
+          "message": "More clean is not right. Use cleanest for the top one in a group."
         },
         {
           "answers": [
             "cleanest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Cleanest than is not right. Use cleanest for the top one in a group."
         },
         {
-          "message": "For this superlative, use cleanest; the sentence already supplies any other needed word."
+          "message": "Use cleanest for the top one in a group."
         }
       ],
-      "explanation": "Use cleanest. A superlative identifies the highest degree in a group."
+      "explanation": "Use cleanest for the top one in a group."
     },
     {
       "id": "adj-005",
-      "sentence": "The new notice is _____ than the old notice.",
+      "sentence": "This shirt is _____ than that shirt.",
       "base": "bright",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -334,29 +334,29 @@
           "answers": [
             "bright than"
           ],
-          "message": "The base form bright does not show a comparison. Use brighter than."
+          "message": "Bright than is not right. Use brighter than to compare two things."
         },
         {
           "answers": [
             "more bright than"
           ],
-          "message": "Bright is being practised as a short form here, so use brighter, not more bright."
+          "message": "More bright than is not right. Use brighter than to compare two things."
         },
         {
           "answers": [
             "brightest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Brightest than is not right. Use brighter than to compare two things."
         },
         {
-          "message": "For this comparison, build brighter and then add than."
+          "message": "Use brighter than to compare two things."
         }
       ],
-      "explanation": "Use brighter than for this comparative form."
+      "explanation": "Use brighter than to compare two things."
     },
     {
       "id": "adj-006",
-      "sentence": "Mina chose the _____ card for the science display.",
+      "sentence": "This is the _____ light in the room.",
       "base": "bright",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -401,29 +401,29 @@
           "answers": [
             "brighter"
           ],
-          "message": "Brighter is comparative. This sentence needs the highest degree."
+          "message": "Brighter is not right. Use brightest for the top one in a group."
         },
         {
           "answers": [
             "more bright"
           ],
-          "message": "Use the short-form superlative brightest, not more bright."
+          "message": "More bright is not right. Use brightest for the top one in a group."
         },
         {
           "answers": [
             "brightest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Brightest than is not right. Use brightest for the top one in a group."
         },
         {
-          "message": "For this superlative, use brightest; the sentence already supplies any other needed word."
+          "message": "Use brightest for the top one in a group."
         }
       ],
-      "explanation": "Use brightest. A superlative identifies the highest degree in a group."
+      "explanation": "Use brightest for the top one in a group."
     },
     {
       "id": "adj-007",
-      "sentence": "This route is _____ than the route through the playground.",
+      "sentence": "The walk to school is _____ than the walk to the shop.",
       "base": "short",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -474,29 +474,29 @@
           "answers": [
             "short than"
           ],
-          "message": "The base form short does not show a comparison. Use shorter than."
+          "message": "Short than is not right. Use shorter than to compare two things."
         },
         {
           "answers": [
             "more short than"
           ],
-          "message": "Short is being practised as a short form here, so use shorter, not more short."
+          "message": "More short than is not right. Use shorter than to compare two things."
         },
         {
           "answers": [
             "shortest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Shortest than is not right. Use shorter than to compare two things."
         },
         {
-          "message": "For this comparison, build shorter and then add than."
+          "message": "Use shorter than to compare two things."
         }
       ],
-      "explanation": "Use shorter than for this comparative form."
+      "explanation": "Use shorter than to compare two things."
     },
     {
       "id": "adj-008",
-      "sentence": "This is the _____ queue at the lunchtime rehearsal.",
+      "sentence": "This is the _____ road home.",
       "base": "short",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -541,29 +541,29 @@
           "answers": [
             "shorter"
           ],
-          "message": "Shorter is comparative. This sentence needs the highest degree."
+          "message": "Shorter is not right. Use shortest for the top one in a group."
         },
         {
           "answers": [
             "more short"
           ],
-          "message": "Use the short-form superlative shortest, not more short."
+          "message": "More short is not right. Use shortest for the top one in a group."
         },
         {
           "answers": [
             "shortest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Shortest than is not right. Use shortest for the top one in a group."
         },
         {
-          "message": "For this superlative, use shortest; the sentence already supplies any other needed word."
+          "message": "Use shortest for the top one in a group."
         }
       ],
-      "explanation": "Use shortest. A superlative identifies the highest degree in a group."
+      "explanation": "Use shortest for the top one in a group."
     },
     {
       "id": "adj-009",
-      "sentence": "The library corner feels _____ than the corridor today.",
+      "sentence": "Today is _____ than yesterday.",
       "base": "warm",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -614,29 +614,29 @@
           "answers": [
             "warm than"
           ],
-          "message": "The base form warm does not show a comparison. Use warmer than."
+          "message": "Warm than is not right. Use warmer than to compare two things."
         },
         {
           "answers": [
             "more warm than"
           ],
-          "message": "Warm is being practised as a short form here, so use warmer, not more warm."
+          "message": "More warm than is not right. Use warmer than to compare two things."
         },
         {
           "answers": [
             "warmest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Warmest than is not right. Use warmer than to compare two things."
         },
         {
-          "message": "For this comparison, build warmer and then add than."
+          "message": "Use warmer than to compare two things."
         }
       ],
-      "explanation": "Use warmer than for this comparative form."
+      "explanation": "Use warmer than to compare two things."
     },
     {
       "id": "adj-010",
-      "sentence": "The sunny bench is the _____ place in this sketch of the playground.",
+      "sentence": "This is the _____ day this week.",
       "base": "warm",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -681,29 +681,29 @@
           "answers": [
             "warmer"
           ],
-          "message": "Warmer is comparative. This sentence needs the highest degree."
+          "message": "Warmer is not right. Use warmest for the top one in a group."
         },
         {
           "answers": [
             "more warm"
           ],
-          "message": "Use the short-form superlative warmest, not more warm."
+          "message": "More warm is not right. Use warmest for the top one in a group."
         },
         {
           "answers": [
             "warmest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Warmest than is not right. Use warmest for the top one in a group."
         },
         {
-          "message": "For this superlative, use warmest; the sentence already supplies any other needed word."
+          "message": "Use warmest for the top one in a group."
         }
       ],
-      "explanation": "Use warmest. A superlative identifies the highest degree in a group."
+      "explanation": "Use warmest for the top one in a group."
     },
     {
       "id": "adj-011",
-      "sentence": "The printed timetable is _____ than the online copy.",
+      "sentence": "My phone is _____ than my sister's phone.",
       "base": "old",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -754,29 +754,29 @@
           "answers": [
             "old than"
           ],
-          "message": "The base form old does not show a comparison. Use older than."
+          "message": "Old than is not right. Use older than to compare two things."
         },
         {
           "answers": [
             "more old than"
           ],
-          "message": "Old is being practised as a short form here, so use older, not more old."
+          "message": "More old than is not right. Use older than to compare two things."
         },
         {
           "answers": [
             "oldest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Oldest than is not right. Use older than to compare two things."
         },
         {
-          "message": "For this comparison, build older and then add than."
+          "message": "Use older than to compare two things."
         }
       ],
-      "explanation": "Use older than for this comparative form."
+      "explanation": "Use older than to compare two things."
     },
     {
       "id": "adj-012",
-      "sentence": "This is the _____ photo in the class history display.",
+      "sentence": "This is the _____ photo at home.",
       "base": "old",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -821,29 +821,29 @@
           "answers": [
             "older"
           ],
-          "message": "Older is comparative. This sentence needs the highest degree."
+          "message": "Older is not right. Use oldest for the top one in a group."
         },
         {
           "answers": [
             "more old"
           ],
-          "message": "Use the short-form superlative oldest, not more old."
+          "message": "More old is not right. Use oldest for the top one in a group."
         },
         {
           "answers": [
             "oldest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Oldest than is not right. Use oldest for the top one in a group."
         },
         {
-          "message": "For this superlative, use oldest; the sentence already supplies any other needed word."
+          "message": "Use oldest for the top one in a group."
         }
       ],
-      "explanation": "Use oldest. A superlative identifies the highest degree in a group."
+      "explanation": "Use oldest for the top one in a group."
     },
     {
       "id": "adj-013",
-      "sentence": "The second paper bridge is _____ than the first one.",
+      "sentence": "This bag is _____ than that bag.",
       "base": "strong",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -894,29 +894,29 @@
           "answers": [
             "strong than"
           ],
-          "message": "The base form strong does not show a comparison. Use stronger than."
+          "message": "Strong than is not right. Use stronger than to compare two things."
         },
         {
           "answers": [
             "more strong than"
           ],
-          "message": "Strong is being practised as a short form here, so use stronger, not more strong."
+          "message": "More strong than is not right. Use stronger than to compare two things."
         },
         {
           "answers": [
             "strongest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Strongest than is not right. Use stronger than to compare two things."
         },
         {
-          "message": "For this comparison, build stronger and then add than."
+          "message": "Use stronger than to compare two things."
         }
       ],
-      "explanation": "Use stronger than for this comparative form."
+      "explanation": "Use stronger than to compare two things."
     },
     {
       "id": "adj-014",
-      "sentence": "This is the _____ glue in our fictional materials test.",
+      "sentence": "Ming is the _____ player on the team.",
       "base": "strong",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -961,29 +961,29 @@
           "answers": [
             "stronger"
           ],
-          "message": "Stronger is comparative. This sentence needs the highest degree."
+          "message": "Stronger is not right. Use strongest for the top one in a group."
         },
         {
           "answers": [
             "more strong"
           ],
-          "message": "Use the short-form superlative strongest, not more strong."
+          "message": "More strong is not right. Use strongest for the top one in a group."
         },
         {
           "answers": [
             "strongest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Strongest than is not right. Use strongest for the top one in a group."
         },
         {
-          "message": "For this superlative, use strongest; the sentence already supplies any other needed word."
+          "message": "Use strongest for the top one in a group."
         }
       ],
-      "explanation": "Use strongest. A superlative identifies the highest degree in a group."
+      "explanation": "Use strongest for the top one in a group."
     },
     {
       "id": "adj-015",
-      "sentence": "Maya's comment was _____ than the first comment in the role-play.",
+      "sentence": "May was _____ than Tom today.",
       "base": "kind",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -1034,29 +1034,29 @@
           "answers": [
             "kind than"
           ],
-          "message": "The base form kind does not show a comparison. Use kinder than."
+          "message": "Kind than is not right. Use kinder than to compare two things."
         },
         {
           "answers": [
             "more kind than"
           ],
-          "message": "Kind is being practised as a short form here, so use kinder, not more kind."
+          "message": "More kind than is not right. Use kinder than to compare two things."
         },
         {
           "answers": [
             "kindest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Kindest than is not right. Use kinder than to compare two things."
         },
         {
-          "message": "For this comparison, build kinder and then add than."
+          "message": "Use kinder than to compare two things."
         }
       ],
-      "explanation": "Use kinder than for this comparative form."
+      "explanation": "Use kinder than to compare two things."
     },
     {
       "id": "adj-016",
-      "sentence": "This is the _____ reply in the peer-feedback examples.",
+      "sentence": "May is the _____ student in the group.",
       "base": "kind",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -1101,29 +1101,29 @@
           "answers": [
             "kinder"
           ],
-          "message": "Kinder is comparative. This sentence needs the highest degree."
+          "message": "Kinder is not right. Use kindest for the top one in a group."
         },
         {
           "answers": [
             "more kind"
           ],
-          "message": "Use the short-form superlative kindest, not more kind."
+          "message": "More kind is not right. Use kindest for the top one in a group."
         },
         {
           "answers": [
             "kindest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Kindest than is not right. Use kindest for the top one in a group."
         },
         {
-          "message": "For this superlative, use kindest; the sentence already supplies any other needed word."
+          "message": "Use kindest for the top one in a group."
         }
       ],
-      "explanation": "Use kindest. A superlative identifies the highest degree in a group."
+      "explanation": "Use kindest for the top one in a group."
     },
     {
       "id": "adj-017",
-      "sentence": "This classroom is _____ than the art room.",
+      "sentence": "The school hall is _____ than our classroom.",
       "base": "large",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -1174,29 +1174,29 @@
           "answers": [
             "large than"
           ],
-          "message": "The base form large does not show a comparison. Use larger than."
+          "message": "Large than is not right. Use larger than to compare two things."
         },
         {
           "answers": [
             "more large than"
           ],
-          "message": "Large is being practised as a short form here, so use larger, not more large."
+          "message": "More large than is not right. Use larger than to compare two things."
         },
         {
           "answers": [
             "largest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Largest than is not right. Use larger than to compare two things."
         },
         {
-          "message": "For this comparison, build larger and then add than."
+          "message": "Use larger than to compare two things."
         }
       ],
-      "explanation": "Use larger than for this comparative form."
+      "explanation": "Use larger than to compare two things."
     },
     {
       "id": "adj-018",
-      "sentence": "The hall poster is the _____ item in the display.",
+      "sentence": "The red bag is the _____ bag here.",
       "base": "large",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -1241,29 +1241,29 @@
           "answers": [
             "larger"
           ],
-          "message": "Larger is comparative. This sentence needs the highest degree."
+          "message": "Larger is not right. Use largest for the top one in a group."
         },
         {
           "answers": [
             "more large"
           ],
-          "message": "Use the short-form superlative largest, not more large."
+          "message": "More large is not right. Use largest for the top one in a group."
         },
         {
           "answers": [
             "largest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Largest than is not right. Use largest for the top one in a group."
         },
         {
-          "message": "For this superlative, use largest; the sentence already supplies any other needed word."
+          "message": "Use largest for the top one in a group."
         }
       ],
-      "explanation": "Use largest. A superlative identifies the highest degree in a group."
+      "explanation": "Use largest for the top one in a group."
     },
     {
       "id": "adj-019",
-      "sentence": "The revised title is _____ than the first title.",
+      "sentence": "This shop is _____ than the old shop.",
       "base": "nice",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -1314,29 +1314,29 @@
           "answers": [
             "nice than"
           ],
-          "message": "The base form nice does not show a comparison. Use nicer than."
+          "message": "Nice than is not right. Use nicer than to compare two things."
         },
         {
           "answers": [
             "more nice than"
           ],
-          "message": "Nice is being practised as a short form here, so use nicer, not more nice."
+          "message": "More nice than is not right. Use nicer than to compare two things."
         },
         {
           "answers": [
             "nicest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Nicest than is not right. Use nicer than to compare two things."
         },
         {
-          "message": "For this comparison, build nicer and then add than."
+          "message": "Use nicer than to compare two things."
         }
       ],
-      "explanation": "Use nicer than for this comparative form."
+      "explanation": "Use nicer than to compare two things."
     },
     {
       "id": "adj-020",
-      "sentence": "Of the three welcome cards, this is the _____ one.",
+      "sentence": "This is the _____ cake in the shop.",
       "base": "nice",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -1381,29 +1381,29 @@
           "answers": [
             "nicer"
           ],
-          "message": "Nicer is comparative. This sentence needs the highest degree."
+          "message": "Nicer is not right. Use nicest for the top one in a group."
         },
         {
           "answers": [
             "more nice"
           ],
-          "message": "Use the short-form superlative nicest, not more nice."
+          "message": "More nice is not right. Use nicest for the top one in a group."
         },
         {
           "answers": [
             "nicest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Nicest than is not right. Use nicest for the top one in a group."
         },
         {
-          "message": "For this superlative, use nicest; the sentence already supplies any other needed word."
+          "message": "Use nicest for the top one in a group."
         }
       ],
-      "explanation": "Use nicest. A superlative identifies the highest degree in a group."
+      "explanation": "Use nicest for the top one in a group."
     },
     {
       "id": "adj-021",
-      "sentence": "The marked route is _____ than the shortcut beside the store room.",
+      "sentence": "The zebra crossing is _____ than the small road.",
       "base": "safe",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -1454,29 +1454,29 @@
           "answers": [
             "safe than"
           ],
-          "message": "The base form safe does not show a comparison. Use safer than."
+          "message": "Safe than is not right. Use safer than to compare two things."
         },
         {
           "answers": [
             "more safe than"
           ],
-          "message": "Safe is being practised as a short form here, so use safer, not more safe."
+          "message": "More safe than is not right. Use safer than to compare two things."
         },
         {
           "answers": [
             "safest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Safest than is not right. Use safer than to compare two things."
         },
         {
-          "message": "For this comparison, build safer and then add than."
+          "message": "Use safer than to compare two things."
         }
       ],
-      "explanation": "Use safer than for this comparative form."
+      "explanation": "Use safer than to compare two things."
     },
     {
       "id": "adj-022",
-      "sentence": "The teacher chose _____ route for the equipment trolley.",
+      "sentence": "The teacher chose _____ way home.",
       "base": "safe",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -1527,29 +1527,29 @@
           "answers": [
             "safer"
           ],
-          "message": "Safer is comparative. This sentence needs the highest degree."
+          "message": "Safer is not right. Use the safest for the top one in a group."
         },
         {
           "answers": [
             "more safe"
           ],
-          "message": "Use the short-form superlative safest, not more safe."
+          "message": "More safe is not right. Use the safest for the top one in a group."
         },
         {
           "answers": [
             "safest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Safest than is not right. Use the safest for the top one in a group."
         },
         {
-          "message": "For this superlative, use the safest; the sentence already supplies any other needed word."
+          "message": "Use the safest for the top one in a group."
         }
       ],
-      "explanation": "Use the safest. A superlative identifies the highest degree in a group."
+      "explanation": "Use the safest for the top one in a group."
     },
     {
       "id": "adj-023",
-      "sentence": "The cardboard box is _____ than the sample tray.",
+      "sentence": "My lunch box is _____ than yours.",
       "base": "big",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -1600,29 +1600,29 @@
           "answers": [
             "big than"
           ],
-          "message": "The base form big does not show a comparison. Use bigger than."
+          "message": "Big than is not right. Use bigger than to compare two things."
         },
         {
           "answers": [
             "more big than"
           ],
-          "message": "Big is being practised as a short form here, so use bigger, not more big."
+          "message": "More big than is not right. Use bigger than to compare two things."
         },
         {
           "answers": [
             "biggest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Biggest than is not right. Use bigger than to compare two things."
         },
         {
-          "message": "For this comparison, build bigger and then add than."
+          "message": "Use bigger than to compare two things."
         }
       ],
-      "explanation": "Use bigger than for this comparative form."
+      "explanation": "Use bigger than to compare two things."
     },
     {
       "id": "adj-024",
-      "sentence": "The stage model is the _____ object in the design sketch.",
+      "sentence": "This is the _____ box in the room.",
       "base": "big",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -1667,29 +1667,29 @@
           "answers": [
             "bigger"
           ],
-          "message": "Bigger is comparative. This sentence needs the highest degree."
+          "message": "Bigger is not right. Use biggest for the top one in a group."
         },
         {
           "answers": [
             "more big"
           ],
-          "message": "Use the short-form superlative biggest, not more big."
+          "message": "More big is not right. Use biggest for the top one in a group."
         },
         {
           "answers": [
             "biggest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Biggest than is not right. Use biggest for the top one in a group."
         },
         {
-          "message": "For this superlative, use biggest; the sentence already supplies any other needed word."
+          "message": "Use biggest for the top one in a group."
         }
       ],
-      "explanation": "Use biggest. A superlative identifies the highest degree in a group."
+      "explanation": "Use biggest for the top one in a group."
     },
     {
       "id": "adj-025",
-      "sentence": "The tea in this flask is _____ than the tea in that flask.",
+      "sentence": "This soup is _____ than my tea.",
       "base": "hot",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -1740,29 +1740,29 @@
           "answers": [
             "hot than"
           ],
-          "message": "The base form hot does not show a comparison. Use hotter than."
+          "message": "Hot than is not right. Use hotter than to compare two things."
         },
         {
           "answers": [
             "more hot than"
           ],
-          "message": "Hot is being practised as a short form here, so use hotter, not more hot."
+          "message": "More hot than is not right. Use hotter than to compare two things."
         },
         {
           "answers": [
             "hottest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Hottest than is not right. Use hotter than to compare two things."
         },
         {
-          "message": "For this comparison, build hotter and then add than."
+          "message": "Use hotter than to compare two things."
         }
       ],
-      "explanation": "Use hotter than for this comparative form."
+      "explanation": "Use hotter than to compare two things."
     },
     {
       "id": "adj-026",
-      "sentence": "This is the _____ day in our imaginary weather chart.",
+      "sentence": "This is the _____ day in July.",
       "base": "hot",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -1807,29 +1807,29 @@
           "answers": [
             "hotter"
           ],
-          "message": "Hotter is comparative. This sentence needs the highest degree."
+          "message": "Hotter is not right. Use hottest for the top one in a group."
         },
         {
           "answers": [
             "more hot"
           ],
-          "message": "Use the short-form superlative hottest, not more hot."
+          "message": "More hot is not right. Use hottest for the top one in a group."
         },
         {
           "answers": [
             "hottest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Hottest than is not right. Use hottest for the top one in a group."
         },
         {
-          "message": "For this superlative, use hottest; the sentence already supplies any other needed word."
+          "message": "Use hottest for the top one in a group."
         }
       ],
-      "explanation": "Use hottest. A superlative identifies the highest degree in a group."
+      "explanation": "Use hottest for the top one in a group."
     },
     {
       "id": "adj-027",
-      "sentence": "This marker is _____ than the blue marker.",
+      "sentence": "This paper is _____ than that paper.",
       "base": "thin",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -1880,29 +1880,29 @@
           "answers": [
             "thin than"
           ],
-          "message": "The base form thin does not show a comparison. Use thinner than."
+          "message": "Thin than is not right. Use thinner than to compare two things."
         },
         {
           "answers": [
             "more thin than"
           ],
-          "message": "Thin is being practised as a short form here, so use thinner, not more thin."
+          "message": "More thin than is not right. Use thinner than to compare two things."
         },
         {
           "answers": [
             "thinnest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Thinnest than is not right. Use thinner than to compare two things."
         },
         {
-          "message": "For this comparison, build thinner and then add than."
+          "message": "Use thinner than to compare two things."
         }
       ],
-      "explanation": "Use thinner than for this comparative form."
+      "explanation": "Use thinner than to compare two things."
     },
     {
       "id": "adj-028",
-      "sentence": "This is the _____ line in the poster design.",
+      "sentence": "This is the _____ book on the shelf.",
       "base": "thin",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -1947,29 +1947,29 @@
           "answers": [
             "thinner"
           ],
-          "message": "Thinner is comparative. This sentence needs the highest degree."
+          "message": "Thinner is not right. Use thinnest for the top one in a group."
         },
         {
           "answers": [
             "more thin"
           ],
-          "message": "Use the short-form superlative thinnest, not more thin."
+          "message": "More thin is not right. Use thinnest for the top one in a group."
         },
         {
           "answers": [
             "thinnest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Thinnest than is not right. Use thinnest for the top one in a group."
         },
         {
-          "message": "For this superlative, use thinnest; the sentence already supplies any other needed word."
+          "message": "Use thinnest for the top one in a group."
         }
       ],
-      "explanation": "Use thinnest. A superlative identifies the highest degree in a group."
+      "explanation": "Use thinnest for the top one in a group."
     },
     {
       "id": "adj-029",
-      "sentence": "The path beside the tap is _____ than the path near the gate.",
+      "sentence": "The floor by the door is _____ than the floor by the window.",
       "base": "wet",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2020,29 +2020,29 @@
           "answers": [
             "wet than"
           ],
-          "message": "The base form wet does not show a comparison. Use wetter than."
+          "message": "Wet than is not right. Use wetter than to compare two things."
         },
         {
           "answers": [
             "more wet than"
           ],
-          "message": "Wet is being practised as a short form here, so use wetter, not more wet."
+          "message": "More wet than is not right. Use wetter than to compare two things."
         },
         {
           "answers": [
             "wettest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Wettest than is not right. Use wetter than to compare two things."
         },
         {
-          "message": "For this comparison, build wetter and then add than."
+          "message": "Use wetter than to compare two things."
         }
       ],
-      "explanation": "Use wetter than for this comparative form."
+      "explanation": "Use wetter than to compare two things."
     },
     {
       "id": "adj-030",
-      "sentence": "This is the _____ part of the pretend playground map after rain.",
+      "sentence": "This is the _____ part of the playground.",
       "base": "wet",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2087,29 +2087,29 @@
           "answers": [
             "wetter"
           ],
-          "message": "Wetter is comparative. This sentence needs the highest degree."
+          "message": "Wetter is not right. Use wettest for the top one in a group."
         },
         {
           "answers": [
             "more wet"
           ],
-          "message": "Use the short-form superlative wettest, not more wet."
+          "message": "More wet is not right. Use wettest for the top one in a group."
         },
         {
           "answers": [
             "wettest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Wettest than is not right. Use wettest for the top one in a group."
         },
         {
-          "message": "For this superlative, use wettest; the sentence already supplies any other needed word."
+          "message": "Use wettest for the top one in a group."
         }
       ],
-      "explanation": "Use wettest. A superlative identifies the highest degree in a group."
+      "explanation": "Use wettest for the top one in a group."
     },
     {
       "id": "adj-031",
-      "sentence": "This clue is _____ than the final clue.",
+      "sentence": "This question is _____ than the last one.",
       "base": "easy",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2166,29 +2166,29 @@
           "answers": [
             "easy than"
           ],
-          "message": "The base form easy does not show a comparison. Use easier than."
+          "message": "Easy than is not right. Use easier than to compare two things."
         },
         {
           "answers": [
             "more easy than"
           ],
-          "message": "Easy is being practised as a short form here, so use easier, not more easy."
+          "message": "More easy than is not right. Use easier than to compare two things."
         },
         {
           "answers": [
             "easiest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Easiest than is not right. Use easier than to compare two things."
         },
         {
-          "message": "For this comparison, build easier and then add than."
+          "message": "Use easier than to compare two things."
         }
       ],
-      "explanation": "Use easier than for this comparative form."
+      "explanation": "Use easier than to compare two things."
     },
     {
       "id": "adj-032",
-      "sentence": "This is the _____ question on the practice sheet.",
+      "sentence": "This is the _____ question in the test.",
       "base": "easy",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2239,29 +2239,29 @@
           "answers": [
             "easier"
           ],
-          "message": "Easier is comparative. This sentence needs the highest degree."
+          "message": "Easier is not right. Use easiest for the top one in a group."
         },
         {
           "answers": [
             "more easy"
           ],
-          "message": "Use the short-form superlative easiest, not more easy."
+          "message": "More easy is not right. Use easiest for the top one in a group."
         },
         {
           "answers": [
             "easiest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Easiest than is not right. Use easiest for the top one in a group."
         },
         {
-          "message": "For this superlative, use easiest; the sentence already supplies any other needed word."
+          "message": "Use easiest for the top one in a group."
         }
       ],
-      "explanation": "Use easiest. A superlative identifies the highest degree in a group."
+      "explanation": "Use easiest for the top one in a group."
     },
     {
       "id": "adj-033",
-      "sentence": "The library is _____ than the study room at lunchtime.",
+      "sentence": "The canteen is _____ than the library at lunch time.",
       "base": "busy",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2318,29 +2318,29 @@
           "answers": [
             "busy than"
           ],
-          "message": "The base form busy does not show a comparison. Use busier than."
+          "message": "Busy than is not right. Use busier than to compare two things."
         },
         {
           "answers": [
             "more busy than"
           ],
-          "message": "Busy is being practised as a short form here, so use busier, not more busy."
+          "message": "More busy than is not right. Use busier than to compare two things."
         },
         {
           "answers": [
             "busiest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Busiest than is not right. Use busier than to compare two things."
         },
         {
-          "message": "For this comparison, build busier and then add than."
+          "message": "Use busier than to compare two things."
         }
       ],
-      "explanation": "Use busier than for this comparative form."
+      "explanation": "Use busier than to compare two things."
     },
     {
       "id": "adj-034",
-      "sentence": "The entrance is the _____ area on this school-event map.",
+      "sentence": "Monday is the _____ day at school.",
       "base": "busy",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2391,29 +2391,29 @@
           "answers": [
             "busier"
           ],
-          "message": "Busier is comparative. This sentence needs the highest degree."
+          "message": "Busier is not right. Use busiest for the top one in a group."
         },
         {
           "answers": [
             "more busy"
           ],
-          "message": "Use the short-form superlative busiest, not more busy."
+          "message": "More busy is not right. Use busiest for the top one in a group."
         },
         {
           "answers": [
             "busiest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Busiest than is not right. Use busiest for the top one in a group."
         },
         {
-          "message": "For this superlative, use busiest; the sentence already supplies any other needed word."
+          "message": "Use busiest for the top one in a group."
         }
       ],
-      "explanation": "Use busiest. A superlative identifies the highest degree in a group."
+      "explanation": "Use busiest for the top one in a group."
     },
     {
       "id": "adj-035",
-      "sentence": "The canteen is _____ than the reading corner during the break.",
+      "sentence": "The bus is _____ than the library.",
       "base": "noisy",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2470,29 +2470,29 @@
           "answers": [
             "noisy than"
           ],
-          "message": "The base form noisy does not show a comparison. Use noisier than."
+          "message": "Noisy than is not right. Use noisier than to compare two things."
         },
         {
           "answers": [
             "more noisy than"
           ],
-          "message": "Noisy is being practised as a short form here, so use noisier, not more noisy."
+          "message": "More noisy than is not right. Use noisier than to compare two things."
         },
         {
           "answers": [
             "noisiest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Noisiest than is not right. Use noisier than to compare two things."
         },
         {
-          "message": "For this comparison, build noisier and then add than."
+          "message": "Use noisier than to compare two things."
         }
       ],
-      "explanation": "Use noisier than for this comparative form."
+      "explanation": "Use noisier than to compare two things."
     },
     {
       "id": "adj-036",
-      "sentence": "This is the _____ part of the sound-recording task.",
+      "sentence": "This is the _____ room in the school.",
       "base": "noisy",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2543,29 +2543,29 @@
           "answers": [
             "noisier"
           ],
-          "message": "Noisier is comparative. This sentence needs the highest degree."
+          "message": "Noisier is not right. Use noisiest for the top one in a group."
         },
         {
           "answers": [
             "more noisy"
           ],
-          "message": "Use the short-form superlative noisiest, not more noisy."
+          "message": "More noisy is not right. Use noisiest for the top one in a group."
         },
         {
           "answers": [
             "noisiest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Noisiest than is not right. Use noisiest for the top one in a group."
         },
         {
-          "message": "For this superlative, use noisiest; the sentence already supplies any other needed word."
+          "message": "Use noisiest for the top one in a group."
         }
       ],
-      "explanation": "Use noisiest. A superlative identifies the highest degree in a group."
+      "explanation": "Use noisiest for the top one in a group."
     },
     {
       "id": "adj-037",
-      "sentence": "The class looked _____ after the successful rehearsal.",
+      "sentence": "Tom was _____ after the game than before it.",
       "base": "happy",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2622,29 +2622,29 @@
           "answers": [
             "happy than"
           ],
-          "message": "The base form happy does not show a comparison. Use happier than."
+          "message": "Happy than is not right. Use happier than to compare two things."
         },
         {
           "answers": [
             "more happy than"
           ],
-          "message": "Happy is being practised as a short form here, so use happier, not more happy."
+          "message": "More happy than is not right. Use happier than to compare two things."
         },
         {
           "answers": [
             "happiest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Happiest than is not right. Use happier than to compare two things."
         },
         {
-          "message": "For this comparison, build happier and then add than."
+          "message": "Use happier than to compare two things."
         }
       ],
-      "explanation": "Use happier than for this comparative form."
+      "explanation": "Use happier than to compare two things."
     },
     {
       "id": "adj-038",
-      "sentence": "This is the _____ face in the illustrated feedback chart.",
+      "sentence": "This is the _____ day of my week.",
       "base": "happy",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2695,29 +2695,29 @@
           "answers": [
             "happier"
           ],
-          "message": "Happier is comparative. This sentence needs the highest degree."
+          "message": "Happier is not right. Use happiest for the top one in a group."
         },
         {
           "answers": [
             "more happy"
           ],
-          "message": "Use the short-form superlative happiest, not more happy."
+          "message": "More happy is not right. Use happiest for the top one in a group."
         },
         {
           "answers": [
             "happiest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Happiest than is not right. Use happiest for the top one in a group."
         },
         {
-          "message": "For this superlative, use happiest; the sentence already supplies any other needed word."
+          "message": "Use happiest for the top one in a group."
         }
       ],
-      "explanation": "Use happiest. A superlative identifies the highest degree in a group."
+      "explanation": "Use happiest for the top one in a group."
     },
     {
       "id": "adj-039",
-      "sentence": "This bag of textbooks is _____ than the bag of worksheets.",
+      "sentence": "My school bag is _____ than my sister's bag.",
       "base": "heavy",
       "degree": "comparative",
       "rule": "Spelling changes",
@@ -2774,29 +2774,29 @@
           "answers": [
             "heavy than"
           ],
-          "message": "The base form heavy does not show a comparison. Use heavier than."
+          "message": "Heavy than is not right. Use heavier than to compare two things."
         },
         {
           "answers": [
             "more heavy than"
           ],
-          "message": "Heavy is being practised as a short form here, so use heavier, not more heavy."
+          "message": "More heavy than is not right. Use heavier than to compare two things."
         },
         {
           "answers": [
             "heaviest than"
           ],
-          "message": "A superlative does not compare two things with than."
+          "message": "Heaviest than is not right. Use heavier than to compare two things."
         },
         {
-          "message": "For this comparison, build heavier and then add than."
+          "message": "Use heavier than to compare two things."
         }
       ],
-      "explanation": "Use heavier than for this comparative form."
+      "explanation": "Use heavier than to compare two things."
     },
     {
       "id": "adj-040",
-      "sentence": "This is the _____ box in the fictional delivery list.",
+      "sentence": "This is the _____ bag in the class.",
       "base": "heavy",
       "degree": "superlative",
       "rule": "Spelling changes",
@@ -2847,29 +2847,29 @@
           "answers": [
             "heavier"
           ],
-          "message": "Heavier is comparative. This sentence needs the highest degree."
+          "message": "Heavier is not right. Use heaviest for the top one in a group."
         },
         {
           "answers": [
             "more heavy"
           ],
-          "message": "Use the short-form superlative heaviest, not more heavy."
+          "message": "More heavy is not right. Use heaviest for the top one in a group."
         },
         {
           "answers": [
             "heaviest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Heaviest than is not right. Use heaviest for the top one in a group."
         },
         {
-          "message": "For this superlative, use heaviest; the sentence already supplies any other needed word."
+          "message": "Use heaviest for the top one in a group."
         }
       ],
-      "explanation": "Use heaviest. A superlative identifies the highest degree in a group."
+      "explanation": "Use heaviest for the top one in a group."
     },
     {
       "id": "adj-041",
-      "sentence": "The second pair was _____ than the first pair while carrying the glass beakers.",
+      "sentence": "Ming was _____ than Tom with the glass cups.",
       "base": "careful",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -2920,29 +2920,29 @@
           "answers": [
             "carefuler than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more careful."
+          "message": "Carefuler than is not right. Use more careful than to compare two things."
         },
         {
           "answers": [
             "most careful than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most careful than is not right. Use more careful than to compare two things."
         },
         {
           "answers": [
             "carefulest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Carefulest than is not right. Use more careful than to compare two things."
         },
         {
-          "message": "Use more careful than to compare the two observed options."
+          "message": "Use more careful than to compare two things."
         }
       ],
-      "explanation": "Careful is a longer adjective here, so use more careful than."
+      "explanation": "Use more careful than to compare two things."
     },
     {
       "id": "adj-042",
-      "sentence": "This is the _____ set of instructions in the practical booklet.",
+      "sentence": "This is the _____ set of rules for the game.",
       "base": "careful",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -2987,29 +2987,29 @@
           "answers": [
             "carefulest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most careful."
+          "message": "Carefulest is not right. Use most careful for the top one in a group."
         },
         {
           "answers": [
             "carefuler"
           ],
-          "message": "Do not add -er to this longer adjective. Use most careful."
+          "message": "Carefuler is not right. Use most careful for the top one in a group."
         },
         {
           "answers": [
             "most careful than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most careful than is not right. Use most careful for the top one in a group."
         },
         {
-          "message": "Use most careful; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use most careful for the top one in a group."
         }
       ],
-      "explanation": "Use most careful. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use most careful for the top one in a group."
     },
     {
       "id": "adj-043",
-      "sentence": "The visitor's second example was _____ than the first example.",
+      "sentence": "This book is _____ than that book.",
       "base": "interesting",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -3060,29 +3060,29 @@
           "answers": [
             "interestinger than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more interesting."
+          "message": "Interestinger than is not right. Use more interesting than to compare two things."
         },
         {
           "answers": [
             "most interesting than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most interesting than is not right. Use more interesting than to compare two things."
         },
         {
           "answers": [
             "interestingest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Interestingest than is not right. Use more interesting than to compare two things."
         },
         {
-          "message": "Use more interesting than to compare the two observed options."
+          "message": "Use more interesting than to compare two things."
         }
       ],
-      "explanation": "Interesting is a longer adjective here, so use more interesting than."
+      "explanation": "Use more interesting than to compare two things."
     },
     {
       "id": "adj-044",
-      "sentence": "This is _____ article in the class magazine.",
+      "sentence": "This is _____ story in the book.",
       "base": "interesting",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -3133,29 +3133,29 @@
           "answers": [
             "interestingest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most interesting."
+          "message": "Interestingest is not right. Use the most interesting for the top one in a group."
         },
         {
           "answers": [
             "interestinger"
           ],
-          "message": "Do not add -er to this longer adjective. Use most interesting."
+          "message": "Interestinger is not right. Use the most interesting for the top one in a group."
         },
         {
           "answers": [
             "most interesting than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most interesting than is not right. Use the most interesting for the top one in a group."
         },
         {
-          "message": "Use the most interesting; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use the most interesting for the top one in a group."
         }
       ],
-      "explanation": "Use the most interesting. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use the most interesting for the top one in a group."
     },
     {
       "id": "adj-045",
-      "sentence": "The labelled diagram is _____ than the unlabelled diagram.",
+      "sentence": "This map is _____ than the old map.",
       "base": "useful",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -3206,29 +3206,29 @@
           "answers": [
             "usefuler than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more useful."
+          "message": "Usefuler than is not right. Use more useful than to compare two things."
         },
         {
           "answers": [
             "most useful than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most useful than is not right. Use more useful than to compare two things."
         },
         {
           "answers": [
             "usefulest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Usefulest than is not right. Use more useful than to compare two things."
         },
         {
-          "message": "Use more useful than to compare the two observed options."
+          "message": "Use more useful than to compare two things."
         }
       ],
-      "explanation": "Useful is a longer adjective here, so use more useful than."
+      "explanation": "Use more useful than to compare two things."
     },
     {
       "id": "adj-046",
-      "sentence": "The checklist is the _____ page in the revision pack.",
+      "sentence": "The bus card is the _____ card in my bag.",
       "base": "useful",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -3273,29 +3273,29 @@
           "answers": [
             "usefulest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most useful."
+          "message": "Usefulest is not right. Use most useful for the top one in a group."
         },
         {
           "answers": [
             "usefuler"
           ],
-          "message": "Do not add -er to this longer adjective. Use most useful."
+          "message": "Usefuler is not right. Use most useful for the top one in a group."
         },
         {
           "answers": [
             "most useful than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most useful than is not right. Use most useful for the top one in a group."
         },
         {
-          "message": "Use most useful; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use most useful for the top one in a group."
         }
       ],
-      "explanation": "Use most useful. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use most useful for the top one in a group."
     },
     {
       "id": "adj-047",
-      "sentence": "The chess club was _____ than the board-game club at the fictional activity fair.",
+      "sentence": "Football is _____ than tennis at our school.",
       "base": "popular",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -3346,29 +3346,29 @@
           "answers": [
             "popularer than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more popular."
+          "message": "Popularer than is not right. Use more popular than to compare two things."
         },
         {
           "answers": [
             "most popular than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most popular than is not right. Use more popular than to compare two things."
         },
         {
           "answers": [
             "popularest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Popularest than is not right. Use more popular than to compare two things."
         },
         {
-          "message": "Use more popular than to compare the two observed options."
+          "message": "Use more popular than to compare two things."
         }
       ],
-      "explanation": "Popular is a longer adjective here, so use more popular than."
+      "explanation": "Use more popular than to compare two things."
     },
     {
       "id": "adj-048",
-      "sentence": "This is _____ choice on the mock survey board.",
+      "sentence": "This is _____ game in the class.",
       "base": "popular",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -3419,29 +3419,29 @@
           "answers": [
             "popularest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most popular."
+          "message": "Popularest is not right. Use the most popular for the top one in a group."
         },
         {
           "answers": [
             "popularer"
           ],
-          "message": "Do not add -er to this longer adjective. Use most popular."
+          "message": "Popularer is not right. Use the most popular for the top one in a group."
         },
         {
           "answers": [
             "most popular than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most popular than is not right. Use the most popular for the top one in a group."
         },
         {
-          "message": "Use the most popular; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use the most popular for the top one in a group."
         }
       ],
-      "explanation": "Use the most popular. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use the most popular for the top one in a group."
     },
     {
       "id": "adj-049",
-      "sentence": "The foldable stand is _____ than the large display frame.",
+      "sentence": "A small bag is _____ than a large bag for this trip.",
       "base": "practical",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -3492,29 +3492,29 @@
           "answers": [
             "practicaler than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more practical."
+          "message": "Practicaler than is not right. Use more practical than to compare two things."
         },
         {
           "answers": [
             "most practical than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most practical than is not right. Use more practical than to compare two things."
         },
         {
           "answers": [
             "practicalest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Practicalest than is not right. Use more practical than to compare two things."
         },
         {
-          "message": "Use more practical than to compare the two observed options."
+          "message": "Use more practical than to compare two things."
         }
       ],
-      "explanation": "Practical is a longer adjective here, so use more practical than."
+      "explanation": "Use more practical than to compare two things."
     },
     {
       "id": "adj-050",
-      "sentence": "This is the _____ solution in our design discussion.",
+      "sentence": "This is the _____ idea for school.",
       "base": "practical",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -3559,36 +3559,36 @@
           "answers": [
             "practicalest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most practical."
+          "message": "Practicalest is not right. Use most practical for the top one in a group."
         },
         {
           "answers": [
             "practicaler"
           ],
-          "message": "Do not add -er to this longer adjective. Use most practical."
+          "message": "Practicaler is not right. Use most practical for the top one in a group."
         },
         {
           "answers": [
             "most practical than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most practical than is not right. Use most practical for the top one in a group."
         },
         {
-          "message": "Use most practical; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use most practical for the top one in a group."
         }
       ],
-      "explanation": "Use most practical. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use most practical for the top one in a group."
     },
     {
       "id": "adj-051",
-      "sentence": "The new mural is _____ than the old noticeboard.",
-      "base": "colourful",
+      "sentence": "This new shop sign is _____ than the old one.",
+      "base": "beautiful",
       "degree": "comparative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "colourful",
+          "label": "beautiful",
           "kind": "word"
         },
         {
@@ -3618,7 +3618,7 @@
         }
       ],
       "answers": [
-        "more colourful than"
+        "more beautiful than"
       ],
       "correctSequences": [
         [
@@ -3630,38 +3630,38 @@
       "feedback": [
         {
           "answers": [
-            "colourfuler than"
+            "beautifuler than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more colourful."
+          "message": "Beautifuler than is not right. Use more beautiful than to compare two things."
         },
         {
           "answers": [
-            "most colourful than"
+            "most beautiful than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most beautiful than is not right. Use more beautiful than to compare two things."
         },
         {
           "answers": [
-            "colourfulest than"
+            "beautifulest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Beautifulest than is not right. Use more beautiful than to compare two things."
         },
         {
-          "message": "Use more colourful than to compare the two observed options."
+          "message": "Use more beautiful than to compare two things."
         }
       ],
-      "explanation": "Colourful is a longer adjective here, so use more colourful than."
+      "explanation": "Use more beautiful than to compare two things."
     },
     {
       "id": "adj-052",
-      "sentence": "This is _____ poster in the art-club gallery.",
-      "base": "colourful",
+      "sentence": "This is _____ picture in the room.",
+      "base": "beautiful",
       "degree": "superlative",
       "rule": "Longer forms",
       "blocks": [
         {
           "id": "b0",
-          "label": "colourful",
+          "label": "beautiful",
           "kind": "word"
         },
         {
@@ -3691,7 +3691,7 @@
         }
       ],
       "answers": [
-        "the most colourful"
+        "the most beautiful"
       ],
       "correctSequences": [
         [
@@ -3703,31 +3703,31 @@
       "feedback": [
         {
           "answers": [
-            "colourfulest"
+            "beautifulest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most colourful."
+          "message": "Beautifulest is not right. Use the most beautiful for the top one in a group."
         },
         {
           "answers": [
-            "colourfuler"
+            "beautifuler"
           ],
-          "message": "Do not add -er to this longer adjective. Use most colourful."
+          "message": "Beautifuler is not right. Use the most beautiful for the top one in a group."
         },
         {
           "answers": [
-            "most colourful than"
+            "most beautiful than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most beautiful than is not right. Use the most beautiful for the top one in a group."
         },
         {
-          "message": "Use the most colourful; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use the most beautiful for the top one in a group."
         }
       ],
-      "explanation": "Use the most colourful. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use the most beautiful for the top one in a group."
     },
     {
       "id": "adj-053",
-      "sentence": "The safety sign is _____ than the decoration for this drill.",
+      "sentence": "A school ID card is _____ than a new pen.",
       "base": "important",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -3778,29 +3778,29 @@
           "answers": [
             "importanter than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more important."
+          "message": "Importanter than is not right. Use more important than to compare two things."
         },
         {
           "answers": [
             "most important than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most important than is not right. Use more important than to compare two things."
         },
         {
           "answers": [
             "importantest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Importantest than is not right. Use more important than to compare two things."
         },
         {
-          "message": "Use more important than to compare the two observed options."
+          "message": "Use more important than to compare two things."
         }
       ],
-      "explanation": "Important is a longer adjective here, so use more important than."
+      "explanation": "Use more important than to compare two things."
     },
     {
       "id": "adj-054",
-      "sentence": "This is the _____ reminder on the laboratory door.",
+      "sentence": "This is the _____ rule in the room.",
       "base": "important",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -3845,29 +3845,29 @@
           "answers": [
             "importantest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most important."
+          "message": "Importantest is not right. Use most important for the top one in a group."
         },
         {
           "answers": [
             "importanter"
           ],
-          "message": "Do not add -er to this longer adjective. Use most important."
+          "message": "Importanter is not right. Use most important for the top one in a group."
         },
         {
           "answers": [
             "most important than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most important than is not right. Use most important for the top one in a group."
         },
         {
-          "message": "Use most important; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use most important for the top one in a group."
         }
       ],
-      "explanation": "Use most important. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use most important for the top one in a group."
     },
     {
       "id": "adj-055",
-      "sentence": "The padded chair is _____ than the wooden stool.",
+      "sentence": "This chair is _____ than that chair.",
       "base": "comfortable",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -3918,29 +3918,29 @@
           "answers": [
             "comfortableer than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more comfortable."
+          "message": "Comfortableer than is not right. Use more comfortable than to compare two things."
         },
         {
           "answers": [
             "most comfortable than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most comfortable than is not right. Use more comfortable than to compare two things."
         },
         {
           "answers": [
             "comfortableest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Comfortableest than is not right. Use more comfortable than to compare two things."
         },
         {
-          "message": "Use more comfortable than to compare the two observed options."
+          "message": "Use more comfortable than to compare two things."
         }
       ],
-      "explanation": "Comfortable is a longer adjective here, so use more comfortable than."
+      "explanation": "Use more comfortable than to compare two things."
     },
     {
       "id": "adj-056",
-      "sentence": "This is _____ seat in the reading-corner plan.",
+      "sentence": "This is _____ seat on the bus.",
       "base": "comfortable",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -3991,29 +3991,29 @@
           "answers": [
             "comfortableest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most comfortable."
+          "message": "Comfortableest is not right. Use the most comfortable for the top one in a group."
         },
         {
           "answers": [
             "comfortableer"
           ],
-          "message": "Do not add -er to this longer adjective. Use most comfortable."
+          "message": "Comfortableer is not right. Use the most comfortable for the top one in a group."
         },
         {
           "answers": [
             "most comfortable than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most comfortable than is not right. Use the most comfortable for the top one in a group."
         },
         {
-          "message": "Use the most comfortable; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use the most comfortable for the top one in a group."
         }
       ],
-      "explanation": "Use the most comfortable. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use the most comfortable for the top one in a group."
     },
     {
       "id": "adj-057",
-      "sentence": "The printed checklist is _____ than the memory test for this task.",
+      "sentence": "This bus is _____ than the old bus.",
       "base": "reliable",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -4064,29 +4064,29 @@
           "answers": [
             "reliableer than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more reliable."
+          "message": "Reliableer than is not right. Use more reliable than to compare two things."
         },
         {
           "answers": [
             "most reliable than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most reliable than is not right. Use more reliable than to compare two things."
         },
         {
           "answers": [
             "reliableest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Reliableest than is not right. Use more reliable than to compare two things."
         },
         {
-          "message": "Use more reliable than to compare the two observed options."
+          "message": "Use more reliable than to compare two things."
         }
       ],
-      "explanation": "Reliable is a longer adjective here, so use more reliable than."
+      "explanation": "Use more reliable than to compare two things."
     },
     {
       "id": "adj-058",
-      "sentence": "This is the _____ source in the class fact-check activity.",
+      "sentence": "This is the _____ bus route home.",
       "base": "reliable",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -4131,29 +4131,29 @@
           "answers": [
             "reliableest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most reliable."
+          "message": "Reliableest is not right. Use most reliable for the top one in a group."
         },
         {
           "answers": [
             "reliableer"
           ],
-          "message": "Do not add -er to this longer adjective. Use most reliable."
+          "message": "Reliableer is not right. Use most reliable for the top one in a group."
         },
         {
           "answers": [
             "most reliable than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most reliable than is not right. Use most reliable for the top one in a group."
         },
         {
-          "message": "Use most reliable; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use most reliable for the top one in a group."
         }
       ],
-      "explanation": "Use most reliable. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use most reliable for the top one in a group."
     },
     {
       "id": "adj-059",
-      "sentence": "The second group produced a _____ solution than the first group.",
+      "sentence": "Ming's poster is _____ than Tom's poster.",
       "base": "creative",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -4204,29 +4204,29 @@
           "answers": [
             "creativeer than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more creative."
+          "message": "Creativeer than is not right. Use more creative than to compare two things."
         },
         {
           "answers": [
             "most creative than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most creative than is not right. Use more creative than to compare two things."
         },
         {
           "answers": [
             "creativeest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Creativeest than is not right. Use more creative than to compare two things."
         },
         {
-          "message": "Use more creative than to compare the two observed options."
+          "message": "Use more creative than to compare two things."
         }
       ],
-      "explanation": "Creative is a longer adjective here, so use more creative than."
+      "explanation": "Use more creative than to compare two things."
     },
     {
       "id": "adj-060",
-      "sentence": "This is _____ idea in the design showcase.",
+      "sentence": "This is _____ idea in the class.",
       "base": "creative",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -4277,29 +4277,29 @@
           "answers": [
             "creativeest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most creative."
+          "message": "Creativeest is not right. Use the most creative for the top one in a group."
         },
         {
           "answers": [
             "creativeer"
           ],
-          "message": "Do not add -er to this longer adjective. Use most creative."
+          "message": "Creativeer is not right. Use the most creative for the top one in a group."
         },
         {
           "answers": [
             "most creative than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most creative than is not right. Use the most creative for the top one in a group."
         },
         {
-          "message": "Use the most creative; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use the most creative for the top one in a group."
         }
       ],
-      "explanation": "Use the most creative. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use the most creative for the top one in a group."
     },
     {
       "id": "adj-061",
-      "sentence": "The metal display frame is _____ than the cardboard stand.",
+      "sentence": "This phone is _____ than that phone.",
       "base": "expensive",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -4350,29 +4350,29 @@
           "answers": [
             "expensiveer than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more expensive."
+          "message": "Expensiveer than is not right. Use more expensive than to compare two things."
         },
         {
           "answers": [
             "most expensive than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most expensive than is not right. Use more expensive than to compare two things."
         },
         {
           "answers": [
             "expensiveest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Expensiveest than is not right. Use more expensive than to compare two things."
         },
         {
-          "message": "Use more expensive than to compare the two observed options."
+          "message": "Use more expensive than to compare two things."
         }
       ],
-      "explanation": "Expensive is a longer adjective here, so use more expensive than."
+      "explanation": "Use more expensive than to compare two things."
     },
     {
       "id": "adj-062",
-      "sentence": "This is the _____ item in the fictional equipment catalogue.",
+      "sentence": "This is the _____ thing in the shop.",
       "base": "expensive",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -4417,29 +4417,29 @@
           "answers": [
             "expensiveest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most expensive."
+          "message": "Expensiveest is not right. Use most expensive for the top one in a group."
         },
         {
           "answers": [
             "expensiveer"
           ],
-          "message": "Do not add -er to this longer adjective. Use most expensive."
+          "message": "Expensiveer is not right. Use most expensive for the top one in a group."
         },
         {
           "answers": [
             "most expensive than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most expensive than is not right. Use most expensive for the top one in a group."
         },
         {
-          "message": "Use most expensive; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use most expensive for the top one in a group."
         }
       ],
-      "explanation": "Use most expensive. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use most expensive for the top one in a group."
     },
     {
       "id": "adj-063",
-      "sentence": "The unmarked route is _____ than the marked route in this safety scenario.",
+      "sentence": "Running on a wet floor is _____ than walking.",
       "base": "dangerous",
       "degree": "comparative",
       "rule": "Longer forms",
@@ -4490,29 +4490,29 @@
           "answers": [
             "dangerouser than"
           ],
-          "message": "Do not add -er to this longer adjective. Use more dangerous."
+          "message": "Dangerouser than is not right. Use more dangerous than to compare two things."
         },
         {
           "answers": [
             "most dangerous than"
           ],
-          "message": "Most makes a superlative; a comparison with than needs more."
+          "message": "Most dangerous than is not right. Use more dangerous than to compare two things."
         },
         {
           "answers": [
             "dangerousest than"
           ],
-          "message": "-est and than do not make this comparative form."
+          "message": "Dangerousest than is not right. Use more dangerous than to compare two things."
         },
         {
-          "message": "Use more dangerous than to compare the two observed options."
+          "message": "Use more dangerous than to compare two things."
         }
       ],
-      "explanation": "Dangerous is a longer adjective here, so use more dangerous than."
+      "explanation": "Use more dangerous than to compare two things."
     },
     {
       "id": "adj-064",
-      "sentence": "This is _____ route on the emergency-planning map.",
+      "sentence": "This is _____ road near the school.",
       "base": "dangerous",
       "degree": "superlative",
       "rule": "Longer forms",
@@ -4563,29 +4563,29 @@
           "answers": [
             "dangerousest"
           ],
-          "message": "Do not add -est to this longer adjective. Use most dangerous."
+          "message": "Dangerousest is not right. Use the most dangerous for the top one in a group."
         },
         {
           "answers": [
             "dangerouser"
           ],
-          "message": "Do not add -er to this longer adjective. Use most dangerous."
+          "message": "Dangerouser is not right. Use the most dangerous for the top one in a group."
         },
         {
           "answers": [
             "most dangerous than"
           ],
-          "message": "A superlative does not use than."
+          "message": "Most dangerous than is not right. Use the most dangerous for the top one in a group."
         },
         {
-          "message": "Use the most dangerous; a superlative adjective before a noun needs the definite article unless the sentence already has it."
+          "message": "Use the most dangerous for the top one in a group."
         }
       ],
-      "explanation": "Use the most dangerous. The sentence identifies one item as the highest degree in its group."
+      "explanation": "Use the most dangerous for the top one in a group."
     },
     {
       "id": "adj-065",
-      "sentence": "The reading room is _____ than the corridor at break time.",
+      "sentence": "The library is _____ than the canteen.",
       "base": "quiet",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -4647,29 +4647,29 @@
           "answers": [
             "most quiet than"
           ],
-          "message": "Most makes a superlative, not a comparison with than."
+          "message": "Most quiet than is not right. Use quieter than or more quiet than to compare two things."
         },
         {
           "answers": [
             "quietest than"
           ],
-          "message": "A superlative ending does not go with than here."
+          "message": "Quietest than is not right. Use quieter than or more quiet than to compare two things."
         },
         {
           "answers": [
             "quietier than"
           ],
-          "message": "Do not force an -ier ending onto quiet. Use quieter or more quiet."
+          "message": "Quietier than is not right. Use quieter than or more quiet than to compare two things."
         },
         {
-          "message": "Both quieter than and more quiet than are accepted standard alternatives here."
+          "message": "Use quieter than or more quiet than to compare two things."
         }
       ],
-      "explanation": "Both quieter than and more quiet than are accepted standard comparative forms."
+      "explanation": "Use quieter than or more quiet than to compare two things."
     },
     {
       "id": "adj-066",
-      "sentence": "This is the _____ corner in the library plan.",
+      "sentence": "This is _____ place in the library.",
       "base": "quiet",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -4694,30 +4694,37 @@
         },
         {
           "id": "b3",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
           "label": "-er",
           "kind": "suffix"
         },
         {
-          "id": "b4",
+          "id": "b5",
           "label": "-ier",
           "kind": "suffix"
         },
         {
-          "id": "b5",
+          "id": "b6",
           "label": "than",
           "kind": "word"
         }
       ],
       "answers": [
-        "quietest",
-        "most quiet"
+        "the quietest",
+        "the most quiet"
       ],
       "correctSequences": [
         [
+          "b3",
           "b0",
           "b1"
         ],
         [
+          "b3",
           "b2",
           "b0"
         ]
@@ -4727,29 +4734,29 @@
           "answers": [
             "quieter"
           ],
-          "message": "-er makes a comparative. This sentence needs a superlative."
+          "message": "Quieter is not right. Use the quietest or the most quiet for the top one in a group."
         },
         {
           "answers": [
             "quietier"
           ],
-          "message": "Do not make quiet end in -ier. Use quietest or most quiet."
+          "message": "Quietier is not right. Use the quietest or the most quiet for the top one in a group."
         },
         {
           "answers": [
             "quietest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Quietest than is not right. Use the quietest or the most quiet for the top one in a group."
         },
         {
-          "message": "Both quietest and most quiet are accepted standard alternatives here."
+          "message": "Use the quietest or the most quiet for the top one in a group."
         }
       ],
-      "explanation": "Both quietest and most quiet are accepted standard superlative forms."
+      "explanation": "Use the quietest or the most quiet for the top one in a group."
     },
     {
       "id": "adj-067",
-      "sentence": "The revised solution is _____ than the first solution.",
+      "sentence": "Ming's answer is _____ than Tom's answer.",
       "base": "clever",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -4811,29 +4818,29 @@
           "answers": [
             "most clever than"
           ],
-          "message": "Most makes a superlative, not a comparison with than."
+          "message": "Most clever than is not right. Use cleverer than or more clever than to compare two things."
         },
         {
           "answers": [
             "cleverest than"
           ],
-          "message": "A superlative ending does not go with than here."
+          "message": "Cleverest than is not right. Use cleverer than or more clever than to compare two things."
         },
         {
           "answers": [
             "cleverier than"
           ],
-          "message": "Do not force an -ier ending onto clever. Use cleverer or more clever."
+          "message": "Cleverier than is not right. Use cleverer than or more clever than to compare two things."
         },
         {
-          "message": "Both cleverer than and more clever than are accepted standard alternatives here."
+          "message": "Use cleverer than or more clever than to compare two things."
         }
       ],
-      "explanation": "Both cleverer than and more clever than are accepted standard comparative forms."
+      "explanation": "Use cleverer than or more clever than to compare two things."
     },
     {
       "id": "adj-068",
-      "sentence": "This is _____ idea in the group brainstorm.",
+      "sentence": "This is _____ idea in the group.",
       "base": "clever",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -4898,29 +4905,29 @@
           "answers": [
             "cleverer"
           ],
-          "message": "-er makes a comparative. This sentence needs a superlative."
+          "message": "Cleverer is not right. Use the cleverest or the most clever for the top one in a group."
         },
         {
           "answers": [
             "cleverier"
           ],
-          "message": "Do not make clever end in -ier. Use cleverest or most clever."
+          "message": "Cleverier is not right. Use the cleverest or the most clever for the top one in a group."
         },
         {
           "answers": [
             "cleverest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Cleverest than is not right. Use the cleverest or the most clever for the top one in a group."
         },
         {
-          "message": "Both the cleverest and the most clever are accepted standard alternatives here."
+          "message": "Use the cleverest or the most clever for the top one in a group."
         }
       ],
-      "explanation": "Both the cleverest and the most clever are accepted standard superlative forms."
+      "explanation": "Use the cleverest or the most clever for the top one in a group."
     },
     {
       "id": "adj-069",
-      "sentence": "This shelf is _____ than the display shelf.",
+      "sentence": "This path is _____ than the road.",
       "base": "narrow",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -4982,29 +4989,29 @@
           "answers": [
             "most narrow than"
           ],
-          "message": "Most makes a superlative, not a comparison with than."
+          "message": "Most narrow than is not right. Use narrower than or more narrow than to compare two things."
         },
         {
           "answers": [
             "narrowest than"
           ],
-          "message": "A superlative ending does not go with than here."
+          "message": "Narrowest than is not right. Use narrower than or more narrow than to compare two things."
         },
         {
           "answers": [
             "narrowier than"
           ],
-          "message": "Do not force an -ier ending onto narrow. Use narrower or more narrow."
+          "message": "Narrowier than is not right. Use narrower than or more narrow than to compare two things."
         },
         {
-          "message": "Both narrower than and more narrow than are accepted standard alternatives here."
+          "message": "Use narrower than or more narrow than to compare two things."
         }
       ],
-      "explanation": "Both narrower than and more narrow than are accepted standard comparative forms."
+      "explanation": "Use narrower than or more narrow than to compare two things."
     },
     {
       "id": "adj-070",
-      "sentence": "This is the _____ aisle in the classroom-layout sketch.",
+      "sentence": "This is _____ path in the park.",
       "base": "narrow",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -5029,30 +5036,37 @@
         },
         {
           "id": "b3",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
           "label": "-er",
           "kind": "suffix"
         },
         {
-          "id": "b4",
+          "id": "b5",
           "label": "-ier",
           "kind": "suffix"
         },
         {
-          "id": "b5",
+          "id": "b6",
           "label": "than",
           "kind": "word"
         }
       ],
       "answers": [
-        "narrowest",
-        "most narrow"
+        "the narrowest",
+        "the most narrow"
       ],
       "correctSequences": [
         [
+          "b3",
           "b0",
           "b1"
         ],
         [
+          "b3",
           "b2",
           "b0"
         ]
@@ -5062,29 +5076,29 @@
           "answers": [
             "narrower"
           ],
-          "message": "-er makes a comparative. This sentence needs a superlative."
+          "message": "Narrower is not right. Use the narrowest or the most narrow for the top one in a group."
         },
         {
           "answers": [
             "narrowier"
           ],
-          "message": "Do not make narrow end in -ier. Use narrowest or most narrow."
+          "message": "Narrowier is not right. Use the narrowest or the most narrow for the top one in a group."
         },
         {
           "answers": [
             "narrowest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Narrowest than is not right. Use the narrowest or the most narrow for the top one in a group."
         },
         {
-          "message": "Both narrowest and most narrow are accepted standard alternatives here."
+          "message": "Use the narrowest or the most narrow for the top one in a group."
         }
       ],
-      "explanation": "Both narrowest and most narrow are accepted standard superlative forms."
+      "explanation": "Use the narrowest or the most narrow for the top one in a group."
     },
     {
       "id": "adj-071",
-      "sentence": "The second instruction is _____ than the first instruction.",
+      "sentence": "The second rule is _____ than the first rule.",
       "base": "simple",
       "degree": "comparative",
       "rule": "Regular forms",
@@ -5146,29 +5160,29 @@
           "answers": [
             "most simple than"
           ],
-          "message": "Most makes a superlative, not a comparison with than."
+          "message": "Most simple than is not right. Use simpler than or more simple than to compare two things."
         },
         {
           "answers": [
             "simpleest than"
           ],
-          "message": "A superlative ending does not go with than here."
+          "message": "Simpleest than is not right. Use simpler than or more simple than to compare two things."
         },
         {
           "answers": [
             "simpleier than"
           ],
-          "message": "Do not force an -ier ending onto simple. Use simpler or more simple."
+          "message": "Simpleier than is not right. Use simpler than or more simple than to compare two things."
         },
         {
-          "message": "Both simpler than and more simple than are accepted standard alternatives here."
+          "message": "Use simpler than or more simple than to compare two things."
         }
       ],
-      "explanation": "Both simpler than and more simple than are accepted standard comparative forms."
+      "explanation": "Use simpler than or more simple than to compare two things."
     },
     {
       "id": "adj-072",
-      "sentence": "This is _____ explanation in the revision guide.",
+      "sentence": "This is _____ way to go home.",
       "base": "simple",
       "degree": "superlative",
       "rule": "Regular forms",
@@ -5230,29 +5244,29 @@
           "answers": [
             "simpleer"
           ],
-          "message": "-er makes a comparative. This sentence needs a superlative."
+          "message": "Simpleer is not right. Use the simplest or the most simple for the top one in a group."
         },
         {
           "answers": [
             "simpleier"
           ],
-          "message": "Do not make simple end in -ier. Use simplest or most simple."
+          "message": "Simpleier is not right. Use the simplest or the most simple for the top one in a group."
         },
         {
           "answers": [
             "simplest than"
           ],
-          "message": "Do not use than with a superlative."
+          "message": "Simplest than is not right. Use the simplest or the most simple for the top one in a group."
         },
         {
-          "message": "Both the simplest and the most simple are accepted standard alternatives here."
+          "message": "Use the simplest or the most simple for the top one in a group."
         }
       ],
-      "explanation": "Both the simplest and the most simple are accepted standard superlative forms."
+      "explanation": "Use the simplest or the most simple for the top one in a group."
     },
     {
       "id": "adj-073",
-      "sentence": "The revised poster is _____ than the first draft.",
+      "sentence": "This new pen is _____ than my old pen.",
       "base": "good",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -5297,29 +5311,29 @@
           "answers": [
             "gooder than"
           ],
-          "message": "Good is irregular: use better, not gooder."
+          "message": "Gooder than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "best than"
           ],
-          "message": "That is a superlative; this sentence compares two items."
+          "message": "Best than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "good than"
           ],
-          "message": "The base adjective alone does not show a comparison."
+          "message": "Good than is not right. Use better than to compare two things."
         },
         {
-          "message": "Use the irregular comparative better than."
+          "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Good changes irregularly to better in the comparative."
+      "explanation": "Use better than to compare two things."
     },
     {
       "id": "adj-074",
-      "sentence": "This is _____ example in the teacher's model set.",
+      "sentence": "This is _____ pen in the shop.",
       "base": "good",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -5364,29 +5378,29 @@
           "answers": [
             "goodest"
           ],
-          "message": "Good is irregular: use best, not goodest."
+          "message": "Goodest is not right. Use the best for the top one in a group."
         },
         {
           "answers": [
             "more good"
           ],
-          "message": "More makes a comparative; this sentence needs the highest degree."
+          "message": "More good is not right. Use the best for the top one in a group."
         },
         {
           "answers": [
             "good"
           ],
-          "message": "The base adjective alone does not make a superlative."
+          "message": "Good is not right. Use the best for the top one in a group."
         },
         {
-          "message": "Use the irregular superlative the best."
+          "message": "Use the best for the top one in a group."
         }
       ],
-      "explanation": "Good changes irregularly to the best in the superlative."
+      "explanation": "Use the best for the top one in a group."
     },
     {
       "id": "adj-075",
-      "sentence": "The updated plan is _____ than the original plan.",
+      "sentence": "The new bus route is _____ than the old route.",
       "base": "good",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -5431,29 +5445,29 @@
           "answers": [
             "gooder than"
           ],
-          "message": "Good is irregular: use better, not gooder."
+          "message": "Gooder than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "best than"
           ],
-          "message": "That is a superlative; this sentence compares two items."
+          "message": "Best than is not right. Use better than to compare two things."
         },
         {
           "answers": [
             "good than"
           ],
-          "message": "The base adjective alone does not show a comparison."
+          "message": "Good than is not right. Use better than to compare two things."
         },
         {
-          "message": "Use the irregular comparative better than."
+          "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Good changes irregularly to better in the comparative."
+      "explanation": "Use better than to compare two things."
     },
     {
       "id": "adj-076",
-      "sentence": "This is _____ solution in the group-feedback set.",
+      "sentence": "This is _____ way to school.",
       "base": "good",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -5498,29 +5512,29 @@
           "answers": [
             "goodest"
           ],
-          "message": "Good is irregular: use best, not goodest."
+          "message": "Goodest is not right. Use the best for the top one in a group."
         },
         {
           "answers": [
             "more good"
           ],
-          "message": "More makes a comparative; this sentence needs the highest degree."
+          "message": "More good is not right. Use the best for the top one in a group."
         },
         {
           "answers": [
             "good"
           ],
-          "message": "The base adjective alone does not make a superlative."
+          "message": "Good is not right. Use the best for the top one in a group."
         },
         {
-          "message": "Use the irregular superlative the best."
+          "message": "Use the best for the top one in a group."
         }
       ],
-      "explanation": "Good changes irregularly to the best in the superlative."
+      "explanation": "Use the best for the top one in a group."
     },
     {
       "id": "adj-077",
-      "sentence": "The second draft has a _____ layout than the first draft.",
+      "sentence": "The rain today is _____ than yesterday's rain.",
       "base": "bad",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -5565,29 +5579,29 @@
           "answers": [
             "bader than"
           ],
-          "message": "Bad is irregular: use worse, not bader."
+          "message": "Bader than is not right. Use worse than to compare two things."
         },
         {
           "answers": [
             "worst than"
           ],
-          "message": "That is a superlative; this sentence compares two items."
+          "message": "Worst than is not right. Use worse than to compare two things."
         },
         {
           "answers": [
             "bad than"
           ],
-          "message": "The base adjective alone does not show a comparison."
+          "message": "Bad than is not right. Use worse than to compare two things."
         },
         {
-          "message": "Use the irregular comparative worse than."
+          "message": "Use worse than to compare two things."
         }
       ],
-      "explanation": "Bad changes irregularly to worse in the comparative."
+      "explanation": "Use worse than to compare two things."
     },
     {
       "id": "adj-078",
-      "sentence": "This is _____ layout in the fictional before-and-after set.",
+      "sentence": "This is _____ weather this week.",
       "base": "bad",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -5632,29 +5646,29 @@
           "answers": [
             "badest"
           ],
-          "message": "Bad is irregular: use worst, not badest."
+          "message": "Badest is not right. Use the worst for the top one in a group."
         },
         {
           "answers": [
             "more bad"
           ],
-          "message": "More makes a comparative; this sentence needs the highest degree."
+          "message": "More bad is not right. Use the worst for the top one in a group."
         },
         {
           "answers": [
             "bad"
           ],
-          "message": "The base adjective alone does not make a superlative."
+          "message": "Bad is not right. Use the worst for the top one in a group."
         },
         {
-          "message": "Use the irregular superlative the worst."
+          "message": "Use the worst for the top one in a group."
         }
       ],
-      "explanation": "Bad changes irregularly to the worst in the superlative."
+      "explanation": "Use the worst for the top one in a group."
     },
     {
       "id": "adj-079",
-      "sentence": "This explanation is _____ than the labelled example.",
+      "sentence": "This bus ride is _____ than the last one.",
       "base": "bad",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -5699,29 +5713,29 @@
           "answers": [
             "bader than"
           ],
-          "message": "Bad is irregular: use worse, not bader."
+          "message": "Bader than is not right. Use worse than to compare two things."
         },
         {
           "answers": [
             "worst than"
           ],
-          "message": "That is a superlative; this sentence compares two items."
+          "message": "Worst than is not right. Use worse than to compare two things."
         },
         {
           "answers": [
             "bad than"
           ],
-          "message": "The base adjective alone does not show a comparison."
+          "message": "Bad than is not right. Use worse than to compare two things."
         },
         {
-          "message": "Use the irregular comparative worse than."
+          "message": "Use worse than to compare two things."
         }
       ],
-      "explanation": "Bad changes irregularly to worse in the comparative."
+      "explanation": "Use worse than to compare two things."
     },
     {
       "id": "adj-080",
-      "sentence": "This is _____ spelling mistake in the proofreading set.",
+      "sentence": "This is _____ bus ride this week.",
       "base": "bad",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -5766,29 +5780,29 @@
           "answers": [
             "badest"
           ],
-          "message": "Bad is irregular: use worst, not badest."
+          "message": "Badest is not right. Use the worst for the top one in a group."
         },
         {
           "answers": [
             "more bad"
           ],
-          "message": "More makes a comparative; this sentence needs the highest degree."
+          "message": "More bad is not right. Use the worst for the top one in a group."
         },
         {
           "answers": [
             "bad"
           ],
-          "message": "The base adjective alone does not make a superlative."
+          "message": "Bad is not right. Use the worst for the top one in a group."
         },
         {
-          "message": "Use the irregular superlative the worst."
+          "message": "Use the worst for the top one in a group."
         }
       ],
-      "explanation": "Bad changes irregularly to the worst in the superlative."
+      "explanation": "Use the worst for the top one in a group."
     },
     {
       "id": "adj-081",
-      "sentence": "The sports hall is _____ the library is from the classroom.",
+      "sentence": "The shop is _____ the school is from my home.",
       "base": "far",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -5843,29 +5857,29 @@
           "answers": [
             "farer than"
           ],
-          "message": "Far does not normally take a plain -er ending in standard English."
+          "message": "Farer than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "farthest than"
           ],
-          "message": "Farthest is a superlative, so it does not compare two places with than."
+          "message": "Farthest than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "far than"
           ],
-          "message": "The base form far does not make the comparison."
+          "message": "Far than is not right. Use farther than or further than to compare two things."
         },
         {
-          "message": "Both farther than and further than are accepted here; farther often stresses physical distance."
+          "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Both farther than and further than are accepted. Farther often stresses physical distance; further also occurs with distance and broader meanings."
+      "explanation": "Use farther than or further than to compare two things."
     },
     {
       "id": "adj-082",
-      "sentence": "This is _____ classroom from the hall on the school-map activity.",
+      "sentence": "This is _____ bus stop from my home.",
       "base": "far",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -5920,29 +5934,29 @@
           "answers": [
             "farest"
           ],
-          "message": "Far does not normally take a plain -est ending in standard English."
+          "message": "Farest is not right. Use the farthest or the furthest for the top one in a group."
         },
         {
           "answers": [
             "more far"
           ],
-          "message": "Use an irregular superlative, not more far."
+          "message": "More far is not right. Use the farthest or the furthest for the top one in a group."
         },
         {
           "answers": [
             "far"
           ],
-          "message": "The base form far does not identify the greatest distance."
+          "message": "Far is not right. Use the farthest or the furthest for the top one in a group."
         },
         {
-          "message": "Both the farthest and the furthest are accepted here."
+          "message": "Use the farthest or the furthest for the top one in a group."
         }
       ],
-      "explanation": "Both the farthest and the furthest are accepted superlative adjective forms."
+      "explanation": "Use the farthest or the furthest for the top one in a group."
     },
     {
       "id": "adj-083",
-      "sentence": "The marker landed _____ the beanbag did from the hoop in the ramp trial.",
+      "sentence": "The park is _____ the school is from my home.",
       "base": "far",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -5997,29 +6011,29 @@
           "answers": [
             "farer than"
           ],
-          "message": "Far does not normally take a plain -er ending in standard English."
+          "message": "Farer than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "farthest than"
           ],
-          "message": "Farthest is a superlative, so it does not compare two places with than."
+          "message": "Farthest than is not right. Use farther than or further than to compare two things."
         },
         {
           "answers": [
             "far than"
           ],
-          "message": "The base form far does not make the comparison."
+          "message": "Far than is not right. Use farther than or further than to compare two things."
         },
         {
-          "message": "Both farther than and further than are accepted here; farther often stresses physical distance."
+          "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Both farther than and further than are accepted. Farther often stresses physical distance; further also occurs with distance and broader meanings."
+      "explanation": "Use farther than or further than to compare two things."
     },
     {
       "id": "adj-084",
-      "sentence": "On the route map, this is _____ point from the school.",
+      "sentence": "This is _____ shop from our school.",
       "base": "far",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6074,29 +6088,29 @@
           "answers": [
             "farest"
           ],
-          "message": "Far does not normally take a plain -est ending in standard English."
+          "message": "Farest is not right. Use the farthest or the furthest for the top one in a group."
         },
         {
           "answers": [
             "more far"
           ],
-          "message": "Use an irregular superlative, not more far."
+          "message": "More far is not right. Use the farthest or the furthest for the top one in a group."
         },
         {
           "answers": [
             "far"
           ],
-          "message": "The base form far does not identify the greatest distance."
+          "message": "Far is not right. Use the farthest or the furthest for the top one in a group."
         },
         {
-          "message": "Both the farthest and the furthest are accepted here."
+          "message": "Use the farthest or the furthest for the top one in a group."
         }
       ],
-      "explanation": "Both the farthest and the furthest are accepted superlative adjective forms."
+      "explanation": "Use the farthest or the furthest for the top one in a group."
     },
     {
       "id": "adj-085",
-      "sentence": "There is _____ paper in this box than in the other box.",
+      "sentence": "There is _____ water in this bottle than in that bottle.",
       "base": "little",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6135,29 +6149,29 @@
           "answers": [
             "little"
           ],
-          "message": "The base form little does not make the comparison. Use less."
+          "message": "Little is not right. Use less to compare two things."
         },
         {
           "answers": [
             "littleer"
           ],
-          "message": "Little does not take a plain -er ending here."
+          "message": "Littleer is not right. Use less to compare two things."
         },
         {
           "answers": [
             "least"
           ],
-          "message": "Least is superlative; the sentence compares two quantities."
+          "message": "Least is not right. Use less to compare two things."
         },
         {
-          "message": "Use the irregular comparative less; than is already in the sentence."
+          "message": "Use less to compare two things."
         }
       ],
-      "explanation": "Use less. The sentence already supplies than after the quantity noun."
+      "explanation": "Use less to compare two things."
     },
     {
       "id": "adj-086",
-      "sentence": "This box has the _____ paper in the display.",
+      "sentence": "This bottle has the _____ water.",
       "base": "little",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6196,29 +6210,29 @@
           "answers": [
             "little"
           ],
-          "message": "The base form little does not show the highest or lowest quantity."
+          "message": "Little is not right. Use least for the top one in a group."
         },
         {
           "answers": [
             "littleest"
           ],
-          "message": "Little does not take a plain -est ending here."
+          "message": "Littleest is not right. Use least for the top one in a group."
         },
         {
           "answers": [
             "less"
           ],
-          "message": "Less is comparative; this sentence needs a superlative."
+          "message": "Less is not right. Use least for the top one in a group."
         },
         {
-          "message": "Use the irregular superlative least; the is already in the sentence."
+          "message": "Use least for the top one in a group."
         }
       ],
-      "explanation": "Use least. The sentence already supplies the before the quantity noun."
+      "explanation": "Use least for the top one in a group."
     },
     {
       "id": "adj-087",
-      "sentence": "There is _____ paint in the blue tray than in the green tray.",
+      "sentence": "There is _____ rice in this bowl than in that bowl.",
       "base": "little",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6257,29 +6271,29 @@
           "answers": [
             "little"
           ],
-          "message": "The base form little does not make the comparison. Use less."
+          "message": "Little is not right. Use less to compare two things."
         },
         {
           "answers": [
             "littleer"
           ],
-          "message": "Little does not take a plain -er ending here."
+          "message": "Littleer is not right. Use less to compare two things."
         },
         {
           "answers": [
             "least"
           ],
-          "message": "Least is superlative; the sentence compares two quantities."
+          "message": "Least is not right. Use less to compare two things."
         },
         {
-          "message": "Use the irregular comparative less; than is already in the sentence."
+          "message": "Use less to compare two things."
         }
       ],
-      "explanation": "Use less. The sentence already supplies than after the quantity noun."
+      "explanation": "Use less to compare two things."
     },
     {
       "id": "adj-088",
-      "sentence": "The blue tray has the _____ paint in the art activity.",
+      "sentence": "This bowl has the _____ rice.",
       "base": "little",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6318,29 +6332,29 @@
           "answers": [
             "little"
           ],
-          "message": "The base form little does not show the highest or lowest quantity."
+          "message": "Little is not right. Use least for the top one in a group."
         },
         {
           "answers": [
             "littleest"
           ],
-          "message": "Little does not take a plain -est ending here."
+          "message": "Littleest is not right. Use least for the top one in a group."
         },
         {
           "answers": [
             "less"
           ],
-          "message": "Less is comparative; this sentence needs a superlative."
+          "message": "Less is not right. Use least for the top one in a group."
         },
         {
-          "message": "Use the irregular superlative least; the is already in the sentence."
+          "message": "Use least for the top one in a group."
         }
       ],
-      "explanation": "Use least. The sentence already supplies the before the quantity noun."
+      "explanation": "Use least for the top one in a group."
     },
     {
       "id": "adj-089",
-      "sentence": "There is _____ paint in this tray than in that tray.",
+      "sentence": "There is _____ tea in this cup than in that cup.",
       "base": "much",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6379,29 +6393,29 @@
           "answers": [
             "much"
           ],
-          "message": "The base form much does not make the comparison. Use more."
+          "message": "Much is not right. Use more to compare two things."
         },
         {
           "answers": [
             "mucher"
           ],
-          "message": "Much does not take a plain -er ending here."
+          "message": "Mucher is not right. Use more to compare two things."
         },
         {
           "answers": [
             "most"
           ],
-          "message": "Most is superlative; the sentence compares two quantities."
+          "message": "Most is not right. Use more to compare two things."
         },
         {
-          "message": "Use the irregular comparative more; than is already in the sentence."
+          "message": "Use more to compare two things."
         }
       ],
-      "explanation": "Use more. The sentence already supplies than after the quantity noun."
+      "explanation": "Use more to compare two things."
     },
     {
       "id": "adj-090",
-      "sentence": "This tray has the _____ paint in the materials test.",
+      "sentence": "This cup has the _____ tea.",
       "base": "much",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6440,29 +6454,29 @@
           "answers": [
             "much"
           ],
-          "message": "The base form much does not show the highest or lowest quantity."
+          "message": "Much is not right. Use most for the top one in a group."
         },
         {
           "answers": [
             "muchest"
           ],
-          "message": "Much does not take a plain -est ending here."
+          "message": "Muchest is not right. Use most for the top one in a group."
         },
         {
           "answers": [
             "more"
           ],
-          "message": "More is comparative; this sentence needs a superlative."
+          "message": "More is not right. Use most for the top one in a group."
         },
         {
-          "message": "Use the irregular superlative most; the is already in the sentence."
+          "message": "Use most for the top one in a group."
         }
       ],
-      "explanation": "Use most. The sentence already supplies the before the quantity noun."
+      "explanation": "Use most for the top one in a group."
     },
     {
       "id": "adj-091",
-      "sentence": "There is _____ time before the second bell than before the first bell.",
+      "sentence": "There is _____ time before lunch than before class.",
       "base": "much",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6501,29 +6515,29 @@
           "answers": [
             "much"
           ],
-          "message": "The base form much does not make the comparison. Use more."
+          "message": "Much is not right. Use more to compare two things."
         },
         {
           "answers": [
             "mucher"
           ],
-          "message": "Much does not take a plain -er ending here."
+          "message": "Mucher is not right. Use more to compare two things."
         },
         {
           "answers": [
             "most"
           ],
-          "message": "Most is superlative; the sentence compares two quantities."
+          "message": "Most is not right. Use more to compare two things."
         },
         {
-          "message": "Use the irregular comparative more; than is already in the sentence."
+          "message": "Use more to compare two things."
         }
       ],
-      "explanation": "Use more. The sentence already supplies than after the quantity noun."
+      "explanation": "Use more to compare two things."
     },
     {
       "id": "adj-092",
-      "sentence": "This timetable gives us the _____ time for the library task.",
+      "sentence": "This plan gives us the _____ time.",
       "base": "much",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6562,29 +6576,29 @@
           "answers": [
             "much"
           ],
-          "message": "The base form much does not show the highest or lowest quantity."
+          "message": "Much is not right. Use most for the top one in a group."
         },
         {
           "answers": [
             "muchest"
           ],
-          "message": "Much does not take a plain -est ending here."
+          "message": "Muchest is not right. Use most for the top one in a group."
         },
         {
           "answers": [
             "more"
           ],
-          "message": "More is comparative; this sentence needs a superlative."
+          "message": "More is not right. Use most for the top one in a group."
         },
         {
-          "message": "Use the irregular superlative most; the is already in the sentence."
+          "message": "Use most for the top one in a group."
         }
       ],
-      "explanation": "Use most. The sentence already supplies the before the quantity noun."
+      "explanation": "Use most for the top one in a group."
     },
     {
       "id": "adj-093",
-      "sentence": "There are _____ labels on this poster than on that poster.",
+      "sentence": "There are _____ books in this bag than in that bag.",
       "base": "many",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -6623,29 +6637,29 @@
           "answers": [
             "many"
           ],
-          "message": "The base form many does not make the comparison. Use more."
+          "message": "Many is not right. Use more to compare two things."
         },
         {
           "answers": [
             "manyer"
           ],
-          "message": "Many does not take a plain -er ending here."
+          "message": "Manyer is not right. Use more to compare two things."
         },
         {
           "answers": [
             "most"
           ],
-          "message": "Most is superlative; the sentence compares two quantities."
+          "message": "Most is not right. Use more to compare two things."
         },
         {
-          "message": "Use the irregular comparative more; than is already in the sentence."
+          "message": "Use more to compare two things."
         }
       ],
-      "explanation": "Use more. The sentence already supplies than after the quantity noun."
+      "explanation": "Use more to compare two things."
     },
     {
       "id": "adj-094",
-      "sentence": "This poster has the _____ labels in the display set.",
+      "sentence": "This bag has the _____ books.",
       "base": "many",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6684,25 +6698,25 @@
           "answers": [
             "many"
           ],
-          "message": "The base form many does not show the highest or lowest quantity."
+          "message": "Many is not right. Use most for the top one in a group."
         },
         {
           "answers": [
             "manyest"
           ],
-          "message": "Many does not take a plain -est ending here."
+          "message": "Manyest is not right. Use most for the top one in a group."
         },
         {
           "answers": [
             "more"
           ],
-          "message": "More is comparative; this sentence needs a superlative."
+          "message": "More is not right. Use most for the top one in a group."
         },
         {
-          "message": "Use the irregular superlative most; the is already in the sentence."
+          "message": "Use most for the top one in a group."
         }
       ],
-      "explanation": "Use most. The sentence already supplies the before the quantity noun."
+      "explanation": "Use most for the top one in a group."
     },
     {
       "id": "adj-095",
@@ -6745,29 +6759,29 @@
           "answers": [
             "many"
           ],
-          "message": "The base form many does not make the comparison. Use more."
+          "message": "Many is not right. Use more to compare two things."
         },
         {
           "answers": [
             "manyer"
           ],
-          "message": "Many does not take a plain -er ending here."
+          "message": "Manyer is not right. Use more to compare two things."
         },
         {
           "answers": [
             "most"
           ],
-          "message": "Most is superlative; the sentence compares two quantities."
+          "message": "Most is not right. Use more to compare two things."
         },
         {
-          "message": "Use the irregular comparative more; than is already in the sentence."
+          "message": "Use more to compare two things."
         }
       ],
-      "explanation": "Use more. The sentence already supplies than after the quantity noun."
+      "explanation": "Use more to compare two things."
     },
     {
       "id": "adj-096",
-      "sentence": "Room B has the _____ chairs on the seating plan.",
+      "sentence": "Room B has the _____ chairs.",
       "base": "many",
       "degree": "superlative",
       "rule": "Irregular forms",
@@ -6806,25 +6820,25 @@
           "answers": [
             "many"
           ],
-          "message": "The base form many does not show the highest or lowest quantity."
+          "message": "Many is not right. Use most for the top one in a group."
         },
         {
           "answers": [
             "manyest"
           ],
-          "message": "Many does not take a plain -est ending here."
+          "message": "Manyest is not right. Use most for the top one in a group."
         },
         {
           "answers": [
             "more"
           ],
-          "message": "More is comparative; this sentence needs a superlative."
+          "message": "More is not right. Use most for the top one in a group."
         },
         {
-          "message": "Use the irregular superlative most; the is already in the sentence."
+          "message": "Use most for the top one in a group."
         }
       ],
-      "explanation": "Use most. The sentence already supplies the before the quantity noun."
+      "explanation": "Use most for the top one in a group."
     }
   ]
 }

@@ -1,0 +1,1418 @@
+{
+  "referenceCsv": "/home/ubuntu/skills/cefr-level-checker/references/A1-C2.csv",
+  "lookupMethod": "Exact Word + Part of Speech match against the sole reference CSV; B2 scope: all.",
+  "scope": "Question target base lemmas only. Comparative and superlative inflections are grammar forms, not separate CEFR target assignments.",
+  "summary": {
+    "questionCounts": {
+      "adjectives": 96,
+      "adverbs": 96
+    },
+    "uniqueTargetChecks": 66,
+    "allFinalTargetsA1ToB1": true,
+    "unresolvedBLANK": [],
+    "outOfRangeFinalTargets": [],
+    "ruleCounts": {
+      "adjectives": {
+        "Regular forms": 24,
+        "Spelling changes": 24,
+        "Longer forms": 24,
+        "Irregular forms": 24
+      },
+      "adverbs": {
+        "Regular forms": 24,
+        "Spelling changes": 24,
+        "Longer forms": 24,
+        "Irregular forms": 24
+      }
+    }
+  },
+  "finalTargetChecks": [
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-001",
+        "adj-002"
+      ],
+      "lookupWord": "tall",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "tall",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-003",
+        "adj-004"
+      ],
+      "lookupWord": "clean",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "clean",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-005",
+        "adj-006"
+      ],
+      "lookupWord": "bright",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "bright",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-007",
+        "adj-008"
+      ],
+      "lookupWord": "short",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "short",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-009",
+        "adj-010"
+      ],
+      "lookupWord": "warm",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "warm",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-011",
+        "adj-012"
+      ],
+      "lookupWord": "old",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "old",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-013",
+        "adj-014"
+      ],
+      "lookupWord": "strong",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "strong",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-015",
+        "adj-016"
+      ],
+      "lookupWord": "kind",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "B1",
+          "Source list": "Oxford 3000",
+          "Word": "kind",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-017",
+        "adj-018"
+      ],
+      "lookupWord": "large",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "large",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-019",
+        "adj-020"
+      ],
+      "lookupWord": "nice",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "nice",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-021",
+        "adj-022"
+      ],
+      "lookupWord": "safe",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "safe",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-023",
+        "adj-024"
+      ],
+      "lookupWord": "big",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "big",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-025",
+        "adj-026"
+      ],
+      "lookupWord": "hot",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "hot",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-027",
+        "adj-028"
+      ],
+      "lookupWord": "thin",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "thin",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-029",
+        "adj-030"
+      ],
+      "lookupWord": "wet",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "wet",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-031",
+        "adj-032"
+      ],
+      "lookupWord": "easy",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "easy",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-033",
+        "adj-034"
+      ],
+      "lookupWord": "busy",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "busy",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-035",
+        "adj-036"
+      ],
+      "lookupWord": "noisy",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "noisy",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-037",
+        "adj-038"
+      ],
+      "lookupWord": "happy",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "happy",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-039",
+        "adj-040"
+      ],
+      "lookupWord": "heavy",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "heavy",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-041",
+        "adj-042"
+      ],
+      "lookupWord": "careful",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "careful",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-043",
+        "adj-044"
+      ],
+      "lookupWord": "interesting",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "interesting",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-045",
+        "adj-046"
+      ],
+      "lookupWord": "useful",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "useful",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-047",
+        "adj-048"
+      ],
+      "lookupWord": "popular",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "popular",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-049",
+        "adj-050"
+      ],
+      "lookupWord": "practical",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "B1",
+          "Source list": "Oxford 3000",
+          "Word": "practical",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-051",
+        "adj-052"
+      ],
+      "lookupWord": "beautiful",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "beautiful",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-053",
+        "adj-054"
+      ],
+      "lookupWord": "important",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "important",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-055",
+        "adj-056"
+      ],
+      "lookupWord": "comfortable",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "comfortable",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-057",
+        "adj-058"
+      ],
+      "lookupWord": "reliable",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "B1",
+          "Source list": "Oxford 3000",
+          "Word": "reliable",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-059",
+        "adj-060"
+      ],
+      "lookupWord": "creative",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "creative",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-061",
+        "adj-062"
+      ],
+      "lookupWord": "expensive",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "expensive",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-063",
+        "adj-064"
+      ],
+      "lookupWord": "dangerous",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "dangerous",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-065",
+        "adj-066"
+      ],
+      "lookupWord": "quiet",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "quiet",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-067",
+        "adj-068"
+      ],
+      "lookupWord": "clever",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "clever",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-069",
+        "adj-070"
+      ],
+      "lookupWord": "narrow",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "narrow",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-071",
+        "adj-072"
+      ],
+      "lookupWord": "simple",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "simple",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-073",
+        "adj-074",
+        "adj-075",
+        "adj-076"
+      ],
+      "lookupWord": "good",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "good",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-077",
+        "adj-078",
+        "adj-079",
+        "adj-080"
+      ],
+      "lookupWord": "bad",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "bad",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-081",
+        "adj-082",
+        "adj-083",
+        "adj-084"
+      ],
+      "lookupWord": "far",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "B1",
+          "Source list": "Oxford 3000",
+          "Word": "far",
+          "Part of Speech": "adj"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-085",
+        "adj-086",
+        "adj-087",
+        "adj-088"
+      ],
+      "lookupWord": "little",
+      "partOfSpeech": "det/pron",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "little",
+          "Part of Speech": "det/pron"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-089",
+        "adj-090",
+        "adj-091",
+        "adj-092"
+      ],
+      "lookupWord": "much",
+      "partOfSpeech": "det/pron",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "much",
+          "Part of Speech": "det/pron"
+        }
+      ]
+    },
+    {
+      "module": "adjectives",
+      "questionIds": [
+        "adj-093",
+        "adj-094",
+        "adj-095",
+        "adj-096"
+      ],
+      "lookupWord": "many",
+      "partOfSpeech": "det/pron",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "many",
+          "Part of Speech": "det/pron"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-001",
+        "adv-002",
+        "adv-011",
+        "adv-012"
+      ],
+      "lookupWord": "fast",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "fast",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-003",
+        "adv-004",
+        "adv-013",
+        "adv-014"
+      ],
+      "lookupWord": "hard",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "hard",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-005",
+        "adv-006",
+        "adv-015",
+        "adv-016"
+      ],
+      "lookupWord": "high",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "high",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-007",
+        "adv-008",
+        "adv-017",
+        "adv-018"
+      ],
+      "lookupWord": "low",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "low",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-009",
+        "adv-010",
+        "adv-019",
+        "adv-020"
+      ],
+      "lookupWord": "long",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "long",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-021",
+        "adv-022"
+      ],
+      "lookupWord": "near",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "near",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-023",
+        "adv-024"
+      ],
+      "lookupWord": "soon",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "soon",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-025",
+        "adv-026",
+        "adv-027",
+        "adv-028",
+        "adv-029",
+        "adv-030",
+        "adv-031",
+        "adv-032",
+        "adv-033",
+        "adv-034",
+        "adv-035",
+        "adv-036"
+      ],
+      "lookupWord": "late",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "late",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-037",
+        "adv-038",
+        "adv-039",
+        "adv-040",
+        "adv-041",
+        "adv-042",
+        "adv-043",
+        "adv-044",
+        "adv-045",
+        "adv-046",
+        "adv-047",
+        "adv-048"
+      ],
+      "lookupWord": "early",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "early",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-049",
+        "adv-050"
+      ],
+      "lookupWord": "carefully",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "carefully",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-051",
+        "adv-052"
+      ],
+      "lookupWord": "quietly",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "quietly",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-053",
+        "adv-054"
+      ],
+      "lookupWord": "clearly",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "clearly",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-055",
+        "adv-056"
+      ],
+      "lookupWord": "easily",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "easily",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-057",
+        "adv-058"
+      ],
+      "lookupWord": "quickly",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "quickly",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-059",
+        "adv-060"
+      ],
+      "lookupWord": "slowly",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "slowly",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-061",
+        "adv-062"
+      ],
+      "lookupWord": "happily",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "happily",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-063",
+        "adv-064"
+      ],
+      "lookupWord": "regularly",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "B1",
+          "Source list": "Oxford 3000",
+          "Word": "regularly",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-065",
+        "adv-066"
+      ],
+      "lookupWord": "seriously",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "B1",
+          "Source list": "Oxford 3000",
+          "Word": "seriously",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-067",
+        "adv-068"
+      ],
+      "lookupWord": "successfully",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "B1",
+          "Source list": "Oxford 3000",
+          "Word": "successfully",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-069",
+        "adv-070"
+      ],
+      "lookupWord": "loudly",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "loudly",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-071",
+        "adv-072"
+      ],
+      "lookupWord": "correctly",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "correctly",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-073",
+        "adv-074",
+        "adv-075",
+        "adv-076",
+        "adv-077",
+        "adv-078",
+        "adv-079",
+        "adv-080"
+      ],
+      "lookupWord": "well",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "well",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-081",
+        "adv-082",
+        "adv-083",
+        "adv-084",
+        "adv-085",
+        "adv-086",
+        "adv-087",
+        "adv-088"
+      ],
+      "lookupWord": "badly",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "badly",
+          "Part of Speech": "adv"
+        }
+      ]
+    },
+    {
+      "module": "adverbs",
+      "questionIds": [
+        "adv-089",
+        "adv-090",
+        "adv-091",
+        "adv-092",
+        "adv-093",
+        "adv-094",
+        "adv-095",
+        "adv-096"
+      ],
+      "lookupWord": "far",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "far",
+          "Part of Speech": "adv"
+        }
+      ]
+    }
+  ],
+  "replacements": [
+    {
+      "oldWord": "colourful",
+      "oldPartOfSpeech": "adj",
+      "newWord": "beautiful",
+      "newPartOfSpeech": "adj",
+      "reason": "Old target was B2; replacement is A1.",
+      "oldExactCsvMatches": [
+        {
+          "CEFR": "B2",
+          "Source list": "Oxford 5000",
+          "Word": "colourful",
+          "Part of Speech": "adj"
+        }
+      ],
+      "newExactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "beautiful",
+          "Part of Speech": "adj"
+        }
+      ],
+      "newQuestionIds": [
+        "adj-051",
+        "adj-052"
+      ]
+    },
+    {
+      "oldWord": "politely",
+      "oldPartOfSpeech": "adv",
+      "newWord": "easily",
+      "newPartOfSpeech": "adv",
+      "reason": "Old target had no exact CSV row; replacement is A2.",
+      "oldExactCsvMatches": [
+        {
+          "CEFR": "BLANK",
+          "Source list": "",
+          "Word": "politely",
+          "Part of Speech": "adv"
+        }
+      ],
+      "newExactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "easily",
+          "Part of Speech": "adv"
+        }
+      ],
+      "newQuestionIds": [
+        "adv-055",
+        "adv-056"
+      ]
+    },
+    {
+      "oldWord": "confidently",
+      "oldPartOfSpeech": "adv",
+      "newWord": "happily",
+      "newPartOfSpeech": "adv",
+      "reason": "Old target had no exact CSV row; replacement is A2.",
+      "oldExactCsvMatches": [
+        {
+          "CEFR": "BLANK",
+          "Source list": "",
+          "Word": "confidently",
+          "Part of Speech": "adv"
+        }
+      ],
+      "newExactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "happily",
+          "Part of Speech": "adv"
+        }
+      ],
+      "newQuestionIds": [
+        "adv-061",
+        "adv-062"
+      ]
+    },
+    {
+      "oldWord": "patiently",
+      "oldPartOfSpeech": "adv",
+      "newWord": "regularly",
+      "newPartOfSpeech": "adv",
+      "reason": "Old target had no exact CSV row; replacement is B1.",
+      "oldExactCsvMatches": [
+        {
+          "CEFR": "BLANK",
+          "Source list": "",
+          "Word": "patiently",
+          "Part of Speech": "adv"
+        }
+      ],
+      "newExactCsvMatches": [
+        {
+          "CEFR": "B1",
+          "Source list": "Oxford 3000",
+          "Word": "regularly",
+          "Part of Speech": "adv"
+        }
+      ],
+      "newQuestionIds": [
+        "adv-063",
+        "adv-064"
+      ]
+    },
+    {
+      "oldWord": "neatly",
+      "oldPartOfSpeech": "adv",
+      "newWord": "successfully",
+      "newPartOfSpeech": "adv",
+      "reason": "Old target had no exact CSV row; replacement is B1.",
+      "oldExactCsvMatches": [
+        {
+          "CEFR": "BLANK",
+          "Source list": "",
+          "Word": "neatly",
+          "Part of Speech": "adv"
+        }
+      ],
+      "newExactCsvMatches": [
+        {
+          "CEFR": "B1",
+          "Source list": "Oxford 3000",
+          "Word": "successfully",
+          "Part of Speech": "adv"
+        }
+      ],
+      "newQuestionIds": [
+        "adv-067",
+        "adv-068"
+      ]
+    },
+    {
+      "oldWord": "accurately",
+      "oldPartOfSpeech": "adv",
+      "newWord": "correctly",
+      "newPartOfSpeech": "adv",
+      "reason": "Old target was B2; replacement is A2.",
+      "oldExactCsvMatches": [
+        {
+          "CEFR": "B2",
+          "Source list": "Oxford 5000",
+          "Word": "accurately",
+          "Part of Speech": "adv"
+        }
+      ],
+      "newExactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "correctly",
+          "Part of Speech": "adv"
+        }
+      ],
+      "newQuestionIds": [
+        "adv-071",
+        "adv-072"
+      ]
+    }
+  ],
+  "requiredSyllabusFormChecks": [
+    {
+      "word": "badly",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A2",
+          "Source list": "Oxford 3000",
+          "Word": "badly",
+          "Part of Speech": "adv"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "word": "far",
+      "partOfSpeech": "adj",
+      "exactCsvMatches": [
+        {
+          "CEFR": "B1",
+          "Source list": "Oxford 3000",
+          "Word": "far",
+          "Part of Speech": "adj"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "word": "far",
+      "partOfSpeech": "adv",
+      "exactCsvMatches": [
+        {
+          "CEFR": "A1",
+          "Source list": "Oxford 3000",
+          "Word": "far",
+          "Part of Speech": "adv"
+        }
+      ],
+      "status": "verified"
+    }
+  ]
+}
