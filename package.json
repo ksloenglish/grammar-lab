@@ -1,0 +1,13 @@
+{
+  "name": "kslo-grammar-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "validate": "node scripts/validate.mjs",
+    "version:update": "node scripts/update-version.mjs",
+    "build": "node scripts/build.mjs",
+    "dev": "python3 -m http.server 3000 --bind 0.0.0.0 --directory site"
+  }
+}

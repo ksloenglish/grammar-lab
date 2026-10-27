@@ -1,0 +1,80 @@
+{
+  "modules": [
+    {
+      "id": "adjectives",
+      "title": "Comparative & superlative adjectives",
+      "shortTitle": "Adjectives",
+      "description": "Build accurate adjective comparisons, superlatives, spelling changes and accepted alternatives.",
+      "symbol": "Aa",
+      "accent": "teal",
+      "available": true,
+      "bank": "adjectives-questions.json",
+      "learn": "adjectives-learn.json"
+    },
+    {
+      "id": "adverbs",
+      "title": "Comparative & superlative adverbs",
+      "shortTitle": "Adverbs",
+      "description": "Practise how actions happen with regular, -ly and irregular adverb forms.",
+      "symbol": "Av",
+      "accent": "violet",
+      "available": true,
+      "bank": "adverbs-questions.json",
+      "learn": "adverbs-learn.json"
+    },
+    {
+      "id": "passive",
+      "title": "Passive voice",
+      "shortTitle": "Passive",
+      "description": "Coming soon: build accurate passive voice sentences.",
+      "symbol": "Pv",
+      "accent": "slate",
+      "available": false
+    },
+    {
+      "id": "present-simple",
+      "title": "Present simple",
+      "shortTitle": "Present simple",
+      "description": "Coming soon: practise routines, facts and present simple forms.",
+      "symbol": "Ps",
+      "accent": "slate",
+      "available": false
+    },
+    {
+      "id": "past-simple",
+      "title": "Past simple",
+      "shortTitle": "Past simple",
+      "description": "Coming soon: practise completed actions in the past.",
+      "symbol": "Pa",
+      "accent": "slate",
+      "available": false
+    },
+    {
+      "id": "present-continuous",
+      "title": "Present continuous",
+      "shortTitle": "Present continuous",
+      "description": "Coming soon: practise actions happening now.",
+      "symbol": "Pc",
+      "accent": "slate",
+      "available": false
+    },
+    {
+      "id": "past-continuous",
+      "title": "Past continuous",
+      "shortTitle": "Past continuous",
+      "description": "Coming soon: practise actions in progress in the past.",
+      "symbol": "Pt",
+      "accent": "slate",
+      "available": false
+    },
+    {
+      "id": "perfect-tenses",
+      "title": "Perfect tenses",
+      "shortTitle": "Perfect tenses",
+      "description": "Coming soon: connect actions and times with perfect tenses.",
+      "symbol": "Pf",
+      "accent": "slate",
+      "available": false
+    }
+  ]
+}

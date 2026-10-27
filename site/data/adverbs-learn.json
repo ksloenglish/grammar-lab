@@ -1,0 +1,82 @@
+{
+  "module": "adverbs",
+  "intro": "Use comparative adverbs to compare how two actions happen and superlative adverbs for the highest or lowest degree of an action in a group. Keep the adverb rule separate from the adjective rule.",
+  "sections": [
+    {
+      "title": "Short adverbs: -er and -est",
+      "text": "Fast, hard, high, low and long normally take -er and -est: faster/fastest and harder/hardest. Late becomes later/latest. Early is an important exception to the usual -ly pattern: earlier/earliest.",
+      "examples": [
+        "Eva ran faster than before.",
+        "The library opened earliest on Thursday."
+      ]
+    },
+    {
+      "title": "Most -ly adverbs: more and most",
+      "text": "Most adverbs ending in -ly use more and most: more carefully, most carefully; more clearly, most clearly. Do not add -er/-est, do not double letters, and do not change the y to i.",
+      "examples": [
+        "Asha explained the instructions more clearly than before.",
+        "The group worked most carefully."
+      ],
+      "note": "Early is the exception: earlier/earliest, not more early in this course."
+    },
+    {
+      "title": "Irregular forms and far",
+      "text": "Well → better → best. Badly usually becomes worse/worst; more badly and most badly can also be natural when the manner or extent of harm is the focus. Farther/farthest and further/furthest are both standard; farther often stresses physical distance.",
+      "examples": [
+        "The team explained the plan better than before.",
+        "The rain damaged the paper sign most badly."
+      ]
+    },
+    {
+      "title": "Than, optional the, and hardly",
+      "text": "Use than after a comparative: more quickly than the other team. With superlative adverbs, the is often used but can be omitted when both sound natural: She ran the fastest / She ran fastest. Hard means with effort; hardly means almost not, so it is not the comparative of hard.",
+      "examples": [
+        "Kai worked harder than usual.",
+        "Of the runners, Eva ran the fastest.",
+        "I could hardly hear the announcement."
+      ]
+    }
+  ],
+  "miniCheck": [
+    {
+      "sentence": "Our group spoke _____ than last time.",
+      "options": [
+        "more clearly",
+        "clearer",
+        "clearliest"
+      ],
+      "answer": "more clearly",
+      "explanation": "Clearly is an -ly adverb, so use more clearly than."
+    },
+    {
+      "sentence": "Of the three teams, Aisha performed _____.",
+      "options": [
+        "best",
+        "goodest",
+        "more well"
+      ],
+      "answer": "best",
+      "explanation": "Well is irregular as an adverb: well → better → best. The is also natural: performed the best."
+    },
+    {
+      "sentence": "Of the three buses, route 2 arrived _____.",
+      "options": [
+        "earliest",
+        "earlier",
+        "earlyest"
+      ],
+      "answer": "earliest",
+      "explanation": "Early is the -ly exception: early → earlier → earliest. The earliest is also natural in this adverbial position."
+    }
+  ],
+  "sources": [
+    {
+      "title": "EF English Grammar: Comparative and superlative adverbs",
+      "url": "https://www.ef.com/wwen/english-resources/english-grammar/comparative-and-superlative-adverbs/"
+    },
+    {
+      "title": "Cambridge Dictionary Grammar: Farther, farthest or further, furthest?",
+      "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/farther-farthest-or-further-furthest"
+    }
+  ]
+}

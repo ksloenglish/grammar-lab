@@ -1,0 +1,91 @@
+{
+  "module": "adjectives",
+  "intro": "Use comparative adjectives to compare two things and superlative adjectives to identify the highest or lowest degree in a group of three or more. Build the form that matches the adjective and the sentence.",
+  "sections": [
+    {
+      "title": "Short adjectives: -er and -est",
+      "text": "Most short adjectives take -er for a comparison and -est for a superlative: tall → taller → tallest. If the adjective ends in -e, add -r or -st: large → larger → largest. For a short consonant-vowel-consonant word, double the final consonant: big → bigger → biggest.",
+      "examples": [
+        "This box is bigger than that tray.",
+        "This is the largest poster in the hall."
+      ],
+      "note": "Do not double after two consonants or after w, x or y."
+    },
+    {
+      "title": "Adjectives ending in -y",
+      "text": "Change final -y to -i before -er and -est: easy → easier → easiest; busy → busier → busiest.",
+      "examples": [
+        "This clue is easier than the final clue.",
+        "It is the noisiest part of the task."
+      ]
+    },
+    {
+      "title": "Longer adjectives and valid alternatives",
+      "text": "Longer adjectives usually use more and most: more careful, the most interesting. Some two-syllable adjectives have more than one standard form: quieter or more quiet; cleverer or more clever; narrower or more narrow; simpler or more simple.",
+      "examples": [
+        "The diagram is more useful than the list.",
+        "This is the simplest explanation.",
+        "This is the most simple explanation."
+      ],
+      "note": "Choose a conventional form for the adjective; both listed alternatives are accepted in this course."
+    },
+    {
+      "title": "Irregular forms and far",
+      "text": "Good → better → best and bad → worse → worst. Far has two standard families: farther/farthest and further/furthest. Farther often focuses on physical distance; further also works with distance and broader meanings.",
+      "examples": [
+        "The revised poster is better than the first draft.",
+        "This is the farthest classroom from the hall."
+      ]
+    },
+    {
+      "title": "Than, the, good and well",
+      "text": "A comparative often uses than: cleaner than the old table. A superlative adjective before a noun normally needs the: the cleanest table, unless another determiner already does the job. Use good for a noun or thing; use well for how an action is done.",
+      "examples": [
+        "The design is good.",
+        "She explained the design well."
+      ]
+    }
+  ],
+  "miniCheck": [
+    {
+      "sentence": "The poster is _____ than the first draft.",
+      "options": [
+        "larger",
+        "largeer",
+        "more large"
+      ],
+      "answer": "larger",
+      "explanation": "Large ends in -e, so add -r: larger than."
+    },
+    {
+      "sentence": "Of the three displays, Nia's is the _____.",
+      "options": [
+        "best",
+        "goodest",
+        "most good"
+      ],
+      "answer": "best",
+      "explanation": "Good is irregular: good → better → best."
+    },
+    {
+      "sentence": "This is the _____ corner in the library plan.",
+      "options": [
+        "quietest",
+        "quieter",
+        "quietiest"
+      ],
+      "answer": "quietest",
+      "explanation": "Use the superlative quietest. The most quiet is also a valid standard alternative, but it is not an option here."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cambridge Dictionary Grammar: Comparison: adjectives",
+      "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/comparison-adjectives-bigger-biggest-more-interesting"
+    },
+    {
+      "title": "Cambridge Dictionary Grammar: Farther, farthest or further, furthest?",
+      "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/farther-farthest-or-further-furthest"
+    }
+  ]
+}
