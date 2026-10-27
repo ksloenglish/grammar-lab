@@ -1,0 +1,2006 @@
+[
+  {
+    "id": "adj-001",
+    "sentence": "The school gate is _____ the side gate.",
+    "answers": [
+      "taller than"
+    ],
+    "base": "tall",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-002",
+    "sentence": "This is the _____ boy in the class.",
+    "answers": [
+      "tallest"
+    ],
+    "base": "tall",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-003",
+    "sentence": "My desk is _____ your desk.",
+    "answers": [
+      "cleaner than"
+    ],
+    "base": "clean",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-004",
+    "sentence": "This is the _____ classroom in the school.",
+    "answers": [
+      "cleanest"
+    ],
+    "base": "clean",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-005",
+    "sentence": "This shirt is _____ that shirt.",
+    "answers": [
+      "brighter than"
+    ],
+    "base": "bright",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-006",
+    "sentence": "This is the _____ light in the room.",
+    "answers": [
+      "brightest"
+    ],
+    "base": "bright",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-007",
+    "sentence": "The walk to school is _____ the walk to the shop.",
+    "answers": [
+      "shorter than"
+    ],
+    "base": "short",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-008",
+    "sentence": "This is the _____ road home.",
+    "answers": [
+      "shortest"
+    ],
+    "base": "short",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-009",
+    "sentence": "Today is _____ yesterday.",
+    "answers": [
+      "warmer than"
+    ],
+    "base": "warm",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-010",
+    "sentence": "This is the _____ day this week.",
+    "answers": [
+      "warmest"
+    ],
+    "base": "warm",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-011",
+    "sentence": "My phone is _____ my sister's phone.",
+    "answers": [
+      "older than"
+    ],
+    "base": "old",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-012",
+    "sentence": "This is the _____ photo at home.",
+    "answers": [
+      "oldest"
+    ],
+    "base": "old",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-013",
+    "sentence": "This bag is _____ that bag.",
+    "answers": [
+      "stronger than"
+    ],
+    "base": "strong",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-014",
+    "sentence": "Ming is the _____ player on the team.",
+    "answers": [
+      "strongest"
+    ],
+    "base": "strong",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-015",
+    "sentence": "May was _____ Tom today.",
+    "answers": [
+      "kinder than"
+    ],
+    "base": "kind",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-016",
+    "sentence": "May is the _____ student in the group.",
+    "answers": [
+      "kindest"
+    ],
+    "base": "kind",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-017",
+    "sentence": "The school hall is _____ our classroom.",
+    "answers": [
+      "larger than"
+    ],
+    "base": "large",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-018",
+    "sentence": "The red bag is the _____ bag here.",
+    "answers": [
+      "largest"
+    ],
+    "base": "large",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-019",
+    "sentence": "This shop is _____ the old shop.",
+    "answers": [
+      "nicer than"
+    ],
+    "base": "nice",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-020",
+    "sentence": "This is the _____ cake in the shop.",
+    "answers": [
+      "nicest"
+    ],
+    "base": "nice",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-021",
+    "sentence": "The zebra crossing is _____ the small road.",
+    "answers": [
+      "safer than"
+    ],
+    "base": "safe",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-022",
+    "sentence": "The teacher chose _____ way home.",
+    "answers": [
+      "the safest"
+    ],
+    "base": "safe",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-023",
+    "sentence": "My lunch box is _____ yours.",
+    "answers": [
+      "bigger than"
+    ],
+    "base": "big",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-024",
+    "sentence": "This is the _____ box in the room.",
+    "answers": [
+      "biggest"
+    ],
+    "base": "big",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-025",
+    "sentence": "This soup is _____ my tea.",
+    "answers": [
+      "hotter than"
+    ],
+    "base": "hot",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-026",
+    "sentence": "This is the _____ day in July.",
+    "answers": [
+      "hottest"
+    ],
+    "base": "hot",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-027",
+    "sentence": "This paper is _____ that paper.",
+    "answers": [
+      "thinner than"
+    ],
+    "base": "thin",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-028",
+    "sentence": "This is the _____ book on the shelf.",
+    "answers": [
+      "thinnest"
+    ],
+    "base": "thin",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-029",
+    "sentence": "My shoes are _____ your shoes.",
+    "answers": [
+      "wetter than"
+    ],
+    "base": "wet",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-030",
+    "sentence": "Of all the shoes, these are the _____.",
+    "answers": [
+      "wettest"
+    ],
+    "base": "wet",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-031",
+    "sentence": "This question is _____ the last one.",
+    "answers": [
+      "easier than"
+    ],
+    "base": "easy",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-032",
+    "sentence": "This is the _____ question in the test.",
+    "answers": [
+      "easiest"
+    ],
+    "base": "easy",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-033",
+    "sentence": "The canteen is _____ the library at lunch time.",
+    "answers": [
+      "busier than"
+    ],
+    "base": "busy",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-034",
+    "sentence": "Monday is the _____ day at school.",
+    "answers": [
+      "busiest"
+    ],
+    "base": "busy",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-035",
+    "sentence": "The bus is _____ the library.",
+    "answers": [
+      "noisier than"
+    ],
+    "base": "noisy",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-036",
+    "sentence": "This is the _____ room in the school.",
+    "answers": [
+      "noisiest"
+    ],
+    "base": "noisy",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-037",
+    "sentence": "Tom was _____ before the game.",
+    "answers": [
+      "happier than"
+    ],
+    "base": "happy",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-038",
+    "sentence": "This is the _____ day of my week.",
+    "answers": [
+      "happiest"
+    ],
+    "base": "happy",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-039",
+    "sentence": "My school bag is _____ my sister's bag.",
+    "answers": [
+      "heavier than"
+    ],
+    "base": "heavy",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-040",
+    "sentence": "This is the _____ bag in the class.",
+    "answers": [
+      "heaviest"
+    ],
+    "base": "heavy",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adj-041",
+    "sentence": "Ming was _____ Tom with the glass cups.",
+    "answers": [
+      "more careful than"
+    ],
+    "base": "careful",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-042",
+    "sentence": "Of the students carrying the glasses, Ming is the _____.",
+    "answers": [
+      "most careful"
+    ],
+    "base": "careful",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-043",
+    "sentence": "This book is _____ that book.",
+    "answers": [
+      "more interesting than"
+    ],
+    "base": "interesting",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-044",
+    "sentence": "This is _____ story in the book.",
+    "answers": [
+      "the most interesting"
+    ],
+    "base": "interesting",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-045",
+    "sentence": "This map is _____ the old map.",
+    "answers": [
+      "more useful than"
+    ],
+    "base": "useful",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-046",
+    "sentence": "The bus card is the _____ card in my bag.",
+    "answers": [
+      "most useful"
+    ],
+    "base": "useful",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-047",
+    "sentence": "Football is _____ tennis at our school.",
+    "answers": [
+      "more popular than"
+    ],
+    "base": "popular",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-048",
+    "sentence": "This is _____ game in the class.",
+    "answers": [
+      "the most popular"
+    ],
+    "base": "popular",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-049",
+    "sentence": "A small bag is _____ a large bag for this trip.",
+    "answers": [
+      "more practical than"
+    ],
+    "base": "practical",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-050",
+    "sentence": "This is the _____ idea for school.",
+    "answers": [
+      "most practical"
+    ],
+    "base": "practical",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-051",
+    "sentence": "This new shop sign is _____ the old one.",
+    "answers": [
+      "more beautiful than"
+    ],
+    "base": "beautiful",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-052",
+    "sentence": "This is _____ picture in the room.",
+    "answers": [
+      "the most beautiful"
+    ],
+    "base": "beautiful",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-053",
+    "sentence": "A school ID card is _____ a new pen.",
+    "answers": [
+      "more important than"
+    ],
+    "base": "important",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-054",
+    "sentence": "This is the _____ rule in the room.",
+    "answers": [
+      "most important"
+    ],
+    "base": "important",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-055",
+    "sentence": "This chair is _____ that chair.",
+    "answers": [
+      "more comfortable than"
+    ],
+    "base": "comfortable",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-056",
+    "sentence": "This is _____ seat on the bus.",
+    "answers": [
+      "the most comfortable"
+    ],
+    "base": "comfortable",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-057",
+    "sentence": "This bus is _____ the old bus.",
+    "answers": [
+      "more reliable than"
+    ],
+    "base": "reliable",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-058",
+    "sentence": "This is the _____ bus route home.",
+    "answers": [
+      "most reliable"
+    ],
+    "base": "reliable",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-059",
+    "sentence": "Ming's poster is _____ Tom's poster.",
+    "answers": [
+      "more creative than"
+    ],
+    "base": "creative",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-060",
+    "sentence": "This is _____ idea in the class.",
+    "answers": [
+      "the most creative"
+    ],
+    "base": "creative",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-061",
+    "sentence": "This phone is _____ that phone.",
+    "answers": [
+      "more expensive than"
+    ],
+    "base": "expensive",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-062",
+    "sentence": "This is the _____ thing in the shop.",
+    "answers": [
+      "most expensive"
+    ],
+    "base": "expensive",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-063",
+    "sentence": "Running on a wet floor is _____ walking.",
+    "answers": [
+      "more dangerous than"
+    ],
+    "base": "dangerous",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-064",
+    "sentence": "This is _____ road near the school.",
+    "answers": [
+      "the most dangerous"
+    ],
+    "base": "dangerous",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adj-065",
+    "sentence": "The library is _____ the canteen.",
+    "answers": [
+      "quieter than",
+      "more quiet than"
+    ],
+    "base": "quiet",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-066",
+    "sentence": "This is _____ place in the library.",
+    "answers": [
+      "the quietest",
+      "the most quiet"
+    ],
+    "base": "quiet",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-067",
+    "sentence": "Ming's plan is _____ Tom's plan.",
+    "answers": [
+      "cleverer than",
+      "more clever than"
+    ],
+    "base": "clever",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-068",
+    "sentence": "This is _____ idea in the group.",
+    "answers": [
+      "the cleverest",
+      "the most clever"
+    ],
+    "base": "clever",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-069",
+    "sentence": "This path is _____ the road.",
+    "answers": [
+      "narrower than",
+      "more narrow than"
+    ],
+    "base": "narrow",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-070",
+    "sentence": "This is _____ path in the park.",
+    "answers": [
+      "the narrowest",
+      "the most narrow"
+    ],
+    "base": "narrow",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-071",
+    "sentence": "The second rule is _____ the first rule.",
+    "answers": [
+      "simpler than",
+      "more simple than"
+    ],
+    "base": "simple",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-072",
+    "sentence": "This is _____ way to go home.",
+    "answers": [
+      "the simplest",
+      "the most simple"
+    ],
+    "base": "simple",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adj-073",
+    "sentence": "This new pen is _____ my old pen.",
+    "answers": [
+      "better than"
+    ],
+    "base": "good",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-074",
+    "sentence": "This is _____ pen in the shop.",
+    "answers": [
+      "the best"
+    ],
+    "base": "good",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-075",
+    "sentence": "The new bus route is _____ the old route.",
+    "answers": [
+      "better than"
+    ],
+    "base": "good",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-076",
+    "sentence": "This is _____ way to school.",
+    "answers": [
+      "the best"
+    ],
+    "base": "good",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-077",
+    "sentence": "The rain today is _____ yesterday's rain.",
+    "answers": [
+      "worse than"
+    ],
+    "base": "bad",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-078",
+    "sentence": "This is _____ weather this week.",
+    "answers": [
+      "the worst"
+    ],
+    "base": "bad",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-079",
+    "sentence": "This bus ride is _____ the last one.",
+    "answers": [
+      "worse than"
+    ],
+    "base": "bad",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-080",
+    "sentence": "This is _____ bus ride this week.",
+    "answers": [
+      "the worst"
+    ],
+    "base": "bad",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-081",
+    "sentence": "The shop is _____ the school is from my home.",
+    "answers": [
+      "farther than",
+      "further than"
+    ],
+    "base": "far",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-082",
+    "sentence": "This is _____ bus stop from my home.",
+    "answers": [
+      "the farthest",
+      "the furthest"
+    ],
+    "base": "far",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-083",
+    "sentence": "The park is _____ the school is from my home.",
+    "answers": [
+      "farther than",
+      "further than"
+    ],
+    "base": "far",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-084",
+    "sentence": "This is _____ shop from our school.",
+    "answers": [
+      "the farthest",
+      "the furthest"
+    ],
+    "base": "far",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-085",
+    "sentence": "This bottle holds _____ that bottle.",
+    "answers": [
+      "less water than"
+    ],
+    "base": "little",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-086",
+    "sentence": "This bottle has the _____ water.",
+    "answers": [
+      "least"
+    ],
+    "base": "little",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-087",
+    "sentence": "This bowl has _____ that bowl.",
+    "answers": [
+      "less rice than"
+    ],
+    "base": "little",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-088",
+    "sentence": "This bowl has the _____ rice.",
+    "answers": [
+      "least"
+    ],
+    "base": "little",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-089",
+    "sentence": "This cup holds _____ that cup.",
+    "answers": [
+      "more tea than"
+    ],
+    "base": "much",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-090",
+    "sentence": "This cup has the _____ tea.",
+    "answers": [
+      "most"
+    ],
+    "base": "much",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-091",
+    "sentence": "This plan gives us _____ the old plan.",
+    "answers": [
+      "more time than"
+    ],
+    "base": "much",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-092",
+    "sentence": "This plan gives us the _____ time.",
+    "answers": [
+      "most"
+    ],
+    "base": "much",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-093",
+    "sentence": "This bag has _____ that bag.",
+    "answers": [
+      "more books than"
+    ],
+    "base": "many",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-094",
+    "sentence": "This bag has the _____ books.",
+    "answers": [
+      "most"
+    ],
+    "base": "many",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-095",
+    "sentence": "Room B has _____ Room A.",
+    "answers": [
+      "more chairs than"
+    ],
+    "base": "many",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adj-096",
+    "sentence": "Room B has the _____ chairs.",
+    "answers": [
+      "most"
+    ],
+    "base": "many",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-001",
+    "sentence": "Ming ran _____ Tom in PE.",
+    "answers": [
+      "faster than"
+    ],
+    "base": "fast",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-002",
+    "sentence": "Of the runners, Ming ran _____.",
+    "answers": [
+      "the fastest",
+      "fastest"
+    ],
+    "base": "fast",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-003",
+    "sentence": "I worked _____ my friend today.",
+    "answers": [
+      "harder than"
+    ],
+    "base": "hard",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-004",
+    "sentence": "Of the students, I worked _____.",
+    "answers": [
+      "the hardest",
+      "hardest"
+    ],
+    "base": "hard",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-005",
+    "sentence": "Ming threw the ball _____ Tom.",
+    "answers": [
+      "higher than"
+    ],
+    "base": "high",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-006",
+    "sentence": "Of the players, Ming threw the ball _____.",
+    "answers": [
+      "the highest",
+      "highest"
+    ],
+    "base": "high",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-007",
+    "sentence": "The red bell rang _____ the blue bell.",
+    "answers": [
+      "lower than"
+    ],
+    "base": "low",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-008",
+    "sentence": "Of the bells, the red bell rang _____.",
+    "answers": [
+      "the lowest",
+      "lowest"
+    ],
+    "base": "low",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-009",
+    "sentence": "The bell rang _____ yesterday.",
+    "answers": [
+      "longer than"
+    ],
+    "base": "long",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-010",
+    "sentence": "Of the bells, this one rang _____.",
+    "answers": [
+      "the longest",
+      "longest"
+    ],
+    "base": "long",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-011",
+    "sentence": "Our team packed _____ the other team.",
+    "answers": [
+      "faster than"
+    ],
+    "base": "fast",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-012",
+    "sentence": "Of the teams, our team packed _____.",
+    "answers": [
+      "the fastest",
+      "fastest"
+    ],
+    "base": "fast",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-013",
+    "sentence": "Tom studied _____ before the test.",
+    "answers": [
+      "harder than"
+    ],
+    "base": "hard",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-014",
+    "sentence": "Of the class, Tom studied _____.",
+    "answers": [
+      "the hardest",
+      "hardest"
+    ],
+    "base": "hard",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-015",
+    "sentence": "The ball bounced _____ before.",
+    "answers": [
+      "higher than"
+    ],
+    "base": "high",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-016",
+    "sentence": "Of the balls, the red ball bounced _____.",
+    "answers": [
+      "the highest",
+      "highest"
+    ],
+    "base": "high",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-017",
+    "sentence": "This whistle sounded _____ the bell.",
+    "answers": [
+      "lower than"
+    ],
+    "base": "low",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-018",
+    "sentence": "Of the instruments, this whistle sounded _____.",
+    "answers": [
+      "the lowest",
+      "lowest"
+    ],
+    "base": "low",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-019",
+    "sentence": "The bus waited _____ usual.",
+    "answers": [
+      "longer than"
+    ],
+    "base": "long",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-020",
+    "sentence": "Of the buses, this bus waited _____.",
+    "answers": [
+      "the longest",
+      "longest"
+    ],
+    "base": "long",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-021",
+    "sentence": "Ming stood _____ Tom did to the door.",
+    "answers": [
+      "nearer than"
+    ],
+    "base": "near",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-022",
+    "sentence": "Of the students, Ming stood _____ to the door.",
+    "answers": [
+      "the nearest",
+      "nearest"
+    ],
+    "base": "near",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-023",
+    "sentence": "Bus 2 came _____ Bus 1.",
+    "answers": [
+      "sooner than"
+    ],
+    "base": "soon",
+    "degree": "comparative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-024",
+    "sentence": "Of the buses, Bus 2 came _____.",
+    "answers": [
+      "the soonest",
+      "soonest"
+    ],
+    "base": "soon",
+    "degree": "superlative",
+    "rule": "Regular forms"
+  },
+  {
+    "id": "adv-025",
+    "sentence": "Bus 1 arrived _____ Bus 2.",
+    "answers": [
+      "later than"
+    ],
+    "base": "late",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-026",
+    "sentence": "Of the buses, Bus 1 arrived _____.",
+    "answers": [
+      "the latest",
+      "latest"
+    ],
+    "base": "late",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-027",
+    "sentence": "My group finished _____ your group.",
+    "answers": [
+      "later than"
+    ],
+    "base": "late",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-028",
+    "sentence": "Of the groups, my group finished _____.",
+    "answers": [
+      "the latest",
+      "latest"
+    ],
+    "base": "late",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-029",
+    "sentence": "Tom came home _____ May.",
+    "answers": [
+      "later than"
+    ],
+    "base": "late",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-030",
+    "sentence": "Of my friends, Tom came home _____.",
+    "answers": [
+      "the latest",
+      "latest"
+    ],
+    "base": "late",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-031",
+    "sentence": "The shop opened _____ we thought.",
+    "answers": [
+      "later than"
+    ],
+    "base": "late",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-032",
+    "sentence": "Of the shops, the small shop opened _____.",
+    "answers": [
+      "the latest",
+      "latest"
+    ],
+    "base": "late",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-033",
+    "sentence": "The bell rang _____ usual.",
+    "answers": [
+      "later than"
+    ],
+    "base": "late",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-034",
+    "sentence": "Of the bells, this bell rang _____.",
+    "answers": [
+      "the latest",
+      "latest"
+    ],
+    "base": "late",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-035",
+    "sentence": "I got home _____ my sister.",
+    "answers": [
+      "later than"
+    ],
+    "base": "late",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-036",
+    "sentence": "Of my family, I got home _____.",
+    "answers": [
+      "the latest",
+      "latest"
+    ],
+    "base": "late",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-037",
+    "sentence": "The library opened _____ yesterday.",
+    "answers": [
+      "earlier than"
+    ],
+    "base": "early",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-038",
+    "sentence": "Of the days, the library opened _____ on Monday.",
+    "answers": [
+      "the earliest",
+      "earliest"
+    ],
+    "base": "early",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-039",
+    "sentence": "The bus left _____ usual.",
+    "answers": [
+      "earlier than"
+    ],
+    "base": "early",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-040",
+    "sentence": "Of the buses, Bus 1 left _____.",
+    "answers": [
+      "the earliest",
+      "earliest"
+    ],
+    "base": "early",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-041",
+    "sentence": "Ming came to school _____ Tom.",
+    "answers": [
+      "earlier than"
+    ],
+    "base": "early",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-042",
+    "sentence": "Of the students, Ming came _____.",
+    "answers": [
+      "the earliest",
+      "earliest"
+    ],
+    "base": "early",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-043",
+    "sentence": "Our class started _____ the other class.",
+    "answers": [
+      "earlier than"
+    ],
+    "base": "early",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-044",
+    "sentence": "Of the classes, our class started _____.",
+    "answers": [
+      "the earliest",
+      "earliest"
+    ],
+    "base": "early",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-045",
+    "sentence": "The shop opened _____ the bank.",
+    "answers": [
+      "earlier than"
+    ],
+    "base": "early",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-046",
+    "sentence": "Of the shops, this one opened _____.",
+    "answers": [
+      "the earliest",
+      "earliest"
+    ],
+    "base": "early",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-047",
+    "sentence": "In summer, the sun came up _____ in winter.",
+    "answers": [
+      "earlier than"
+    ],
+    "base": "early",
+    "degree": "comparative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-048",
+    "sentence": "Of the days, the sun came up _____.",
+    "answers": [
+      "the earliest",
+      "earliest"
+    ],
+    "base": "early",
+    "degree": "superlative",
+    "rule": "Spelling changes"
+  },
+  {
+    "id": "adv-049",
+    "sentence": "Ming wrote _____ Tom.",
+    "answers": [
+      "more carefully than"
+    ],
+    "base": "carefully",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-050",
+    "sentence": "Of the students, Ming wrote _____.",
+    "answers": [
+      "the most carefully",
+      "most carefully"
+    ],
+    "base": "carefully",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-051",
+    "sentence": "The class walked _____ before.",
+    "answers": [
+      "more quietly than"
+    ],
+    "base": "quietly",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-052",
+    "sentence": "Of the groups, this group walked _____.",
+    "answers": [
+      "the most quietly",
+      "most quietly"
+    ],
+    "base": "quietly",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-053",
+    "sentence": "The teacher spoke _____ before.",
+    "answers": [
+      "more clearly than"
+    ],
+    "base": "clearly",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-054",
+    "sentence": "Of the teachers, this teacher spoke _____.",
+    "answers": [
+      "the most clearly",
+      "most clearly"
+    ],
+    "base": "clearly",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-055",
+    "sentence": "Jia found the new bus stop _____ the old one.",
+    "answers": [
+      "more easily than"
+    ],
+    "base": "easily",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-056",
+    "sentence": "Of the bus stops, this one was found _____.",
+    "answers": [
+      "the most easily",
+      "most easily"
+    ],
+    "base": "easily",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-057",
+    "sentence": "My team finished _____ the other team.",
+    "answers": [
+      "more quickly than"
+    ],
+    "base": "quickly",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-058",
+    "sentence": "Of the teams, my team finished _____.",
+    "answers": [
+      "the most quickly",
+      "most quickly"
+    ],
+    "base": "quickly",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-059",
+    "sentence": "The bus moved _____ before.",
+    "answers": [
+      "more slowly than"
+    ],
+    "base": "slowly",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-060",
+    "sentence": "Of the buses, this bus moved _____.",
+    "answers": [
+      "the most slowly",
+      "most slowly"
+    ],
+    "base": "slowly",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-061",
+    "sentence": "Tom smiled _____ before the game.",
+    "answers": [
+      "more happily than"
+    ],
+    "base": "happily",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-062",
+    "sentence": "Of the students, Tom smiled _____.",
+    "answers": [
+      "the most happily",
+      "most happily"
+    ],
+    "base": "happily",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-063",
+    "sentence": "This month, the school bus came _____ last month.",
+    "answers": [
+      "more regularly than"
+    ],
+    "base": "regularly",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-064",
+    "sentence": "Of the buses, this bus came _____.",
+    "answers": [
+      "the most regularly",
+      "most regularly"
+    ],
+    "base": "regularly",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-065",
+    "sentence": "Ming listened _____ before.",
+    "answers": [
+      "more seriously than"
+    ],
+    "base": "seriously",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-066",
+    "sentence": "Of the students, Ming listened _____.",
+    "answers": [
+      "the most seriously",
+      "most seriously"
+    ],
+    "base": "seriously",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-067",
+    "sentence": "Our team finished the game _____ last time.",
+    "answers": [
+      "more successfully than"
+    ],
+    "base": "successfully",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-068",
+    "sentence": "Of the teams, our team finished the game _____.",
+    "answers": [
+      "the most successfully",
+      "most successfully"
+    ],
+    "base": "successfully",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-069",
+    "sentence": "The boy spoke _____ before.",
+    "answers": [
+      "more loudly than"
+    ],
+    "base": "loudly",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-070",
+    "sentence": "Of the children, this boy spoke _____.",
+    "answers": [
+      "the most loudly",
+      "most loudly"
+    ],
+    "base": "loudly",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-071",
+    "sentence": "The new clock showed the time _____ the old clock.",
+    "answers": [
+      "more correctly than"
+    ],
+    "base": "correctly",
+    "degree": "comparative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-072",
+    "sentence": "Of the clocks, this clock showed the time _____.",
+    "answers": [
+      "the most correctly",
+      "most correctly"
+    ],
+    "base": "correctly",
+    "degree": "superlative",
+    "rule": "Longer forms"
+  },
+  {
+    "id": "adv-073",
+    "sentence": "The blue team explained its plan _____ the red team.",
+    "answers": [
+      "better than"
+    ],
+    "base": "well",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-074",
+    "sentence": "Of the teams, the blue team explained its plan _____.",
+    "answers": [
+      "the best",
+      "best"
+    ],
+    "base": "well",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-075",
+    "sentence": "Jia answered the question _____ before.",
+    "answers": [
+      "better than"
+    ],
+    "base": "well",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-076",
+    "sentence": "Of the students, Jia answered the question _____.",
+    "answers": [
+      "the best",
+      "best"
+    ],
+    "base": "well",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-077",
+    "sentence": "Jia sang into the new microphone _____ before.",
+    "answers": [
+      "better than"
+    ],
+    "base": "well",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-078",
+    "sentence": "Of the singers, Jia sang into the microphone _____.",
+    "answers": [
+      "the best",
+      "best"
+    ],
+    "base": "well",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-079",
+    "sentence": "Tom explained the game _____ May.",
+    "answers": [
+      "better than"
+    ],
+    "base": "well",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-080",
+    "sentence": "Of the students, Tom explained the game _____.",
+    "answers": [
+      "the best",
+      "best"
+    ],
+    "base": "well",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-081",
+    "sentence": "The rain damaged the paper sign _____ it damaged the plastic sign.",
+    "answers": [
+      "worse than",
+      "more badly than"
+    ],
+    "base": "badly",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-082",
+    "sentence": "Of the signs, the paper one was damaged _____.",
+    "answers": [
+      "the worst",
+      "worst",
+      "the most badly",
+      "most badly"
+    ],
+    "base": "badly",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-083",
+    "sentence": "Water marked the blue card _____ it marked the red card.",
+    "answers": [
+      "worse than",
+      "more badly than"
+    ],
+    "base": "badly",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-084",
+    "sentence": "Of the cards, the blue card was marked _____.",
+    "answers": [
+      "the worst",
+      "worst",
+      "the most badly",
+      "most badly"
+    ],
+    "base": "badly",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-085",
+    "sentence": "The spill damaged the old poster _____ it damaged the new poster.",
+    "answers": [
+      "worse than",
+      "more badly than"
+    ],
+    "base": "badly",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-086",
+    "sentence": "Of the posters, the old one was damaged _____.",
+    "answers": [
+      "the worst",
+      "worst",
+      "the most badly",
+      "most badly"
+    ],
+    "base": "badly",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-087",
+    "sentence": "A leaking bottle damaged the paper label _____ it damaged the plastic label.",
+    "answers": [
+      "worse than",
+      "more badly than"
+    ],
+    "base": "badly",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-088",
+    "sentence": "Of the labels, the paper one was damaged _____.",
+    "answers": [
+      "the worst",
+      "worst",
+      "the most badly",
+      "most badly"
+    ],
+    "base": "badly",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-089",
+    "sentence": "The red ball rolled _____ the blue ball.",
+    "answers": [
+      "farther than",
+      "further than"
+    ],
+    "base": "far",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-090",
+    "sentence": "Of the balls, the red ball rolled _____.",
+    "answers": [
+      "the farthest",
+      "farthest",
+      "the furthest",
+      "furthest"
+    ],
+    "base": "far",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-091",
+    "sentence": "The green marble rolled _____ the red marble.",
+    "answers": [
+      "farther than",
+      "further than"
+    ],
+    "base": "far",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-092",
+    "sentence": "Of the marbles, the green marble rolled _____.",
+    "answers": [
+      "the farthest",
+      "farthest",
+      "the furthest",
+      "furthest"
+    ],
+    "base": "far",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-093",
+    "sentence": "Jia's beanbag travelled _____ Kai's beanbag.",
+    "answers": [
+      "farther than",
+      "further than"
+    ],
+    "base": "far",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-094",
+    "sentence": "Of the beanbags, Jia's travelled _____.",
+    "answers": [
+      "the farthest",
+      "farthest",
+      "the furthest",
+      "furthest"
+    ],
+    "base": "far",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-095",
+    "sentence": "The blue counter moved _____ the yellow counter.",
+    "answers": [
+      "farther than",
+      "further than"
+    ],
+    "base": "far",
+    "degree": "comparative",
+    "rule": "Irregular forms"
+  },
+  {
+    "id": "adv-096",
+    "sentence": "Of the counters, the blue counter moved _____.",
+    "answers": [
+      "the farthest",
+      "farthest",
+      "the furthest",
+      "furthest"
+    ],
+    "base": "far",
+    "degree": "superlative",
+    "rule": "Irregular forms"
+  }
+]

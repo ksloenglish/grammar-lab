@@ -1,0 +1,162 @@
+[
+  {
+    "id": "adj-010",
+    "sentence": "Monday was the _____ day last week.",
+    "reason": "Use a completed-week reference."
+  },
+  {
+    "id": "adj-012",
+    "sentence": "This is the _____ photo in our family album.",
+    "reason": "Give the photo a clear comparison set."
+  },
+  {
+    "id": "adj-021",
+    "sentence": "Walking across at the zebra crossing is _____ crossing elsewhere on this road.",
+    "reason": "Compare crossing choices rather than a crossing with a road."
+  },
+  {
+    "id": "adj-035",
+    "sentence": "The bus is _____ my car.",
+    "reason": "Compare two similarly described objects."
+  },
+  {
+    "id": "adj-037",
+    "sentence": "Tom was _____ his brother before the game.",
+    "reason": "Clarify the happiness comparison."
+  },
+  {
+    "id": "adj-041",
+    "sentence": "Ming was _____ Tom when they carried the glass cups.",
+    "reason": "Clarify both boys' careful behaviour."
+  },
+  {
+    "id": "adj-042",
+    "sentence": "Of the students carrying glasses of water, Ming is the _____.",
+    "reason": "Distinguish drinking glasses from spectacles."
+  },
+  {
+    "id": "adj-050",
+    "sentence": "This is the _____ idea for our school.",
+    "reason": "Make the school reference clear."
+  },
+  {
+    "id": "adj-077",
+    "sentence": "The weather today is _____ yesterday’s.",
+    "reason": "Compare weather, not worse rain."
+  },
+  {
+    "id": "adj-078",
+    "sentence": "This is _____ weather we have had this week.",
+    "reason": "Clarify weather in the current week."
+  },
+  {
+    "id": "adj-080",
+    "sentence": "This has been _____ bus ride this week.",
+    "reason": "Use a completed-experience reference."
+  },
+  {
+    "id": "adj-081",
+    "sentence": "The shop is _____ the school from my home.",
+    "reason": "Clarify the shared distance reference."
+  },
+  {
+    "id": "adj-083",
+    "sentence": "From our home, the park is _____ the school.",
+    "reason": "State the common distance reference first."
+  },
+  {
+    "id": "adj-088",
+    "sentence": "Of the four bowls, this one has the _____ rice.",
+    "reason": "Make the bowl comparison set explicit."
+  },
+  {
+    "id": "adv-005",
+    "sentence": "Ming threw the ball _____ Tom did.",
+    "reason": "Make the compared action explicit."
+  },
+  {
+    "id": "adv-009",
+    "sentence": "The bell rang _____ it did yesterday.",
+    "reason": "Make the duration comparison explicit."
+  },
+  {
+    "id": "adv-012",
+    "sentence": "Of the teams, ours ran _____.",
+    "reason": "Use a familiar clear action."
+  },
+  {
+    "id": "adv-013",
+    "sentence": "Tom studied _____ his brother did for the test.",
+    "reason": "Clarify the effort comparison."
+  },
+  {
+    "id": "adv-014",
+    "sentence": "Tom studied _____ in his class.",
+    "reason": "Use a natural comparison-group phrase."
+  },
+  {
+    "id": "adv-037",
+    "sentence": "The library opened _____ it did yesterday.",
+    "reason": "Make the earlier-opening reference explicit."
+  },
+  {
+    "id": "adv-038",
+    "sentence": "The library opened _____ on Monday.",
+    "reason": "Remove the awkward Of the days phrase."
+  },
+  {
+    "id": "adv-043",
+    "sentence": "Our lesson started _____ the lesson for the other class.",
+    "reason": "Clarify that a lesson began, rather than a group."
+  },
+  {
+    "id": "adv-047",
+    "sentence": "In summer, the sun comes up _____ in winter.",
+    "reason": "Use present tense for a general seasonal comparison."
+  },
+  {
+    "id": "adv-048",
+    "sentence": "Of my family, Dad gets up _____.",
+    "reason": "Use a clearer familiar family routine."
+  },
+  {
+    "id": "adv-054",
+    "sentence": "Of all the teachers, Mr Lee spoke _____.",
+    "reason": "Use a named speaker within a clear group."
+  },
+  {
+    "id": "adv-064",
+    "sentence": "Of the bus services, this one runs _____.",
+    "reason": "Compare service frequency rather than single bus arrivals."
+  },
+  {
+    "id": "adv-066",
+    "sentence": "Of the students, Ming took the competition _____.",
+    "reason": "Use the natural take seriously collocation."
+  },
+  {
+    "id": "adv-067",
+    "sentence": "Our team played _____ it did last time.",
+    "reason": "Make the earlier action explicit."
+  },
+  {
+    "id": "adv-068",
+    "sentence": "Of all the teams, our team completed the challenge _____.",
+    "reason": "Use a clearer action for successfully."
+  },
+  {
+    "id": "adv-072",
+    "sentence": "Of these clocks, this one is set _____.",
+    "reason": "Use set correctly instead of show time correctly."
+  },
+  {
+    "id": "adv-084",
+    "sentence": "Of the cards, the blue one was _____ damaged by the rain.",
+    "reason": "Use physical damage rather than marked badly."
+  },
+  {
+    "id": "adv-004",
+    "sentence": "Of all the students in my class, I worked _____.",
+    "reason": "The retry found Among students too vague; use a clear class comparison set."
+  }
+]

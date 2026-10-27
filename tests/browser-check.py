@@ -139,7 +139,10 @@ with sync_playwright() as p:
         # Desktop drag/drop and reordering.
         state = saved(page)
         blocks = state['questions'][0]['correctSequences'][0]
-        page.locator(f'[data-action="add-block"][data-block="{blocks[0]}"]').drag_to(page.locator('#assembly-zone'))
+        source = page.locator(f'[data-action="add-block"][data-block="{blocks[0]}"]')
+        source.scroll_into_view_if_needed()
+        page.wait_for_timeout(700)  # Let smooth scrolling settle before native pointer coordinates are captured.
+        source.drag_to(page.locator('#assembly-zone'), target_position={'x': 25, 'y': 25})
         expect(page.locator(f'[data-action="return-block"][data-block="{blocks[0]}"]')).to_be_visible()
         if len(blocks) > 1:
             page.wait_for_timeout(200)

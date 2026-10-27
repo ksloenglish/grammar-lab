@@ -1,0 +1,226 @@
+[
+  {
+    "id": "adj-010",
+    "old_current_stem": "This is _____ day of our week.",
+    "new_stem": "Monday was _____ day last week.",
+    "decision": "applied",
+    "reason": "A completed last-week reference makes the comparison period explicit while leaving the article for the learner."
+  },
+  {
+    "id": "adj-012",
+    "old_current_stem": "At my home, this is _____ photo.",
+    "new_stem": "This is _____ photo in our family album.",
+    "decision": "applied",
+    "reason": "The family album gives the photo a clear, familiar comparison set without pre-supplying the article."
+  },
+  {
+    "id": "adj-021",
+    "old_current_stem": "The zebra crossing is _____ the small road.",
+    "new_stem": "Walking across at traffic lights is _____ walking across elsewhere on this road.",
+    "decision": "applied",
+    "reason": "This compares two crossing choices, and uses simpler traffic-lights wording instead of the less accessible zebra-crossing term."
+  },
+  {
+    "id": "adj-035",
+    "old_current_stem": "The bus is _____ the library.",
+    "new_stem": "Our school bus is _____ our car.",
+    "decision": "applied",
+    "reason": "The revised B1 context compares two clearly described vehicles and uses natural possessives."
+  },
+  {
+    "id": "adj-037",
+    "old_current_stem": "Tom was _____ before the game.",
+    "new_stem": "Before the game, Tom was _____ his brother.",
+    "decision": "applied",
+    "reason": "Naming Tom's brother makes the happiness comparison explicit."
+  },
+  {
+    "id": "adj-041",
+    "old_current_stem": "Ming was _____ Tom with the glass cups.",
+    "new_stem": "Ming was _____ Tom when they carried glass cups.",
+    "decision": "applied",
+    "reason": "The parallel action makes clear that both boys were carrying the cups."
+  },
+  {
+    "id": "adj-042",
+    "old_current_stem": "Among students holding glasses, Ming is _____.",
+    "new_stem": "Among students carrying glasses of water, Ming is _____.",
+    "decision": "applied",
+    "reason": "Glasses of water removes the possible spectacles meaning while keeping the superlative stem article-free."
+  },
+  {
+    "id": "adj-050",
+    "old_current_stem": "For our school, this is _____ idea.",
+    "new_stem": "This is _____ idea for our school.",
+    "decision": "applied",
+    "reason": "The school reference now directly modifies idea, and the learner still supplies the article."
+  },
+  {
+    "id": "adj-077",
+    "old_current_stem": "The rain today is _____ yesterday's rain.",
+    "new_stem": "Today's weather is _____ yesterday's weather.",
+    "decision": "applied",
+    "reason": "The context now compares weather rather than treating rain itself as worse."
+  },
+  {
+    "id": "adj-078",
+    "old_current_stem": "This is _____ weather this week.",
+    "new_stem": "This is _____ weather we have had this week.",
+    "decision": "applied",
+    "reason": "The completed experiences within the current week make the comparison set clear."
+  },
+  {
+    "id": "adj-080",
+    "old_current_stem": "This is _____ bus ride this week.",
+    "new_stem": "This was _____ bus ride I took this week.",
+    "decision": "applied",
+    "reason": "The past experience gives the bus-ride superlative a complete, natural reference."
+  },
+  {
+    "id": "adj-081",
+    "old_current_stem": "The shop is _____ the school is from my home.",
+    "new_stem": "From my home, the shop is _____ the school.",
+    "decision": "applied",
+    "reason": "The shared distance reference is stated first."
+  },
+  {
+    "id": "adj-083",
+    "old_current_stem": "The park is _____ the school is from my home.",
+    "new_stem": "From our home, the park is _____ the school.",
+    "decision": "applied",
+    "reason": "The common starting point is now explicit and uses a natural possessive."
+  },
+  {
+    "id": "adj-088",
+    "old_current_stem": "This bowl has _____ rice.",
+    "new_stem": "Of four bowls, this one has _____ rice.",
+    "decision": "applied",
+    "reason": "The four-bowl set makes the quantity superlative unambiguous without pre-filling the article."
+  },
+  {
+    "id": "adv-005",
+    "old_current_stem": "Ming threw the ball _____ Tom.",
+    "new_stem": "Ming threw the ball _____ Tom did.",
+    "decision": "applied",
+    "reason": "Did explicitly compares the two throwing actions."
+  },
+  {
+    "id": "adv-009",
+    "old_current_stem": "The bell rang _____ yesterday.",
+    "new_stem": "The bell rang _____ it did yesterday.",
+    "decision": "applied",
+    "reason": "The repeated action makes the duration comparison explicit."
+  },
+  {
+    "id": "adv-012",
+    "old_current_stem": "Among teams, our team packed _____.",
+    "new_stem": "Among teams, our team ran _____.",
+    "decision": "applied",
+    "reason": "Running is a more familiar and direct B1 action for this comparison."
+  },
+  {
+    "id": "adv-013",
+    "old_current_stem": "Tom studied _____ before the test.",
+    "new_stem": "Tom studied _____ his brother did for the test.",
+    "decision": "applied",
+    "reason": "The sentence now explicitly compares the two boys' effort."
+  },
+  {
+    "id": "adv-014",
+    "old_current_stem": "In our class, Tom studied _____.",
+    "new_stem": "Tom studied _____ in his class.",
+    "decision": "applied",
+    "reason": "The group phrase now sits naturally with the action while preserving both accepted adverb forms."
+  },
+  {
+    "id": "adv-037",
+    "old_current_stem": "The library opened _____ yesterday.",
+    "new_stem": "The library opened _____ it did yesterday.",
+    "decision": "applied",
+    "reason": "Did makes the earlier-opening comparison explicit."
+  },
+  {
+    "id": "adv-038",
+    "old_current_stem": "Across school days, our library opened _____ on Monday.",
+    "new_stem": "During our school week, our library opened _____ on Monday.",
+    "decision": "applied",
+    "reason": "School week provides a natural comparison period and avoids the awkward days phrasing."
+  },
+  {
+    "id": "adv-043",
+    "old_current_stem": "Our class started _____ the other class.",
+    "new_stem": "Our lesson started _____ the other class's lesson.",
+    "decision": "applied",
+    "reason": "The revised parallel nouns make clear that lessons, not classes, began."
+  },
+  {
+    "id": "adv-047",
+    "old_current_stem": "In summer, the sun came up _____ in winter.",
+    "new_stem": "In summer, the sun comes up _____ in winter.",
+    "decision": "applied",
+    "reason": "Present tense correctly presents the seasonal comparison as a general fact."
+  },
+  {
+    "id": "adv-048",
+    "old_current_stem": "Across all days, sunrise came _____.",
+    "new_stem": "In my family, Dad gets up _____.",
+    "decision": "applied",
+    "reason": "A familiar family routine is clearer at B1 and has an explicit comparison group."
+  },
+  {
+    "id": "adv-054",
+    "old_current_stem": "Among teachers, our teacher spoke _____.",
+    "new_stem": "Among our teachers, Mr Lee spoke _____.",
+    "decision": "applied",
+    "reason": "The named speaker and possessive group make the comparison specific and natural."
+  },
+  {
+    "id": "adv-064",
+    "old_current_stem": "Among buses, this bus came _____.",
+    "new_stem": "Of these bus services, this one runs _____.",
+    "decision": "applied",
+    "reason": "Bus services and runs compare regularity rather than one arrival."
+  },
+  {
+    "id": "adv-066",
+    "old_current_stem": "Among students, Ming listened _____.",
+    "new_stem": "Among students, Ming took our competition _____.",
+    "decision": "applied",
+    "reason": "This uses the natural take seriously collocation; our competition keeps the required superlative stem free of a literal article."
+  },
+  {
+    "id": "adv-067",
+    "old_current_stem": "Our team finished the game _____ last time.",
+    "new_stem": "Our team played _____ it did last time.",
+    "decision": "applied",
+    "reason": "The pronoun did makes the earlier team performance explicit."
+  },
+  {
+    "id": "adv-068",
+    "old_current_stem": "Among teams, our team finished a game _____.",
+    "new_stem": "Among all teams, our team completed this challenge _____.",
+    "decision": "applied",
+    "reason": "This names a shared task and gives successfully a clearer action without pre-filling the article."
+  },
+  {
+    "id": "adv-072",
+    "old_current_stem": "Among clocks, this clock showed time _____.",
+    "new_stem": "Of these clocks, this one is set _____.",
+    "decision": "applied",
+    "reason": "Set correctly is the natural way to describe a clock's time setting."
+  },
+  {
+    "id": "adv-084",
+    "old_current_stem": "Our blue card was marked _____ of all.",
+    "new_stem": "Of our cards, rain damaged this blue card _____.",
+    "decision": "applied",
+    "reason": "The new physical-damage context lets every existing badly superlative form fit naturally."
+  },
+  {
+    "id": "adv-004",
+    "old_current_stem": "Among students, I worked _____.",
+    "new_stem": "Of everyone in my class, I worked _____.",
+    "decision": "applied",
+    "reason": "The retry now has a complete, article-free class comparison set while retaining the existing accepted forms."
+  }
+]

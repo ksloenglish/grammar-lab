@@ -1,0 +1,8 @@
+{
+  "reviewed": 192,
+  "passed_without_context_changes": 160,
+  "flagged_contexts": 32,
+  "original_workflow": "cbd2c3161fd3",
+  "retry_id": "adv-004",
+  "initial_cancelled_attempt_resolved": true
+}

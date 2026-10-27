@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { assemble, isCorrect } from '../site/js/core.js';
+import { questionContextIssues } from '../site/js/question-context.js';
 const read = path => JSON.parse(readFileSync(new URL(`../site/data/${path}`, import.meta.url), 'utf8'));
 const manifest = read('modules.json');
 assert.equal(new Set(manifest.modules.map(item => item.id)).size, manifest.modules.length, 'Unique module IDs');
@@ -15,9 +16,11 @@ for (const module of manifest.modules.filter(item => item.available)) {
   const rules = {};
   for (const question of bank.questions) {
     const label = `${module.id}/${question.id}`;
+    assert.deepEqual(questionContextIssues(question), [], `${label}: gap, connector, suffix and feedback context`);
     assert.equal(question.sentence.split('_____').length, 2, `${label}: one gap`);
     assert.ok(question.base && question.explanation && question.rule);
     assert.ok(question.degree in counts, `${label}: degree`);
+    assert.equal(question.requiresArticle, module.id === 'adjectives' && question.degree === 'superlative', `${label}: explicit article policy`);
     counts[question.degree]++;
     rules[question.rule] = (rules[question.rule] ?? 0) + 1;
     assert.equal(new Set(question.blocks.map(block => block.id)).size, question.blocks.length);
@@ -31,7 +34,8 @@ for (const module of manifest.modules.filter(item => item.available)) {
     for (const answer of question.answers) assert.ok(question.correctSequences.some(sequence => assemble(question, sequence).text.toLowerCase() === answer.toLowerCase()), `${label}: unreachable ${answer}`);
     const used = new Set(question.correctSequences.flat());
     const distractors = question.blocks.filter(block => !used.has(block.id));
-    assert.ok(distractors.length >= 2 && distractors.length <= 3, `${label}: ${distractors.length} distractors (expected 2–3)`);
+    assert.equal(question.ingredientMode, 'complete', `${label}: complete ingredient tray`);
+    assert.ok(distractors.length >= 2, `${label}: choices must include unused alternatives`);
     assert.ok(question.feedback.length >= 3, `${label}: targeted feedback`);
     for (const feedback of question.feedback) if (feedback.pattern) new RegExp(feedback.pattern);
   }
@@ -41,9 +45,11 @@ for (const module of manifest.modules.filter(item => item.available)) {
   assert.equal(learn.miniCheck.length, 3);
   for (const check of learn.miniCheck) {
     assert.ok(check.options.includes(check.answer));
+    assert.ok(!/\bthan\b/i.test(check.sentence), 'Mini-check stem must not supply than');
+    if (!/\bthan\b/i.test(check.answer)) assert.ok(!/\bthe\b/i.test(check.sentence), 'Superlative mini-check must not supply the');
     assert.equal(new Set(check.options).size, check.options.length);
     assert.ok(check.explanation);
   }
   console.log(`${module.id}: ${bank.questions.length} questions; degrees ${JSON.stringify(counts)}; rules ${JSON.stringify(rules)}; 3 mini-checks. PASS`);
 }
-console.log('All content and reachable answer checks passed.');
+console.log('All question stems, complete answers, required -er options, suffixes and reachable answer checks passed.');

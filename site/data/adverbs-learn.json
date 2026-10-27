@@ -4,7 +4,7 @@
   "sections": [
     {
       "title": "Short adverbs: -er and -est",
-      "text": "Fast, hard, high, low and long take -er and -est: faster/fastest and harder/hardest. For late, add -r and -st: later/latest. For early, change y to i: earlier/earliest.",
+      "text": "Fast, hard, high, low and long take -er and -est: faster/fastest and harder/hardest. For late, add -r and -st: later/latest. For early, change y to i: earlier/earliest. In Grammar Lab, use Remove y only for a final y: early + Remove y + -ier → earlier.",
       "examples": [
         "Ming ran faster than Tom.",
         "The library opened earliest on Monday."
@@ -47,34 +47,34 @@
   ],
   "miniCheck": [
     {
-      "sentence": "The teacher spoke _____ than before.",
+      "sentence": "Our teacher spoke _____ before.",
       "options": [
-        "more clearly",
-        "clearer",
-        "clearliest"
+        "more clearly than",
+        "clearer than",
+        "more clearly"
       ],
-      "answer": "more clearly",
-      "explanation": "Clearly ends in -ly, so use more clearly."
+      "answer": "more clearly than",
+      "explanation": "Clearly ends in -ly, so use more clearly than."
     },
     {
-      "sentence": "Of the three teams, the blue team played _____.",
+      "sentence": "Of three teams, our blue team played _____.",
       "options": [
-        "best",
+        "the best",
         "goodest",
         "more well"
       ],
-      "answer": "best",
-      "explanation": "Well is irregular: well → better → best. The best is also correct here."
+      "answer": "the best",
+      "explanation": "Well is irregular: well → better → best. Best is also natural here; it is not offered as a wrong option."
     },
     {
-      "sentence": "Of the three buses, Bus 2 arrived _____.",
+      "sentence": "Among three buses, Bus 2 arrived _____.",
       "options": [
-        "earliest",
-        "earlier",
+        "the earliest",
+        "the earlier",
         "earlyest"
       ],
-      "answer": "earliest",
-      "explanation": "Early changes y to i: early → earlier → earliest. The earliest is also correct here."
+      "answer": "the earliest",
+      "explanation": "Early changes y to i: early → earlier → earliest. Earliest is also natural here; it is not offered as a wrong option."
     }
   ],
   "sources": [

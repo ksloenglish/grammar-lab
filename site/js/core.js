@@ -1,3 +1,5 @@
+import { QUESTION_SCHEMA } from './question-context.js';
+
 export function normalise(value) {
   return String(value ?? '').trim().replace(/\s+/g, ' ').toLowerCase();
 }
@@ -23,10 +25,24 @@ export function assemble(question, ids) {
   for (const id of ids) {
     const block = question.blocks.find(item => item.id === id);
     if (!block) throw new Error('An answer block is missing.');
-    if (block.kind === 'suffix' && parts.length && !parts.at(-1).orphan) {
+    if (block.kind === 'operation') {
       const previous = parts.at(-1);
+      if (block.operation === 'remove-final-y' && previous && !previous.orphan && /y$/i.test(previous.text)) {
+        const before = previous.text;
+        previous.text = before.slice(0, -1);
+        previous.ids.push(id);
+        previous.spellingChanges = [...(previous.spellingChanges ?? []), { before, after: previous.text }];
+      } else {
+        parts.push({ text: `[${block.label}]`, ids: [id], orphan: true });
+      }
+    } else if (block.kind === 'suffix' && parts.length && !parts.at(-1).orphan) {
+      const previous = parts.at(-1);
+      const before = previous.text;
       previous.text = block.transforms?.[previous.text] ?? (previous.text + block.label.replace(/^-/, ''));
       previous.ids.push(id);
+      if (['-ier', '-iest'].includes(block.label) && /y$/i.test(before) && previous.text.startsWith(before.slice(0, -1)) && !previous.text.startsWith(before)) {
+        previous.spellingChanges = [...(previous.spellingChanges ?? []), { before, after: before.slice(0, -1) }];
+      }
     } else {
       parts.push({ text: block.label, ids: [id], orphan: block.kind === 'suffix' });
     }
@@ -39,6 +55,7 @@ export function isCorrect(question, answer) {
 }
 
 export function explain(question, answer) {
+  if (/\[Remove y\]/i.test(answer)) return 'Put Remove y straight after a word ending in y. You do not need it for other words.';
   for (const feedback of question.feedback ?? []) {
     if (feedback.answers?.some(item => normalise(item) === normalise(answer))) return feedback.message;
     if (feedback.pattern) {
@@ -52,7 +69,7 @@ export function explain(question, answer) {
 
 export function createExperiment(moduleId, questions, practice = false, originalReport = null) {
   return {
-    schema: 1, moduleId, questions, count: questions.length, index: 0, score: 0,
+    schema: QUESTION_SCHEMA, moduleId, questions, count: questions.length, index: 0, score: 0,
     results: [], assembly: [], trayOrder: shuffle(questions[0].blocks.map(block => block.id)),
     attempts: 0, firstAnswer: null, status: 'building', feedback: '',
     practice, originalReport, startedAt: new Date().toISOString()
@@ -111,7 +128,7 @@ export function advanceTrial(session) {
 
 export function makeReport(session) {
   return {
-    schema: 1, moduleId: session.moduleId, questions: session.questions,
+    schema: QUESTION_SCHEMA, moduleId: session.moduleId, questions: session.questions,
     results: session.results, count: session.count, score: session.score,
     percentage: Math.round(session.score / session.count * 100),
     practice: session.practice, originalReport: session.originalReport,

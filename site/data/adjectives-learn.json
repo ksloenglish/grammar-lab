@@ -13,7 +13,7 @@
     },
     {
       "title": "Adjectives ending in -y",
-      "text": "For easy, busy, noisy, happy and heavy, change y to i: easy → easier → easiest. But shy keeps y: shy → shyer → shyest.",
+      "text": "For easy, busy, noisy, happy and heavy, change y to i: easy → easier → easiest. In Grammar Lab, use Remove y only for a final y: happy + Remove y + -ier → happier. But shy keeps y: shy → shyer → shyest.",
       "examples": [
         "This question is easier than the last one.",
         "The canteen is the noisiest place at school."
@@ -56,34 +56,34 @@
   ],
   "miniCheck": [
     {
-      "sentence": "The school hall is _____ than our classroom.",
+      "sentence": "Our school hall is _____ our classroom.",
       "options": [
-        "larger",
-        "largeer",
-        "more large"
+        "larger than",
+        "largeer than",
+        "larger"
       ],
-      "answer": "larger",
-      "explanation": "Large ends in -e, so add -r: larger."
+      "answer": "larger than",
+      "explanation": "Large ends in -e, so add -r and then than: larger than."
     },
     {
-      "sentence": "Of the three bags, the red bag is the _____.",
+      "sentence": "Of three bags, our red bag is _____.",
       "options": [
-        "best",
-        "goodest",
-        "most good"
+        "the best",
+        "the goodest",
+        "the better"
       ],
-      "answer": "best",
-      "explanation": "Good is irregular: good → better → best."
+      "answer": "the best",
+      "explanation": "Good is irregular: good → better → best. A superlative adjective before a noun phrase needs the: the best."
     },
     {
-      "sentence": "This is the _____ place in the library.",
+      "sentence": "This is _____ place in our library.",
       "options": [
-        "quietest",
-        "quieter",
-        "quietiest"
+        "the quietest",
+        "the quieter",
+        "the quietiest"
       ],
-      "answer": "quietest",
-      "explanation": "Use quietest. The most quiet is also correct, but it is not an option here."
+      "answer": "the quietest",
+      "explanation": "Use the quietest. The most quiet is also correct, but it is not an option here."
     }
   ],
   "sources": [

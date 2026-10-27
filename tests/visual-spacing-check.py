@@ -79,7 +79,7 @@ def seed_report(page) -> None:
           const bank = await (await fetch('./data/adjectives-questions.json')).json();
           const questions = bank.questions.slice(0, 2);
           return {
-            schema: 1,
+            schema: 2,
             moduleId: 'adjectives',
             questions,
             results: [
