@@ -124,6 +124,10 @@ def exercise(page, tag: str, mobile: bool) -> None:
     reset_home(page)
     shot(page, f"{tag}-home-clean.png")
     check(gap_below(page, ".demo-result", ".demo-caption") >= 16, f"{tag}: demo result has at least 16px before explanation")
+    result_box = box(page, ".demo-result")
+    demo_card = box(page, ".hero-demo")
+    check(result_box["width"] < demo_card["width"] * 0.75, f"{tag}: demo result fits its text instead of stretching across the card")
+    check(abs(result_box["x"] + result_box["width"] / 2 - demo_card["x"] - demo_card["width"] / 2) < 2, f"{tag}: compact demo result is centred")
     check(box(page, ".module-card")["x"] - box(page, ".module-card h3")["x"] <= -20, f"{tag}: module card content has at least 20px left padding")
 
     # Home with resume actions.
