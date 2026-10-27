@@ -31,10 +31,7 @@
         {
           "id": "b4",
           "label": "-est",
-          "kind": "suffix",
-          "transforms": {
-            "fast": "fastest"
-          }
+          "kind": "suffix"
         },
         {
           "id": "b5",
@@ -55,9 +52,9 @@
       "feedback": [
         {
           "answers": [
-            "faster than"
+            "fast than"
           ],
-          "message": "Do not simply add -er to fast. Use the spelling-change ending on the tray."
+          "message": "The base form fast does not show a comparison. Use faster than."
         },
         {
           "answers": [
@@ -135,7 +132,7 @@
           "answers": [
             "faster"
           ],
-          "message": "-er makes a comparative. This sentence asks for the highest degree."
+          "message": "Faster is comparative. This sentence asks for the highest degree."
         },
         {
           "answers": [
@@ -185,10 +182,7 @@
         {
           "id": "b4",
           "label": "-est",
-          "kind": "suffix",
-          "transforms": {
-            "hard": "hardest"
-          }
+          "kind": "suffix"
         },
         {
           "id": "b5",
@@ -209,9 +203,9 @@
       "feedback": [
         {
           "answers": [
-            "harder than"
+            "hard than"
           ],
-          "message": "Do not simply add -er to hard. Use the spelling-change ending on the tray."
+          "message": "The base form hard does not show a comparison. Use harder than."
         },
         {
           "answers": [
@@ -289,7 +283,7 @@
           "answers": [
             "harder"
           ],
-          "message": "-er makes a comparative. This sentence asks for the highest degree."
+          "message": "Harder is comparative. This sentence asks for the highest degree."
         },
         {
           "answers": [
@@ -339,10 +333,7 @@
         {
           "id": "b4",
           "label": "-est",
-          "kind": "suffix",
-          "transforms": {
-            "high": "highest"
-          }
+          "kind": "suffix"
         },
         {
           "id": "b5",
@@ -363,9 +354,9 @@
       "feedback": [
         {
           "answers": [
-            "higher than"
+            "high than"
           ],
-          "message": "Do not simply add -er to high. Use the spelling-change ending on the tray."
+          "message": "The base form high does not show a comparison. Use higher than."
         },
         {
           "answers": [
@@ -443,7 +434,7 @@
           "answers": [
             "higher"
           ],
-          "message": "-er makes a comparative. This sentence asks for the highest degree."
+          "message": "Higher is comparative. This sentence asks for the highest degree."
         },
         {
           "answers": [
@@ -493,10 +484,7 @@
         {
           "id": "b4",
           "label": "-est",
-          "kind": "suffix",
-          "transforms": {
-            "low": "lowest"
-          }
+          "kind": "suffix"
         },
         {
           "id": "b5",
@@ -517,9 +505,9 @@
       "feedback": [
         {
           "answers": [
-            "lower than"
+            "low than"
           ],
-          "message": "Do not simply add -er to low. Use the spelling-change ending on the tray."
+          "message": "The base form low does not show a comparison. Use lower than."
         },
         {
           "answers": [
@@ -597,7 +585,7 @@
           "answers": [
             "lower"
           ],
-          "message": "-er makes a comparative. This sentence asks for the highest degree."
+          "message": "Lower is comparative. This sentence asks for the highest degree."
         },
         {
           "answers": [
@@ -647,10 +635,7 @@
         {
           "id": "b4",
           "label": "-est",
-          "kind": "suffix",
-          "transforms": {
-            "long": "longest"
-          }
+          "kind": "suffix"
         },
         {
           "id": "b5",
@@ -671,9 +656,9 @@
       "feedback": [
         {
           "answers": [
-            "longer than"
+            "long than"
           ],
-          "message": "Do not simply add -er to long. Use the spelling-change ending on the tray."
+          "message": "The base form long does not show a comparison. Use longer than."
         },
         {
           "answers": [
@@ -751,7 +736,7 @@
           "answers": [
             "longer"
           ],
-          "message": "-er makes a comparative. This sentence asks for the highest degree."
+          "message": "Longer is comparative. This sentence asks for the highest degree."
         },
         {
           "answers": [
@@ -773,6 +758,1063 @@
     },
     {
       "id": "adv-011",
+      "sentence": "In the second drill, the green team packed its kit _____ than the blue team.",
+      "base": "fast",
+      "degree": "comparative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "fast",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "faster than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "fast than"
+          ],
+          "message": "The base form fast does not show a comparison. Use faster than."
+        },
+        {
+          "answers": [
+            "more fast than"
+          ],
+          "message": "Fast is being practised as a short form here, so use faster, not more fast."
+        },
+        {
+          "answers": [
+            "fastest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build faster and then add than."
+        }
+      ],
+      "explanation": "Use faster than for this comparative form."
+    },
+    {
+      "id": "adv-012",
+      "sentence": "Of the teams in the packing drill, the green team packed its kit _____.",
+      "base": "fast",
+      "degree": "superlative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "fast",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the fastest",
+        "fastest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "faster"
+          ],
+          "message": "Faster is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more fast"
+          ],
+          "message": "Use the short adverb superlative fastest, not more fast."
+        },
+        {
+          "answers": [
+            "fastest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the fastest and fastest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the fastest and fastest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-013",
+      "sentence": "Tara worked _____ than before on the practice model.",
+      "base": "hard",
+      "degree": "comparative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "hard",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "harder than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "hard than"
+          ],
+          "message": "The base form hard does not show a comparison. Use harder than."
+        },
+        {
+          "answers": [
+            "more hard than"
+          ],
+          "message": "Hard is being practised as a short form here, so use harder, not more hard."
+        },
+        {
+          "answers": [
+            "hardest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build harder and then add than."
+        }
+      ],
+      "explanation": "Use harder than for this comparative form."
+    },
+    {
+      "id": "adv-014",
+      "sentence": "Of the team members, Tara worked _____ on the practice model.",
+      "base": "hard",
+      "degree": "superlative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "hard",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the hardest",
+        "hardest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "harder"
+          ],
+          "message": "Harder is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more hard"
+          ],
+          "message": "Use the short adverb superlative hardest, not more hard."
+        },
+        {
+          "answers": [
+            "hardest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the hardest and hardest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the hardest and hardest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-015",
+      "sentence": "In the second trial, the foam ball bounced _____ than in the first trial.",
+      "base": "high",
+      "degree": "comparative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "high",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "higher than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "high than"
+          ],
+          "message": "The base form high does not show a comparison. Use higher than."
+        },
+        {
+          "answers": [
+            "more high than"
+          ],
+          "message": "High is being practised as a short form here, so use higher, not more high."
+        },
+        {
+          "answers": [
+            "highest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build higher and then add than."
+        }
+      ],
+      "explanation": "Use higher than for this comparative form."
+    },
+    {
+      "id": "adv-016",
+      "sentence": "Of the foam balls, the orange one bounced _____.",
+      "base": "high",
+      "degree": "superlative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "high",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the highest",
+        "highest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "higher"
+          ],
+          "message": "Higher is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more high"
+          ],
+          "message": "Use the short adverb superlative highest, not more high."
+        },
+        {
+          "answers": [
+            "highest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the highest and highest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the highest and highest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-017",
+      "sentence": "During the quiet-reading challenge, Group B spoke _____ than Group A.",
+      "base": "low",
+      "degree": "comparative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "low",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "lower than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "low than"
+          ],
+          "message": "The base form low does not show a comparison. Use lower than."
+        },
+        {
+          "answers": [
+            "more low than"
+          ],
+          "message": "Low is being practised as a short form here, so use lower, not more low."
+        },
+        {
+          "answers": [
+            "lowest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build lower and then add than."
+        }
+      ],
+      "explanation": "Use lower than for this comparative form."
+    },
+    {
+      "id": "adv-018",
+      "sentence": "Of the groups in the quiet-reading challenge, Group B spoke _____.",
+      "base": "low",
+      "degree": "superlative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "low",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the lowest",
+        "lowest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "lower"
+          ],
+          "message": "Lower is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more low"
+          ],
+          "message": "Use the short adverb superlative lowest, not more low."
+        },
+        {
+          "answers": [
+            "lowest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the lowest and lowest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the lowest and lowest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-019",
+      "sentence": "The final video clip played _____ than the preview clip.",
+      "base": "long",
+      "degree": "comparative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "long",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "longer than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "long than"
+          ],
+          "message": "The base form long does not show a comparison. Use longer than."
+        },
+        {
+          "answers": [
+            "more long than"
+          ],
+          "message": "Long is being practised as a short form here, so use longer, not more long."
+        },
+        {
+          "answers": [
+            "longest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build longer and then add than."
+        }
+      ],
+      "explanation": "Use longer than for this comparative form."
+    },
+    {
+      "id": "adv-020",
+      "sentence": "Of the sample clips, the final clip played _____.",
+      "base": "long",
+      "degree": "superlative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "long",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the longest",
+        "longest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "longer"
+          ],
+          "message": "Longer is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more long"
+          ],
+          "message": "Use the short adverb superlative longest, not more long."
+        },
+        {
+          "answers": [
+            "longest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the longest and longest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the longest and longest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-021",
+      "sentence": "For the photo, Amir stood _____ to the board than Jia did.",
+      "base": "near",
+      "degree": "comparative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "near",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "nearer than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "near than"
+          ],
+          "message": "The base form near does not show a comparison. Use nearer than."
+        },
+        {
+          "answers": [
+            "more near than"
+          ],
+          "message": "Near is being practised as a short form here, so use nearer, not more near."
+        },
+        {
+          "answers": [
+            "nearest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build nearer and then add than."
+        }
+      ],
+      "explanation": "Use nearer than for this comparative form."
+    },
+    {
+      "id": "adv-022",
+      "sentence": "Of the pupils in the photo, Amir stood _____ to the board.",
+      "base": "near",
+      "degree": "superlative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "near",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the nearest",
+        "nearest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "nearer"
+          ],
+          "message": "Nearer is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more near"
+          ],
+          "message": "Use the short adverb superlative nearest, not more near."
+        },
+        {
+          "answers": [
+            "nearest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the nearest and nearest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the nearest and nearest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-023",
+      "sentence": "The second reminder appeared _____ than the first reminder.",
+      "base": "soon",
+      "degree": "comparative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "soon",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "sooner than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "soon than"
+          ],
+          "message": "The base form soon does not show a comparison. Use sooner than."
+        },
+        {
+          "answers": [
+            "more soon than"
+          ],
+          "message": "Soon is being practised as a short form here, so use sooner, not more soon."
+        },
+        {
+          "answers": [
+            "soonest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build sooner and then add than."
+        }
+      ],
+      "explanation": "Use sooner than for this comparative form."
+    },
+    {
+      "id": "adv-024",
+      "sentence": "Of the reminders, the second one appeared _____.",
+      "base": "soon",
+      "degree": "superlative",
+      "rule": "Regular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "soon",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the soonest",
+        "soonest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "sooner"
+          ],
+          "message": "Sooner is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more soon"
+          ],
+          "message": "Use the short adverb superlative soonest, not more soon."
+        },
+        {
+          "answers": [
+            "soonest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the soonest and soonest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the soonest and soonest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-025",
       "sentence": "On Tuesday, the shuttle arrived _____ than expected.",
       "base": "late",
       "degree": "comparative",
@@ -800,7 +1842,7 @@
         },
         {
           "id": "b4",
-          "label": "-est",
+          "label": "-st",
           "kind": "suffix"
         },
         {
@@ -822,9 +1864,9 @@
       "feedback": [
         {
           "answers": [
-            "lateer than"
+            "late than"
           ],
-          "message": "Do not simply add -er to late. Use the spelling-change ending on the tray."
+          "message": "The base form late does not show a comparison. Use later than."
         },
         {
           "answers": [
@@ -845,7 +1887,7 @@
       "explanation": "Use later than for this comparative form."
     },
     {
-      "id": "adv-012",
+      "id": "adv-026",
       "sentence": "Of the three buses, route 2 arrived _____.",
       "base": "late",
       "degree": "superlative",
@@ -873,7 +1915,7 @@
         },
         {
           "id": "b4",
-          "label": "-er",
+          "label": "-r",
           "kind": "suffix"
         },
         {
@@ -900,9 +1942,9 @@
       "feedback": [
         {
           "answers": [
-            "lateer"
+            "later"
           ],
-          "message": "-er makes a comparative. This sentence asks for the highest degree."
+          "message": "Later is comparative. This sentence asks for the highest degree."
         },
         {
           "answers": [
@@ -923,7 +1965,762 @@
       "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
     },
     {
-      "id": "adv-013",
+      "id": "adv-027",
+      "sentence": "The drama group finished _____ than the music group.",
+      "base": "late",
+      "degree": "comparative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "late",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-r",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-st",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "later than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "late than"
+          ],
+          "message": "The base form late does not show a comparison. Use later than."
+        },
+        {
+          "answers": [
+            "more late than"
+          ],
+          "message": "Late is being practised as a short form here, so use later, not more late."
+        },
+        {
+          "answers": [
+            "latest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build later and then add than."
+        }
+      ],
+      "explanation": "Use later than for this comparative form."
+    },
+    {
+      "id": "adv-028",
+      "sentence": "Of the rehearsal groups, the drama group finished _____.",
+      "base": "late",
+      "degree": "superlative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "late",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-st",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-r",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the latest",
+        "latest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "later"
+          ],
+          "message": "Later is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more late"
+          ],
+          "message": "Use the short adverb superlative latest, not more late."
+        },
+        {
+          "answers": [
+            "latest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the latest and latest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-029",
+      "sentence": "The reminder appeared _____ than the first notice.",
+      "base": "late",
+      "degree": "comparative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "late",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-r",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-st",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "later than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "late than"
+          ],
+          "message": "The base form late does not show a comparison. Use later than."
+        },
+        {
+          "answers": [
+            "more late than"
+          ],
+          "message": "Late is being practised as a short form here, so use later, not more late."
+        },
+        {
+          "answers": [
+            "latest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build later and then add than."
+        }
+      ],
+      "explanation": "Use later than for this comparative form."
+    },
+    {
+      "id": "adv-030",
+      "sentence": "Of the notices, the final reminder appeared _____.",
+      "base": "late",
+      "degree": "superlative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "late",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-st",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-r",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the latest",
+        "latest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "later"
+          ],
+          "message": "Later is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more late"
+          ],
+          "message": "Use the short adverb superlative latest, not more late."
+        },
+        {
+          "answers": [
+            "latest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the latest and latest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-031",
+      "sentence": "The delivery reached the office _____ than planned in the fictional timetable.",
+      "base": "late",
+      "degree": "comparative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "late",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-r",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-st",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "later than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "late than"
+          ],
+          "message": "The base form late does not show a comparison. Use later than."
+        },
+        {
+          "answers": [
+            "more late than"
+          ],
+          "message": "Late is being practised as a short form here, so use later, not more late."
+        },
+        {
+          "answers": [
+            "latest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build later and then add than."
+        }
+      ],
+      "explanation": "Use later than for this comparative form."
+    },
+    {
+      "id": "adv-032",
+      "sentence": "Of the sample deliveries, the blue-box delivery arrived _____.",
+      "base": "late",
+      "degree": "superlative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "late",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-st",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-r",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the latest",
+        "latest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "later"
+          ],
+          "message": "Later is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more late"
+          ],
+          "message": "Use the short adverb superlative latest, not more late."
+        },
+        {
+          "answers": [
+            "latest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the latest and latest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-033",
+      "sentence": "The final bell rang _____ than the practice bell.",
+      "base": "late",
+      "degree": "comparative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "late",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-r",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-st",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "later than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "late than"
+          ],
+          "message": "The base form late does not show a comparison. Use later than."
+        },
+        {
+          "answers": [
+            "more late than"
+          ],
+          "message": "Late is being practised as a short form here, so use later, not more late."
+        },
+        {
+          "answers": [
+            "latest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build later and then add than."
+        }
+      ],
+      "explanation": "Use later than for this comparative form."
+    },
+    {
+      "id": "adv-034",
+      "sentence": "Of the bells in the sound test, the final bell rang _____.",
+      "base": "late",
+      "degree": "superlative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "late",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-st",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-r",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the latest",
+        "latest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "later"
+          ],
+          "message": "Later is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more late"
+          ],
+          "message": "Use the short adverb superlative latest, not more late."
+        },
+        {
+          "answers": [
+            "latest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the latest and latest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-035",
+      "sentence": "The second group submitted its chart _____ than the first group.",
+      "base": "late",
+      "degree": "comparative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "late",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-r",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-st",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "later than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "late than"
+          ],
+          "message": "The base form late does not show a comparison. Use later than."
+        },
+        {
+          "answers": [
+            "more late than"
+          ],
+          "message": "Late is being practised as a short form here, so use later, not more late."
+        },
+        {
+          "answers": [
+            "latest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build later and then add than."
+        }
+      ],
+      "explanation": "Use later than for this comparative form."
+    },
+    {
+      "id": "adv-036",
+      "sentence": "Of the groups, the second group submitted its chart _____.",
+      "base": "late",
+      "degree": "superlative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "late",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-st",
+          "kind": "suffix"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-r",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the latest",
+        "latest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "later"
+          ],
+          "message": "Later is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more late"
+          ],
+          "message": "Use the short adverb superlative latest, not more late."
+        },
+        {
+          "answers": [
+            "latest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the latest and latest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the latest and latest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-037",
       "sentence": "On Wednesday, the library opened _____ than on Tuesday.",
       "base": "early",
       "degree": "comparative",
@@ -954,8 +2751,11 @@
         },
         {
           "id": "b4",
-          "label": "-est",
-          "kind": "suffix"
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
         },
         {
           "id": "b5",
@@ -976,9 +2776,9 @@
       "feedback": [
         {
           "answers": [
-            "earlyer than"
+            "early than"
           ],
-          "message": "Do not simply add -er to early. Use the spelling-change ending on the tray."
+          "message": "The base form early does not show a comparison. Use earlier than."
         },
         {
           "answers": [
@@ -999,7 +2799,7 @@
       "explanation": "Use earlier than for this comparative form."
     },
     {
-      "id": "adv-014",
+      "id": "adv-038",
       "sentence": "Of the four days, the library opened _____ on Thursday.",
       "base": "early",
       "degree": "superlative",
@@ -1030,8 +2830,11 @@
         },
         {
           "id": "b4",
-          "label": "-er",
-          "kind": "suffix"
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
         },
         {
           "id": "b5",
@@ -1057,9 +2860,9 @@
       "feedback": [
         {
           "answers": [
-            "earlyer"
+            "earlier"
           ],
-          "message": "-er makes a comparative. This sentence asks for the highest degree."
+          "message": "Earlier is comparative. This sentence asks for the highest degree."
         },
         {
           "answers": [
@@ -1080,7 +2883,822 @@
       "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
     },
     {
-      "id": "adv-015",
+      "id": "adv-039",
+      "sentence": "The first practice bus arrived _____ than the second bus.",
+      "base": "early",
+      "degree": "comparative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "early",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "earlier than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "early than"
+          ],
+          "message": "The base form early does not show a comparison. Use earlier than."
+        },
+        {
+          "answers": [
+            "more early than"
+          ],
+          "message": "Early is being practised as a short form here, so use earlier, not more early."
+        },
+        {
+          "answers": [
+            "earliest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build earlier and then add than."
+        }
+      ],
+      "explanation": "Use earlier than for this comparative form."
+    },
+    {
+      "id": "adv-040",
+      "sentence": "Of the practice buses, the first bus arrived _____.",
+      "base": "early",
+      "degree": "superlative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "early",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the earliest",
+        "earliest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "earlier"
+          ],
+          "message": "Earlier is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more early"
+          ],
+          "message": "Use the short adverb superlative earliest, not more early."
+        },
+        {
+          "answers": [
+            "earliest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the earliest and earliest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-041",
+      "sentence": "The caretaker unlocked the hall _____ than on the previous day.",
+      "base": "early",
+      "degree": "comparative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "early",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "earlier than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "early than"
+          ],
+          "message": "The base form early does not show a comparison. Use earlier than."
+        },
+        {
+          "answers": [
+            "more early than"
+          ],
+          "message": "Early is being practised as a short form here, so use earlier, not more early."
+        },
+        {
+          "answers": [
+            "earliest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build earlier and then add than."
+        }
+      ],
+      "explanation": "Use earlier than for this comparative form."
+    },
+    {
+      "id": "adv-042",
+      "sentence": "Of the days in the schedule, the hall opened _____.",
+      "base": "early",
+      "degree": "superlative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "early",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the earliest",
+        "earliest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "earlier"
+          ],
+          "message": "Earlier is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more early"
+          ],
+          "message": "Use the short adverb superlative earliest, not more early."
+        },
+        {
+          "answers": [
+            "earliest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the earliest and earliest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-043",
+      "sentence": "The class started its warm-up _____ than the other class.",
+      "base": "early",
+      "degree": "comparative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "early",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "earlier than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "early than"
+          ],
+          "message": "The base form early does not show a comparison. Use earlier than."
+        },
+        {
+          "answers": [
+            "more early than"
+          ],
+          "message": "Early is being practised as a short form here, so use earlier, not more early."
+        },
+        {
+          "answers": [
+            "earliest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build earlier and then add than."
+        }
+      ],
+      "explanation": "Use earlier than for this comparative form."
+    },
+    {
+      "id": "adv-044",
+      "sentence": "Of the classes, this class started its warm-up _____.",
+      "base": "early",
+      "degree": "superlative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "early",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the earliest",
+        "earliest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "earlier"
+          ],
+          "message": "Earlier is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more early"
+          ],
+          "message": "Use the short adverb superlative earliest, not more early."
+        },
+        {
+          "answers": [
+            "earliest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the earliest and earliest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-045",
+      "sentence": "The first notice appeared _____ than the follow-up notice.",
+      "base": "early",
+      "degree": "comparative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "early",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "earlier than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "early than"
+          ],
+          "message": "The base form early does not show a comparison. Use earlier than."
+        },
+        {
+          "answers": [
+            "more early than"
+          ],
+          "message": "Early is being practised as a short form here, so use earlier, not more early."
+        },
+        {
+          "answers": [
+            "earliest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build earlier and then add than."
+        }
+      ],
+      "explanation": "Use earlier than for this comparative form."
+    },
+    {
+      "id": "adv-046",
+      "sentence": "Of the notices, the first notice appeared _____.",
+      "base": "early",
+      "degree": "superlative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "early",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the earliest",
+        "earliest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "earlier"
+          ],
+          "message": "Earlier is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more early"
+          ],
+          "message": "Use the short adverb superlative earliest, not more early."
+        },
+        {
+          "answers": [
+            "earliest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the earliest and earliest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-047",
+      "sentence": "The sun rose _____ in the chart's summer example than in its winter example.",
+      "base": "early",
+      "degree": "comparative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "early",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
+        },
+        {
+          "id": "b5",
+          "label": "most",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "earlier than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "early than"
+          ],
+          "message": "The base form early does not show a comparison. Use earlier than."
+        },
+        {
+          "answers": [
+            "more early than"
+          ],
+          "message": "Early is being practised as a short form here, so use earlier, not more early."
+        },
+        {
+          "answers": [
+            "earliest than"
+          ],
+          "message": "A superlative does not compare two things with than."
+        },
+        {
+          "message": "For this comparison, build earlier and then add than."
+        }
+      ],
+      "explanation": "Use earlier than for this comparative form."
+    },
+    {
+      "id": "adv-048",
+      "sentence": "Of the dates on the mock chart, the sun rose _____.",
+      "base": "early",
+      "degree": "superlative",
+      "rule": "Spelling changes",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "early",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "-iest",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earliest"
+          }
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-ier",
+          "kind": "suffix",
+          "transforms": {
+            "early": "earlier"
+          }
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the earliest",
+        "earliest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0",
+          "b1"
+        ],
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "earlier"
+          ],
+          "message": "Earlier is comparative. This sentence asks for the highest degree."
+        },
+        {
+          "answers": [
+            "more early"
+          ],
+          "message": "Use the short adverb superlative earliest, not more early."
+        },
+        {
+          "answers": [
+            "earliest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both the earliest and earliest are natural after this verb."
+        }
+      ],
+      "explanation": "Both the earliest and earliest are accepted adverbial superlatives in this sentence."
+    },
+    {
+      "id": "adv-049",
       "sentence": "The second pair checked the measurements _____ than the first pair.",
       "base": "carefully",
       "degree": "comparative",
@@ -1153,7 +3771,7 @@
       "explanation": "Use more carefully than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-016",
+      "id": "adv-050",
       "sentence": "Of the pairs, the second pair checked the measurements _____.",
       "base": "carefully",
       "degree": "superlative",
@@ -1231,7 +3849,7 @@
       "explanation": "Both the most carefully and most carefully are accepted adverbial superlatives."
     },
     {
-      "id": "adv-017",
+      "id": "adv-051",
       "sentence": "The group entered the reading room _____ than the earlier group.",
       "base": "quietly",
       "degree": "comparative",
@@ -1304,7 +3922,7 @@
       "explanation": "Use more quietly than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-018",
+      "id": "adv-052",
       "sentence": "Of the groups, they entered the reading room _____.",
       "base": "quietly",
       "degree": "superlative",
@@ -1382,7 +4000,7 @@
       "explanation": "Both the most quietly and most quietly are accepted adverbial superlatives."
     },
     {
-      "id": "adv-019",
+      "id": "adv-053",
       "sentence": "Asha explained the instructions _____ than in her first attempt.",
       "base": "clearly",
       "degree": "comparative",
@@ -1455,7 +4073,7 @@
       "explanation": "Use more clearly than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-020",
+      "id": "adv-054",
       "sentence": "Of the presenters, Asha explained the instructions _____.",
       "base": "clearly",
       "degree": "superlative",
@@ -1533,7 +4151,7 @@
       "explanation": "Both the most clearly and most clearly are accepted adverbial superlatives."
     },
     {
-      "id": "adv-021",
+      "id": "adv-055",
       "sentence": "The student asked for help _____ than before.",
       "base": "politely",
       "degree": "comparative",
@@ -1606,7 +4224,7 @@
       "explanation": "Use more politely than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-022",
+      "id": "adv-056",
       "sentence": "Of the role-play groups, this group asked for help _____.",
       "base": "politely",
       "degree": "superlative",
@@ -1684,7 +4302,7 @@
       "explanation": "Both the most politely and most politely are accepted adverbial superlatives."
     },
     {
-      "id": "adv-023",
+      "id": "adv-057",
       "sentence": "The team completed the sorting task _____ than the other team.",
       "base": "quickly",
       "degree": "comparative",
@@ -1757,7 +4375,7 @@
       "explanation": "Use more quickly than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-024",
+      "id": "adv-058",
       "sentence": "Of the trial teams, this team completed the sorting task _____.",
       "base": "quickly",
       "degree": "superlative",
@@ -1835,7 +4453,7 @@
       "explanation": "Both the most quickly and most quickly are accepted adverbial superlatives."
     },
     {
-      "id": "adv-025",
+      "id": "adv-059",
       "sentence": "The class walked across the wet-floor practice mat _____ than before.",
       "base": "slowly",
       "degree": "comparative",
@@ -1908,7 +4526,7 @@
       "explanation": "Use more slowly than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-026",
+      "id": "adv-060",
       "sentence": "Of the groups, this group walked across the practice mat _____.",
       "base": "slowly",
       "degree": "superlative",
@@ -1986,7 +4604,7 @@
       "explanation": "Both the most slowly and most slowly are accepted adverbial superlatives."
     },
     {
-      "id": "adv-027",
+      "id": "adv-061",
       "sentence": "Nora presented her idea _____ than in the rehearsal.",
       "base": "confidently",
       "degree": "comparative",
@@ -2059,7 +4677,7 @@
       "explanation": "Use more confidently than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-028",
+      "id": "adv-062",
       "sentence": "Of the presenters, Nora presented her idea _____.",
       "base": "confidently",
       "degree": "superlative",
@@ -2137,7 +4755,7 @@
       "explanation": "Both the most confidently and most confidently are accepted adverbial superlatives."
     },
     {
-      "id": "adv-029",
+      "id": "adv-063",
       "sentence": "Kai waited for the equipment _____ than his partner.",
       "base": "patiently",
       "degree": "comparative",
@@ -2210,7 +4828,7 @@
       "explanation": "Use more patiently than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-030",
+      "id": "adv-064",
       "sentence": "Of the pairs, Kai waited for the equipment _____.",
       "base": "patiently",
       "degree": "superlative",
@@ -2288,7 +4906,7 @@
       "explanation": "Both the most patiently and most patiently are accepted adverbial superlatives."
     },
     {
-      "id": "adv-031",
+      "id": "adv-065",
       "sentence": "The group discussed the safety rule _____ than in the first meeting.",
       "base": "seriously",
       "degree": "comparative",
@@ -2361,7 +4979,7 @@
       "explanation": "Use more seriously than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-032",
+      "id": "adv-066",
       "sentence": "Of the groups, this group discussed the safety rule _____.",
       "base": "seriously",
       "degree": "superlative",
@@ -2439,7 +5057,7 @@
       "explanation": "Both the most seriously and most seriously are accepted adverbial superlatives."
     },
     {
-      "id": "adv-033",
+      "id": "adv-067",
       "sentence": "Mina arranged the labels _____ than before.",
       "base": "neatly",
       "degree": "comparative",
@@ -2512,7 +5130,7 @@
       "explanation": "Use more neatly than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-034",
+      "id": "adv-068",
       "sentence": "Of the teams, Mina arranged the labels _____.",
       "base": "neatly",
       "degree": "superlative",
@@ -2590,7 +5208,7 @@
       "explanation": "Both the most neatly and most neatly are accepted adverbial superlatives."
     },
     {
-      "id": "adv-035",
+      "id": "adv-069",
       "sentence": "The announcer read the notice _____ than during the first sound check.",
       "base": "loudly",
       "degree": "comparative",
@@ -2663,7 +5281,7 @@
       "explanation": "Use more loudly than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-036",
+      "id": "adv-070",
       "sentence": "Of the speakers, the announcer read the notice _____.",
       "base": "loudly",
       "degree": "superlative",
@@ -2741,7 +5359,7 @@
       "explanation": "Both the most loudly and most loudly are accepted adverbial superlatives."
     },
     {
-      "id": "adv-037",
+      "id": "adv-071",
       "sentence": "The helper copied the timetable _____ than in the first trial.",
       "base": "accurately",
       "degree": "comparative",
@@ -2814,7 +5432,7 @@
       "explanation": "Use more accurately than. Most -ly adverbs use more and most, without changing y to i."
     },
     {
-      "id": "adv-038",
+      "id": "adv-072",
       "sentence": "Of the helpers, the student copied the timetable _____.",
       "base": "accurately",
       "degree": "superlative",
@@ -2892,2121 +5510,7 @@
       "explanation": "Both the most accurately and most accurately are accepted adverbial superlatives."
     },
     {
-      "id": "adv-039",
-      "sentence": "The group updated the class noticeboard _____ than last term.",
-      "base": "regularly",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "regularly",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more regularly than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "regularlyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as regularly. Use more regularly."
-        },
-        {
-          "answers": [
-            "most regularly than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "regularly than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more regularly than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more regularly than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-040",
-      "sentence": "Of the groups, this group updated the class noticeboard _____.",
-      "base": "regularly",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "regularly",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most regularly",
-        "most regularly"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "regularlyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as regularly. Use most regularly."
-        },
-        {
-          "answers": [
-            "more regularly"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most regularly than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most regularly and most regularly are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most regularly and most regularly are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-041",
-      "sentence": "The pupils volunteered to demonstrate _____ than in the previous activity.",
-      "base": "eagerly",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "eagerly",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more eagerly than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "eagerlyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as eagerly. Use more eagerly."
-        },
-        {
-          "answers": [
-            "most eagerly than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "eagerly than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more eagerly than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more eagerly than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-042",
-      "sentence": "Of the volunteers, this pupil volunteered _____.",
-      "base": "eagerly",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "eagerly",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most eagerly",
-        "most eagerly"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "eagerlyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as eagerly. Use most eagerly."
-        },
-        {
-          "answers": [
-            "more eagerly"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most eagerly than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most eagerly and most eagerly are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most eagerly and most eagerly are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-043",
-      "sentence": "The team designed the campaign poster _____ than the other team.",
-      "base": "creatively",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "creatively",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more creatively than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "creativelyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as creatively. Use more creatively."
-        },
-        {
-          "answers": [
-            "most creatively than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "creatively than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more creatively than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more creatively than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-044",
-      "sentence": "Of the teams, this team designed the campaign poster _____.",
-      "base": "creatively",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "creatively",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most creatively",
-        "most creatively"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "creativelyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as creatively. Use most creatively."
-        },
-        {
-          "answers": [
-            "more creatively"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most creatively than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most creatively and most creatively are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most creatively and most creatively are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-045",
-      "sentence": "The students carried the science tray _____ than before.",
-      "base": "safely",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "safely",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more safely than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "safelyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as safely. Use more safely."
-        },
-        {
-          "answers": [
-            "most safely than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "safely than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more safely than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more safely than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-046",
-      "sentence": "Of the groups, this group carried the science tray _____.",
-      "base": "safely",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "safely",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most safely",
-        "most safely"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "safelyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as safely. Use most safely."
-        },
-        {
-          "answers": [
-            "more safely"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most safely than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most safely and most safely are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most safely and most safely are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-047",
-      "sentence": "The leader organised the materials _____ than in the first round.",
-      "base": "effectively",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "effectively",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more effectively than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "effectivelyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as effectively. Use more effectively."
-        },
-        {
-          "answers": [
-            "most effectively than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "effectively than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more effectively than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more effectively than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-048",
-      "sentence": "Of the leaders, this pupil organised the materials _____.",
-      "base": "effectively",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "effectively",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most effectively",
-        "most effectively"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "effectivelyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as effectively. Use most effectively."
-        },
-        {
-          "answers": [
-            "more effectively"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most effectively than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most effectively and most effectively are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most effectively and most effectively are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-049",
-      "sentence": "Ravi completed the research task _____ than during the first week.",
-      "base": "independently",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "independently",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more independently than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "independentlyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as independently. Use more independently."
-        },
-        {
-          "answers": [
-            "most independently than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "independently than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more independently than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more independently than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-050",
-      "sentence": "Of the students, Ravi completed the research task _____.",
-      "base": "independently",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "independently",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most independently",
-        "most independently"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "independentlyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as independently. Use most independently."
-        },
-        {
-          "answers": [
-            "more independently"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most independently than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most independently and most independently are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most independently and most independently are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-051",
-      "sentence": "The group used the shared tablets _____ than last lesson.",
-      "base": "responsibly",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "responsibly",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more responsibly than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "responsiblyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as responsibly. Use more responsibly."
-        },
-        {
-          "answers": [
-            "most responsibly than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "responsibly than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more responsibly than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more responsibly than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-052",
-      "sentence": "Of the groups, this group used the shared tablets _____.",
-      "base": "responsibly",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "responsibly",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most responsibly",
-        "most responsibly"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "responsiblyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as responsibly. Use most responsibly."
-        },
-        {
-          "answers": [
-            "more responsibly"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most responsibly than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most responsibly and most responsibly are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most responsibly and most responsibly are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-053",
-      "sentence": "The pair solved the coding task _____ than the other pair.",
-      "base": "successfully",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "successfully",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more successfully than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "successfullyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as successfully. Use more successfully."
-        },
-        {
-          "answers": [
-            "most successfully than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "successfully than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more successfully than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more successfully than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-054",
-      "sentence": "Of the pairs, this pair solved the coding task _____.",
-      "base": "successfully",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "successfully",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most successfully",
-        "most successfully"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "successfullyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as successfully. Use most successfully."
-        },
-        {
-          "answers": [
-            "more successfully"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most successfully than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most successfully and most successfully are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most successfully and most successfully are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-055",
-      "sentence": "The class shared the art supplies _____ than in the earlier activity.",
-      "base": "generously",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "generously",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more generously than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "generouslyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as generously. Use more generously."
-        },
-        {
-          "answers": [
-            "most generously than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "generously than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more generously than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more generously than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-056",
-      "sentence": "Of the groups, this class shared the art supplies _____.",
-      "base": "generously",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "generously",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most generously",
-        "most generously"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "generouslyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as generously. Use most generously."
-        },
-        {
-          "answers": [
-            "more generously"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most generously than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most generously and most generously are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most generously and most generously are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-057",
-      "sentence": "The audience listened to the guest speaker _____ than in the rehearsal.",
-      "base": "attentively",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "attentively",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more attentively than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "attentivelyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as attentively. Use more attentively."
-        },
-        {
-          "answers": [
-            "most attentively than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "attentively than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more attentively than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more attentively than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-058",
-      "sentence": "Of the groups, this audience listened to the guest speaker _____.",
-      "base": "attentively",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "attentively",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most attentively",
-        "most attentively"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "attentivelyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as attentively. Use most attentively."
-        },
-        {
-          "answers": [
-            "more attentively"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most attentively than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most attentively and most attentively are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most attentively and most attentively are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-059",
-      "sentence": "The class responded to the practice drill _____ than in the first run-through.",
-      "base": "calmly",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "calmly",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more calmly than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "calmlyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as calmly. Use more calmly."
-        },
-        {
-          "answers": [
-            "most calmly than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "calmly than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more calmly than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more calmly than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-060",
-      "sentence": "Of the groups, this class responded to the practice drill _____.",
-      "base": "calmly",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "calmly",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most calmly",
-        "most calmly"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "calmlyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as calmly. Use most calmly."
-        },
-        {
-          "answers": [
-            "more calmly"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most calmly than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most calmly and most calmly are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most calmly and most calmly are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-061",
-      "sentence": "The students joined the warm-up _____ than last week.",
-      "base": "enthusiastically",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "enthusiastically",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more enthusiastically than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "enthusiasticallyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as enthusiastically. Use more enthusiastically."
-        },
-        {
-          "answers": [
-            "most enthusiastically than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "enthusiastically than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more enthusiastically than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more enthusiastically than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-062",
-      "sentence": "Of the groups, these students joined the warm-up _____.",
-      "base": "enthusiastically",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "enthusiastically",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most enthusiastically",
-        "most enthusiastically"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "enthusiasticallyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as enthusiastically. Use most enthusiastically."
-        },
-        {
-          "answers": [
-            "more enthusiastically"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most enthusiastically than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most enthusiastically and most enthusiastically are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most enthusiastically and most enthusiastically are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-063",
-      "sentence": "Sana responded to the visitor's question _____ than in the first discussion.",
-      "base": "thoughtfully",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "thoughtfully",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more thoughtfully than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "thoughtfullyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as thoughtfully. Use more thoughtfully."
-        },
-        {
-          "answers": [
-            "most thoughtfully than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "thoughtfully than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more thoughtfully than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more thoughtfully than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-064",
-      "sentence": "Of the students, Sana responded to the visitor's question _____.",
-      "base": "thoughtfully",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "thoughtfully",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most thoughtfully",
-        "most thoughtfully"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "thoughtfullyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as thoughtfully. Use most thoughtfully."
-        },
-        {
-          "answers": [
-            "more thoughtfully"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most thoughtfully than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most thoughtfully and most thoughtfully are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most thoughtfully and most thoughtfully are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-065",
-      "sentence": "The group measured the liquid _____ than in the first trial.",
-      "base": "precisely",
-      "degree": "comparative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "precisely",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "than",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-er",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "-est",
-          "kind": "suffix"
-        }
-      ],
-      "answers": [
-        "more precisely than"
-      ],
-      "correctSequences": [
-        [
-          "b1",
-          "b0",
-          "b2"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "preciselyer than"
-          ],
-          "message": "Do not add -er to an -ly adverb such as precisely. Use more precisely."
-        },
-        {
-          "answers": [
-            "most precisely than"
-          ],
-          "message": "Most makes a superlative; a comparison with than needs more."
-        },
-        {
-          "answers": [
-            "precisely than"
-          ],
-          "message": "The base adverb needs more to make this comparison."
-        },
-        {
-          "message": "Use more precisely than. Do not change the y to i or double an ending on an -ly adverb."
-        }
-      ],
-      "explanation": "Use more precisely than. Most -ly adverbs use more and most, without changing y to i."
-    },
-    {
-      "id": "adv-066",
-      "sentence": "Of the groups, this group measured the liquid _____.",
-      "base": "precisely",
-      "degree": "superlative",
-      "rule": "Longer forms",
-      "blocks": [
-        {
-          "id": "b0",
-          "label": "precisely",
-          "kind": "word"
-        },
-        {
-          "id": "b1",
-          "label": "most",
-          "kind": "word"
-        },
-        {
-          "id": "b2",
-          "label": "the",
-          "kind": "word"
-        },
-        {
-          "id": "b3",
-          "label": "-est",
-          "kind": "suffix"
-        },
-        {
-          "id": "b4",
-          "label": "more",
-          "kind": "word"
-        },
-        {
-          "id": "b5",
-          "label": "than",
-          "kind": "word"
-        }
-      ],
-      "answers": [
-        "the most precisely",
-        "most precisely"
-      ],
-      "correctSequences": [
-        [
-          "b2",
-          "b1",
-          "b0"
-        ],
-        [
-          "b1",
-          "b0"
-        ]
-      ],
-      "feedback": [
-        {
-          "answers": [
-            "preciselyest"
-          ],
-          "message": "Do not add -est to an -ly adverb such as precisely. Use most precisely."
-        },
-        {
-          "answers": [
-            "more precisely"
-          ],
-          "message": "More makes a comparative. This sentence needs the highest degree."
-        },
-        {
-          "answers": [
-            "most precisely than"
-          ],
-          "message": "Do not use than with a superlative."
-        },
-        {
-          "message": "Both the most precisely and most precisely are natural in this adverbial position."
-        }
-      ],
-      "explanation": "Both the most precisely and most precisely are accepted adverbial superlatives."
-    },
-    {
-      "id": "adv-067",
+      "id": "adv-073",
       "sentence": "The blue team explained its plan _____ than the red team.",
       "base": "well",
       "degree": "comparative",
@@ -5073,7 +5577,7 @@
       "explanation": "Use better than. Well is an adverb here, describing how the plan was explained."
     },
     {
-      "id": "adv-068",
+      "id": "adv-074",
       "sentence": "Of the groups, the first team explained its plan _____.",
       "base": "well",
       "degree": "superlative",
@@ -5144,7 +5648,421 @@
       "explanation": "Use the best or best. Well is an adverb here, not the adjective good."
     },
     {
-      "id": "adv-069",
+      "id": "adv-075",
+      "sentence": "Jia answered the visitor's question _____ than in the first rehearsal.",
+      "base": "well",
+      "degree": "comparative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "better",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "well",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b4",
+          "label": "more",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "better than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "weller than"
+          ],
+          "message": "Well is irregular as an adverb: use better, not weller."
+        },
+        {
+          "answers": [
+            "more well than"
+          ],
+          "message": "For how an action is done here, the standard comparative is better."
+        },
+        {
+          "answers": [
+            "well than"
+          ],
+          "message": "The base adverb alone does not make a comparison."
+        },
+        {
+          "message": "Use better than. Well describes how an action is done; good is the related adjective."
+        }
+      ],
+      "explanation": "Use better than. Well is an adverb here, describing how the plan was explained."
+    },
+    {
+      "id": "adv-076",
+      "sentence": "Of the presenters, Jia answered the visitor's question _____.",
+      "base": "well",
+      "degree": "superlative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "best",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "well",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b4",
+          "label": "more",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the best",
+        "best"
+      ],
+      "correctSequences": [
+        [
+          "b1",
+          "b0"
+        ],
+        [
+          "b0"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "wellest"
+          ],
+          "message": "Well is irregular as an adverb: use best, not wellest."
+        },
+        {
+          "answers": [
+            "more well"
+          ],
+          "message": "This sentence needs a superlative, and the standard form is best."
+        },
+        {
+          "answers": [
+            "well"
+          ],
+          "message": "The base adverb alone does not show the highest degree."
+        },
+        {
+          "message": "Both the best and best are natural adverbial superlatives here."
+        }
+      ],
+      "explanation": "Use the best or best. Well is an adverb here, not the adjective good."
+    },
+    {
+      "id": "adv-077",
+      "sentence": "The group used the microphone _____ than before during the sound check.",
+      "base": "well",
+      "degree": "comparative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "better",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "well",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b4",
+          "label": "more",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "better than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "weller than"
+          ],
+          "message": "Well is irregular as an adverb: use better, not weller."
+        },
+        {
+          "answers": [
+            "more well than"
+          ],
+          "message": "For how an action is done here, the standard comparative is better."
+        },
+        {
+          "answers": [
+            "well than"
+          ],
+          "message": "The base adverb alone does not make a comparison."
+        },
+        {
+          "message": "Use better than. Well describes how an action is done; good is the related adjective."
+        }
+      ],
+      "explanation": "Use better than. Well is an adverb here, describing how the plan was explained."
+    },
+    {
+      "id": "adv-078",
+      "sentence": "Of the groups, this group used the microphone _____.",
+      "base": "well",
+      "degree": "superlative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "best",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "well",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b4",
+          "label": "more",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the best",
+        "best"
+      ],
+      "correctSequences": [
+        [
+          "b1",
+          "b0"
+        ],
+        [
+          "b0"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "wellest"
+          ],
+          "message": "Well is irregular as an adverb: use best, not wellest."
+        },
+        {
+          "answers": [
+            "more well"
+          ],
+          "message": "This sentence needs a superlative, and the standard form is best."
+        },
+        {
+          "answers": [
+            "well"
+          ],
+          "message": "The base adverb alone does not show the highest degree."
+        },
+        {
+          "message": "Both the best and best are natural adverbial superlatives here."
+        }
+      ],
+      "explanation": "Use the best or best. Well is an adverb here, not the adjective good."
+    },
+    {
+      "id": "adv-079",
+      "sentence": "The second tutor demonstrated the task _____ than the first tutor.",
+      "base": "well",
+      "degree": "comparative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "better",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "well",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b4",
+          "label": "more",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "better than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "weller than"
+          ],
+          "message": "Well is irregular as an adverb: use better, not weller."
+        },
+        {
+          "answers": [
+            "more well than"
+          ],
+          "message": "For how an action is done here, the standard comparative is better."
+        },
+        {
+          "answers": [
+            "well than"
+          ],
+          "message": "The base adverb alone does not make a comparison."
+        },
+        {
+          "message": "Use better than. Well describes how an action is done; good is the related adjective."
+        }
+      ],
+      "explanation": "Use better than. Well is an adverb here, describing how the plan was explained."
+    },
+    {
+      "id": "adv-080",
+      "sentence": "Of the tutors, the second tutor demonstrated the task _____.",
+      "base": "well",
+      "degree": "superlative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "best",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "well",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "-est",
+          "kind": "suffix"
+        },
+        {
+          "id": "b4",
+          "label": "more",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the best",
+        "best"
+      ],
+      "correctSequences": [
+        [
+          "b1",
+          "b0"
+        ],
+        [
+          "b0"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "wellest"
+          ],
+          "message": "Well is irregular as an adverb: use best, not wellest."
+        },
+        {
+          "answers": [
+            "more well"
+          ],
+          "message": "This sentence needs a superlative, and the standard form is best."
+        },
+        {
+          "answers": [
+            "well"
+          ],
+          "message": "The base adverb alone does not show the highest degree."
+        },
+        {
+          "message": "Both the best and best are natural adverbial superlatives here."
+        }
+      ],
+      "explanation": "Use the best or best. Well is an adverb here, not the adjective good."
+    },
+    {
+      "id": "adv-081",
       "sentence": "The rain damaged the paper display _____ than it damaged the plastic sign.",
       "base": "badly",
       "degree": "comparative",
@@ -5227,7 +6145,7 @@
       "explanation": "Worse than is the usual irregular form. More badly than is also natural when focusing on the manner or extent of damage."
     },
     {
-      "id": "adv-070",
+      "id": "adv-082",
       "sentence": "Of the notices left outside, the paper one was damaged _____.",
       "base": "badly",
       "degree": "superlative",
@@ -5319,8 +6237,533 @@
       "explanation": "Use worst or most badly. With an adverbial superlative, the may be included or omitted when natural."
     },
     {
-      "id": "adv-071",
-      "sentence": "In the route challenge, the orange token rolled _____ than the blue token.",
+      "id": "adv-083",
+      "sentence": "In the fictional storm test, water marked the blue card _____ than the laminated card.",
+      "base": "badly",
+      "degree": "comparative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "worse",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "badly",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "badlier",
+          "kind": "word"
+        },
+        {
+          "id": "b5",
+          "label": "worser",
+          "kind": "word"
+        },
+        {
+          "id": "b6",
+          "label": "worst",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "worse than",
+        "more badly than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b3"
+        ],
+        [
+          "b1",
+          "b2",
+          "b3"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "badlier than"
+          ],
+          "message": "Do not change badly to badlier. Use worse, or more badly in this manner context."
+        },
+        {
+          "answers": [
+            "worser than"
+          ],
+          "message": "Worse is already the irregular comparative; worser is not standard here."
+        },
+        {
+          "answers": [
+            "worst than"
+          ],
+          "message": "Worst is a superlative, not a comparison with than."
+        },
+        {
+          "message": "Both worse than and more badly than are accepted in this context."
+        }
+      ],
+      "explanation": "Worse than is the usual irregular form. More badly than is also natural when focusing on the manner or extent of damage."
+    },
+    {
+      "id": "adv-084",
+      "sentence": "Of the cards in the storm test, the blue card was marked _____.",
+      "base": "badly",
+      "degree": "superlative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "worst",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "most",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "badly",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "badlier",
+          "kind": "word"
+        },
+        {
+          "id": "b5",
+          "label": "worse",
+          "kind": "word"
+        },
+        {
+          "id": "b6",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the worst",
+        "worst",
+        "the most badly",
+        "most badly"
+      ],
+      "correctSequences": [
+        [
+          "b3",
+          "b0"
+        ],
+        [
+          "b0"
+        ],
+        [
+          "b3",
+          "b1",
+          "b2"
+        ],
+        [
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "badlier"
+          ],
+          "message": "Do not make badly into badlier. Use worst, or most badly in this manner context."
+        },
+        {
+          "answers": [
+            "worse"
+          ],
+          "message": "Worse is comparative; this sentence needs the highest degree."
+        },
+        {
+          "answers": [
+            "worst than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Worst and most badly are both accepted here; the is optional with these adverbial superlatives."
+        }
+      ],
+      "explanation": "Use worst or most badly. With an adverbial superlative, the may be included or omitted when natural."
+    },
+    {
+      "id": "adv-085",
+      "sentence": "The old trolley performed _____ than the new trolley in the route trial.",
+      "base": "badly",
+      "degree": "comparative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "worse",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "badly",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "badlier",
+          "kind": "word"
+        },
+        {
+          "id": "b5",
+          "label": "worser",
+          "kind": "word"
+        },
+        {
+          "id": "b6",
+          "label": "worst",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "worse than",
+        "more badly than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b3"
+        ],
+        [
+          "b1",
+          "b2",
+          "b3"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "badlier than"
+          ],
+          "message": "Do not change badly to badlier. Use worse, or more badly in this manner context."
+        },
+        {
+          "answers": [
+            "worser than"
+          ],
+          "message": "Worse is already the irregular comparative; worser is not standard here."
+        },
+        {
+          "answers": [
+            "worst than"
+          ],
+          "message": "Worst is a superlative, not a comparison with than."
+        },
+        {
+          "message": "Both worse than and more badly than are accepted in this context."
+        }
+      ],
+      "explanation": "Worse than is the usual irregular form. More badly than is also natural when focusing on the manner or extent of damage."
+    },
+    {
+      "id": "adv-086",
+      "sentence": "Of the trolleys in the route trial, the old one performed _____.",
+      "base": "badly",
+      "degree": "superlative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "worst",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "most",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "badly",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "badlier",
+          "kind": "word"
+        },
+        {
+          "id": "b5",
+          "label": "worse",
+          "kind": "word"
+        },
+        {
+          "id": "b6",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the worst",
+        "worst",
+        "the most badly",
+        "most badly"
+      ],
+      "correctSequences": [
+        [
+          "b3",
+          "b0"
+        ],
+        [
+          "b0"
+        ],
+        [
+          "b3",
+          "b1",
+          "b2"
+        ],
+        [
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "badlier"
+          ],
+          "message": "Do not make badly into badlier. Use worst, or most badly in this manner context."
+        },
+        {
+          "answers": [
+            "worse"
+          ],
+          "message": "Worse is comparative; this sentence needs the highest degree."
+        },
+        {
+          "answers": [
+            "worst than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Worst and most badly are both accepted here; the is optional with these adverbial superlatives."
+        }
+      ],
+      "explanation": "Use worst or most badly. With an adverbial superlative, the may be included or omitted when natural."
+    },
+    {
+      "id": "adv-087",
+      "sentence": "The microphone worked _____ than it did in the first sound check.",
+      "base": "badly",
+      "degree": "comparative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "worse",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "more",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "badly",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "badlier",
+          "kind": "word"
+        },
+        {
+          "id": "b5",
+          "label": "worser",
+          "kind": "word"
+        },
+        {
+          "id": "b6",
+          "label": "worst",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "worse than",
+        "more badly than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b3"
+        ],
+        [
+          "b1",
+          "b2",
+          "b3"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "badlier than"
+          ],
+          "message": "Do not change badly to badlier. Use worse, or more badly in this manner context."
+        },
+        {
+          "answers": [
+            "worser than"
+          ],
+          "message": "Worse is already the irregular comparative; worser is not standard here."
+        },
+        {
+          "answers": [
+            "worst than"
+          ],
+          "message": "Worst is a superlative, not a comparison with than."
+        },
+        {
+          "message": "Both worse than and more badly than are accepted in this context."
+        }
+      ],
+      "explanation": "Worse than is the usual irregular form. More badly than is also natural when focusing on the manner or extent of damage."
+    },
+    {
+      "id": "adv-088",
+      "sentence": "Of the microphones, the old one worked _____.",
+      "base": "badly",
+      "degree": "superlative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "worst",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "most",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "badly",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "badlier",
+          "kind": "word"
+        },
+        {
+          "id": "b5",
+          "label": "worse",
+          "kind": "word"
+        },
+        {
+          "id": "b6",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the worst",
+        "worst",
+        "the most badly",
+        "most badly"
+      ],
+      "correctSequences": [
+        [
+          "b3",
+          "b0"
+        ],
+        [
+          "b0"
+        ],
+        [
+          "b3",
+          "b1",
+          "b2"
+        ],
+        [
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "badlier"
+          ],
+          "message": "Do not make badly into badlier. Use worst, or most badly in this manner context."
+        },
+        {
+          "answers": [
+            "worse"
+          ],
+          "message": "Worse is comparative; this sentence needs the highest degree."
+        },
+        {
+          "answers": [
+            "worst than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Worst and most badly are both accepted here; the is optional with these adverbial superlatives."
+        }
+      ],
+      "explanation": "Use worst or most badly. With an adverbial superlative, the may be included or omitted when natural."
+    },
+    {
+      "id": "adv-089",
+      "sentence": "In the route challenge, the orange token rolled _____ than the blue token did.",
       "base": "far",
       "degree": "comparative",
       "rule": "Irregular forms",
@@ -5396,8 +6839,494 @@
       "explanation": "Both farther than and further than are accepted. Farther often stresses physical distance."
     },
     {
-      "id": "adv-072",
+      "id": "adv-090",
       "sentence": "Of the tokens in the route challenge, the orange token rolled _____.",
+      "base": "far",
+      "degree": "superlative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "farthest",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "furthest",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "farther",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "further",
+          "kind": "word"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the farthest",
+        "farthest",
+        "the furthest",
+        "furthest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0"
+        ],
+        [
+          "b0"
+        ],
+        [
+          "b2",
+          "b1"
+        ],
+        [
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "farther"
+          ],
+          "message": "Farther is comparative; this sentence needs the greatest distance."
+        },
+        {
+          "answers": [
+            "further"
+          ],
+          "message": "Further is comparative; this sentence needs the greatest distance."
+        },
+        {
+          "answers": [
+            "farthest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both (the) farthest and (the) furthest are accepted adverbial superlatives here."
+        }
+      ],
+      "explanation": "Both the farthest/farthest and the furthest/furthest are accepted adverbial superlatives."
+    },
+    {
+      "id": "adv-091",
+      "sentence": "In the ramp trial, the green marble rolled _____ than the red marble did.",
+      "base": "far",
+      "degree": "comparative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "farther",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "further",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "far",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "farthest",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "farther than",
+        "further than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b2"
+        ],
+        [
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "farer than"
+          ],
+          "message": "Far does not normally take a plain -er ending in standard English."
+        },
+        {
+          "answers": [
+            "farthest than"
+          ],
+          "message": "Farthest is a superlative, so it does not compare two actions with than."
+        },
+        {
+          "answers": [
+            "far than"
+          ],
+          "message": "The base adverb far does not make the comparison."
+        },
+        {
+          "message": "Both farther than and further than are accepted in this distance context."
+        }
+      ],
+      "explanation": "Both farther than and further than are accepted. Farther often stresses physical distance."
+    },
+    {
+      "id": "adv-092",
+      "sentence": "Of the marbles in the ramp trial, the green marble rolled _____.",
+      "base": "far",
+      "degree": "superlative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "farthest",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "furthest",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "farther",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "further",
+          "kind": "word"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the farthest",
+        "farthest",
+        "the furthest",
+        "furthest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0"
+        ],
+        [
+          "b0"
+        ],
+        [
+          "b2",
+          "b1"
+        ],
+        [
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "farther"
+          ],
+          "message": "Farther is comparative; this sentence needs the greatest distance."
+        },
+        {
+          "answers": [
+            "further"
+          ],
+          "message": "Further is comparative; this sentence needs the greatest distance."
+        },
+        {
+          "answers": [
+            "farthest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both (the) farthest and (the) furthest are accepted adverbial superlatives here."
+        }
+      ],
+      "explanation": "Both the farthest/farthest and the furthest/furthest are accepted adverbial superlatives."
+    },
+    {
+      "id": "adv-093",
+      "sentence": "In the throw challenge, Jia's beanbag travelled _____ than Kai's did.",
+      "base": "far",
+      "degree": "comparative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "farther",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "further",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "far",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "farthest",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "farther than",
+        "further than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b2"
+        ],
+        [
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "farer than"
+          ],
+          "message": "Far does not normally take a plain -er ending in standard English."
+        },
+        {
+          "answers": [
+            "farthest than"
+          ],
+          "message": "Farthest is a superlative, so it does not compare two actions with than."
+        },
+        {
+          "answers": [
+            "far than"
+          ],
+          "message": "The base adverb far does not make the comparison."
+        },
+        {
+          "message": "Both farther than and further than are accepted in this distance context."
+        }
+      ],
+      "explanation": "Both farther than and further than are accepted. Farther often stresses physical distance."
+    },
+    {
+      "id": "adv-094",
+      "sentence": "Of the beanbags in the throw challenge, Jia's travelled _____.",
+      "base": "far",
+      "degree": "superlative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "farthest",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "furthest",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "the",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "farther",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "further",
+          "kind": "word"
+        },
+        {
+          "id": "b5",
+          "label": "than",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "the farthest",
+        "farthest",
+        "the furthest",
+        "furthest"
+      ],
+      "correctSequences": [
+        [
+          "b2",
+          "b0"
+        ],
+        [
+          "b0"
+        ],
+        [
+          "b2",
+          "b1"
+        ],
+        [
+          "b1"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "farther"
+          ],
+          "message": "Farther is comparative; this sentence needs the greatest distance."
+        },
+        {
+          "answers": [
+            "further"
+          ],
+          "message": "Further is comparative; this sentence needs the greatest distance."
+        },
+        {
+          "answers": [
+            "farthest than"
+          ],
+          "message": "Do not use than with a superlative."
+        },
+        {
+          "message": "Both (the) farthest and (the) furthest are accepted adverbial superlatives here."
+        }
+      ],
+      "explanation": "Both the farthest/farthest and the furthest/furthest are accepted adverbial superlatives."
+    },
+    {
+      "id": "adv-095",
+      "sentence": "On the route chart, the blue counter moved _____ than the yellow counter did.",
+      "base": "far",
+      "degree": "comparative",
+      "rule": "Irregular forms",
+      "blocks": [
+        {
+          "id": "b0",
+          "label": "farther",
+          "kind": "word"
+        },
+        {
+          "id": "b1",
+          "label": "further",
+          "kind": "word"
+        },
+        {
+          "id": "b2",
+          "label": "than",
+          "kind": "word"
+        },
+        {
+          "id": "b3",
+          "label": "far",
+          "kind": "word"
+        },
+        {
+          "id": "b4",
+          "label": "-er",
+          "kind": "suffix"
+        },
+        {
+          "id": "b5",
+          "label": "farthest",
+          "kind": "word"
+        }
+      ],
+      "answers": [
+        "farther than",
+        "further than"
+      ],
+      "correctSequences": [
+        [
+          "b0",
+          "b2"
+        ],
+        [
+          "b1",
+          "b2"
+        ]
+      ],
+      "feedback": [
+        {
+          "answers": [
+            "farer than"
+          ],
+          "message": "Far does not normally take a plain -er ending in standard English."
+        },
+        {
+          "answers": [
+            "farthest than"
+          ],
+          "message": "Farthest is a superlative, so it does not compare two actions with than."
+        },
+        {
+          "answers": [
+            "far than"
+          ],
+          "message": "The base adverb far does not make the comparison."
+        },
+        {
+          "message": "Both farther than and further than are accepted in this distance context."
+        }
+      ],
+      "explanation": "Both farther than and further than are accepted. Farther often stresses physical distance."
+    },
+    {
+      "id": "adv-096",
+      "sentence": "Of the counters on the route chart, the blue counter moved _____.",
       "base": "far",
       "degree": "superlative",
       "rule": "Irregular forms",

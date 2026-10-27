@@ -1,3 +1,5 @@
+import { isCorrect } from './core.js';
+
 const PREFIX = 'kslo-grammar-lab:';
 let available = true;
 try {
@@ -36,18 +38,32 @@ export function saveBest(report) {
 }
 
 export function validSession(value, moduleIds) {
-  if (!value || value.schema !== 1 || !moduleIds.includes(value.moduleId)) return false;
-  if (!Array.isArray(value.questions) || value.count !== value.questions.length || value.count < 1 || value.count > 30) return false;
-  if (!Number.isInteger(value.index) || value.index < 0 || value.index >= value.count) return false;
-  if (!Array.isArray(value.results) || !Array.isArray(value.assembly) || !Array.isArray(value.trayOrder)) return false;
-  if (!['building', 'wrong', 'correct', 'revealed'].includes(value.status)) return false;
-  const completed = ['correct', 'revealed'].includes(value.status);
-  if (value.results.length !== value.index + Number(completed)) return false;
-  if (!value.results.every(result => [0, 1].includes(result.mark))) return false;
-  if (value.score !== value.results.reduce((sum, result) => sum + result.mark, 0)) return false;
-  if (!Number.isInteger(value.attempts) || value.attempts < 0) return false;
-  if (new Set(value.questions.map(question => question.id)).size !== value.count) return false;
-  if (!value.questions.every(question => typeof question.sentence === 'string' && Array.isArray(question.blocks) && question.blocks.length && Array.isArray(question.answers) && question.answers.length)) return false;
-  const ids = value.questions[value.index].blocks.map(block => block.id);
-  return value.assembly.every(id => ids.includes(id)) && new Set(value.assembly).size === value.assembly.length && value.trayOrder.length === ids.length && new Set(value.trayOrder).size === ids.length && value.trayOrder.every(id => ids.includes(id));
+  try {
+    if (!value || value.schema !== 1 || !moduleIds.includes(value.moduleId)) return false;
+    if (!Array.isArray(value.questions) || value.count !== value.questions.length || value.count < 1 || value.count > 30) return false;
+    if (!value.questions.every(question => question && typeof question.id === 'string' && typeof question.sentence === 'string' && Array.isArray(question.blocks) && question.blocks.length && Array.isArray(question.answers) && question.answers.length && question.answers.every(answer => typeof answer === 'string'))) return false;
+    if (new Set(value.questions.map(question => question.id)).size !== value.count) return false;
+    if (!Number.isInteger(value.index) || value.index < 0 || value.index >= value.count) return false;
+    if (!Array.isArray(value.results) || !Array.isArray(value.assembly) || !Array.isArray(value.trayOrder)) return false;
+    if (!['building', 'wrong', 'correct', 'revealed'].includes(value.status)) return false;
+    if (!Number.isInteger(value.attempts) || value.attempts < 0) return false;
+    const completed = ['correct', 'revealed'].includes(value.status);
+    if (value.results.length !== value.index + Number(completed)) return false;
+    if (value.attempts === 0 && value.status !== 'revealed' && (value.status !== 'building' || value.firstAnswer !== null)) return false;
+    if ((value.attempts > 0 || value.status === 'wrong' || value.status === 'correct') && (value.attempts < 1 || typeof value.firstAnswer !== 'string' || !value.firstAnswer.trim())) return false;
+    if (!value.results.every((result, i) => {
+      const question = value.questions[i];
+      return result && result.questionId === question.id && [0, 1].includes(result.mark) && typeof result.firstAnswer === 'string' && typeof result.finalAnswer === 'string' && typeof result.gaveUp === 'boolean' && isCorrect(question, result.finalAnswer) && result.mark === Number(!result.gaveUp && isCorrect(question, result.firstAnswer));
+    })) return false;
+    if (value.score !== value.results.reduce((sum, result) => sum + result.mark, 0)) return false;
+    const question = value.questions[value.index];
+    if (value.status === 'wrong' && isCorrect(question, value.firstAnswer)) return false;
+    if (completed) {
+      const result = value.results.at(-1);
+      if (result.firstAnswer !== value.firstAnswer || result.gaveUp !== (value.status === 'revealed')) return false;
+      if (value.status === 'correct' && result.mark !== Number(value.attempts === 1)) return false;
+    }
+    const ids = question.blocks.map(block => block.id);
+    return value.assembly.every(id => ids.includes(id)) && new Set(value.assembly).size === value.assembly.length && value.trayOrder.length === ids.length && new Set(value.trayOrder).size === ids.length && value.trayOrder.every(id => ids.includes(id));
+  } catch { return false; }
 }

@@ -4,7 +4,7 @@
   "sections": [
     {
       "title": "Short adverbs: -er and -est",
-      "text": "Fast, hard, high, low and long normally take -er and -est: faster/fastest and harder/hardest. Late becomes later/latest. Early is an important exception to the usual -ly pattern: earlier/earliest.",
+      "text": "Fast, hard, high, low and long take -er and -est: faster/fastest and harder/hardest. For spelling, late → later → latest: add -r and -st. Early → earlier → earliest: change y to i before -er/-est.",
       "examples": [
         "Eva ran faster than before.",
         "The library opened earliest on Thursday."
@@ -12,19 +12,27 @@
     },
     {
       "title": "Most -ly adverbs: more and most",
-      "text": "Most adverbs ending in -ly use more and most: more carefully, most carefully; more clearly, most clearly. Do not add -er/-est, do not double letters, and do not change the y to i.",
+      "text": "Most adverbs ending in -ly use more and most: more carefully, most carefully; more easily, most easily. Do not add -er/-est, double letters, or change -ly to -lier/-liest.",
       "examples": [
         "Asha explained the instructions more clearly than before.",
         "The group worked most carefully."
       ],
-      "note": "Early is the exception: earlier/earliest, not more early in this course."
+      "note": "Early is a conventional exception: earlier/earliest is the usual form in these comparison exercises."
     },
     {
       "title": "Irregular forms and far",
-      "text": "Well → better → best. Badly usually becomes worse/worst; more badly and most badly can also be natural when the manner or extent of harm is the focus. Farther/farthest and further/furthest are both standard; farther often stresses physical distance.",
+      "text": "Well → better → best. Badly usually becomes worse/worst; more badly and most badly can also be natural when the manner or extent of harm is the focus. Both farther/farthest and further/furthest are standard for distance; further alone also means additional or broader.",
       "examples": [
         "The team explained the plan better than before.",
         "The rain damaged the paper sign most badly."
+      ]
+    },
+    {
+      "title": "Common mistakes to avoid",
+      "text": "Use faster, not more fast. Use more easily, not easilier. Do not combine two comparison patterns, and do not copy the adjective rule onto an -ly adverb.",
+      "examples": [
+        "The team finished faster than before.",
+        "The new instructions can be followed more easily."
       ]
     },
     {

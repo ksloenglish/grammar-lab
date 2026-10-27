@@ -46,7 +46,8 @@ for (const id of ['adjectives', 'adverbs']) {
       const question = questions[i];
       assert.equal(submitTrial(session), null, 'empty submission ignored');
       assert.equal(session.attempts, 0);
-      session.assembly = [question.blocks.find(x => x.label === question.base)?.id ?? question.blocks[0].id];
+      const used = new Set(question.correctSequences.flat());
+      session.assembly = [question.blocks.find(block => !used.has(block.id)).id];
       assert.equal(submitTrial(session).correct, false);
       const firstAnswer = session.firstAnswer;
       if (i % 2 === 0) {
@@ -81,3 +82,21 @@ test('invalid saved sessions are rejected safely', () => {
   for (const value of [null, {}, { schema: 1 }, { schema: 1, moduleId: 'adjectives', questions: null }]) assert.equal(validSession(value, ['adjectives']), false);
 });
 test('sampling rejects insufficient content', () => assert.throws(() => sampleQuestions([], 10)));
+
+test('corrupt wrong states cannot earn a first-attempt mark on resume', () => {
+  const question = bank('adjectives')[0];
+  const session = createExperiment('adjectives', [question]);
+  const used = new Set(question.correctSequences.flat());
+  session.assembly = [question.blocks.find(block => !used.has(block.id)).id];
+  submitTrial(session);
+  assert.equal(validSession(session, ['adjectives']), true);
+  const noAttempts = { ...session, attempts: 0 };
+  const noFirstAnswer = { ...session, firstAnswer: null };
+  assert.equal(validSession(noAttempts, ['adjectives']), false);
+  assert.equal(validSession(noFirstAnswer, ['adjectives']), false);
+  const malformedQuestion = { ...session, questions: [null] };
+  assert.equal(validSession(malformedQuestion, ['adjectives']), false);
+  retryTrial(session);
+  session.assembly = question.correctSequences[0];
+  assert.equal(submitTrial(session).mark, 0);
+});

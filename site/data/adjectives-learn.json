@@ -13,7 +13,7 @@
     },
     {
       "title": "Adjectives ending in -y",
-      "text": "Change final -y to -i before -er and -est: easy → easier → easiest; busy → busier → busiest.",
+      "text": "Many common two-syllable adjectives ending in consonant + y change y to i before -er and -est: easy → easier → easiest; busy → busier → busiest. This is not every final-y word: shy → shyer → shyest is a standard exception.",
       "examples": [
         "This clue is easier than the final clue.",
         "It is the noisiest part of the task."
@@ -31,10 +31,18 @@
     },
     {
       "title": "Irregular forms and far",
-      "text": "Good → better → best and bad → worse → worst. Far has two standard families: farther/farthest and further/furthest. Farther often focuses on physical distance; further also works with distance and broader meanings.",
+      "text": "Good → better → best and bad → worse → worst. Far has two standard families: farther/farthest and further/furthest. Both are standard for distance; further alone also means additional or broader.",
       "examples": [
         "The revised poster is better than the first draft.",
         "This is the farthest classroom from the hall."
+      ]
+    },
+    {
+      "title": "Common mistakes to avoid",
+      "text": "Do not make a double comparison or superlative: say easier, not more easier; say the fastest, not the most fastest. Use one formation pattern only.",
+      "examples": [
+        "The second clue is easier than the first.",
+        "She chose the most interesting article."
       ]
     },
     {
