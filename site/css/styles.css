@@ -192,19 +192,18 @@ main#app { flex: 1 0 auto; padding-block: clamp(2rem, 5vw, 4.75rem) clamp(3.75re
 
 /* Optional home-only flask scene injected by the app. */
 .lab-scene { position: relative; min-height: 5.75rem; display: flex; align-items: end; justify-content: center; gap: 0.56rem; margin: 1.15rem 0 0; padding: 0.5rem 0.55rem 0; border-top: 1px dashed #c8dce5; pointer-events: none; }
-.lab-flask { position: relative; width: 3.65rem; height: 4.7rem; display: grid; align-items: end; justify-items: center; color: var(--teal); transform-origin: bottom center; }
-.lab-flask:nth-child(2) { color: var(--violet); transform: translateY(-0.3rem) rotate(-2deg); }
-.lab-flask:nth-child(3) { color: var(--coral); transform: rotate(2deg); }
-.flask-neck { position: absolute; z-index: 2; top: 0.16rem; width: 1.12rem; height: 1.55rem; border: 2px solid currentColor; border-bottom: 0; border-radius: 0.25rem 0.25rem 0 0; background: #fff; }
-.flask-body { position: relative; width: 3.4rem; height: 3.28rem; overflow: hidden; border: 2px solid currentColor; border-radius: 0.55rem 0.55rem 1.32rem 1.32rem; background: rgb(255 255 255 / 80%); }
-.flask-liquid { position: absolute; right: 0.18rem; bottom: 0.18rem; left: 0.18rem; height: 48%; border-radius: 0.32rem 0.32rem 1.05rem 1.05rem; background: currentColor; opacity: 0.82; }
-.lab-flask:nth-child(2) .flask-liquid { height: 67%; }
-.lab-flask:nth-child(3) .flask-liquid { height: 39%; }
-.lab-bubble { position: absolute; z-index: 3; width: 0.32rem; height: 0.32rem; border-radius: 50%; background: currentColor; opacity: 0.68; }
-.lab-bubble:nth-of-type(2) { bottom: 0.72rem; left: 0.52rem; }
-.lab-bubble:nth-of-type(3) { right: 0.52rem; bottom: 1.18rem; width: 0.48rem; height: 0.48rem; }
-.lab-bubble:nth-of-type(4) { bottom: 1.9rem; left: 1.58rem; width: 0.25rem; height: 0.25rem; }
-.flask-tag { position: absolute; z-index: 4; bottom: -0.06rem; padding: 0.13rem 0.28rem; border-radius: 99px; color: var(--ink); background: #fff; box-shadow: 0 1px 0 rgb(23 35 63 / 16%); font-family: var(--mono); font-size: 0.42rem; font-weight: 900; letter-spacing: 0.02em; line-height: 1; }
+.lab-flask { position: relative; width: 4.2rem; display: flex; flex-direction: column; align-items: center; color: var(--teal); transform-origin: bottom center; }
+.lab-flask:nth-child(2) { color: var(--violet); }
+.lab-flask:nth-child(3) { color: var(--coral); }
+.flask-svg { display: block; width: 100%; height: auto; overflow: visible; }
+.flask-glass { fill: #f2fcfe; }
+.flask-outline { fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.flask-fluid { fill: currentColor; opacity: 0.72; }
+.flask-bubble { fill: #fff; opacity: 0.75; animation: flask-bubble-pop 500ms ease-out var(--delay, 0ms) both; }
+.flask-shine { fill: none; stroke: #fff; stroke-width: 3.5; stroke-linecap: round; opacity: 0.85; }
+.flask-marks { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; opacity: 0.55; }
+.flask-tag { position: relative; margin-top: -0.14rem; padding: 0.17rem 0.35rem; border-radius: 99px; color: var(--ink); background: #fff; box-shadow: 0 1px 0 rgb(23 35 63 / 16%); font-family: var(--mono); font-size: 0.48rem; font-weight: 900; letter-spacing: 0.02em; line-height: 1; }
+@keyframes flask-bubble-pop { from { opacity: 0; transform: translateY(5px); } to { opacity: 0.75; transform: translateY(0); } }
 .scene-spark { position: absolute; width: 0.9rem; height: 0.9rem; display: grid; place-items: center; border-radius: 50%; color: #6b3900; background: #ffd267; box-shadow: 0 0 0 0.18rem rgb(255 204 77 / 26%); font-family: var(--display); font-size: 0.74rem; font-weight: 900; line-height: 1; }
 .lab-scene .scene-spark:nth-last-child(1) { top: 0.55rem; left: 7%; }
 .lab-scene .scene-spark:nth-last-child(2) { top: 0.1rem; right: 10%; color: var(--coral); }
@@ -220,8 +219,7 @@ main#app { flex: 1 0 auto; padding-block: clamp(2rem, 5vw, 4.75rem) clamp(3.75re
 .module-card::after { position: absolute; z-index: 0; right: -4.2rem; bottom: -4.2rem; width: 12rem; height: 12rem; content: ""; border-radius: 50%; background: currentColor; opacity: 0.1; pointer-events: none; }
 .module-card.teal { color: var(--teal-dark); background: linear-gradient(135deg, #fff 0 72%, #dff8f4 100%); }
 .module-card.violet { color: var(--violet-dark); background: linear-gradient(135deg, #fff 0 72%, #efe9ff 100%); }
-.module-top { position: relative; z-index: 1; min-height: 3.6rem; display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
-.module-symbol { width: 3.35rem; height: 3.35rem; display: grid; flex: 0 0 auto; place-items: center; border: 2px solid currentColor; border-radius: 1rem; color: #fff; background: currentColor; box-shadow: 0 4px 0 rgb(23 35 63 / 17%); font-family: var(--display); font-size: 1.68rem; font-weight: 900; line-height: 1; }
+.module-top { position: relative; z-index: 1; min-height: 2.25rem; display: flex; align-items: flex-start; justify-content: flex-end; gap: 1rem; }
 .module-status { min-height: 1.8rem; display: inline-flex; align-items: center; padding: 0.32rem 0.55rem; border: 1px solid currentColor; border-radius: 99px; color: currentColor; background: rgb(255 255 255 / 82%); font-family: var(--mono); font-size: 0.62rem; font-weight: 900; letter-spacing: 0.06em; line-height: 1; text-transform: uppercase; white-space: nowrap; }
 .module-card h3 { position: relative; z-index: 1; max-width: 18ch; margin: 1.65rem 0 0.75rem; color: var(--ink); font-family: var(--display); font-size: clamp(1.85rem, 2.6vw, 2.35rem); font-weight: 900; letter-spacing: -0.045em; line-height: 1.03; }
 .module-card > p { position: relative; z-index: 1; max-width: 44ch; margin: 0 0 1.35rem; color: var(--ink-muted); font-size: 0.98rem; }
@@ -346,10 +344,10 @@ main#app { flex: 1 0 auto; padding-block: clamp(2rem, 5vw, 4.75rem) clamp(3.75re
 .assembly-zone:empty::before { width: 100%; content: "Place your word blocks here"; color: var(--ink-faint); font-size: 0.98rem; font-style: italic; text-align: center; }
 .assembly-zone.drag-over { border-color: var(--teal-dark); background: var(--teal-pale); box-shadow: inset 0 0 0 3px rgb(8 125 120 / 17%); }
 .assembled-block { min-width: 0; display: inline-flex; align-items: stretch; gap: 0.2rem; border-radius: 0.75rem; background: #fff; box-shadow: 0 3px 0 #c4d5df; }
-.token-button { min-height: 3.25rem; max-width: 100%; padding: 0.58rem 0.8rem; border: 2px solid #9db5c2; border-radius: 0.75rem; color: var(--ink); background: #fff; font-family: var(--display); font-size: clamp(1.25rem, 1.4vw, 1.38rem); font-weight: 900; line-height: 1.12; text-align: left; }
+.token-button { min-height: 3.25rem; max-width: 100%; padding: 0.58rem 0.8rem; border: 2px solid #9db5c2; border-radius: 0.75rem; color: var(--ink); background: #fff; font-family: var(--display); font-size: clamp(1.25rem, 1.4vw, 1.38rem); font-weight: 900; line-height: 1.12; text-align: left; white-space: nowrap; }
 .token-button.suffix { border-color: #b49bed; background: #f2efff; color: var(--violet-dark); }
 .token-button.operation { border-color: #b07917; color: #704609; background: #fff0c7; }
-.token-button.operation::after { display: inline-block; margin-left: 0.45rem; content: "✕"; color: #b52d42; font-size: 1.25rem; }
+.token-button.operation::before { display: inline-block; margin-right: 0.35rem; content: "✕"; color: #b52d42; font-size: 1.25rem; }
 .token-button:hover { border-color: var(--coral); color: var(--coral-dark); background: #fff7f8; }
 .move-buttons { display: flex; flex-direction: column; gap: 0.15rem; padding: 0.15rem 0.15rem 0.15rem 0; }
 .move-buttons button { width: 1.75rem; min-height: 1.4rem; display: grid; place-items: center; padding: 0; border: 1px solid #b9cbd5; border-radius: 0.35rem; color: var(--ink-muted); background: #f5fbfe; font-size: 0.75rem; font-weight: 900; line-height: 1; }
@@ -380,16 +378,17 @@ main#app { flex: 1 0 auto; padding-block: clamp(2rem, 5vw, 4.75rem) clamp(3.75re
 .tray-group { display: grid; gap: 0.6rem; min-width: 0; }
 .tray-group + .tray-group { padding-top: 0.95rem; border-top: 1px dashed #dfc47c; }
 .tray-group-title { margin: 0; color: var(--ink-muted); font-family: var(--mono); font-size: 0.67rem; font-weight: 900; letter-spacing: 0.075em; line-height: 1.2; text-transform: uppercase; }
-.ingredient-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.7rem; min-width: 0; }
-.reagent { min-width: 0; min-height: 4.05rem; display: flex; align-items: center; justify-content: center; gap: 0.28rem; padding: 0.72rem 0.48rem; border: 2px solid #9eb7c4; border-radius: 0.95rem; color: var(--ink); background: #fff; box-shadow: 0 4px 0 #b9cbd5; font-family: var(--display); font-size: clamp(1.25rem, 1.4vw, 1.38rem); font-weight: 900; line-height: 1.12; text-align: center; transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease, background-color 150ms ease; }
+.ingredient-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.7rem; min-width: 0; }
+.reagent { flex: 0 0 auto; width: max-content; min-width: 4.2rem; max-width: 100%; min-height: 4.05rem; display: flex; align-items: center; justify-content: center; gap: 0.35rem; padding: 0.72rem 0.65rem; border: 2px solid #9eb7c4; border-radius: 0.95rem; color: var(--ink); background: #fff; box-shadow: 0 4px 0 #b9cbd5; font-family: var(--display); font-size: clamp(1.25rem, 1.4vw, 1.38rem); font-weight: 900; line-height: 1.12; text-align: center; transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease, background-color 150ms ease; }
 .reagent::after { flex: 0 0 auto; color: var(--ink-faint); content: "+"; font-family: var(--display); font-size: 1.4rem; font-weight: 900; }
 .reagent:hover { border-color: var(--teal-dark); background: #f4fffd; box-shadow: 0 6px 0 #82c3bd; transform: translateY(-2px); }
 .reagent:active { box-shadow: 0 1px 0 #82c3bd; transform: translateY(2px); }
 .reagent.word { border-left: 0.46rem solid var(--teal); }
 .reagent.suffix { border-left: 0.46rem solid var(--violet); background: #fcfbff; }
-.reagent.operation { grid-column: span 2; border-left: 0.46rem solid #b07917; color: #704609; background: #fff0c7; }
-.reagent.operation::after { content: "✕"; color: #b52d42; font-size: 1.6rem; text-decoration: none; }
-.block-label { display: block; min-width: 0; margin: 0; color: inherit; font: inherit; letter-spacing: normal; overflow-wrap: anywhere; text-transform: none; white-space: normal; }
+.reagent.operation { min-width: 4.2rem; border-left: 0.46rem solid #b07917; color: #704609; background: #fff0c7; }
+.reagent.operation::before { content: "✕"; color: #b52d42; font-size: 1.6rem; }
+.reagent.operation::after { display: none; content: none; }
+.block-label { display: block; margin: 0; color: inherit; font: inherit; letter-spacing: normal; overflow-wrap: normal; text-transform: none; white-space: nowrap; }
 .tray-placeholder { min-height: 5.25rem; display: grid; place-items: center; padding: 1rem; border: 2px dashed #caa750; border-radius: var(--radius-sm); color: var(--ink-faint); background: rgb(255 255 255 / 55%); font-size: 0.98rem; font-style: italic; text-align: center; }
 .trial-actions { justify-content: flex-end; margin-top: 1.5rem; }
 

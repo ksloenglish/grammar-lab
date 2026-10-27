@@ -24,7 +24,7 @@ with sync_playwright() as p:
         page.reload(wait_until='networkidle')
         expect(page.locator('.sentence')).to_be_visible()
         operation=page.locator(f'[data-action="add-block"][data-block="{ids["operation"]}"]')
-        cross=operation.evaluate("node=>({content:getComputedStyle(node,'::after').content,colour:getComputedStyle(node,'::after').color})")
+        cross=operation.evaluate("node=>({content:getComputedStyle(node,'::before').content,colour:getComputedStyle(node,'::before').color})")
         assert '✕' in cross['content'] and cross['colour']=='rgb(181, 45, 66)',cross
         page.locator(f'[data-action="add-block"][data-block="{ids["base"]}"]').click()
         operation.click()

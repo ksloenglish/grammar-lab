@@ -60,7 +60,7 @@ Reuse labels/IDs rather than duplicating blocks. Do not add unrelated irregular 
 
 ## Remove y and visible spelling changes
 
-Use a readable **Remove y** tile with a **red cross** meaning removal. It is a controlled operation, not an ordinary word or suffix: it removes only the final y from the immediately preceding word. For example, `happy + Remove y + -ier + than` builds `happier than`; `early + Remove y + -ier` builds earlier.
+Show the deletion tile as a **red cross before y**, with no visible word “remove”. Keep it compact and retain an accessible remove-final-y label. It is a controlled operation, not an ordinary word or suffix: it removes only the final y from the immediately preceding word. For example, `happy + Remove y + -ier + than` builds `happier than`; `early + Remove y + -ier` builds earlier.
 
 Show the spelling change clearly: happy with its final y crossed out → happ → happier. Use a brief removal/joining effect and a static reduced-motion equivalent. An operation on a non-y word or in the wrong position must remain visibly invalid, not silently do nothing or earn a mark. Prefer explicit deletion recipes in examples/correct sequences, but retain direct -ier/-iest assembly as an accepted equivalent. Explain the operation in B1 language.
 
@@ -85,3 +85,9 @@ A link such as `?module=adjectives&n=20` opens **setup with that module/count pr
 Permanently enforce the final assessment principles in the generator, deployment validator, regression tests and saved-question checks. Investigate reported mistakes at the root cause, correct the output and update this prompt/instructions so they do not recur. Keep corrected context overrides in the generator so regeneration cannot undo them.
 
 Verify answer alternatives, article/connectors, all ingredients, y operations, first-attempt scoring, retry/give-up, persistence, keyboard/touch/native drag, responsive layouts, print, reduced motion and error states. Save the authorised code without rewriting remote history, push to GitHub automatically, confirm the Action deployment and verify the actual public site before delivery. Do not claim a preview/checkpoint is a published release.
+
+## Home icon correction
+
+Do not display the Aa or Av abbreviation badges on available module cards; the Lab 01 / Lab 02 labels are sufficient. In particular, Av is unwanted. Keep Home flasks recognisably conical laboratory glassware: short necks, flared rims, sloping shoulders and broad flat bases, with neatly clipped coloured liquid and subtle graduation marks. Never use a tall central neck on a rounded rectangular body that resembles a raised finger. Verify the rendered scene at phone and desktop sizes.
+
+Tile words must stay on one line without smaller text or ellipses. Use content-sized wrapping rows so longer words such as reliable receive a wider tile. The deletion tile is a short red-cross-plus-y control, with the cross before y, both in the tray and after placement.
