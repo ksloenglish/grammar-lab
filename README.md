@@ -62,7 +62,7 @@ Best scores are separate for each module and 10/20/30 count. Unfinished experime
 
 The assessment correction uses saved-question schema 2. Older incompatible experiments/reports are backed up locally under `archive:session`/`archive:last-report` where storage permits, then excluded from current practice. Students see a notice asking them to start a new experiment. The independent best-score key is not cleared. New unfinished experiments resume normally.
 
-Optional name/class fields exist only on screen and in the requested printout. They are never stored, sent, or put in URLs. Sound starts off and uses local Web Audio tones. There is no backend, login, cookies, app analytics, tracking or external font library. GitHub can maintain its own host access logs; these are separate from the app.
+Optional name/class fields exist only on screen and in the requested printout. They are never stored, sent, or put in URLs. The app is completely silent, with no sound control or audio-generation code. There is no backend, login, cookies, app analytics, tracking or external font library. GitHub can maintain its own host access logs; these are separate from the app.
 
 End Experiment asks before discarding unfinished work. In-app navigation/browser back asks before leaving and preserves unfinished work where storage is available. Refresh/closing uses the browser's native leave warning; its exact text is controlled by the browser.
 
@@ -86,7 +86,7 @@ Use **Build your answer**, **Word blocks**, **Check answer**, **Clear answer**. 
 
 ## Playful light-lab effects
 
-The approved UI is a colourful light science lab, not a formal editorial page. Bold rounded system typography, lively lab panels and chunky coloured word tiles preserve clear high-contrast reading. `js/effects.js` builds decorative Home flasks, score beakers, sparks and report confetti. The beaker level uses the actual score percentage; effects never alter marking. Placement/fusion, correct reactions, separated wrong-word fragments and report celebrations are brief, with no endlessly distracting motion. Reduced-motion preferences suppress animations, printing omits decorative effects, and sound remains off by default. Everything runs as ordinary static CSS/JavaScript on GitHub Pages.
+The approved UI is a colourful light science lab, not a formal editorial page. Bold rounded system typography, lively lab panels and chunky coloured word tiles preserve clear high-contrast reading. `js/effects.js` builds decorative Home flasks, score beakers, sparks and report confetti. The beaker level uses the actual score percentage; effects never alter marking. Placement/fusion, correct reactions, separated wrong-word fragments and report celebrations are brief, with no endlessly distracting motion. Reduced-motion preferences suppress animations, printing omits decorative effects, and all effects are silent. Everything runs as ordinary static CSS/JavaScript on GitHub Pages.
 
 ## Final-y deletion ingredient
 
@@ -97,3 +97,5 @@ The build appends the deployment version to CSS, the JavaScript entry and every 
 ## Final tile and Home visual rules
 
 Word labels stay on one line. Content-sized wrapping rows give longer words their own width without smaller text or ellipses. The deletion control displays only a red cross before y, in both tray and answer; its internal Remove y name and accessible remove-final-y description remain intact. Available cards use Lab labels only, not Aa/Av abbreviation badges. Home flask vectors have short flared necks, sloping shoulders, clipped liquid, glass highlights and broad bases. `tests/tile-visual-check.py` checks all 2,430 rendered labels per viewport across both banks.
+
+Top-right navigation always shows the full **Lab home** label in an outlined teal button, including at 360px. It retains the unfinished-experiment confirmation and a minimum 44px touch target. The Home example is headed **How to build a word** and shows **easy + ×y + -ier → easier**, with accessible final-y deletion and engine-rendered **easy → eas → easier** spelling steps. The caption matches the ingredients: “Remove the final y. Add -ier.” `tests/home-ui-check.py` checks these changes and silence on desktop Chromium and 360px WebKit.

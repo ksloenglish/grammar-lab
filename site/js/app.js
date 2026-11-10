@@ -20,8 +20,6 @@ let dialogPending = false;
 let ignorePop = false;
 let draggedId = null;
 let dragEndedAt = 0;
-let audioContext;
-let soundOn = false;
 let bankUpdateNotice = false;
 let justPlacedBlock = null;
 let justFused = false;
@@ -134,9 +132,26 @@ function homeView() {
   const best = load('best', {});
   const saved = getSavedSession();
   const available = modules.filter(item => item.available);
+  const demo = assemble({ blocks: [
+    { id: 'base', label: 'easy', kind: 'word' },
+    { id: 'remove-y', label: 'Remove y', kind: 'operation', operation: 'remove-final-y' },
+    { id: 'suffix', label: '-ier', kind: 'suffix' }
+  ] }, ['base', 'remove-y', 'suffix']);
   return `<section class="hero">
     <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> LEARN · BUILD · TRY AGAIN</p><h1>Mix words.<br><em>Make it work.</em></h1><p class="hero-description">Move word blocks, build your answer and see what happens. Make mistakes, learn the rules and try again.</p><div class="hero-actions"><a class="button primary" href="#modules">Pick a grammar challenge <span class="arrow" aria-hidden="true">↗</span></a><span class="hero-footnote">No login needed.</span></div></div>
-    <aside class="hero-demo" aria-label="Example: easy plus ier forms easier"><div class="specimen-label"><span>WORD EXAMPLE</span><span>BUILD A WORD</span></div><div class="demo-equation"><span class="demo-token">easy</span><span class="demo-plus">+</span><span class="demo-token suffix">-ier</span></div><div class="demo-flow" aria-hidden="true">↓</div><div class="demo-result">easier<span class="demo-tick" aria-hidden="true">✓</span></div><p class="demo-caption">Change <strong>y → i</strong>. Add <strong>-er</strong>.<br>You have made the correct word.</p>${labScene()}<div class="glassware" aria-hidden="true"></div></aside>
+    <aside class="hero-demo" aria-label="Example: easy; remove the final y; add ier to make easier">
+      <h2 class="specimen-label">How to build a word</h2>
+      <div class="demo-equation">
+        <span class="demo-token">easy</span><span class="demo-plus" aria-hidden="true">+</span>
+        <span class="demo-token operation" role="img" aria-label="Remove the final y"><span class="demo-cross" aria-hidden="true">✕</span><span aria-hidden="true">y</span></span>
+        <span class="demo-plus" aria-hidden="true">+</span><span class="demo-token suffix">-ier</span>
+      </div>
+      ${spellingStepsMarkup(demo.parts, e)}
+      <div class="demo-flow" aria-hidden="true">↓</div>
+      <div class="demo-result">${e(demo.text)}<span class="demo-tick" aria-hidden="true">✓</span></div>
+      <p class="demo-caption">Remove the final <strong>y</strong>. Add <strong>-ier</strong>.<br>You have made the correct word.</p>
+      ${labScene()}<div class="glassware" aria-hidden="true"></div>
+    </aside>
   </section>
   ${saved ? `<section class="resume-banner"><div><strong>You have an unfinished experiment.</strong><p>${e(moduleById(saved.moduleId)?.shortTitle)} · ${saved.practice ? 'Wrong-answer practice' : `${saved.count} trials`} · ${saved.results.length} completed</p></div>${actionButton('Resume experiment →', 'resume')}${actionButton('Discard', 'discard-saved', 'ghost')}</section>` : ''}
   <section id="modules" aria-labelledby="modules-heading"><div class="section-heading"><span class="section-index">01 /</span><div><h2 id="modules-heading">Choose a grammar topic.</h2><p>Read the rules first, or try some questions.</p></div><span class="available-count">${available.length} CHALLENGES READY</span></div><div class="modules-grid">${available.map((module, i) => `<article class="module-card ${e(module.accent)}"><div class="module-top"><span class="module-status">LAB ${String(i + 1).padStart(2, '0')} · READY</span></div><h3>${e(module.title)}</h3><p>${e(module.description)}</p><div class="module-preview"><span>${i === 0 ? 'big → bigger → biggest' : 'well → better → best'}</span><span aria-hidden="true">↗</span></div><div class="module-actions">${routeLink('Learn the rules', `learn/${module.id}`)}${routeLink('Experiment →', `setup/${module.id}`, 'primary')}</div><div class="best-scores">${[10, 20, 30].map(n => { const record = best[`${module.id}:${n}`]; return `<span class="best-chip">${n} trials: ${record ? `best ${record.score}/${n}` : 'not yet tested'}</span>`; }).join('')}</div></article>`).join('')}</div></section>
@@ -226,22 +241,6 @@ async function refreshTrial(focusSelector) {
   persist();
   await render('experiment');
   if (focusSelector) app.querySelector(focusSelector)?.focus({ preventScroll: true });
-}
-function sound(correct) {
-  if (!soundOn) return;
-  try {
-    audioContext ??= new (window.AudioContext || window.webkitAudioContext)();
-    audioContext.resume();
-    const oscillator = audioContext.createOscillator();
-    const gain = audioContext.createGain();
-    oscillator.connect(gain); gain.connect(audioContext.destination);
-    oscillator.type = 'sine';
-    oscillator.frequency.setValueAtTime(correct ? 520 : 190, audioContext.currentTime);
-    oscillator.frequency.exponentialRampToValueAtTime(correct ? 780 : 100, audioContext.currentTime + 0.18);
-    gain.gain.setValueAtTime(0.04, audioContext.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 0.25);
-    oscillator.start(); oscillator.stop(audioContext.currentTime + 0.26);
-  } catch { /* Unsupported audio must not affect marking. */ }
 }
 async function changeBlock(id, mode, targetId) {
   if (!session || session.status !== 'building') return;
@@ -341,7 +340,6 @@ async function handleAction(button) {
   if (action === 'submit') {
     const result = submitTrial(session);
     if (!result) return;
-    sound(result.correct);
     await refreshTrial(result.correct ? '[data-action="next"]' : '[data-action="retry"]');
     announce(`${result.correct ? 'Correct.' : 'Not correct yet.'} ${session.feedback} ${result.correct ? result.mark ? 'One mark awarded.' : 'No mark: this was a retry.' : 'No mark will be awarded for this trial. Retry or give up.'}`);
     return;
@@ -431,13 +429,6 @@ app.addEventListener('drop', event => {
 app.addEventListener('dragend', () => {
   draggedId = null; dragEndedAt = Date.now();
   app.querySelectorAll('.drag-over').forEach(zone => zone.classList.remove('drag-over'));
-});
-document.querySelector('#sound-toggle').addEventListener('click', event => {
-  soundOn = !soundOn;
-  event.currentTarget.textContent = `Sound ${soundOn ? 'on' : 'off'}`;
-  event.currentTarget.setAttribute('aria-pressed', String(soundOn));
-  event.currentTarget.setAttribute('aria-label', `Turn sound ${soundOn ? 'off' : 'on'}`);
-  if (soundOn) sound(true);
 });
 
 async function initialise() {

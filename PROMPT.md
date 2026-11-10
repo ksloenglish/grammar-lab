@@ -22,7 +22,7 @@ The footer displays the sole `version.js` version in `v[yymmdd]-[hhmmss]` format
 
 Use a **colourful LIGHT science lab** that feels fun and exciting, not a serious editorial form with a few added particles. Use bold rounded system sans-serif, lively teal/violet/coral/amber accents, tactile coloured word tiles, playful lab panels and functional beaker progress. Keep the question area calm, readable and high-contrast. No clip art, novelty fonts, external font dependency or endless distracting animation.
 
-Include brief animated Home flasks/mixing, block snapping and fusion, clearly visible correct-answer sparks, genuinely separating wrong-word fragments, a beaker filled to the actual score percentage and a short report celebration. Animations are smooth and short, generally 200–600ms; reduced-motion preferences disable decorative movement. Sound is off by default with a toggle. Effects never change marking or block controls.
+Include brief animated Home flasks/mixing, block snapping and fusion, clearly visible correct-answer sparks, genuinely separating wrong-word fragments, a beaker filled to the actual score percentage and a short report celebration. Animations are smooth and short, generally 200–600ms; reduced-motion preferences disable decorative movement. The app is completely silent: no sound toggle, audio playback or Web Audio generation. Effects never change marking or block controls.
 
 Support 360px phones, desktops and classroom projectors. Use deliberate card/dialog padding and consistent component spacing. Button rows have comfortable gaps and at least 16–24px before following text/callouts. Word-block text is normal-case sans-serif, at least 20px desktop and 18px phone. Left-align **Build your answer** and **Word blocks** with panel content; keep **01 / BUILD** and **02 / SELECT** on the right. Decorative marks must not push headings into the middle. Keep the green easier/tick Home result content-sized and centred, with breathing space before its caption.
 
@@ -31,6 +31,10 @@ Provide WCAG AA contrast, visible focus, full keyboard operation and screen-read
 ## Home and Learn
 
 Home has the title/logo, a concise two- or three-sentence explanation and module cards. Available cards offer Learn and Experiment and show saved best records. Placeholder modules say Coming soon.
+
+Top-right navigation always displays the full **Lab home** label, including on phones, with an obvious button treatment and a minimum 44px touch target. Never replace its text with an icon-only control. Preserve the unfinished-experiment leave confirmation.
+
+The Home demonstration heading is **How to build a word**. Show **easy + ×y + -ier → easier**, using the compact red-cross-before-y operation and an accessible remove-final-y name. Reuse the assembly engine and spelling-step renderer to show easy with its final y crossed out → eas → easier. The caption says “Remove the final y. Add -ier.” Keep all three ingredient labels readable and unclipped at phone and desktop sizes.
 
 Learn explains formation, spelling and common mistakes: short words, consonant-y endings, longer words and -ly adverbs; -r, doubling and y changes; good/well → better/best, bad/badly → worse/worst, far alternatives; than/the; errors such as more easier, the most fastest and more fast. Distinguish adjective and adverb rules accurately and accept standard alternatives in context. End each Learn with exactly three mini-checks and an Experiment button.
 

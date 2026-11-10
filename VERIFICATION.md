@@ -21,3 +21,11 @@ The final all-bank tile audit passed for **2,430 labels per viewport**: all word
 The public repository is https://github.com/ksloenglish/grammar-lab. GitHub Pages publishing is configured through Actions. The action updates the sole version.js in Hong Kong Time. Built CSS and every JavaScript module edge carry that version to prevent mixed cached releases. No backend, account, external font or application analytics is used. Report identity fields are not stored or sent.
 
 The reusable PROMPT.md, README, generator, deployment validator and regression tests preserve the final teaching and UI rules. Documentation-only verification commits can use the existing `[skip ci]` convention because they do not change deployed app files.
+
+## Home usability update — 10 November 2026
+
+Removed the sound control, its listeners, playback calls and Web Audio code. Top-right Lab home remains a visible, outlined text button on 360px phones, with a 44px minimum touch target and the existing unfinished-experiment confirmation. The Home heading is How to build a word; the example shows easy + ×y + -ier → easier and shares the engine-generated easy → eas → easier spelling strip. The compact red-cross-before-y operation has an accessible remove-final-y label. No question-bank, scoring or storage schema changed.
+
+Local release checks passed: bank validation for both unchanged 96-question banks; all 34 Node regressions (including four permanent Home/silence checks); static build; affected JavaScript and Python syntax; git diff --check; 112 focused Home/mobile/silence browser assertions and 76 existing interaction assertions on Chromium and WebKit. The existing spelling, all-bank tile (2,430 labels per viewport), 41-check visual-spacing, colourful visual-journey and bank-update/storage suites also passed. Desktop and phone Home demos and mobile navigation were visually inspected; reduced motion and leave confirmation remained functional. Browser-test prerequisites were restored in the sandbox before completing browser checks.
+
+Publication evidence is recorded below after successful GitHub Pages deployment and live checks.

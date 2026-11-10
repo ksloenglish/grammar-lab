@@ -38,7 +38,7 @@ with sync_playwright() as p:
         page.on('dialog', lambda dialog: dialog.accept())
         page.goto(BASE)
         expect(page.locator('.module-card')).to_have_count(2)
-        check(page.locator('#sound-toggle').get_attribute('aria-pressed') == 'false', f'{engine}: sound initially off')
+        check(page.locator('#sound-toggle, .sound-toggle').count() == 0, f'{engine}: no sound control')
         check('reset the browser' in page.locator('#storage-notice').inner_text(), f'{engine}: browser reset notice visible')
         page.screenshot(path=str(OUT / f'{engine}-home-desktop.png'), full_page=True)
         for module in ['adjectives', 'adverbs']:
