@@ -32,7 +32,9 @@ test('Home uses a natural heading and an explicit final-y operation', () => {
   assert.doesNotMatch(app, /WORD EXAMPLE|BUILD A WORD/);
   assert.match(app, /class="demo-token operation" role="img" aria-label="Remove the final y"/);
   assert.match(app, /class="demo-cross" aria-hidden="true">✕<\/span><span aria-hidden="true">y<\/span>/);
-  assert.match(app, /spellingStepsMarkup\(demo\.parts, e\)/);
+  const homeSource = app.slice(app.indexOf('function homeView()'), app.indexOf('async function setupView('));
+  assert.doesNotMatch(homeSource, /spellingStepsMarkup|spelling-change|deleted-letter/);
+  assert.match(app, /spellingStepsMarkup\(assembled\.parts, e\)/);
 });
 
 test('the Home recipe removes y before joining ier and shows the intermediate stem', () => {

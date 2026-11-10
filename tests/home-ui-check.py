@@ -196,6 +196,8 @@ def readable_labels(locator, minimum: int, tag: str, state: str) -> None:
 def demo(page, tag: str, minimum: int) -> None:
     panel = page.locator(".hero-demo")
     expect(panel.get_by_text("How to build a word", exact=True)).to_be_visible()
+    check(panel.locator(".spelling-change, .deleted-letter").count() == 0,
+          f"{tag}/Home: intermediate yellow spelling strip is absent")
     check(panel.get_by_text(re.compile(r"^(WORD EXAMPLE|BUILD A WORD)$", re.I)).count() == 0,
           f"{tag}/Home: awkward old demo heading removed")
     tokens = panel.locator(".demo-equation .demo-token")

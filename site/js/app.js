@@ -146,7 +146,6 @@ function homeView() {
         <span class="demo-token operation" role="img" aria-label="Remove the final y"><span class="demo-cross" aria-hidden="true">✕</span><span aria-hidden="true">y</span></span>
         <span class="demo-plus" aria-hidden="true">+</span><span class="demo-token suffix">-ier</span>
       </div>
-      ${spellingStepsMarkup(demo.parts, e)}
       <div class="demo-flow" aria-hidden="true">↓</div>
       <div class="demo-result">${e(demo.text)}<span class="demo-tick" aria-hidden="true">✓</span></div>
       <p class="demo-caption">Remove the final <strong>y</strong>. Add <strong>-ier</strong>.<br>You have made the correct word.</p>

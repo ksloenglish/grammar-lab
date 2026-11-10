@@ -34,7 +34,7 @@ Home has the title/logo, a concise two- or three-sentence explanation and module
 
 Top-right navigation always displays the full **Lab home** label, including on phones, with an obvious button treatment and a minimum 44px touch target. Never replace its text with an icon-only control. Preserve the unfinished-experiment leave confirmation.
 
-The Home demonstration heading is **How to build a word**. Show **easy + ×y + -ier → easier**, using the compact red-cross-before-y operation and an accessible remove-final-y name. Reuse the assembly engine and spelling-step renderer to show easy with its final y crossed out → eas → easier. The caption says “Remove the final y. Add -ier.” Keep all three ingredient labels readable and unclipped at phone and desktop sizes.
+The Home demonstration heading is **How to build a word**. Show **easy + ×y + -ier → easier**, using the compact red-cross-before-y operation and an accessible remove-final-y name. Use the assembly engine for the correct result, but do not show the intermediate yellow spelling-step strip on Home. Keep the spelling-step renderer and crossed-out-y feedback during experiments. The caption says “Remove the final y. Add -ier.” Keep all three ingredient labels readable and unclipped at phone and desktop sizes.
 
 Learn explains formation, spelling and common mistakes: short words, consonant-y endings, longer words and -ly adverbs; -r, doubling and y changes; good/well → better/best, bad/badly → worse/worst, far alternatives; than/the; errors such as more easier, the most fastest and more fast. Distinguish adjective and adverb rules accurately and accept standard alternatives in context. End each Learn with exactly three mini-checks and an Experiment button.
 

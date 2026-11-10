@@ -183,7 +183,6 @@ main#app { flex: 1 0 auto; padding-block: clamp(2rem, 5vw, 4.75rem) clamp(3.75re
 .demo-token.operation { gap: 0.3rem; border-color: #b07917; color: #704609; background: #fff0c7; animation: demo-token-mix 560ms cubic-bezier(.17,.9,.32,1.2) 240ms both; }
 .demo-cross { color: #b52d42; }
 .demo-token.suffix { border-color: #ae95f0; color: var(--violet-dark); background: var(--violet-pale); transform: rotate(3deg); animation: demo-token-mix 560ms cubic-bezier(.17,.9,.32,1.2) 360ms both; }
-.hero-demo .spelling-change { justify-content: center; gap: 0.3rem; padding: 0.65rem 0.3rem; font-size: 1.125rem; }
 .demo-plus { color: var(--coral); font-family: var(--display); font-size: 1.7rem; font-weight: 900; }
 .demo-flow { margin: 0.2rem 0; color: var(--coral); font-family: var(--display); font-size: 1.65rem; font-weight: 900; line-height: 1; text-align: center; }
 .demo-result { display: flex; width: min(100%, 168px); min-width: 0; min-height: 3.5rem; margin-inline: auto; padding: 0.75rem 0.65rem; border-color: var(--teal-dark); color: #fff; background: var(--teal); font-size: 1.25rem; box-shadow: 0 4px 0 var(--teal-dark), 0 8px 16px rgb(8 125 120 / 20%); animation: demo-result-pop 680ms cubic-bezier(.17,.9,.32,1) 460ms both; }

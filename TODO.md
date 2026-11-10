@@ -1,9 +1,10 @@
 # Outcomes
 
+- [x] Remove the yellow intermediate spelling-step strip from the Home demo only. Keep easy + ×y + -ier → easier, the heading/caption and spelling feedback during experiments.
 - [x] Silent app: remove the sound on/off control, its event handler and all audio-generation code. No sound plays anywhere in the Lab.
 - [x] Clear mobile navigation: top-right navigation displays the full “Lab home” label, not an ambiguous icon, with a visible button treatment and a 44px minimum touch target.
 - [x] Natural Home heading: replace “WORD EXAMPLE BUILD A WORD” with “How to build a word”.
-- [x] Explicit Home spelling example: show easy + ×y + -ier → easier, with a compact red cross before y, an accessible remove-final-y name, and the actual easy → eas → easier spelling steps.
+- [x] Explicit Home spelling example: show easy + ×y + -ier → easier, with a compact red cross before y, an accessible remove-final-y name, and the correct easier result. The later Home-only strip removal supersedes the intermediate spelling display; experiment spelling feedback remains.
 
 - [x] Static and extensible architecture: HTML/CSS/JavaScript only, no backend/login/personal-data collection; minimal libraries; relative GitHub Pages paths; separate editable JSON banks and Learn content; add a module using manifest/bank/Learn without core changes; British English.
 - [x] Initial content: comparative/superlative adjectives and comparative/superlative adverbs; 96 questions each with balanced regular, spelling, irregular, comparative/superlative patterns, familiar HK secondary contexts, complete ingredient trays with intentional unused alternatives, specific rule-targeted wrong-combination feedback and default explanation; accept valid alternatives in context. Coming soon cards for passive voice, present and past simple, present and past continuous and perfect tenses.
