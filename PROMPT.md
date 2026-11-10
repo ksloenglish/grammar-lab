@@ -32,7 +32,7 @@ Provide WCAG AA contrast, visible focus, full keyboard operation and screen-read
 
 Home has the title/logo, a concise two- or three-sentence explanation and module cards. Available cards offer Learn and Experiment and show saved best records. Placeholder modules say Coming soon.
 
-Top-right navigation always displays the full **Lab home** label, including on phones, with an obvious button treatment and a minimum 44px touch target. Never replace its text with an icon-only control. Preserve the unfinished-experiment leave confirmation.
+Hide top-right navigation on Home. On non-Home pages it displays the full **Lab home** label, including on phones, with an obvious button treatment and a minimum 44px touch target. Never replace its text with an icon-only control. Preserve the unfinished-experiment leave confirmation.
 
 The Home demonstration heading is **How to build a word**. Show **easy + ×y + -ier → easier**, using the compact red-cross-before-y operation and an accessible remove-final-y name. Use the assembly engine for the correct result, but do not show the intermediate yellow spelling-step strip on Home. Keep the spelling-step renderer and crossed-out-y feedback during experiments. The caption says “Remove the final y. Add -ier.” Keep all three ingredient labels readable and unclipped at phone and desktop sizes.
 
@@ -73,11 +73,11 @@ Each initial bank contains **96 questions**, with 48 comparative/48 superlative 
 
 Each question defines sentence, hint, degree/rule, blocks, all accepted gap answers, constructible sequences, specific feedback for likely wrong combinations and a default explanation. Correct suffix labels must reflect the real spelling rule; do not hide an invalid label with a transform.
 
-Setup offers 10/20/30. Randomly sample without repeats. The trial shows the gap sentence and randomly ordered ingredients within groups. Students drag or tap to place, tap to return and reorder blocks; keyboard users have equivalent controls. Word plus suffix visibly fuses. Correct submission shows a tick and reaction; wrong submission shows a cross and separated incorrect structure plus rule-specific explanation. Offer Retry and Give Up. Give Up shows correct answers, a canonical ingredient recipe and a short explanation.
+Setup offers 10/20/30. Randomly sample without repeats. The question shows the gap sentence and randomly ordered ingredients within groups. Students tap/click to append blocks and tap/click selected blocks to return them. Drag/drop and movement arrows are disabled; change order by return/re-add or Clear. Tab/Enter/Space activates these same native buttons; Left/Right does not reorder. Word plus suffix visibly fuses. Correct submission shows a tick and reaction; wrong submission shows a cross and separated incorrect structure plus rule-specific explanation. Offer Retry and Give Up. Give Up shows correct answers, a canonical ingredient recipe and a short explanation.
 
 ## Scoring and reports
 
-Only a correct first non-empty submission earns one mark. Wrong first answers, later retries and Give Up earn zero; never double-score. Show current score, Trial X of Y and progress. End Experiment and browser-back leaving require confirmation.
+Only a correct first non-empty submission earns one mark. Wrong first answers, later retries and Give Up earn zero; never double-score. Show current score, Question X of Y and progress. End Experiment and browser-back leaving require confirmation.
 
 At completion show score/percentage, an encouraging band comment, all questions with first answer/correct answer/tick-cross, and a rule-type breakdown. Retry Wrong Answers has its own score and never overwrites the original report or best records. Include New Experiment, Home and Print / Save as PDF, with a clean print layout and ephemeral optional name/class fields.
 
@@ -87,7 +87,7 @@ A link such as `?module=adjectives&n=20` opens **setup with that module/count pr
 
 Permanently enforce the final assessment principles in the generator, deployment validator, regression tests and saved-question checks. Investigate reported mistakes at the root cause, correct the output and update this prompt/instructions so they do not recur. Keep corrected context overrides in the generator so regeneration cannot undo them.
 
-Verify answer alternatives, article/connectors, all ingredients, y operations, first-attempt scoring, retry/give-up, persistence, keyboard/touch/native drag, responsive layouts, print, reduced motion and error states. Save the authorised code without rewriting remote history, push to GitHub automatically, confirm the Action deployment and verify the actual public site before delivery. Do not claim a preview/checkpoint is a published release.
+Verify answer alternatives, article/connectors, all ingredients, y operations, first-attempt scoring, retry/give-up, persistence, keyboard/touch/tap-only interaction and disabled drag, responsive layouts, print, reduced motion and error states. Save the authorised code without rewriting remote history, push to GitHub automatically, confirm the Action deployment and verify the actual public site before delivery. Do not claim a preview/checkpoint is a published release.
 
 ## Home icon correction
 
@@ -98,3 +98,11 @@ Tile words must stay on one line without smaller text or ellipses. Use content-s
 ## Noun-free accepted answers — 10 November 2026
 
 This rule supersedes the earlier quantity-noun-in-gap approach. Students build only the target adjective/adverb comparison and required grammar words. No accepted answer or word ingredient may include an additional noun. The six former noun-bearing adjective comparatives adj-085/087/089/091/093/095 are replaced with good/bad/far contexts and better than, worse than, farther than/further than answers. Keep the noun-free quantity superlatives the least/the most. Preserve 96 questions per module and all degree/rule counts. Enforce the rule in generator validation, deployment validation, regression tests and same-schema saved-question checks; archive incompatible old snapshots while preserving independent best scores.
+
+## Tap-only UI and compact controls — 10 November 2026
+
+This update supersedes all earlier drag/drop and movement-arrow requirements. Hide the top-right Lab home control on the Home page only; retain its full label on non-Home pages. Remove the No login needed footnote under Pick a grammar challenge. Use questions, not trials, in visible counts, including Number of questions; leave technical IDs and storage keys unchanged. Show the 10/20/30 choices as compact content-sized controls that wrap safely, not full-width stacked rows.
+
+Use only tap/click to add and return ingredient blocks. Adding appends to the answer; tapping a selected block returns it. No native drag/drop, drag state, move arrow buttons or Left/Right reordering. Keep equivalent Tab/Enter/Space native-button access and focus/live announcements. Change order through return and re-add (or Clear), never through hidden reorder behaviour. Answer blocks are compact/content-sized on desktop and mobile and wrap naturally. Keep labels at least 20px desktop/18px mobile and touch targets at least 44px.
+
+Display the base word directly after the blank in parentheses: In this test, this is _____ (easy) question. Remove the separate Base word paragraph. Keep the gap and hint visually adjacent, readable and escaped, and preserve the original stored sentence and noun-free answer recipes. All first-attempt scores, alternative forms, correct/wrong locks, retries, reports and browser-only persistence remain unchanged.

@@ -54,7 +54,7 @@ with sync_playwright() as p:
                 question = state['questions'][trial]
                 sequence = question['correctSequences'][0]
                 if trial == 0:
-                    # Place via keyboard, reorder with visible buttons, return and re-add.
+                    # Place via keyboard, return and re-add; ordering is tap-only.
                     first = sequence[0]
                     page.locator(f'[data-action="add-block"][data-block="{first}"]').focus()
                     page.keyboard.press('Enter')
@@ -136,20 +136,33 @@ with sync_playwright() as p:
         expect(page.locator('[data-action="resume"]')).to_be_visible()
         page.locator('[data-action="resume"]').click()
         expect(page.locator('.sentence')).to_be_visible()
-        # Desktop drag/drop and reordering.
+        # Native dragging is inert; buttons append and return/re-add changes order.
         state = saved(page)
-        blocks = state['questions'][0]['correctSequences'][0]
+        blocks = [block['id'] for block in state['questions'][state['index']]['blocks']][:3]
         source = page.locator(f'[data-action="add-block"][data-block="{blocks[0]}"]')
+        expect(source).to_have_attribute('draggable', 'false')
         source.scroll_into_view_if_needed()
         page.wait_for_timeout(700)  # Let smooth scrolling settle before native pointer coordinates are captured.
         source.drag_to(page.locator('#assembly-zone'), target_position={'x': 25, 'y': 25})
-        expect(page.locator(f'[data-action="return-block"][data-block="{blocks[0]}"]')).to_be_visible()
-        if len(blocks) > 1:
-            page.wait_for_timeout(200)
-            page.locator(f'[data-action="add-block"][data-block="{blocks[1]}"]').click()
-            page.locator(f'[data-action="move-block"][data-block="{blocks[1]}"][data-direction="-1"]').click()
-            check(saved(page)['assembly'][0] == blocks[1], f'{engine}: placed blocks reorder')
-        check(True, f'{engine}: native drag-to-place works')
+        check(saved(page) == state, f'{engine}: native tray drag changes neither assembly nor saved state')
+        expect(page.locator('.move-buttons, [data-action="move-block"]')).to_have_count(0)
+        check(True, f'{engine}: obsolete arrow move controls are absent')
+        source.focus()
+        page.keyboard.press('Enter')
+        for block_id in blocks[1:]:
+            page.locator(f'[data-action="add-block"][data-block="{block_id}"]').click()
+        check(saved(page)['assembly'] == blocks, f'{engine}: keyboard and click append blocks in selection order')
+        returned = page.locator(f'[data-action="return-block"][data-block="{blocks[0]}"]')
+        returned.focus()
+        page.keyboard.press('ArrowRight')
+        page.keyboard.press('ArrowLeft')
+        check(saved(page)['assembly'] == blocks, f'{engine}: Left and Right do not reorder selected blocks')
+        page.keyboard.press('Space')
+        expect(page.locator(f'[data-action="add-block"][data-block="{blocks[0]}"]')).to_be_focused()
+        page.keyboard.press('Enter')
+        check(saved(page)['assembly'] == blocks[1:] + blocks[:1], f'{engine}: keyboard return and re-add moves a block only to the end')
+        page.locator('[data-action="clear"]').click()
+        check(saved(page)['assembly'] == [], f'{engine}: Clear still empties the answer')
         page.locator('[data-action="end"]').click()
         expect(page.locator('#confirm-dialog')).to_be_visible()
         page.locator('#confirm-dialog [value="leave"]').click()

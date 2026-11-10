@@ -1,21 +1,17 @@
-from playwright.sync_api import sync_playwright, expect
-import json
-with sync_playwright() as p:
-    for engine in [p.chromium,p.webkit]:
-        browser=engine.launch()
-        page=browser.new_page(viewport={'width':1440,'height':1000})
-        page.goto('http://127.0.0.1:3000/?module=adjectives&n=10',wait_until='networkidle')
-        page.locator('[data-action="start"]').click()
-        state=page.evaluate("JSON.parse(localStorage.getItem('kslo-grammar-lab:session'))")
-        ids=state['questions'][0]['correctSequences'][0]
-        page.evaluate("""() => {window.dragTrace=[];for(const type of ['dragstart','drop','click'])document.addEventListener(type,event=>window.dragTrace.push({type,id:event.target.closest('[data-block]')?.dataset.block,text:event.target.innerText,x:event.clientX,y:event.clientY}),true)}""")
-        source=page.locator(f'[data-action="add-block"][data-block="{ids[0]}"]')
-        source.scroll_into_view_if_needed()
-        page.wait_for_timeout(700)
-        print(engine.name,'wanted',ids[0],source.inner_text(),'source',source.bounding_box(),'target',page.locator('#assembly-zone').bounding_box())
-        source.drag_to(page.locator('#assembly-zone'),target_position={'x':25,'y':25})
-        page.wait_for_timeout(700)
-        result=page.evaluate("({events:window.dragTrace,assembly:JSON.parse(localStorage.getItem('kslo-grammar-lab:session')).assembly})")
-        print(json.dumps(result,indent=2))
-        expect(page.locator(f'[data-action="return-block"][data-block="{ids[0]}"]')).to_be_visible()
-        browser.close()
+"""Revised tap-only regression: native/synthetic drag must NOT change answers.
+
+Retains the historical filename so existing verification commands remain useful.
+Run with GRAMMAR_TEST_URL set to a ready local or live server. The shared focused
+suite checks fresh Chromium/WebKit contexts and saves results under the ignored
+test-results/tap-only-ui/ directory.
+"""
+import importlib.util
+from pathlib import Path
+
+path = Path(__file__).with_name("tap-only-ui-check.py")
+spec = importlib.util.spec_from_file_location("tap_only_ui_check", path)
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+
+if __name__ == "__main__":
+    module.run_drag_regression()

@@ -4,7 +4,7 @@ A browser-only grammar workbench for K S Lo English. Students combine word parts
 
 ## Live app
 
-The GitHub Pages address is `https://ksloenglish.github.io/grammar-lab/`. Teacher assignment links use `?module=adjectives&n=20` or `?module=adverbs&n=30`; these open setup with the module and trial count preselected, not the first trial. To create a fresh assignment link, do not append an experiment/report hash.
+The GitHub Pages address is `https://ksloenglish.github.io/grammar-lab/`. Teacher assignment links use `?module=adjectives&n=20` or `?module=adverbs&n=30`; these open setup with the module and question count preselected, not the first question. To create a fresh assignment link, do not append an experiment/report hash.
 
 ## Files
 
@@ -52,11 +52,11 @@ A Learn document has `module`, `intro`, `sections`, `miniCheck` and `sources`. S
 
 ## Add a module
 
-Create a bank and Learn document using these schemas. Add a manifest entry with a unique `id`, `title`, `shortTitle`, `description`, `symbol`, `accent` (`teal` or `violet`), `available: true`, and relative `bank`/`learn` filenames. Home, Learn, setup, trials, storage, assignment links and reports discover it automatically. A placeholder uses `available: false` and needs no bank/Learn file. Extend structure-specific context and degree validation when adding a non-comparison structure; the assembly/scoring engine itself remains reusable. Update `site/manus-routes.json` for new Learn/setup views.
+Create a bank and Learn document using these schemas. Add a manifest entry with a unique `id`, `title`, `shortTitle`, `description`, `symbol`, `accent` (`teal` or `violet`), `available: true`, and relative `bank`/`learn` filenames. Home, Learn, setup, questions, storage, assignment links and reports discover it automatically. A placeholder uses `available: false` and needs no bank/Learn file. Extend structure-specific context and degree validation when adding a non-comparison structure; the assembly/scoring engine itself remains reusable. Update `site/manus-routes.json` for new Learn/setup views.
 
 ## Scoring, persistence and privacy
 
-A trial earns one mark only if its first non-empty submission is correct. A wrong first submission, later successful retry or Give Up earns zero. Empty submissions do not count. Reports retain first answers. Wrong-answer practice has a separate score and never changes the original report or best records.
+A question earns one mark only if its first non-empty submission is correct. A wrong first submission, later successful retry or Give Up earns zero. Empty submissions do not count. Reports retain first answers. Wrong-answer practice has a separate score and never changes the original report or best records.
 
 Best scores are separate for each module and 10/20/30 count. Unfinished experiments, mini-check choices and the latest report are stored under the `kslo-grammar-lab:` localStorage prefix in the same browser profile/device. Clearing browser data, resetting the browser, private browsing or using a different browser/device can remove or hide them. Storage failure is explained and practice remains usable without false persistence claims.
 
@@ -78,7 +78,7 @@ All runtime assets use relative URLs and views use hashes, so `/grammar-lab/` wo
 
 ## Accessibility and layout
 
-Tap and native drag/drop work. Keyboard users place/return with Enter/Space and reorder with visible arrows or Left/Right on a placed block. Results have live announcements; focus is visible, colours are high-contrast and reduced motion disables effects. Printing removes navigation/actions, includes optional identity and preserves all questions and rule results.
+Tap/click adds a block to the end of the answer, and tap/click on a selected block returns it to the tray. Drag/drop, movement arrows and Left/Right reordering are disabled. Keyboard users activate the same add/return buttons with Tab and Enter/Space; change order by returning and re-adding blocks or clearing the answer. Results have live announcements; focus is visible, colours are high-contrast and reduced motion disables effects. Printing removes navigation/actions, includes optional identity and preserves all questions and rule results.
 
 Use **Build your answer**, **Word blocks**, **Check answer**, **Clear answer**. Block text is normal-case sans-serif, at least 20px desktop/18px phone. Cards/dialogues have deliberate padding, button groups have gaps, and at least 16px separates actions from following text/callouts. The green `easier ✓` demo is centred and content-sized, not full-width. Run visual-spacing and browser interaction checks after styling changes; no overflow alone does not prove a good layout.
 
@@ -96,6 +96,10 @@ The build appends the deployment version to CSS, the JavaScript entry and every 
 
 ## Final tile and Home visual rules
 
-Word labels stay on one line. Content-sized wrapping rows give longer words their own width without smaller text or ellipses. The deletion control displays only a red cross before y, in both tray and answer; its internal Remove y name and accessible remove-final-y description remain intact. Available cards use Lab labels only, not Aa/Av abbreviation badges. Home flask vectors have short flared necks, sloping shoulders, clipped liquid, glass highlights and broad bases. `tests/tile-visual-check.py` checks all 2,430 rendered labels per viewport across both banks.
+Word labels stay on one line. Content-sized wrapping rows give longer words their own width without smaller text or ellipses. The deletion control displays only a red cross before y, in both tray and answer; its internal Remove y name and accessible remove-final-y description remain intact. Available cards use Lab labels only, not Aa/Av abbreviation badges. Home flask vectors have short flared necks, sloping shoulders, clipped liquid, glass highlights and broad bases. `tests/tile-visual-check.py` checks all current bank labels per viewport across both banks.
 
-Top-right navigation always shows the full **Lab home** label in an outlined teal button, including at 360px. It retains the unfinished-experiment confirmation and a minimum 44px touch target. The Home example is headed **How to build a word** and shows **easy + ×y + -ier → easier**, with accessible final-y deletion. Do not show the intermediate yellow spelling strip on Home; keep spelling-step feedback during experiments. The caption matches the ingredients: “Remove the final y. Add -ier.” `tests/home-ui-check.py` checks these changes and silence on desktop Chromium and 360px WebKit.
+Hide top-right navigation on Home. On non-Home pages it shows the full **Lab home** label in an outlined teal button, including at 360px. It retains the unfinished-experiment confirmation and a minimum 44px touch target. The Home example is headed **How to build a word** and shows **easy + ×y + -ier → easier**, with accessible final-y deletion. Do not show the intermediate yellow spelling strip on Home; keep spelling-step feedback during experiments. The caption matches the ingredients: “Remove the final y. Add -ier.” `tests/home-ui-check.py` checks these changes and silence on desktop Chromium and 360px WebKit.
+
+## Compact question controls
+
+The setup field is Number of questions, with content-sized 10/20/30 question choices instead of stacked full-width rows. Answer blocks are content-sized on desktop and mobile and wrap as needed. The base hint appears in parentheses immediately after the blank, e.g. In this test, this is _____ (easy) question; it is no longer a separate Base word line. Stored question wording and all answers remain unchanged. The No login needed Home footnote is removed.

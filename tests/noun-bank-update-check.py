@@ -138,7 +138,7 @@ with sync_playwright() as p:
             expect(page.locator('.sentence')).to_be_visible()
             after_reload = saved(page)
             check(after_reload == before_reload, f'{label}: compatible snapshot resumes without altering score, attempts, results or assembly')
-            expect(page.locator('.trial-meta strong')).to_contain_text('Trial 3 of 10')
+            expect(page.locator('.trial-meta strong')).to_contain_text('Question 3 of 10')
             expect(page.locator('.score-display strong')).to_contain_text('1')
             page.screenshot(path=str(OUT / f'{engine_name}-compatible-resumed.png'), full_page=True)
 

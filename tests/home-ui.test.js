@@ -18,8 +18,12 @@ test('the Lab has no sound control, playback or Web Audio generation', () => {
   }
 });
 
-test('mobile Lab home remains a labelled link rather than an icon-only control', () => {
+test('Lab home is hidden on Home and remains a labelled 44px link on other pages', () => {
   assert.match(html, /<a class="home-link" href="#home" data-route="home">Lab home<\/a>/);
+  assert.match(app, /header-nav/);
+  assert.match(app, /\.hidden\s*=.*(?:home|isHome)/);
+  assert.match(css, /(?:\.header-nav)?\[hidden\]\s*\{[^}]*display:\s*none/);
+  assert.match(css, /\.home-link\s*\{[^}]*min-height:\s*(?:2\.75rem|44px)/);
   for (const rule of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
     if (!rule[1].includes('.home-link')) continue;
     assert.doesNotMatch(rule[2], /font-size:\s*0(?:\s|;|$)/);

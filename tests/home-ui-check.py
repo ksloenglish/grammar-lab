@@ -161,6 +161,14 @@ def silent(page, tag: str, state: str) -> None:
     check(not audit["calls"], f"{tag}/{state}: no audio API accesses or calls ({audit['calls']})")
 
 
+def home_navigation_hidden(page, tag: str, state: str) -> None:
+    nav = page.locator(".header-nav")
+    expect(nav).to_have_count(1)
+    expect(nav).to_be_hidden()
+    expect(nav.locator(".home-link")).to_have_text("Lab home")
+    check(True, f"{tag}/{state}: top-right navigation is hidden only on Home")
+
+
 def home_link(page, tag: str, state: str):
     link = page.locator(".header-nav").get_by_role("link", name="Lab home", exact=True)
     expect(link).to_have_count(1)
@@ -279,7 +287,7 @@ def run(engine, tag: str, width: int, height: int) -> None:
         expect(page.locator(".module-card")).to_have_count(2)
         # Save Home evidence before assertions so regressions remain inspectable.
         shot(page, tag, "home")
-        home_link(page, tag, "Home")
+        home_navigation_hidden(page, tag, "Home")
         demo(page, tag, minimum)
         no_overflow(page, tag, "Home")
         silent(page, tag, "Home")
@@ -291,6 +299,7 @@ def run(engine, tag: str, width: int, height: int) -> None:
         no_overflow(page, tag, "Learn")
         home_link(page, tag, "Learn").click()
         expect(page.locator(".module-card")).to_have_count(2)
+        home_navigation_hidden(page, tag, "Home after Learn")
 
         page.locator('[data-route="setup/adjectives"]').first.click()
         expect(page.locator('[data-action="start"]')).to_be_visible()
@@ -301,6 +310,7 @@ def run(engine, tag: str, width: int, height: int) -> None:
         no_overflow(page, tag, "setup")
         home_link(page, tag, "setup").click()
         expect(page.locator(".module-card")).to_have_count(2)
+        home_navigation_hidden(page, tag, "Home after setup")
         expect(page.locator("#confirm-dialog")).not_to_be_visible()
         check(page.evaluate("location.hash") == "#home", f"{tag}: setup Lab home link navigates Home without a guard")
         if width == 360:
