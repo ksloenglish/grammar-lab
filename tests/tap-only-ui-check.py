@@ -122,7 +122,7 @@ def selector(page, tag, width, mobile):
 
 
 def seed_fixture(page, module="adjectives"):
-    # Use the real engine to make a current schema-2 session, just as older saved work.
+    # Use the real engine to make a prepared current schema-2 session.
     page.goto(BASE, wait_until="networkidle")
     state = page.evaluate("""async module => {
       const {createExperiment} = await import('./js/core.js');
@@ -236,7 +236,7 @@ def scoring(page, tag, mobile):
     activate(page.locator('[data-action="next"]'), mobile)
     question = saved(page)["questions"][1]
     inline_hint(page, f"{tag}/comfortable", question["base"])
-    wrong_id = next(item["id"] for item in question["blocks"] if item["label"] == "than")
+    wrong_id = next(item["id"] for item in question["blocks"] if item["label"] == question["base"])
     activate(block(page, "add", wrong_id), mobile)
     activate(page.locator('[data-action="submit"]'), mobile)
     expect(page.locator(".reaction.error")).to_be_visible()
@@ -251,7 +251,7 @@ def scoring(page, tag, mobile):
           f"{tag}: successful retry preserves first answer and adds no mark")
     activate(page.locator('[data-action="next"]'), mobile)
     question = saved(page)["questions"][2]
-    wrong_id = next(item["id"] for item in question["blocks"] if item["label"] == "than")
+    wrong_id = next(item["id"] for item in question["blocks"] if item["label"] == question["base"])
     activate(block(page, "add", wrong_id), mobile)
     activate(page.locator('[data-action="submit"]'), mobile)
     activate(page.locator('[data-action="give-up"]'), mobile)

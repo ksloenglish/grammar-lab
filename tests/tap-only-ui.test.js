@@ -6,6 +6,7 @@ import vm from 'node:vm';
 import { assemble, createExperiment } from '../site/js/core.js';
 import { QUESTION_SCHEMA } from '../site/js/question-context.js';
 import { renderIngredients } from '../site/js/ingredients.js';
+import { adaptiveBlocks, prepareAdaptiveQuestion } from '../site/js/comparison-blocks.js';
 
 const source = path => readFileSync(new URL(`../site/${path}`, import.meta.url), 'utf8');
 const app = source('js/app.js');
@@ -17,11 +18,12 @@ const escape = value => String(value).replace(/[&<>"']/g, character => ({
 
 test('all reagent buttons explicitly disable dragging, in building and locked states', () => {
   for (const moduleId of ['adjectives', 'adverbs']) {
-    for (const question of bank(moduleId)) {
+    for (const raw of bank(moduleId)) {
+      const question = prepareAdaptiveQuestion(raw);
       for (const building of [true, false]) {
         const html = renderIngredients(question, question.blocks.map(block => block.id), [], building, escape);
         const buttons = [...html.matchAll(/<button\b[^>]*>/g)].map(match => match[0]);
-        assert.equal(buttons.length, question.blocks.length, question.id);
+        assert.equal(buttons.length, adaptiveBlocks(question, []).length, question.id);
         for (const button of buttons) {
           assert.match(button, /draggable="false"/, question.id);
           assert.match(button, /data-action="add-block"/, question.id);

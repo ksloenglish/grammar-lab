@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { assemble, isCorrect } from '../site/js/core.js';
 import { questionContextIssues } from '../site/js/question-context.js';
+import { adaptiveBlocks, prepareAdaptiveQuestion } from '../site/js/comparison-blocks.js';
 const read = path => JSON.parse(readFileSync(new URL(`../site/data/${path}`, import.meta.url), 'utf8'));
 const manifest = read('modules.json');
 assert.equal(new Set(manifest.modules.map(item => item.id)).size, manifest.modules.length, 'Unique module IDs');
@@ -32,6 +33,21 @@ for (const module of manifest.modules.filter(item => item.available)) {
       assert.ok(isCorrect(question, answer), `${label}: sequence produces ${answer}`);
     }
     for (const answer of question.answers) assert.ok(question.correctSequences.some(sequence => assemble(question, sequence).text.toLowerCase() === answer.toLowerCase()), `${label}: unreachable ${answer}`);
+    const prepared = prepareAdaptiveQuestion(question);
+    assert.deepEqual(questionContextIssues(prepared), [], `${label}: controlled adaptive operations and recipes`);
+    assert.deepEqual(prepareAdaptiveQuestion(prepared), prepared, `${label}: idempotent adaptive preparation`);
+    assert.deepEqual(prepared.answers, question.answers, `${label}: accepted answers must not change`);
+    assert.deepEqual(prepared.blocks.slice(0, question.blocks.length), question.blocks, `${label}: authored ingredients must not change`);
+    const visible = adaptiveBlocks(prepared);
+    const visibleIds = new Set(visible.map(block => block.id));
+    assert.equal(visible[0]?.label, question.base, `${label}: unselected base must be first`);
+    assert.equal(visibleIds.size, visible.length, `${label}: unique adaptive choices`);
+    assert.ok(!visible.some(block => /^-[bcdfghjklmnpqrstvz](?:er|est)$/.test(block.label) && !['-ier', '-iest'].includes(block.label)), `${label}: no combined doubling suffixes in visible choices`);
+    for (const sequence of prepared.correctSequences) assert.ok(isCorrect(prepared, assemble(prepared, sequence).text), `${label}: adaptive sequence must remain accepted`);
+    for (const answer of question.answers) {
+      assert.ok(prepared.correctSequences.some(sequence => sequence.every(id => visibleIds.has(id))
+        && assemble(prepared, sequence).text.toLowerCase() === answer.toLowerCase()), `${label}: adaptive choices cannot construct accepted alternative ${answer}`);
+    }
     const used = new Set(question.correctSequences.flat());
     const distractors = question.blocks.filter(block => !used.has(block.id));
     assert.equal(question.ingredientMode, 'complete', `${label}: complete ingredient tray`);
@@ -52,4 +68,4 @@ for (const module of manifest.modules.filter(item => item.available)) {
   }
   console.log(`${module.id}: ${bank.questions.length} questions; degrees ${JSON.stringify(counts)}; rules ${JSON.stringify(rules)}; 3 mini-checks. PASS`);
 }
-console.log('All noun-free answers/ingredients, question stems, complete answers, required -er options, suffixes and reachable answer checks passed.');
+console.log('All noun-free answers/ingredients, question stems, complete authored trays, controlled operations, legacy recipes and every adaptive visible-answer reachability check passed.');

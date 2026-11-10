@@ -67,7 +67,8 @@ def make_wrong(page) -> None:
     state = page.evaluate("JSON.parse(localStorage.getItem('kslo-grammar-lab:session'))")
     question = state["questions"][state["index"]]
     accepted = {token for sequence in question.get("correctSequences", []) for token in sequence}
-    wrong = next(block["id"] for block in question["blocks"] if block["id"] not in accepted)
+    visible = page.locator('[data-action="add-block"]').evaluate_all("nodes => nodes.map(node => node.dataset.block)")
+    wrong = next(block_id for block_id in visible if block_id not in accepted)
     page.locator(f"[data-action='add-block'][data-block='{wrong}']").click()
     page.locator("[data-action='submit']").click()
     expect(page.locator(".reaction.error")).to_be_visible()
@@ -111,9 +112,10 @@ def store_resume_state(page) -> None:
 def assert_common(page, tag: str, mobile: bool) -> None:
     check(page.evaluate("document.documentElement.scrollWidth <= innerWidth"), f"{tag}: no horizontal overflow")
     check(page.locator(".button:focus-visible").count() >= 0, f"{tag}: focus selector remains available")
-    # 14px action gaps meet the 12px minimum even when flex wraps.
+    # Only the question page intentionally tightens its mobile action gap;
+    # unchanged Home/setup/report/dialog spacing is audited separately below.
     gap = page.locator(".trial-actions").evaluate("node => parseFloat(getComputedStyle(node).gap)")
-    check(gap >= 12, f"{tag}: button groups have at least 12px gap")
+    check(8 <= gap <= 12 if mobile else gap >= 12, f"{tag}: question actions use their intentional spacing budget ({gap:g}px)")
     if mobile:
         # Important readability requirement for word blocks on a 360px screen.
         size = page.locator(".reagent").first.evaluate("node => parseFloat(getComputedStyle(node).fontSize)")
@@ -166,7 +168,11 @@ def exercise(page, tag: str, mobile: bool) -> None:
     check(reagent_size >= (18 if mobile else 20), f"{tag}: word blocks meet minimum readable size ({reagent_size:g}px)")
     panel = box(page, ".tray-panel")
     label = box(page, ".tray-panel .panel-label")
-    check(label["x"] - panel["x"] >= (20 if mobile else 22), f"{tag}: tray panel has required inner padding")
+    padding = page.locator(".tray-panel").evaluate("node => parseFloat(getComputedStyle(node).paddingLeft)")
+    check(12 <= padding <= 16 if mobile else padding >= 12, f"{tag}: question-only tray uses compact padding ({padding:g}px)")
+    sentence = box(page, ".sentence")
+    chamber = box(page, ".chamber-panel")
+    check(sentence["y"] < chamber["y"] and (chamber["y"] < panel["y"] if mobile else chamber["x"] < panel["x"]), f"{tag}: Question then Build your answer then Word blocks")
     make_wrong(page)
     shot(page, f"{tag}-trial-wrong.png")
     check(gap_below(page, ".reaction.error", ".trial-actions") >= 16, f"{tag}: wrong feedback has at least 16px before action buttons")

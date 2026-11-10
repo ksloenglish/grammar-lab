@@ -330,8 +330,9 @@ def run(engine, tag: str, width: int, height: int) -> None:
         expect(page.locator('[data-action="submit"]')).to_be_visible()
         state = saved(page)
         question = state["questions"][state["index"]]
-        # 'than' alone is never a full answer in either comparative/superlative trials.
-        wrong = next(block["id"] for block in question["blocks"] if block["label"] == "than")
+        # A degree-relevant connector alone is never a complete answer.
+        connector = "than" if question["degree"] == "comparative" else "the"
+        wrong = next(block["id"] for block in question["blocks"] if block["label"] == connector)
         submit(page, [wrong])
         expect(page.locator(".reaction.error")).to_be_visible()
         silent(page, tag, "wrong submission")

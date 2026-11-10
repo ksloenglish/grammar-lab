@@ -1,4 +1,5 @@
 import { QUESTION_SCHEMA } from './question-context.js';
+import { isControlledDoublingBlock, prepareAdaptiveQuestion } from './comparison-blocks.js';
 
 export function normalise(value) {
   return String(value ?? '').trim().replace(/\s+/g, ' ').toLowerCase();
@@ -25,13 +26,22 @@ export function assemble(question, ids) {
   for (const id of ids) {
     const block = question.blocks.find(item => item.id === id);
     if (!block) throw new Error('An answer block is missing.');
-    if (block.kind === 'operation') {
+    const doublingMarker = block.operation === 'double-final-consonant' || block.id === 'double-final-consonant';
+    if (block.kind === 'operation' || doublingMarker) {
       const previous = parts.at(-1);
-      if (block.operation === 'remove-final-y' && previous && !previous.orphan && /y$/i.test(previous.text)) {
+      if (!doublingMarker && block.operation === 'remove-final-y' && previous && !previous.orphan && /y$/i.test(previous.text)) {
         const before = previous.text;
         previous.text = before.slice(0, -1);
         previous.ids.push(id);
         previous.spellingChanges = [...(previous.spellingChanges ?? []), { before, after: previous.text }];
+      } else if (isControlledDoublingBlock(question, block) && previous && !previous.orphan
+        && previous.text === question.base && previous.ids.length === 1
+        && question.blocks.find(item => item.id === previous.ids[0])?.kind === 'word'
+        && !previous.spellingChanges?.length) {
+        const before = previous.text;
+        previous.text += block.consonant;
+        previous.ids.push(id);
+        previous.spellingChanges = [{ before, after: previous.text }];
       } else {
         parts.push({ text: `[${block.label}]`, ids: [id], orphan: true });
       }
@@ -56,6 +66,9 @@ export function isCorrect(question, answer) {
 
 export function explain(question, answer) {
   if (/\[Remove y\]/i.test(answer)) return 'Put Remove y straight after a word ending in y. You do not need it for other words.';
+  if (/\[[a-z]\]/i.test(answer) || question.blocks.some(block => (block.operation === 'double-final-consonant' || block.id === 'double-final-consonant') && answer.includes(`[${block.label}]`))) {
+    return 'Put the extra letter straight after the base word, before -er or -est. Only double the final consonant when the word needs it.';
+  }
   for (const feedback of question.feedback ?? []) {
     if (feedback.answers?.some(item => normalise(item) === normalise(answer))) return feedback.message;
     if (feedback.pattern) {
@@ -68,9 +81,10 @@ export function explain(question, answer) {
 }
 
 export function createExperiment(moduleId, questions, practice = false, originalReport = null) {
+  const prepared = questions.map(prepareAdaptiveQuestion);
   return {
-    schema: QUESTION_SCHEMA, moduleId, questions, count: questions.length, index: 0, score: 0,
-    results: [], assembly: [], trayOrder: shuffle(questions[0].blocks.map(block => block.id)),
+    schema: QUESTION_SCHEMA, moduleId, questions: prepared, count: prepared.length, index: 0, score: 0,
+    results: [], assembly: [], trayOrder: shuffle(prepared[0].blocks.map(block => block.id)),
     attempts: 0, firstAnswer: null, status: 'building', feedback: '',
     practice, originalReport, startedAt: new Date().toISOString()
   };

@@ -48,9 +48,9 @@ Every comparative answer includes exactly one than at the end of the contiguous 
 
 Every adjective-superlative accepted answer begins with the. Every superlative tray offers the, but natural optional-the **adverb** superlatives remain accepted. Validate completed sentences, not only stored answer reachability. Reject duplicated than/the and invalid accepted suffix labels.
 
-## Complete ingredient trays
+## Complete authored ingredient trays (compatibility metadata)
 
-The final instruction **supersedes the former two- or three-distractor limit**. Every comparison question offers:
+Authored banks retain the full comparison ingredient set for compatibility. The later mobile-first redesign supersedes complete visible trays; render only its adaptive subset. Every authored comparison question retains:
 
 - the base word;
 - more, most, than and the;
@@ -59,7 +59,7 @@ The final instruction **supersedes the former two- or three-distractor limit**. 
 - the relevant base's irregular comparative and superlative forms, including all standard far alternatives;
 - a distinct **Remove y** operation.
 
-Reuse labels/IDs rather than duplicating blocks. Do not add unrelated irregular word families or prebuilt nonwords such as worser/badlier. Students can produce incorrect forms by combining the genuine ingredients. Group choices into Words, Other words and Endings & changes. Many unused ingredients are intentional.
+Reuse labels/IDs rather than duplicating blocks. Do not add unrelated irregular word families or prebuilt nonwords such as worser/badlier. Students can produce incorrect forms by combining the genuine ingredients. Categories remain optional authored metadata only. The visible question tray is one flat adaptive collection, with the base first.
 
 ## Remove y and visible spelling changes
 
@@ -73,7 +73,7 @@ Each initial bank contains **96 questions**, with 48 comparative/48 superlative 
 
 Each question defines sentence, hint, degree/rule, blocks, all accepted gap answers, constructible sequences, specific feedback for likely wrong combinations and a default explanation. Correct suffix labels must reflect the real spelling rule; do not hide an invalid label with a transform.
 
-Setup offers 10/20/30. Randomly sample without repeats. The question shows the gap sentence and randomly ordered ingredients within groups. Students tap/click to append blocks and tap/click selected blocks to return them. Drag/drop and movement arrows are disabled; change order by return/re-add or Clear. Tab/Enter/Space activates these same native buttons; Left/Right does not reorder. Word plus suffix visibly fuses. Correct submission shows a tick and reaction; wrong submission shows a cross and separated incorrect structure plus rule-specific explanation. Offer Retry and Give Up. Give Up shows correct answers, a canonical ingredient recipe and a short explanation.
+Setup offers 10/20/30. Randomly sample without repeats. The question shows the gap sentence and a flat adaptive ingredient collection, with the available base first. Students tap/click to append blocks and tap/click selected blocks to return them. Drag/drop and movement arrows are disabled; change order by return/re-add or Clear. Tab/Enter/Space activates these same native buttons; Left/Right does not reorder. Word plus suffix visibly fuses. Correct submission shows a tick and reaction; wrong submission shows a cross and separated incorrect structure plus rule-specific explanation. Offer Retry and Give Up. Give Up shows correct answers, a canonical ingredient recipe and a short explanation.
 
 ## Scoring and reports
 
@@ -106,3 +106,11 @@ This update supersedes all earlier drag/drop and movement-arrow requirements. Hi
 Use only tap/click to add and return ingredient blocks. Adding appends to the answer; tapping a selected block returns it. No native drag/drop, drag state, move arrow buttons or Left/Right reordering. Keep equivalent Tab/Enter/Space native-button access and focus/live announcements. Change order through return and re-add (or Clear), never through hidden reorder behaviour. Answer blocks are compact/content-sized on desktop and mobile and wrap naturally. Keep labels at least 20px desktop/18px mobile and touch targets at least 44px.
 
 Display the base word directly after the blank in parentheses: In this test, this is _____ (easy) question. Remove the separate Base word paragraph. Keep the gap and hint visually adjacent, readable and escaped, and preserve the original stored sentence and noun-free answer recipes. All first-attempt scores, alternative forms, correct/wrong locks, retries, reports and browser-only persistence remain unchanged.
+
+## Mobile-first question redesign and adaptive trays — 10 November 2026
+
+This latest update supersedes oversized question-page padding, the question-score beaker/container graphic and the complete visible category-grouped trays. Use compact text Score N / total, retaining the beaker only where already appropriate on reports/Home. Mobile order is Question → Build your answer → Word blocks. Reduce question-only padding/gaps and empty heights to target one ordinary building screen at 360×640–800 CSS pixels; never clip long sentences, feedback or enlarged text. Keep 44px controls, 18px phone/20px desktop labels, natural wrapping, inline parenthesised base, tap-only add/return and keyboard access. Do not shrink or restyle unrelated Home/Learn/setup/report pages.
+
+Question tray copy is concise: “Tap to add. Tap your answer blocks to remove.” Show one flat wrapping collection, without categories or a large rule/keyboard callout. Always put the available base first. Comparative defaults: base, more, than, -er, -r. If the base ends in y, add ×y and -ier. For an actual doubling form add a literal final-consonant operation, e.g. big + g + -er + than. Superlative equivalents: base, most, the, -est, -st; y adds ×y/-iest; doubling adds the literal letter. Offer current-degree genuine irregular forms, including both far alternatives and all valid optional-the adverb answers. Do not add nouns or prefill formation words/connectors in stems.
+
+Keep original authored banks and accepted answers unchanged. Derive adaptive recipes and controlled doubling at runtime in a pure shared module; enforce every accepted answer is reachable using visible options. Older combined doubling endings remain compatible for existing selected answers but are not new visible options. Preserve schema 2, compatible unfinished work, attempts, first answers, first-attempt scores, best records and reports through an additive in-memory upgrade. Invalid doubling/removal positions or incompatible letters stay visibly invalid and earn no mark. This replaces the earlier “always show every core ingredient” requirement only for the rendered question tray; the complete authored ingredients still support compatibility and validation.

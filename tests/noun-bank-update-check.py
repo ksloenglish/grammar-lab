@@ -60,6 +60,9 @@ with sync_playwright() as p:
               const current = (await (await fetch('./data/adjectives-questions.json')).json()).questions;
               const questions = [fixture, ...current.filter(q => q.id !== fixture.id).slice(0, 9)];
               const old = createExperiment('adjectives', questions);
+              // Preserve an ACTUAL pre-adaptive snapshot; preparation is not migration evidence.
+              old.questions = structuredClone(questions);
+              old.trayOrder = questions[0].blocks.map(block => block.id);
               old.assembly = [...fixture.correctSequences[0]];
               const results = questions.map((q, i) => ({ questionId:q.id,
                 firstAnswer:i < 8 ? q.answers[0] : '(No answer)', finalAnswer:q.answers[0],
@@ -118,7 +121,7 @@ with sync_playwright() as p:
             check(saved(page)['score'] == 1, f'{label}: new first correct answer earns exactly one mark')
             page.locator('[data-action="next"]').click()
             second = saved(page)['questions'][1]
-            wrong = next(block['id'] for block in second['blocks'] if block['label'] == 'than')
+            wrong = next(block['id'] for block in second['blocks'] if block['label'] == second['base'])
             submit_sequence(page, [wrong])
             expect(page.locator('[data-action="retry"]')).to_be_visible()
             page.locator('[data-action="retry"]').click()
@@ -152,7 +155,7 @@ with sync_playwright() as p:
             expect(page.locator('.sentence')).to_be_visible()
             check(saved(page) == before_reload, f'{label}: explicit Resume also preserves compatible work and original best')
             page.locator('[data-action="clear"]').click()
-            submit_sequence(page, [next(block['id'] for block in third['blocks'] if block['label'] == 'than')])
+            submit_sequence(page, [next(block['id'] for block in third['blocks'] if block['label'] == third['base'])])
             page.locator('[data-action="give-up"]').click()
             expect(page.locator('[data-action="next"]')).to_be_visible()
             check(saved(page)['score'] == 1 and saved(page)['results'][2]['mark'] == 0,

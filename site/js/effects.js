@@ -22,5 +22,11 @@ export function reportConfetti() {
 }
 
 export function spellingStepsMarkup(parts, escape) {
-  return parts.flatMap(part => (part.spellingChanges ?? []).map(step => `<div class="spelling-change" aria-hidden="true"><span class="spelling-word">${escape(step.before.slice(0, -1))}<s class="deleted-letter">${escape(step.before.slice(-1))}</s></span><span class="spelling-arrow">→</span><span class="spelling-word">${escape(step.after)}</span>${part.text !== step.after ? `<span class="spelling-arrow">→</span><span class="spelling-word completed">${escape(part.text)}</span>` : ''}</div>`)).join('');
+  return parts.flatMap(part => (part.spellingChanges ?? []).map(step => {
+    const removedFinal = step.after === step.before.slice(0, -1);
+    const before = removedFinal
+      ? `${escape(step.before.slice(0, -1))}<s class="deleted-letter">${escape(step.before.slice(-1))}</s>`
+      : escape(step.before);
+    return `<div class="spelling-change" aria-hidden="true"><span class="spelling-word">${before}</span><span class="spelling-arrow">→</span><span class="spelling-word">${escape(step.after)}</span>${part.text !== step.after ? `<span class="spelling-arrow">→</span><span class="spelling-word completed">${escape(part.text)}</span>` : ''}</div>`;
+  })).join('');
 }

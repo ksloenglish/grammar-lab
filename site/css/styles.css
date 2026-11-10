@@ -350,7 +350,7 @@ main#app { flex: 1 0 auto; padding-block: clamp(2rem, 5vw, 4.75rem) clamp(3.75re
 .token-button { flex: 0 0 auto; width: max-content; min-height: 3.25rem; max-width: 100%; padding: 0.58rem 0.8rem; border: 2px solid #9db5c2; border-radius: 0.75rem; color: var(--ink); background: #fff; font-family: var(--display); font-size: clamp(1.25rem, 1.4vw, 1.38rem); font-weight: 900; line-height: 1.12; text-align: left; white-space: nowrap; }
 .token-button.suffix { border-color: #b49bed; background: #f2efff; color: var(--violet-dark); }
 .token-button.operation { border-color: #b07917; color: #704609; background: #fff0c7; }
-.token-button.operation::before { display: inline-block; margin-right: 0.35rem; content: "✕"; color: #b52d42; font-size: 1.25rem; }
+.token-button.operation:not(.double-consonant)::before { display: inline-block; margin-right: 0.35rem; content: "✕"; color: #b52d42; font-size: 1.25rem; }
 .token-button:hover { border-color: var(--coral); color: var(--coral-dark); background: #fff7f8; }
 .answer-preview { position: relative; min-height: 5.3rem; display: flex; align-items: center; justify-content: center; gap: 0.7rem; margin-top: 1.35rem; padding: 0.9rem; overflow: visible; border-top: 2px dashed #c5d5df; color: var(--ink-muted); text-align: center; }
 .answer-preview.success-glow { color: var(--teal-dark); animation: answer-glow 500ms ease-out both; }
@@ -386,7 +386,7 @@ main#app { flex: 1 0 auto; padding-block: clamp(2rem, 5vw, 4.75rem) clamp(3.75re
 .reagent.word { border-left: 0.46rem solid var(--teal); }
 .reagent.suffix { border-left: 0.46rem solid var(--violet); background: #fcfbff; }
 .reagent.operation { min-width: 4.2rem; border-left: 0.46rem solid #b07917; color: #704609; background: #fff0c7; }
-.reagent.operation::before { content: "✕"; color: #b52d42; font-size: 1.6rem; }
+.reagent.operation:not(.double-consonant)::before { content: "✕"; color: #b52d42; font-size: 1.6rem; }
 .reagent.operation::after { display: none; content: none; }
 .block-label { display: block; margin: 0; color: inherit; font: inherit; letter-spacing: normal; overflow-wrap: normal; text-transform: none; white-space: nowrap; }
 .tray-placeholder { min-height: 5.25rem; display: grid; place-items: center; padding: 1rem; border: 2px dashed #caa750; border-radius: var(--radius-sm); color: var(--ink-faint); background: rgb(255 255 255 / 55%); font-size: 0.98rem; font-style: italic; text-align: center; }
@@ -576,6 +576,69 @@ dialog.confirm-dialog::backdrop { background: rgb(23 35 63 / 58%); }
   .confirm-dialog > .dialog-heading { padding: 1.5rem 1.25rem 0; }
   .confirm-dialog > p { padding: 0.8rem 1.25rem 1.25rem; }
   .confirm-dialog > .dialog-actions { padding: 0 1.25rem 1.25rem; }
+}
+
+/* Adaptive question workspace. Other views keep their existing generous spacing. */
+.question-page .score-display { min-height: 2rem; padding: 0.35rem 0.6rem; border: 0; border-radius: 0.6rem; box-shadow: none; }
+.question-page .reagent-tray { display: block; }
+.question-page .adaptive-ingredients { gap: 0.65rem; }
+.question-page .reagent::after { display: none; }
+.question-page .reagent.double-consonant, .question-page .token-button.double-consonant { border-color: #b07917; color: #704609; background: #fff0c7; }
+.question-page .tray-help { margin: 0.75rem 0 1rem; }
+.question-page .workbench { align-items: start; }
+
+@media (max-width: 46rem) {
+  .question-page .header-inner { min-height: 3.75rem; }
+  .question-page main#app { padding-block: 0.5rem 1rem; }
+  .question-page .experiment-bar { grid-template-columns: minmax(0, 1fr) auto auto; gap: 0.35rem; margin-bottom: 0.5rem; padding: 0; border: 0; }
+  .question-page .trial-meta { grid-column: auto; }
+  .question-page .trial-meta .eyebrow { display: none; }
+  .question-page .trial-meta > strong { font-size: 0.8rem; line-height: 1.2; }
+  .question-page .score-display { min-height: 1.65rem; gap: 0.25rem; padding: 0.28rem 0.35rem; font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0; }
+  .question-page .score-display strong { font-size: 0.9rem; }
+  .question-page .score-display small { font-size: 0.68rem; }
+  .question-page .end-button { min-height: 2.75rem; padding: 0.35rem 0.45rem; border-radius: 0.65rem; font-size: 0.72rem; }
+  .question-page .progress-track { height: 0.28rem; margin-bottom: 0.65rem; border-width: 1px; }
+  .question-page .trial-card { padding-bottom: 0.65rem; border-bottom: 1px solid var(--line); }
+  .question-page .trial-card .trial-label { align-items: flex-start; flex-direction: row; justify-content: flex-start; gap: 0.3rem; margin-bottom: 0.4rem; }
+  .question-page .trial-label > .eyebrow { display: none; }
+  .question-page .trial-card .trial-label > span:last-child { padding: 0.18rem 0.4rem; font-size: 0.58rem; letter-spacing: 0.02em; }
+  .question-page .sentence { max-width: none; font-size: 1.4rem; letter-spacing: -0.035em; line-height: 1.2; }
+  .question-page .inline-base-hint { font-size: 1.125rem; }
+  .question-page .workbench { grid-template-columns: minmax(0, 1fr); gap: 0.65rem; margin-top: 0.65rem; }
+  .question-page .chamber-panel, .question-page .tray-panel { padding: 0.75rem; border-radius: 0.95rem; box-shadow: 0 3px 0 rgb(23 35 63 / 7%); }
+  .question-page .chamber-panel { order: 0; }
+  .question-page .tray-panel { order: 1; }
+  .question-page .chamber-panel::before { width: 3rem; height: 0.22rem; left: 0.75rem; }
+  .question-page .panel-label { gap: 0.5rem; }
+  .question-page .chamber-panel .panel-label { margin-top: 0; }
+  .question-page .panel-label h2 { font-size: 1.125rem; line-height: 1.2; }
+  .question-page .panel-label > span { font-size: 0.55rem; letter-spacing: 0; }
+  .question-page .assembly-zone { min-height: 3.5rem; gap: 0.4rem; margin: 0.5rem 0; padding: 0.3rem; border-width: 2px; border-radius: 0.65rem; }
+  .question-page .tray-placeholder { width: 100%; min-height: 2.75rem; margin: 0; padding: 0.25rem; border: 0; font-size: 0.8rem; line-height: 1.3; }
+  .question-page .token-button { min-height: 2.75rem; padding: 0.35rem 0.5rem; border-radius: 0.6rem; font-size: 1.125rem; }
+  .question-page .answer-preview { min-height: 1.5rem; flex-direction: row; gap: 0.35rem; margin-top: 0; padding: 0.2rem 0; border-top: 0; }
+  .question-page .answer-preview > .answer-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .question-page .answer-preview > strong { font-size: 1rem; line-height: 1.25; overflow-wrap: anywhere; }
+  .question-page .trial-actions { align-items: center; flex-direction: row; gap: 0.5rem; margin-top: 0.55rem; }
+  .question-page .trial-actions > .button { flex: 1 1 auto; width: auto; min-height: 2.75rem; padding: 0.4rem 0.55rem; border-radius: 0.65rem; font-size: 0.85rem; }
+  .question-page .reaction + .trial-actions { margin-top: 1rem; }
+  .question-page .feedback-actions { display: flex; width: 100%; flex-direction: row; gap: 0.5rem; margin: 0; }
+  .question-page .feedback-actions .button { flex: 1 1 0; width: auto; min-height: 2.75rem; }
+  .question-page .tray-help { margin: 0.35rem 0 0.55rem; font-size: 0.8rem; line-height: 1.3; }
+  .question-page .adaptive-ingredients { gap: 0.4rem; }
+  .question-page .reagent { min-width: 2.75rem; min-height: 2.75rem; gap: 0.2rem; padding: 0.35rem 0.48rem; border-left-width: 0.25rem; border-radius: 0.65rem; font-size: 1.125rem; box-shadow: 0 3px 0 #b9cbd5; }
+  .question-page .reagent.operation { min-width: 2.75rem; }
+  .question-page .reagent.operation::before { font-size: 1.125rem; }
+  .question-page .spelling-change { gap: 0.3rem; margin: 0.5rem 0; padding: 0.4rem; border-width: 1px; font-size: 1rem; }
+  .question-page .reaction { min-height: 0; gap: 0.5rem; margin-top: 0.5rem; padding: 0.65rem; }
+  .question-page .reaction-icon { width: 1.7rem; height: 1.7rem; font-size: 1rem; }
+  .question-page .reaction-text { font-size: 0.85rem; line-height: 1.35; }
+  .question-page .reaction-text h3 { font-size: 0.95rem; }
+  .question-page .reaction-text p { margin-bottom: 0.4rem; }
+  .question-page .reaction-text > :last-child { margin-bottom: 0; }
+  .question-page .reaction-success .answer-preview::after { position: static; font-size: 0.5rem; }
+  .question-page .practice-notice { margin: 0 0 0.5rem; padding: 0.55rem; font-size: 0.8rem; line-height: 1.35; }
 }
 
 /* Respect users who choose reduced motion. */

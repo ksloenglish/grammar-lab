@@ -71,7 +71,8 @@ def make_wrong(page) -> None:
     state = page.evaluate("JSON.parse(localStorage.getItem('kslo-grammar-lab:session'))")
     question = state["questions"][state["index"]]
     accepted = {item for sequence in question["correctSequences"] for item in sequence}
-    wrong_id = next(block["id"] for block in question["blocks"] if block["id"] not in accepted)
+    visible = page.locator('[data-action="add-block"]').evaluate_all("nodes => nodes.map(node => node.dataset.block)")
+    wrong_id = next(block_id for block_id in visible if block_id not in accepted)
     page.locator(f"[data-action='add-block'][data-block='{wrong_id}']").click()
     page.locator("[data-action='submit']").click()
     expect(page.locator(".reaction.error")).to_be_visible()
@@ -116,7 +117,9 @@ def inspect_viewport(page, tag: str) -> None:
     start_trial(page)
     screenshot(page, f"{tag}-trial-building.png")
     no_overflow(page, f"{tag} trial building")
-    expect(page.locator(".beaker-meter")).to_have_count(1)
+    expect(page.locator(".score-display .beaker-meter, .experiment-bar .beaker-meter")).to_have_count(0)
+    expect(page.locator(".score-display")).to_be_visible()
+    check(box(page, ".score-display")["height"] <= 32.1, f"{tag}: text-only score is compact without a container graphic")
     heading = box(page, ".chamber-panel .panel-label h2")
     zone = box(page, ".assembly-zone")
     tray_heading = box(page, ".tray-panel .panel-label h2")

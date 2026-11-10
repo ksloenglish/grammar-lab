@@ -71,7 +71,8 @@ with sync_playwright() as p:
                     if len(sequence) == 1:
                         page.locator('[data-action="clear"]').click()
                         used = {id for seq in question['correctSequences'] for id in seq}
-                        wrong = next(block['id'] for block in question['blocks'] if block['id'] not in used)
+                        visible = page.locator('[data-action="add-block"]').evaluate_all('nodes => nodes.map(node => node.dataset.block)')
+                        wrong = next(block_id for block_id in visible if block_id not in used)
                         page.locator(f'[data-action="add-block"][data-block="{wrong}"]').click()
                     page.locator('[data-action="submit"]').click()
                     expect(page.locator('[data-action="retry"]')).to_be_visible()
@@ -81,7 +82,8 @@ with sync_playwright() as p:
                     check(saved(page)['score'] == 1, f'{engine}/{module}: successful retry adds no mark')
                 elif trial == 2:
                     used = {id for seq in question['correctSequences'] for id in seq}
-                    wrong = next(block['id'] for block in question['blocks'] if block['id'] not in used)
+                    visible = page.locator('[data-action="add-block"]').evaluate_all('nodes => nodes.map(node => node.dataset.block)')
+                    wrong = next(block_id for block_id in visible if block_id not in used)
                     page.locator(f'[data-action="add-block"][data-block="{wrong}"]').click()
                     page.locator('[data-action="submit"]').click()
                     page.locator('[data-action="give-up"]').click()
@@ -138,7 +140,7 @@ with sync_playwright() as p:
         expect(page.locator('.sentence')).to_be_visible()
         # Native dragging is inert; buttons append and return/re-add changes order.
         state = saved(page)
-        blocks = [block['id'] for block in state['questions'][state['index']]['blocks']][:3]
+        blocks = page.locator('[data-action="add-block"]').evaluate_all('nodes => nodes.slice(0, 3).map(node => node.dataset.block)')
         source = page.locator(f'[data-action="add-block"][data-block="{blocks[0]}"]')
         expect(source).to_have_attribute('draggable', 'false')
         source.scroll_into_view_if_needed()

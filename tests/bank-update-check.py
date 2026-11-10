@@ -30,9 +30,11 @@ with sync_playwright() as p:
         page.locator('[data-action="start"]').click()
         expect(page.locator('.sentence')).to_be_visible()
         assert 'than' not in page.locator('.sentence').inner_text().lower().split()
-        assert page.locator('.reagent .block-label',has_text='-er').count() >= 1
+        question = page.evaluate("JSON.parse(localStorage.getItem('kslo-grammar-lab:session')).questions[0]")
+        labels = page.locator('.reagent .block-label').all_inner_texts()
+        assert labels[0] == question['base'] and ('-er' if question['degree'] == 'comparative' else '-est') in labels
         assert page.evaluate("JSON.parse(localStorage.getItem('kslo-grammar-lab:session')).schema") == 2
-        results.append(f'{engine.name}: new bank starts with no supplied than and includes -er')
+        results.append(f'{engine.name}: new bank starts with no supplied than and includes degree-relevant ending')
         browser.close()
 Path('test-results').mkdir(exist_ok=True)
 Path('test-results/bank-update-results.json').write_text(json.dumps(results,indent=2)+'\n')

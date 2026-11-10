@@ -1,23 +1,15 @@
+import { doublingConsonant, isControlledDoublingBlock, IRREGULAR_COMPARISON_FORMS } from './comparison-blocks.js';
+export { IRREGULAR_COMPARISON_FORMS } from './comparison-blocks.js';
+
 export const QUESTION_SCHEMA = 2;
 export const COMPARISON_INGREDIENTS = ['more', 'most', 'than', 'the', '-er', '-est', '-r', '-st', '-ier', '-iest'];
-export const IRREGULAR_COMPARISON_FORMS = Object.freeze({
-  good: Object.freeze(['better', 'best']),
-  bad: Object.freeze(['worse', 'worst']),
-  well: Object.freeze(['better', 'best']),
-  badly: Object.freeze(['worse', 'worst']),
-  far: Object.freeze(['farther', 'further', 'farthest', 'furthest']),
-  little: Object.freeze(['less', 'least']),
-  much: Object.freeze(['more', 'most']),
-  many: Object.freeze(['more', 'most'])
-});
 const STRUCTURE_WORDS = ['more', 'most', 'than', 'the'];
 const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const isText = value => typeof value === 'string' && value.trim().length > 0;
 const irregularForms = base => Object.hasOwn(IRREGULAR_COMPARISON_FORMS, base) ? IRREGULAR_COMPARISON_FORMS[base] : [];
 
-// Derive comparison headwords independently of accepted answers and word tiles.
-// Only real comparison endings can extend the base; arbitrary transform values
-// cannot introduce a noun (or another lexical word) into this allow-list.
+// Only real comparison endings extend this allow-list. Arbitrary transform
+// values must never introduce a noun or another lexical word into it.
 function comparisonHeadwords(question) {
   const base = question.base.toLowerCase();
   const words = new Set([base, ...irregularForms(base)]);
@@ -28,6 +20,10 @@ function comparisonHeadwords(question) {
     else if (['-ier', '-iest'].includes(ending) && base.endsWith('y')) words.add(base.slice(0, -1) + ending.slice(1));
     else if (/^-[b-df-hj-np-tv-z](?:er|est)$/.test(ending) && ending[1] === base.at(-1)) words.add(base + ending.slice(1));
   }
+  const consonant = doublingConsonant(question);
+  if (consonant && question.blocks.some(block => isControlledDoublingBlock(question, block))) {
+    words.add(base + consonant.toLowerCase() + (question.degree === 'comparative' ? 'er' : 'est'));
+  }
   return words;
 }
 
@@ -35,17 +31,27 @@ function isNounFreeAnswer(question, answer, headwords) {
   const words = answer.trim().toLowerCase().split(/\s+/);
   if (question.degree === 'comparative' && words.at(-1) === 'than') words.pop();
   if (words[0] === 'the') words.shift();
-  // A longer form contains exactly one lexical headword: the given base.
   if (words.length === 2 && ['more', 'most'].includes(words[0])) return words[1] === question.base.toLowerCase();
-  // Irregular quantity forms such as "the most" and "the least" are
-  // themselves headwords, so they need no additional adjective or noun.
   return words.length === 1 && headwords.has(words[0]);
+}
+
+function legitimateTransform(question, block, from, to) {
+  const base = question.base;
+  const ending = block.label;
+  if (block.kind !== 'suffix') return false;
+  if (['-ier', '-iest'].includes(ending) && /y$/i.test(base)) {
+    return [base, base.slice(0, -1)].includes(from) && to === base.slice(0, -1) + ending.slice(1);
+  }
+  if (from !== base) return false;
+  if (['-er', '-est'].includes(ending)) return to === base + ending.slice(1);
+  if (['-r', '-st'].includes(ending) && /e$/i.test(base)) return to === base + ending.slice(1);
+  return /^-[bcdfghjklmnpqrstvz](?:er|est)$/.test(ending) && ending[1] === base.at(-1)
+    && to === base + ending.slice(1);
 }
 
 export function questionContextIssues(question) {
   const issues = [];
-  // Saved snapshots are untrusted JSON. Reject malformed nested values before
-  // examining them so archiveOutdatedWork can safely exclude corrupt questions.
+  // Saved snapshots are untrusted JSON: guard every nested value first.
   if (!isObject(question) || typeof question.sentence !== 'string' || !isText(question.base) || !/^[a-z]+$/i.test(question.base)
     || !['comparative', 'superlative'].includes(question.degree) || (question.id !== undefined && typeof question.id !== 'string')
     || !Array.isArray(question.answers) || !question.answers.length || !Array.isArray(question.blocks) || !question.blocks.length
@@ -61,13 +67,32 @@ export function questionContextIssues(question) {
   if (question.degree === 'superlative' && !question.blocks.some(block => block.label === 'the' && block.kind === 'word')) issues.push('Every superlative tray must include the');
   if (!question.blocks.some(block => block.label === '-er' && block.kind === 'suffix')) issues.push('Every tray must include a literal -er suffix');
   if (!question.blocks.some(block => block.label === question.base && block.kind === 'word')) issues.push('The tray must include the base word');
+  // Full authored cores are preserved, even though runtime visible choices are
+  // degree-specific. Do not make doubling compulsory in legacy bank snapshots.
   for (const ingredient of COMPARISON_INGREDIENTS) {
     if (!question.blocks.some(block => block.label === ingredient && block.kind === (ingredient.startsWith('-') ? 'suffix' : 'word'))) issues.push(`The complete tray is missing ${ingredient}`);
   }
   if (!question.blocks.some(block => block.label === 'Remove y' && block.kind === 'operation' && block.operation === 'remove-final-y')) issues.push('Every tray must include the Remove y operation');
+  if (new Set(question.blocks.map(block => block.id)).size !== question.blocks.length) issues.push('Ingredient IDs must be unique');
   const allowedWords = new Set([question.base.toLowerCase(), ...STRUCTURE_WORDS, ...irregularForms(question.base.toLowerCase())]);
   for (const block of question.blocks) {
     if (block.kind === 'word' && !allowedWords.has(block.label.toLowerCase())) issues.push(`Noun-free comparison tray has an unrelated word ingredient: ${block.label}`);
+    if (block.operation === 'double-final-consonant' || block.id === 'double-final-consonant') {
+      if (!isControlledDoublingBlock(question, block)) issues.push('Double final consonant must match the base and an accepted regular doubling form');
+    } else if (block.kind === 'operation') {
+      if (block.operation !== 'remove-final-y' || block.label !== 'Remove y' || block.transforms !== undefined) {
+        issues.push('Unknown or malformed spelling operation');
+      }
+    } else if (block.operation !== undefined) {
+      issues.push('Only an operation ingredient may define a spelling operation');
+    }
+    if (block.kind === 'suffix' && !COMPARISON_INGREDIENTS.filter(label => label.startsWith('-')).includes(block.label)
+      && !(/^-[bcdfghjklmnpqrstvz](?:er|est)$/.test(block.label) && block.label[1] === question.base.at(-1))) {
+      issues.push(`Unsupported comparison suffix: ${block.label}`);
+    }
+    if (block.transforms !== undefined && (block.kind !== 'suffix' || Object.entries(block.transforms).some(([from, to]) => !legitimateTransform(question, block, from, to)))) {
+      issues.push(`Ingredient has an arbitrary spelling transform: ${block.label}`);
+    }
   }
   const headwords = comparisonHeadwords(question);
   for (const answer of question.answers) {
@@ -84,12 +109,26 @@ export function questionContextIssues(question) {
   const blocks = new Map(question.blocks.map(block => [block.id, block]));
   for (const sequence of question.correctSequences ?? []) {
     if (sequence.some(id => !blocks.has(id))) issues.push('Accepted sequence references a missing ingredient');
-    for (let i = 1; i < sequence.length; i++) {
+    if (new Set(sequence).size !== sequence.length) issues.push('Accepted sequence cannot repeat an ingredient');
+    for (let i = 0; i < sequence.length; i++) {
       const ending = blocks.get(sequence[i]);
-      let word = blocks.get(sequence[i - 1]);
-      if (ending?.kind === 'operation' && (ending.operation !== 'remove-final-y' || word?.kind !== 'word' || !/y$/i.test(word.label))) issues.push('Accepted Remove y sequence must follow a y-ending word');
+      const previous = blocks.get(sequence[i - 1]);
+      let word = previous;
+      if (ending?.kind === 'operation') {
+        if (ending.operation === 'remove-final-y') {
+          if (previous?.kind !== 'word' || !/y$/i.test(previous.label)) issues.push('Accepted Remove y sequence must follow a y-ending word');
+        } else if (ending.operation === 'double-final-consonant') {
+          if (!isControlledDoublingBlock(question, ending) || previous?.kind !== 'word' || previous.label !== question.base) {
+            issues.push('Accepted doubling sequence must immediately follow the unmodified base word');
+          }
+          const suffix = blocks.get(sequence[i + 1]);
+          if (suffix?.kind !== 'suffix' || !['-er', '-est'].includes(suffix.label)) issues.push('Accepted doubling operation must be followed by -er or -est');
+        } else issues.push('Accepted sequence contains an unknown spelling operation');
+      }
       if (word?.kind === 'operation') word = blocks.get(sequence[i - 2]);
-      if (ending?.kind !== 'suffix' || !word) continue;
+      if (ending?.kind !== 'suffix') continue;
+      if (word?.kind !== 'word') { issues.push('Accepted suffix must follow a word or its controlled spelling operation'); continue; }
+      if (previous?.operation === 'double-final-consonant' && !['-er', '-est'].includes(ending.label)) issues.push('A doubled base takes -er or -est, not a combined doubling ending');
       if (['-r', '-st'].includes(ending.label) && !word.label.endsWith('e')) issues.push(`The ${ending.label} ending requires a base ending in e, not ${word.label}`);
       if (['-ier', '-iest'].includes(ending.label) && !word.label.endsWith('y')) issues.push(`The ${ending.label} ending requires a base ending in y, not ${word.label}`);
     }

@@ -2,7 +2,8 @@ import { assemble, createExperiment, submitTrial, retryTrial, giveUp, advanceTri
 import { load, save, remove, storageAvailable, saveBest, validSession, archiveOutdatedWork } from './storage.js';
 import { QUESTION_SCHEMA, questionContextIssues } from './question-context.js';
 import { labScene, beakerMeter, sparkParticles, reportConfetti, spellingStepsMarkup } from './effects.js';
-import { renderIngredients } from './ingredients.js';
+import { renderIngredients, blockDisplayLabel } from './ingredients.js';
+import { upgradeAdaptiveSession } from './comparison-blocks.js';
 import { VERSION } from '../version.js';
 
 const app = document.querySelector('#app');
@@ -54,7 +55,7 @@ function questionHeading(module, eyebrow, text) {
 }
 function getSavedSession() {
   const saved = load('session');
-  return validSession(saved, modules.filter(item => item.available).map(item => item.id)) ? saved : null;
+  return validSession(saved, modules.filter(item => item.available).map(item => item.id)) ? upgradeAdaptiveSession(saved) : null;
 }
 
 async function confirmLeave(discard = false) {
@@ -174,7 +175,22 @@ async function learnView(module) {
 
 function assemblyView(question) {
   const locked = session.status !== 'building';
-  return session.assembly.map(id => { const block = question.blocks.find(item => item.id === id); return `<div class="assembled-block${id === justPlacedBlock ? ' just-placed' : ''}" data-block="${e(id)}" draggable="false"><button type="button" class="token-button ${e(block.kind)}" data-action="return-block" data-block="${e(id)}" ${locked ? 'disabled' : ''} aria-label="Return ${e(block.label)} to the word blocks">${e(block.operation === 'remove-final-y' ? 'y' : block.label)}</button></div>`; }).join('');
+  return session.assembly.map(id => {
+    const block = question.blocks.find(item => item.id === id);
+    const operationClass = block.operation === 'remove-final-y' ? ' remove-y' : block.operation === 'double-final-consonant' ? ' double-consonant' : '';
+    const returnLabel = block.operation === 'double-final-consonant' ? `doubled ${blockDisplayLabel(block)}` : block.operation === 'remove-final-y' ? 'final-y removal block' : block.label;
+    return `<div class="assembled-block${id === justPlacedBlock ? ' just-placed' : ''}" data-block="${e(id)}" draggable="false"><button type="button" class="token-button ${e(block.kind)}${operationClass}" data-action="return-block" data-block="${e(id)}" ${locked ? 'disabled' : ''} aria-label="Return ${e(returnLabel)} to the word blocks">${e(blockDisplayLabel(block))}</button></div>`;
+  }).join('');
+}
+function correctRecipeView(question) {
+  const sequence = question.correctSequences[0];
+  return sequence.map(id => {
+    const block = question.blocks.find(item => item.id === id);
+    const label = blockDisplayLabel(block);
+    if (block.operation === 'remove-final-y') return `<span role="img" aria-label="Remove the final y">×${e(label)}</span>`;
+    if (block.operation === 'double-final-consonant') return `<span role="img" aria-label="Double the final ${e(label)}">${e(label)}</span>`;
+    return e(label);
+  }).join(' + ');
 }
 function trialView() {
   if (!session) return '<section class="error-panel"><h1>No active experiment</h1><p>Resume your saved experiment or start a new one.</p>' + routeLink('Back to Home', 'home') + '</section>';
@@ -188,13 +204,13 @@ function trialView() {
   let preview = e(assembled.text || 'Your answer will appear here');
   if (wrong) preview = `<span class="shatter-word" aria-hidden="true">${[...assembled.text].map((char, i) => `<span style="--i:${i};--dx:${(i % 5 - 2) * 7}px;--dy:${(i % 3 - 1) * 9}px;--rotation:${i % 2 ? 9 : -9}deg">${char === ' ' ? '&nbsp;' : e(char)}</span>`).join('')}</span><span class="sr-only">${e(assembled.text)}</span>`;
   if (session.status === 'revealed') preview = e(question.answers[0]);
-  return `<div class="experiment-bar"><div class="trial-meta"><p class="eyebrow">${session.practice ? 'REVISION ROUND' : 'EXPERIMENT'} / ${e(module.shortTitle)}</p><strong>Question ${session.index + 1} of ${session.count}</strong></div><div class="score-display">${beakerMeter(session.score / session.count * 100, (session.score - (session.status === 'correct' && session.attempts === 1 ? 1 : 0)) / session.count * 100, false, session.status === 'correct' && session.attempts === 1)}<span>Score</span><strong>${session.score}<small> / ${session.count}</small></strong></div>${actionButton('End Experiment', 'end', 'ghost end-button')}</div><div class="progress-track" role="progressbar" aria-label="Completed questions" aria-valuenow="${session.results.length}" aria-valuemin="0" aria-valuemax="${session.count}"><div class="progress-fill" style="width:${progress}%"></div></div>
+  return `<div class="experiment-bar"><div class="trial-meta"><p class="eyebrow">${session.practice ? 'REVISION ROUND' : 'EXPERIMENT'} / ${e(module.shortTitle)}</p><strong>Question ${session.index + 1} of ${session.count}</strong></div><div class="score-display"><span>Score</span><strong>${session.score}<small> / ${session.count}</small></strong></div>${actionButton('End Experiment', 'end', 'ghost end-button')}</div><div class="progress-track" role="progressbar" aria-label="Completed questions" aria-valuenow="${session.results.length}" aria-valuemin="0" aria-valuemax="${session.count}"><div class="progress-fill" style="width:${progress}%"></div></div>
   ${session.practice ? '<p class="practice-notice">This practice has its own score. Your first result and best score will not change.</p>' : ''}
-  <section class="trial-card"><div class="trial-label"><span class="eyebrow">QUESTION ${String(session.index + 1).padStart(2, '0')}</span><span>${e(question.degree)} · ${e(question.rule)}</span></div><h1 class="sentence">${gapSentence(question.sentence, question.base)}</h1></section>
+  <section class="trial-card"><div class="trial-label"><span>${e(question.degree)} · ${e(question.rule)}</span></div><h1 class="sentence">${gapSentence(question.sentence, question.base)}</h1></section>
   <div class="workbench ${session.status === 'correct' ? 'reaction-success' : ''}"><section class="chamber-panel"><div class="panel-label"><h2>Build your answer</h2><span>01 / BUILD</span></div><div class="assembly-zone" id="assembly-zone" data-zone="assembly" aria-label="Answer blocks in order">${session.assembly.length ? assemblyView(question) : '<p class="tray-placeholder">Tap word blocks to build your answer</p>'}</div>${spellingStepsMarkup(assembled.parts, e)}<div class="answer-preview ${session.status === 'correct' ? 'success-glow' : ''}${justFused ? ' just-fused' : ''}"><span class="answer-label">YOUR ANSWER</span><strong id="assembled-answer">${preview}</strong>${session.status === 'correct' ? sparkParticles() : ''}</div>
-  ${!building ? `<div class="reaction ${wrong ? 'error' : 'success'}" role="region" aria-label="Question feedback"><span class="reaction-icon" aria-hidden="true">${wrong ? '✗' : session.status === 'revealed' ? '→' : '✓'}</span><div class="reaction-text"><h3>${wrong ? 'Not quite. Try again.' : session.status === 'revealed' ? 'The correct answer' : 'Correct. Well done!'}</h3><p>${e(session.feedback)}</p>${session.status === 'revealed' ? `<p>Correct answer: <strong>${question.answers.map(e).join(' / ')}</strong></p><p class="correct-recipe">${question.correctSequences[0].map(id => e(question.blocks.find(block => block.id === id).label)).join(' + ')}</p>` : ''}${session.status === 'correct' ? `<p class="mark-note">${session.attempts === 1 ? '+1 mark for a correct first answer.' : 'Good try. No mark this time: only your first answer counts.'}</p>` : ''}</div></div>` : ''}
+  ${!building ? `<div class="reaction ${wrong ? 'error' : 'success'}" role="region" aria-label="Question feedback"><span class="reaction-icon" aria-hidden="true">${wrong ? '✗' : session.status === 'revealed' ? '→' : '✓'}</span><div class="reaction-text"><h3>${wrong ? 'Not quite. Try again.' : session.status === 'revealed' ? 'The correct answer' : 'Correct. Well done!'}</h3><p>${e(session.feedback)}</p>${session.status === 'revealed' ? `<p>Correct answer: <strong>${question.answers.map(e).join(' / ')}</strong></p><p class="correct-recipe">${correctRecipeView(question)}</p>` : ''}${session.status === 'correct' ? `<p class="mark-note">${session.attempts === 1 ? '+1 mark for a correct first answer.' : 'Good try. No mark this time: only your first answer counts.'}</p>` : ''}</div></div>` : ''}
   <div class="trial-actions">${building ? `${actionButton('Check answer →', 'submit', 'primary', session.assembly.length ? '' : 'disabled')}${actionButton('Clear answer', 'clear', 'ghost', session.assembly.length ? '' : 'disabled')}` : wrong ? `<div class="feedback-actions">${actionButton('Retry', 'retry')}${actionButton('Give Up', 'give-up', 'secondary')}</div>` : completed ? actionButton(session.index + 1 === session.count ? 'View Lab Report →' : 'Next question →', 'next') : ''}</div></section>
-  <section class="tray-panel"><div class="panel-label"><h2>Word blocks</h2><span>02 / SELECT</span></div><p class="tray-help">Tap a block to add it to the end of your answer. Tap a selected block to return it to the word blocks. To change the order, return blocks and add them again, or clear your answer.</p><div class="reagent-tray" id="reagent-tray" data-zone="tray">${renderIngredients(question, session.trayOrder, session.assembly, building, e)}</div><p class="keyboard-help">Keyboard: press Tab to choose a block, then Enter or Space to add it. On a selected block, Enter or Space returns it. To change the order, return blocks and add them again.</p><p class="rule-note">An ending joins the word before it. You do not need every block.</p></section></div>`;
+  <section class="tray-panel"><div class="panel-label"><h2>Word blocks</h2><span>02 / SELECT</span></div><p class="tray-help">Tap to add. Tap your answer blocks to remove.</p><div class="reagent-tray" id="reagent-tray" data-zone="tray">${renderIngredients(question, session.trayOrder, session.assembly, building, e)}</div><p class="keyboard-help sr-only">Keyboard: Tab to a block, then Enter or Space to add or return it.</p></section></div>`;
 }
 
 function reportView() {
@@ -227,10 +243,12 @@ async function render(route) {
     else if (resolvedView === 'report') html = reportView();
     else html = homeView();
     if (ticket !== renderId) return;
+    document.body.classList.toggle('question-page', resolvedView === 'experiment');
     app.innerHTML = `${bankUpdateNotice ? '<aside class="notice" role="status">We have updated the questions. Please start a new experiment. Your best scores are still saved.</aside>' : ''}${html}`;
     document.title = `${resolvedView === 'home' ? 'K S Lo Grammar Lab' : resolvedView === 'report' ? 'Lab Report | K S Lo Grammar Lab' : moduleById(id ?? session?.moduleId)?.shortTitle ?? 'Experiment'} | K S Lo English`;
   } catch (error) {
     if (ticket !== renderId) return;
+    document.body.classList.remove('question-page');
     app.innerHTML = `<section class="error-panel"><h1>The lab needs a moment.</h1><p>${e(error.message)}</p>${actionButton('Try again', 'reload', 'primary')}${routeLink('Back to Home', 'home')}</section>`;
     announce(error.message);
   } finally { if (ticket === renderId) app.setAttribute('aria-busy', 'false'); }
@@ -401,6 +419,7 @@ async function initialise() {
     updateStorageNotice();
     await render(currentRoute);
   } catch (error) {
+    document.body.classList.remove('question-page');
     app.setAttribute('aria-busy', 'false');
     app.innerHTML = `<section class="error-panel"><h1>The lab is temporarily offline.</h1><p>${e(error.message)}</p>${actionButton('Try again', 'reload')}</section>`;
   }
