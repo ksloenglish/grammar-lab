@@ -173,6 +173,55 @@ def assemble(blocks: list[dict[str, Any]], sequence: list[str]) -> str:
     return " ".join(pieces)
 
 
+def concise_explanation(base: str, degree: str, rule: str, answers: list[str], requires_article: bool) -> str:
+    """Explain the actual accepted formation, without repeating the whole answer."""
+    comparative = degree == "comparative"
+    assert degree in {"comparative", "superlative"}, f"Unknown comparison degree: {degree}"
+    ending = "-er" if comparative else "-est"
+    formation_word = "more" if comparative else "most"
+    heads: list[str] = []
+    analytic_forms: list[str] = []
+    for answer in answers:
+        words = answer.lower().split()
+        if words[-1:] == ["than"]:
+            words.pop()
+        if words[:1] == ["the"]:
+            words.pop(0)
+        if len(words) > 1 and words[0] in {"more", "most"}:
+            form = " ".join(words)
+            if form not in analytic_forms:
+                analytic_forms.append(form)
+            words.pop(0)
+        head = " ".join(words)
+        if head and head not in heads:
+            heads.append(head)
+    assert heads, f"{base}: explanation needs an accepted answer"
+    if rule == "Longer forms":
+        explanation = f"Put {formation_word} before {base}. Do not add {ending}."
+    elif rule == "Irregular forms":
+        forms = [head for head in heads if head != base]
+        assert forms, f"{base}: explanation needs an irregular form"
+        explanation = f"{base.capitalize()} changes its form to {' or '.join(forms)}."
+    elif base.endswith("y") and base[:-1] + "i" + ending[1:] in heads:
+        explanation = f"Remove the final y, then add {'-ier' if comparative else '-iest'} to {base}."
+    elif base.endswith("e") and base + ("r" if comparative else "st") in heads:
+        explanation = f"The word already ends in e. Add {'-r' if comparative else '-st'} to {base}."
+    elif base + base[-1] + ending[1:] in heads:
+        explanation = f"Double the final {base[-1]}, then add {ending} to {base}."
+    else:
+        assert base + ending[1:] in heads, f"{base}: unrecognised regular formation"
+        explanation = f"Add {ending} to {base}."
+    if rule != "Longer forms" and analytic_forms:
+        explanation += f" {' or '.join(analytic_forms).capitalize()} is also accepted here."
+    if comparative:
+        explanation += " Use than to introduce the other person, thing or action in the comparison."
+    elif requires_article:
+        explanation += " Use the before the superlative."
+    else:
+        explanation += " This adverb can be used with or without the."
+    return explanation
+
+
 def make_question(
     module: str,
     number: int,
@@ -238,10 +287,7 @@ def make_question(
         wrong_answers = item.get("answers")
         if isinstance(wrong_answers, list):
             short_feedback.append({"answers": wrong_answers, "message": f"{wrong_answers[0].capitalize()} is not right here. {hint} Use {answer_text} {purpose}."})
-    if degree == "comparative":
-        short_explanation = f"Use {answer_text} to compare two things. {hint}"
-    else:
-        short_explanation = f"Use {answer_text} for the top one in a group. {hint}"
+    short_explanation = concise_explanation(base, degree, rule, answers, requires_article)
     short_feedback.append({"message": f"Use {answer_text} {purpose}."})
     return {
         "id": question_id,
@@ -1088,6 +1134,7 @@ def validate_bank(bank: dict[str, Any]) -> dict[str, Any]:
     assert rule_counts == Counter({"Regular forms": 24, "Spelling changes": 24, "Longer forms": 24, "Irregular forms": 24}), f"{module}: unbalanced rule groups"
     for q in questions:
         assert q["sentence"].count("_____") == 1, f"{q['id']}: gap must appear exactly once"
+        assert not re.search(r"\bUse\b[^.]*\b(?:to compare two things|for the top one in a group)\b", q["explanation"], re.I), f"{q['id']}: correct explanation must not repeat a generic answer introduction"
         assert not re.search(r"\bthan\b", q["sentence"], re.I), f"{q['id']}: than must not appear in a question stem"
         assert not re.search(r"\b(?:more|most)\b", q["sentence"], re.I), f"{q['id']}: degree words must not be prefilled in a question stem"
         assert len(q["feedback"]) >= 4, f"{q['id']}: needs 3 specifics plus fallback"

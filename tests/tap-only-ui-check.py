@@ -11,6 +11,7 @@ import importlib.util
 import json
 import os
 import re
+import subprocess
 from pathlib import Path
 
 from playwright.sync_api import expect, sync_playwright
@@ -20,8 +21,8 @@ BASE = os.environ.get("GRAMMAR_TEST_URL", "http://127.0.0.1:3000/").rstrip("/") 
 OUT = ROOT / "test-results" / "tap-only-ui"
 RESULTS: list[str] = []
 BANK_HASHES = {
-    "adjectives": "7ff392eda0bd54dcce344cfa0c1a087314a94932e4b24840dd5677682e9c9006",
-    "adverbs": "70796e68030a3ac052fe2ed4c872da64ec8f20f09b674bd1571b265ed93f0da3",
+    "adjectives": "7cfe6a3aed8303709dde4777b1283bdebafe23007e4e477d29f18a0913f8ad54",
+    "adverbs": "91f4f0cbaffee97300592110953273c3263985aab097df04aa3e25f6eb227f09",
 }
 # Reuse the existing strict text-range/clipping audit, without executing its main.
 _spec = importlib.util.spec_from_file_location("home_ui_metrics", ROOT / "tests/home-ui-check.py")
@@ -34,6 +35,26 @@ def check(condition, message):
     if not condition:
         raise AssertionError(message)
     RESULTS.append(message)
+
+
+def without_explanations(bank):
+    # Only the direct question.explanation field is allowed to change. Keep
+    # feedback, blocks, recipes, answers, metadata and question order intact.
+    value = json.loads(json.dumps(bank))
+    for question in value["questions"]:
+        del question["explanation"]
+    return value
+
+
+def bank_identity(page, module, expected, tag):
+    current = page.evaluate("async module => (await (await fetch(`./data/${module}-questions.json`)).json())", module)
+    head = json.loads(subprocess.check_output(["git", "show", f"HEAD:site/data/{module}-questions.json"], cwd=ROOT))
+    stripped = without_explanations(current)
+    check(stripped == without_explanations(head), f"{tag}: served {module} bank differs from git HEAD only in question explanations")
+    canonical = json.dumps(stripped, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()
+    check(hashlib.sha256(canonical).hexdigest() == expected, f"{tag}: every non-explanation {module} bank field matches the pinned pre-feedback baseline")
+    check(all(isinstance(q["explanation"], str) and q["explanation"].strip() for q in current["questions"]),
+          f"{tag}: all {module} explanations remain nonempty strings")
 
 
 def saved(page):
@@ -310,8 +331,7 @@ def run(engine, tag, width):
         shot(page, tag, "home")
         shot(page, tag, "home-header", page.locator(".site-header"))
         for module, expected in BANK_HASHES.items():
-            text = page.evaluate("async module => (await fetch(`./data/${module}-questions.json`)).text()", module)
-            check(hashlib.sha256(text.encode()).hexdigest() == expected, f"{tag}: served {module} bank JSON remains byte-identical")
+            bank_identity(page, module, expected, tag)
         activate(page.locator('[data-route="learn/adjectives"]').first, mobile)
         expect(page.locator(".mini-question")).to_have_count(3)
         header(page, f"{tag}/Learn")

@@ -20,6 +20,10 @@ for (const module of manifest.modules.filter(item => item.available)) {
     assert.deepEqual(questionContextIssues(question), [], `${label}: noun-free answers/ingredients, gap, connector, suffix and feedback context`);
     assert.equal(question.sentence.split('_____').length, 2, `${label}: one gap`);
     assert.ok(question.base && question.explanation && question.rule);
+    assert.equal(typeof question.explanation, 'string', `${label}: plain explanation text`);
+    assert.ok(!/Use .+ (?:to compare two things|for the top one in a group|in this gap)\./i.test(question.explanation), `${label}: remove redundant generic correct-answer copy`);
+    const thanPurpose = 'Use than to introduce the other person, thing or action in the comparison.';
+    assert.equal(question.explanation.split(thanPurpose).length - 1, question.degree === 'comparative' ? 1 : 0, `${label}: exactly one purpose-of-than sentence for comparatives only`);
     assert.ok(question.degree in counts, `${label}: degree`);
     assert.equal(question.requiresArticle, module.id === 'adjectives' && question.degree === 'superlative', `${label}: explicit article policy`);
     counts[question.degree]++;

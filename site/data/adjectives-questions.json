@@ -117,7 +117,7 @@
           "message": "Use taller than to compare two things."
         }
       ],
-      "explanation": "Use taller than to compare two things. Add -er to this short word."
+      "explanation": "Add -er to tall. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-002",
@@ -235,7 +235,7 @@
           "message": "Use the tallest for the top one in a group."
         }
       ],
-      "explanation": "Use the tallest for the top one in a group. Add -est to this short word."
+      "explanation": "Add -est to tall. Use the before the superlative."
     },
     {
       "id": "adj-003",
@@ -353,7 +353,7 @@
           "message": "Use cleaner than to compare two things."
         }
       ],
-      "explanation": "Use cleaner than to compare two things. Add -er to this short word."
+      "explanation": "Add -er to clean. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-004",
@@ -471,7 +471,7 @@
           "message": "Use the cleanest for the top one in a group."
         }
       ],
-      "explanation": "Use the cleanest for the top one in a group. Add -est to this short word."
+      "explanation": "Add -est to clean. Use the before the superlative."
     },
     {
       "id": "adj-005",
@@ -589,7 +589,7 @@
           "message": "Use brighter than to compare two things."
         }
       ],
-      "explanation": "Use brighter than to compare two things. Add -er to this short word."
+      "explanation": "Add -er to bright. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-006",
@@ -707,7 +707,7 @@
           "message": "Use the brightest for the top one in a group."
         }
       ],
-      "explanation": "Use the brightest for the top one in a group. Add -est to this short word."
+      "explanation": "Add -est to bright. Use the before the superlative."
     },
     {
       "id": "adj-007",
@@ -825,7 +825,7 @@
           "message": "Use shorter than to compare two things."
         }
       ],
-      "explanation": "Use shorter than to compare two things. Add -er to this short word."
+      "explanation": "Add -er to short. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-008",
@@ -943,7 +943,7 @@
           "message": "Use the shortest for the top one in a group."
         }
       ],
-      "explanation": "Use the shortest for the top one in a group. Add -est to this short word."
+      "explanation": "Add -est to short. Use the before the superlative."
     },
     {
       "id": "adj-009",
@@ -1061,7 +1061,7 @@
           "message": "Use warmer than to compare two things."
         }
       ],
-      "explanation": "Use warmer than to compare two things. Add -er to this short word."
+      "explanation": "Add -er to warm. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-010",
@@ -1179,7 +1179,7 @@
           "message": "Use the warmest for the top one in a group."
         }
       ],
-      "explanation": "Use the warmest for the top one in a group. Add -est to this short word."
+      "explanation": "Add -est to warm. Use the before the superlative."
     },
     {
       "id": "adj-011",
@@ -1297,7 +1297,7 @@
           "message": "Use older than to compare two things."
         }
       ],
-      "explanation": "Use older than to compare two things. Add -er to this short word."
+      "explanation": "Add -er to old. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-012",
@@ -1415,7 +1415,7 @@
           "message": "Use the oldest for the top one in a group."
         }
       ],
-      "explanation": "Use the oldest for the top one in a group. Add -est to this short word."
+      "explanation": "Add -est to old. Use the before the superlative."
     },
     {
       "id": "adj-013",
@@ -1533,7 +1533,7 @@
           "message": "Use stronger than to compare two things."
         }
       ],
-      "explanation": "Use stronger than to compare two things. Add -er to this short word."
+      "explanation": "Add -er to strong. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-014",
@@ -1651,7 +1651,7 @@
           "message": "Use the strongest for the top one in a group."
         }
       ],
-      "explanation": "Use the strongest for the top one in a group. Add -est to this short word."
+      "explanation": "Add -est to strong. Use the before the superlative."
     },
     {
       "id": "adj-015",
@@ -1769,7 +1769,7 @@
           "message": "Use kinder than to compare two things."
         }
       ],
-      "explanation": "Use kinder than to compare two things. Add -er to this short word."
+      "explanation": "Add -er to kind. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-016",
@@ -1887,7 +1887,7 @@
           "message": "Use the kindest for the top one in a group."
         }
       ],
-      "explanation": "Use the kindest for the top one in a group. Add -est to this short word."
+      "explanation": "Add -est to kind. Use the before the superlative."
     },
     {
       "id": "adj-017",
@@ -2005,7 +2005,7 @@
           "message": "Use larger than to compare two things."
         }
       ],
-      "explanation": "Use larger than to compare two things. The word ends in e. Add -r."
+      "explanation": "The word already ends in e. Add -r to large. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-018",
@@ -2123,7 +2123,7 @@
           "message": "Use the largest for the top one in a group."
         }
       ],
-      "explanation": "Use the largest for the top one in a group. The word ends in e. Add -st."
+      "explanation": "The word already ends in e. Add -st to large. Use the before the superlative."
     },
     {
       "id": "adj-019",
@@ -2241,7 +2241,7 @@
           "message": "Use nicer than to compare two things."
         }
       ],
-      "explanation": "Use nicer than to compare two things. The word ends in e. Add -r."
+      "explanation": "The word already ends in e. Add -r to nice. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-020",
@@ -2359,7 +2359,7 @@
           "message": "Use the nicest for the top one in a group."
         }
       ],
-      "explanation": "Use the nicest for the top one in a group. The word ends in e. Add -st."
+      "explanation": "The word already ends in e. Add -st to nice. Use the before the superlative."
     },
     {
       "id": "adj-021",
@@ -2477,7 +2477,7 @@
           "message": "Use safer than to compare two things."
         }
       ],
-      "explanation": "Use safer than to compare two things. The word ends in e. Add -r."
+      "explanation": "The word already ends in e. Add -r to safe. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-022",
@@ -2595,7 +2595,7 @@
           "message": "Use the safest for the top one in a group."
         }
       ],
-      "explanation": "Use the safest for the top one in a group. The word ends in e. Add -st."
+      "explanation": "The word already ends in e. Add -st to safe. Use the before the superlative."
     },
     {
       "id": "adj-023",
@@ -2725,7 +2725,7 @@
           "message": "Use bigger than to compare two things."
         }
       ],
-      "explanation": "Use bigger than to compare two things. Double the last letter, then add -er."
+      "explanation": "Double the final g, then add -er to big. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-024",
@@ -2855,7 +2855,7 @@
           "message": "Use the biggest for the top one in a group."
         }
       ],
-      "explanation": "Use the biggest for the top one in a group. Double the last letter, then add -est."
+      "explanation": "Double the final g, then add -est to big. Use the before the superlative."
     },
     {
       "id": "adj-025",
@@ -2985,7 +2985,7 @@
           "message": "Use hotter than to compare two things."
         }
       ],
-      "explanation": "Use hotter than to compare two things. Double the last letter, then add -er."
+      "explanation": "Double the final t, then add -er to hot. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-026",
@@ -3115,7 +3115,7 @@
           "message": "Use the hottest for the top one in a group."
         }
       ],
-      "explanation": "Use the hottest for the top one in a group. Double the last letter, then add -est."
+      "explanation": "Double the final t, then add -est to hot. Use the before the superlative."
     },
     {
       "id": "adj-027",
@@ -3245,7 +3245,7 @@
           "message": "Use thinner than to compare two things."
         }
       ],
-      "explanation": "Use thinner than to compare two things. Double the last letter, then add -er."
+      "explanation": "Double the final n, then add -er to thin. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-028",
@@ -3375,7 +3375,7 @@
           "message": "Use the thinnest for the top one in a group."
         }
       ],
-      "explanation": "Use the thinnest for the top one in a group. Double the last letter, then add -est."
+      "explanation": "Double the final n, then add -est to thin. Use the before the superlative."
     },
     {
       "id": "adj-029",
@@ -3505,7 +3505,7 @@
           "message": "Use wetter than to compare two things."
         }
       ],
-      "explanation": "Use wetter than to compare two things. Double the last letter, then add -er."
+      "explanation": "Double the final t, then add -er to wet. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-030",
@@ -3635,7 +3635,7 @@
           "message": "Use the wettest for the top one in a group."
         }
       ],
-      "explanation": "Use the wettest for the top one in a group. Double the last letter, then add -est."
+      "explanation": "Double the final t, then add -est to wet. Use the before the superlative."
     },
     {
       "id": "adj-031",
@@ -3765,7 +3765,7 @@
           "message": "Use easier than to compare two things."
         }
       ],
-      "explanation": "Use easier than to compare two things. Change y to i, then add -er."
+      "explanation": "Remove the final y, then add -ier to easy. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-032",
@@ -3895,7 +3895,7 @@
           "message": "Use the easiest for the top one in a group."
         }
       ],
-      "explanation": "Use the easiest for the top one in a group. Change y to i, then add -est."
+      "explanation": "Remove the final y, then add -iest to easy. Use the before the superlative."
     },
     {
       "id": "adj-033",
@@ -4025,7 +4025,7 @@
           "message": "Use busier than to compare two things."
         }
       ],
-      "explanation": "Use busier than to compare two things. Change y to i, then add -er."
+      "explanation": "Remove the final y, then add -ier to busy. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-034",
@@ -4155,7 +4155,7 @@
           "message": "Use the busiest for the top one in a group."
         }
       ],
-      "explanation": "Use the busiest for the top one in a group. Change y to i, then add -est."
+      "explanation": "Remove the final y, then add -iest to busy. Use the before the superlative."
     },
     {
       "id": "adj-035",
@@ -4285,7 +4285,7 @@
           "message": "Use noisier than to compare two things."
         }
       ],
-      "explanation": "Use noisier than to compare two things. Change y to i, then add -er."
+      "explanation": "Remove the final y, then add -ier to noisy. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-036",
@@ -4415,7 +4415,7 @@
           "message": "Use the noisiest for the top one in a group."
         }
       ],
-      "explanation": "Use the noisiest for the top one in a group. Change y to i, then add -est."
+      "explanation": "Remove the final y, then add -iest to noisy. Use the before the superlative."
     },
     {
       "id": "adj-037",
@@ -4545,7 +4545,7 @@
           "message": "Use happier than to compare two things."
         }
       ],
-      "explanation": "Use happier than to compare two things. Change y to i, then add -er."
+      "explanation": "Remove the final y, then add -ier to happy. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-038",
@@ -4675,7 +4675,7 @@
           "message": "Use the happiest for the top one in a group."
         }
       ],
-      "explanation": "Use the happiest for the top one in a group. Change y to i, then add -est."
+      "explanation": "Remove the final y, then add -iest to happy. Use the before the superlative."
     },
     {
       "id": "adj-039",
@@ -4805,7 +4805,7 @@
           "message": "Use heavier than to compare two things."
         }
       ],
-      "explanation": "Use heavier than to compare two things. Change y to i, then add -er."
+      "explanation": "Remove the final y, then add -ier to heavy. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-040",
@@ -4935,7 +4935,7 @@
           "message": "Use the heaviest for the top one in a group."
         }
       ],
-      "explanation": "Use the heaviest for the top one in a group. Change y to i, then add -est."
+      "explanation": "Remove the final y, then add -iest to heavy. Use the before the superlative."
     },
     {
       "id": "adj-041",
@@ -5053,7 +5053,7 @@
           "message": "Use more careful than to compare two things."
         }
       ],
-      "explanation": "Use more careful than to compare two things. Put more before careful. Do not add -er."
+      "explanation": "Put more before careful. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-042",
@@ -5171,7 +5171,7 @@
           "message": "Use the most careful for the top one in a group."
         }
       ],
-      "explanation": "Use the most careful for the top one in a group. Put most before careful. Do not add -est."
+      "explanation": "Put most before careful. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-043",
@@ -5289,7 +5289,7 @@
           "message": "Use more interesting than to compare two things."
         }
       ],
-      "explanation": "Use more interesting than to compare two things. Put more before interesting. Do not add -er."
+      "explanation": "Put more before interesting. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-044",
@@ -5407,7 +5407,7 @@
           "message": "Use the most interesting for the top one in a group."
         }
       ],
-      "explanation": "Use the most interesting for the top one in a group. Put most before interesting. Do not add -est."
+      "explanation": "Put most before interesting. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-045",
@@ -5525,7 +5525,7 @@
           "message": "Use more useful than to compare two things."
         }
       ],
-      "explanation": "Use more useful than to compare two things. Put more before useful. Do not add -er."
+      "explanation": "Put more before useful. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-046",
@@ -5643,7 +5643,7 @@
           "message": "Use the most useful for the top one in a group."
         }
       ],
-      "explanation": "Use the most useful for the top one in a group. Put most before useful. Do not add -est."
+      "explanation": "Put most before useful. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-047",
@@ -5761,7 +5761,7 @@
           "message": "Use more popular than to compare two things."
         }
       ],
-      "explanation": "Use more popular than to compare two things. Put more before popular. Do not add -er."
+      "explanation": "Put more before popular. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-048",
@@ -5879,7 +5879,7 @@
           "message": "Use the most popular for the top one in a group."
         }
       ],
-      "explanation": "Use the most popular for the top one in a group. Put most before popular. Do not add -est."
+      "explanation": "Put most before popular. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-049",
@@ -5997,7 +5997,7 @@
           "message": "Use more practical than to compare two things."
         }
       ],
-      "explanation": "Use more practical than to compare two things. Put more before practical. Do not add -er."
+      "explanation": "Put more before practical. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-050",
@@ -6115,7 +6115,7 @@
           "message": "Use the most practical for the top one in a group."
         }
       ],
-      "explanation": "Use the most practical for the top one in a group. Put most before practical. Do not add -est."
+      "explanation": "Put most before practical. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-051",
@@ -6233,7 +6233,7 @@
           "message": "Use more beautiful than to compare two things."
         }
       ],
-      "explanation": "Use more beautiful than to compare two things. Put more before beautiful. Do not add -er."
+      "explanation": "Put more before beautiful. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-052",
@@ -6351,7 +6351,7 @@
           "message": "Use the most beautiful for the top one in a group."
         }
       ],
-      "explanation": "Use the most beautiful for the top one in a group. Put most before beautiful. Do not add -est."
+      "explanation": "Put most before beautiful. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-053",
@@ -6469,7 +6469,7 @@
           "message": "Use more important than to compare two things."
         }
       ],
-      "explanation": "Use more important than to compare two things. Put more before important. Do not add -er."
+      "explanation": "Put more before important. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-054",
@@ -6587,7 +6587,7 @@
           "message": "Use the most important for the top one in a group."
         }
       ],
-      "explanation": "Use the most important for the top one in a group. Put most before important. Do not add -est."
+      "explanation": "Put most before important. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-055",
@@ -6705,7 +6705,7 @@
           "message": "Use more comfortable than to compare two things."
         }
       ],
-      "explanation": "Use more comfortable than to compare two things. Put more before comfortable. Do not add -er."
+      "explanation": "Put more before comfortable. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-056",
@@ -6823,7 +6823,7 @@
           "message": "Use the most comfortable for the top one in a group."
         }
       ],
-      "explanation": "Use the most comfortable for the top one in a group. Put most before comfortable. Do not add -est."
+      "explanation": "Put most before comfortable. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-057",
@@ -6941,7 +6941,7 @@
           "message": "Use more reliable than to compare two things."
         }
       ],
-      "explanation": "Use more reliable than to compare two things. Put more before reliable. Do not add -er."
+      "explanation": "Put more before reliable. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-058",
@@ -7059,7 +7059,7 @@
           "message": "Use the most reliable for the top one in a group."
         }
       ],
-      "explanation": "Use the most reliable for the top one in a group. Put most before reliable. Do not add -est."
+      "explanation": "Put most before reliable. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-059",
@@ -7177,7 +7177,7 @@
           "message": "Use more creative than to compare two things."
         }
       ],
-      "explanation": "Use more creative than to compare two things. Put more before creative. Do not add -er."
+      "explanation": "Put more before creative. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-060",
@@ -7295,7 +7295,7 @@
           "message": "Use the most creative for the top one in a group."
         }
       ],
-      "explanation": "Use the most creative for the top one in a group. Put most before creative. Do not add -est."
+      "explanation": "Put most before creative. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-061",
@@ -7413,7 +7413,7 @@
           "message": "Use more expensive than to compare two things."
         }
       ],
-      "explanation": "Use more expensive than to compare two things. Put more before expensive. Do not add -er."
+      "explanation": "Put more before expensive. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-062",
@@ -7531,7 +7531,7 @@
           "message": "Use the most expensive for the top one in a group."
         }
       ],
-      "explanation": "Use the most expensive for the top one in a group. Put most before expensive. Do not add -est."
+      "explanation": "Put most before expensive. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-063",
@@ -7649,7 +7649,7 @@
           "message": "Use more dangerous than to compare two things."
         }
       ],
-      "explanation": "Use more dangerous than to compare two things. Put more before dangerous. Do not add -er."
+      "explanation": "Put more before dangerous. Do not add -er. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-064",
@@ -7767,7 +7767,7 @@
           "message": "Use the most dangerous for the top one in a group."
         }
       ],
-      "explanation": "Use the most dangerous for the top one in a group. Put most before dangerous. Do not add -est."
+      "explanation": "Put most before dangerous. Do not add -est. Use the before the superlative."
     },
     {
       "id": "adj-065",
@@ -7891,7 +7891,7 @@
           "message": "Use quieter than or more quiet than to compare two things."
         }
       ],
-      "explanation": "Use quieter than or more quiet than to compare two things. Both forms fit this sentence: quieter than or more quiet than."
+      "explanation": "Add -er to quiet. More quiet is also accepted here. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-066",
@@ -8015,7 +8015,7 @@
           "message": "Use the quietest or the most quiet for the top one in a group."
         }
       ],
-      "explanation": "Use the quietest or the most quiet for the top one in a group. Both forms fit this sentence: the quietest or the most quiet."
+      "explanation": "Add -est to quiet. Most quiet is also accepted here. Use the before the superlative."
     },
     {
       "id": "adj-067",
@@ -8139,7 +8139,7 @@
           "message": "Use cleverer than or more clever than to compare two things."
         }
       ],
-      "explanation": "Use cleverer than or more clever than to compare two things. Both forms fit this sentence: cleverer than or more clever than."
+      "explanation": "Add -er to clever. More clever is also accepted here. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-068",
@@ -8263,7 +8263,7 @@
           "message": "Use the cleverest or the most clever for the top one in a group."
         }
       ],
-      "explanation": "Use the cleverest or the most clever for the top one in a group. Both forms fit this sentence: the cleverest or the most clever."
+      "explanation": "Add -est to clever. Most clever is also accepted here. Use the before the superlative."
     },
     {
       "id": "adj-069",
@@ -8387,7 +8387,7 @@
           "message": "Use narrower than or more narrow than to compare two things."
         }
       ],
-      "explanation": "Use narrower than or more narrow than to compare two things. Both forms fit this sentence: narrower than or more narrow than."
+      "explanation": "Add -er to narrow. More narrow is also accepted here. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-070",
@@ -8511,7 +8511,7 @@
           "message": "Use the narrowest or the most narrow for the top one in a group."
         }
       ],
-      "explanation": "Use the narrowest or the most narrow for the top one in a group. Both forms fit this sentence: the narrowest or the most narrow."
+      "explanation": "Add -est to narrow. Most narrow is also accepted here. Use the before the superlative."
     },
     {
       "id": "adj-071",
@@ -8635,7 +8635,7 @@
           "message": "Use simpler than or more simple than to compare two things."
         }
       ],
-      "explanation": "Use simpler than or more simple than to compare two things. Both forms fit this sentence: simpler than or more simple than."
+      "explanation": "The word already ends in e. Add -r to simple. More simple is also accepted here. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-072",
@@ -8759,7 +8759,7 @@
           "message": "Use the simplest or the most simple for the top one in a group."
         }
       ],
-      "explanation": "Use the simplest or the most simple for the top one in a group. Both forms fit this sentence: the simplest or the most simple."
+      "explanation": "The word already ends in e. Add -st to simple. Most simple is also accepted here. Use the before the superlative."
     },
     {
       "id": "adj-073",
@@ -8888,7 +8888,7 @@
           "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Use better than to compare two things. Good changes its form. Use better than in this gap."
+      "explanation": "Good changes its form to better. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-074",
@@ -9017,7 +9017,7 @@
           "message": "Use the best for the top one in a group."
         }
       ],
-      "explanation": "Use the best for the top one in a group. Good changes its form. Use the best in this gap."
+      "explanation": "Good changes its form to best. Use the before the superlative."
     },
     {
       "id": "adj-075",
@@ -9146,7 +9146,7 @@
           "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Use better than to compare two things. Good changes its form. Use better than in this gap."
+      "explanation": "Good changes its form to better. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-076",
@@ -9275,7 +9275,7 @@
           "message": "Use the best for the top one in a group."
         }
       ],
-      "explanation": "Use the best for the top one in a group. Good changes its form. Use the best in this gap."
+      "explanation": "Good changes its form to best. Use the before the superlative."
     },
     {
       "id": "adj-077",
@@ -9404,7 +9404,7 @@
           "message": "Use worse than to compare two things."
         }
       ],
-      "explanation": "Use worse than to compare two things. Bad changes its form. Use worse than in this gap."
+      "explanation": "Bad changes its form to worse. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-078",
@@ -9533,7 +9533,7 @@
           "message": "Use the worst for the top one in a group."
         }
       ],
-      "explanation": "Use the worst for the top one in a group. Bad changes its form. Use the worst in this gap."
+      "explanation": "Bad changes its form to worst. Use the before the superlative."
     },
     {
       "id": "adj-079",
@@ -9662,7 +9662,7 @@
           "message": "Use worse than to compare two things."
         }
       ],
-      "explanation": "Use worse than to compare two things. Bad changes its form. Use worse than in this gap."
+      "explanation": "Bad changes its form to worse. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-080",
@@ -9791,7 +9791,7 @@
           "message": "Use the worst for the top one in a group."
         }
       ],
-      "explanation": "Use the worst for the top one in a group. Bad changes its form. Use the worst in this gap."
+      "explanation": "Bad changes its form to worst. Use the before the superlative."
     },
     {
       "id": "adj-081",
@@ -9937,7 +9937,7 @@
           "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Use farther than or further than to compare two things. Far changes its form. Use farther than or further than in this gap."
+      "explanation": "Far changes its form to farther or further. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-082",
@@ -10083,7 +10083,7 @@
           "message": "Use the farthest or the furthest for the top one in a group."
         }
       ],
-      "explanation": "Use the farthest or the furthest for the top one in a group. Far changes its form. Use the farthest or the furthest in this gap."
+      "explanation": "Far changes its form to farthest or furthest. Use the before the superlative."
     },
     {
       "id": "adj-083",
@@ -10229,7 +10229,7 @@
           "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Use farther than or further than to compare two things. Far changes its form. Use farther than or further than in this gap."
+      "explanation": "Far changes its form to farther or further. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-084",
@@ -10375,7 +10375,7 @@
           "message": "Use the farthest or the furthest for the top one in a group."
         }
       ],
-      "explanation": "Use the farthest or the furthest for the top one in a group. Far changes its form. Use the farthest or the furthest in this gap."
+      "explanation": "Far changes its form to farthest or furthest. Use the before the superlative."
     },
     {
       "id": "adj-085",
@@ -10504,7 +10504,7 @@
           "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Use better than to compare two things. Good changes its form. Use better than in this gap."
+      "explanation": "Good changes its form to better. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-086",
@@ -10633,7 +10633,7 @@
           "message": "Use the least for the top one in a group."
         }
       ],
-      "explanation": "Use the least for the top one in a group. Little changes its form. Use the least in this gap."
+      "explanation": "Little changes its form to least. Use the before the superlative."
     },
     {
       "id": "adj-087",
@@ -10762,7 +10762,7 @@
           "message": "Use worse than to compare two things."
         }
       ],
-      "explanation": "Use worse than to compare two things. Bad changes its form. Use worse than in this gap."
+      "explanation": "Bad changes its form to worse. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-088",
@@ -10891,7 +10891,7 @@
           "message": "Use the least for the top one in a group."
         }
       ],
-      "explanation": "Use the least for the top one in a group. Little changes its form. Use the least in this gap."
+      "explanation": "Little changes its form to least. Use the before the superlative."
     },
     {
       "id": "adj-089",
@@ -11020,7 +11020,7 @@
           "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Use better than to compare two things. Good changes its form. Use better than in this gap."
+      "explanation": "Good changes its form to better. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-090",
@@ -11137,7 +11137,7 @@
           "message": "Use the most for the top one in a group."
         }
       ],
-      "explanation": "Use the most for the top one in a group. Much changes its form. Use the most in this gap."
+      "explanation": "Much changes its form to most. Use the before the superlative."
     },
     {
       "id": "adj-091",
@@ -11266,7 +11266,7 @@
           "message": "Use worse than to compare two things."
         }
       ],
-      "explanation": "Use worse than to compare two things. Bad changes its form. Use worse than in this gap."
+      "explanation": "Bad changes its form to worse. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-092",
@@ -11383,7 +11383,7 @@
           "message": "Use the most for the top one in a group."
         }
       ],
-      "explanation": "Use the most for the top one in a group. Much changes its form. Use the most in this gap."
+      "explanation": "Much changes its form to most. Use the before the superlative."
     },
     {
       "id": "adj-093",
@@ -11529,7 +11529,7 @@
           "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Use farther than or further than to compare two things. Far changes its form. Use farther than or further than in this gap."
+      "explanation": "Far changes its form to farther or further. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-094",
@@ -11646,7 +11646,7 @@
           "message": "Use the most for the top one in a group."
         }
       ],
-      "explanation": "Use the most for the top one in a group. Many changes its form. Use the most in this gap."
+      "explanation": "Many changes its form to most. Use the before the superlative."
     },
     {
       "id": "adj-095",
@@ -11792,7 +11792,7 @@
           "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Use farther than or further than to compare two things. Far changes its form. Use farther than or further than in this gap."
+      "explanation": "Far changes its form to farther or further. Use than to introduce the other person, thing or action in the comparison."
     },
     {
       "id": "adj-096",
@@ -11909,7 +11909,7 @@
           "message": "Use the most for the top one in a group."
         }
       ],
-      "explanation": "Use the most for the top one in a group. Many changes its form. Use the most in this gap."
+      "explanation": "Many changes its form to most. Use the before the superlative."
     }
   ]
 }

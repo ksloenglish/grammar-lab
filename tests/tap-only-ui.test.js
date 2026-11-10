@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 import { assemble, createExperiment } from '../site/js/core.js';
 import { QUESTION_SCHEMA } from '../site/js/question-context.js';
@@ -114,13 +115,20 @@ test('phone selected blocks do not regress to full-width rows', () => {
   }
 });
 
-test('tap-only presentation changes leave both JSON banks byte-identical and schema 2', () => {
+test('feedback revision changes only explanations in both pinned banks and keeps schema 2', () => {
   const hashes = {
-    adjectives: '7ff392eda0bd54dcce344cfa0c1a087314a94932e4b24840dd5677682e9c9006',
-    adverbs: '70796e68030a3ac052fe2ed4c872da64ec8f20f09b674bd1571b265ed93f0da3'
+    adjectives: '7cfe6a3aed8303709dde4777b1283bdebafe23007e4e477d29f18a0913f8ad54',
+    adverbs: '91f4f0cbaffee97300592110953273c3263985aab097df04aa3e25f6eb227f09'
   };
+  const withoutExplanations = value => ({ ...value, questions: value.questions.map(({ explanation, ...question }) => question) });
+  const canonical = value => JSON.stringify(value, (_, item) => item && typeof item === 'object' && !Array.isArray(item)
+    ? Object.fromEntries(Object.keys(item).sort().map(key => [key, item[key]])) : item);
   for (const [moduleId, hash] of Object.entries(hashes)) {
-    assert.equal(createHash('sha256').update(source(`data/${moduleId}-questions.json`)).digest('hex'), hash);
+    const current = JSON.parse(source(`data/${moduleId}-questions.json`));
+    const head = JSON.parse(execFileSync('git', ['show', `HEAD:site/data/${moduleId}-questions.json`], { cwd: new URL('../', import.meta.url), encoding: 'utf8' }));
+    assert.deepEqual(withoutExplanations(current), withoutExplanations(head), `${moduleId}: only question.explanation may differ from HEAD`);
+    assert.equal(createHash('sha256').update(canonical(withoutExplanations(current))).digest('hex'), hash, `${moduleId}: pinned identity of all other fields`);
+    assert.ok(current.questions.every(question => typeof question.explanation === 'string' && question.explanation.trim()));
     assert.equal(bank(moduleId).length, 96);
   }
   assert.equal(QUESTION_SCHEMA, 2);

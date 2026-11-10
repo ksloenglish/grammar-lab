@@ -1,5 +1,6 @@
 import { QUESTION_SCHEMA } from './question-context.js';
 import { isControlledDoublingBlock, prepareAdaptiveQuestion } from './comparison-blocks.js';
+import { correctExplanation, diagnoseAnswer } from './feedback.js';
 
 export function normalise(value) {
   return String(value ?? '').trim().replace(/\s+/g, ' ').toLowerCase();
@@ -64,20 +65,9 @@ export function isCorrect(question, answer) {
   return question.answers.some(item => normalise(item) === normalise(answer));
 }
 
-export function explain(question, answer) {
-  if (/\[Remove y\]/i.test(answer)) return 'Put Remove y straight after a word ending in y. You do not need it for other words.';
-  if (/\[[a-z]\]/i.test(answer) || question.blocks.some(block => (block.operation === 'double-final-consonant' || block.id === 'double-final-consonant') && answer.includes(`[${block.label}]`))) {
-    return 'Put the extra letter straight after the base word, before -er or -est. Only double the final consonant when the word needs it.';
-  }
-  for (const feedback of question.feedback ?? []) {
-    if (feedback.answers?.some(item => normalise(item) === normalise(answer))) return feedback.message;
-    if (feedback.pattern) {
-      try {
-        if (new RegExp(feedback.pattern, 'i').test(normalise(answer))) return feedback.message;
-      } catch { /* A malformed teacher-edited pattern cannot interrupt practice. */ }
-    }
-  }
-  return question.explanation;
+export function explain(question, answer, ids = []) {
+  const diagnostic = diagnoseAnswer(question, answer, ids);
+  return diagnostic.code === 'correct' ? correctExplanation(question) : diagnostic.message;
 }
 
 export function createExperiment(moduleId, questions, practice = false, originalReport = null) {
@@ -97,7 +87,7 @@ export function submitTrial(session) {
   const correct = isCorrect(question, answer);
   if (session.attempts === 0) session.firstAnswer = answer;
   session.attempts += 1;
-  session.feedback = correct ? question.explanation : explain(question, answer);
+  session.feedback = correct ? correctExplanation(question) : explain(question, answer, session.assembly);
   if (correct) {
     const mark = session.attempts === 1 ? 1 : 0;
     session.score += mark;
@@ -122,7 +112,7 @@ export function giveUp(session) {
   const current = assemble(question, session.assembly).text;
   if (session.firstAnswer === null) session.firstAnswer = current || '(No answer)';
   session.status = 'revealed';
-  session.feedback = question.explanation;
+  session.feedback = correctExplanation(question);
   session.results.push({ questionId: question.id, firstAnswer: session.firstAnswer, finalAnswer: question.answers[0], mark: 0, gaveUp: true });
   return true;
 }
