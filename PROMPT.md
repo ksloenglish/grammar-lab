@@ -44,7 +44,7 @@ Teaching examples can show complete structures, but **mini-check question stems 
 
 Students must select the ingredients themselves. **Never prefill comparative than, superlative the, or the formation words more/most in a question stem.** Keep all superlative stems free of literal the, using natural possessive/demonstrative/group wording where needed. A base-word hint is allowed.
 
-Every comparative answer includes exactly one than at the end of the contiguous gap phrase. Rewrite non-adjacent comparisons so the entire phrase fits that gap. For quantity comparisons put the noun inside the gap when necessary, e.g. `Room B has _____ Room A.` → `more chairs than`.
+Every comparative answer includes exactly one than at the end of the contiguous gap phrase. Rewrite non-adjacent comparisons so the entire phrase fits that gap. Never include a noun in an accepted gap answer or ingredient tray. Replace quantity comparisons that need noun-containing answers with natural adjective/adverb comparisons; nouns may remain in the sentence outside the gap.
 
 Every adjective-superlative accepted answer begins with the. Every superlative tray offers the, but natural optional-the **adverb** superlatives remain accepted. Validate completed sentences, not only stored answer reachability. Reject duplicated than/the and invalid accepted suffix labels.
 
@@ -57,7 +57,6 @@ The final instruction **supersedes the former two- or three-distractor limit**. 
 - -er/-est, -r/-st and -ier/-iest;
 - relevant paired doubling endings, such as -ger/-gest for big;
 - the relevant base's irregular comparative and superlative forms, including all standard far alternatives;
-- quantity nouns required inside comparative phrases;
 - a distinct **Remove y** operation.
 
 Reuse labels/IDs rather than duplicating blocks. Do not add unrelated irregular word families or prebuilt nonwords such as worser/badlier. Students can produce incorrect forms by combining the genuine ingredients. Group choices into Words, Other words and Endings & changes. Many unused ingredients are intentional.
@@ -95,3 +94,7 @@ Verify answer alternatives, article/connectors, all ingredients, y operations, f
 Do not display the Aa or Av abbreviation badges on available module cards; the Lab 01 / Lab 02 labels are sufficient. In particular, Av is unwanted. Keep Home flasks recognisably conical laboratory glassware: short necks, flared rims, sloping shoulders and broad flat bases, with neatly clipped coloured liquid and subtle graduation marks. Never use a tall central neck on a rounded rectangular body that resembles a raised finger. Verify the rendered scene at phone and desktop sizes.
 
 Tile words must stay on one line without smaller text or ellipses. Use content-sized wrapping rows so longer words such as reliable receive a wider tile. The deletion tile is a short red-cross-plus-y control, with the cross before y, both in the tray and after placement.
+
+## Noun-free accepted answers — 10 November 2026
+
+This rule supersedes the earlier quantity-noun-in-gap approach. Students build only the target adjective/adverb comparison and required grammar words. No accepted answer or word ingredient may include an additional noun. The six former noun-bearing adjective comparatives adj-085/087/089/091/093/095 are replaced with good/bad/far contexts and better than, worse than, farther than/further than answers. Keep the noun-free quantity superlatives the least/the most. Preserve 96 questions per module and all degree/rule counts. Enforce the rule in generator validation, deployment validation, regression tests and same-schema saved-question checks; archive incompatible old snapshots while preserving independent best scores.

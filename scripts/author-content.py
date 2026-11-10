@@ -34,6 +34,17 @@ IRREGULAR_FORMS = {
     "many": ("more", "most"),
 }
 
+# Accepted answers contain only comparison words, never an additional noun.
+# Keep the six replacements keyed to their existing IDs for future regeneration.
+NOUN_FREE_COMPARATIVES = {
+    85: ("good", "Monday's school lunch was _____ Tuesday's school lunch."),
+    87: ("bad", "The weather on Monday was _____ the weather on Sunday."),
+    89: ("good", "This cup is _____ the other cup for keeping tea hot."),
+    91: ("bad", "The travel plan with a dirty hotel is _____ the plan with a clean hotel."),
+    93: ("far", "From my home, the library is _____ the swimming pool."),
+    95: ("far", "From the school gate, the sports hall is _____ the library."),
+}
+
 # Context-only revisions from tests/context-review-issues.json.  Keep them
 # keyed to stable question IDs so regenerating the banks cannot restore an
 # older, less clear template sentence.  Each stem deliberately leaves degree
@@ -438,26 +449,8 @@ def irregular_adjective_superlative(n: int, sentence: str, base: str, result: st
     )
 
 
-def quantity_adjective_comparative(n: int, sentence: str, base: str, result: str, superlative: str, noun: str) -> dict[str, Any]:
-    """Build an irregular quantity comparative, its noun and than inside the gap."""
-    blocks = [
-        block("b0", result), block("b1", noun), block("b2", "than"),
-        block("b3", base), block("b4", "-er", "suffix"), block("b5", superlative),
-    ]
-    return make_question(
-        "adjectives", n, sentence, base, "comparative", "Irregular forms", blocks, [["b0", "b1", "b2"]],
-        fb(
-            (f"{base} {noun} than", f"The base form {base} does not make the comparison. Use {result} {noun} than."),
-            (f"{base}er {noun} than", f"{base.capitalize()} does not take a plain -er ending here."),
-            (f"{superlative} {noun} than", f"{superlative.capitalize()} is superlative; the sentence compares two quantities."),
-            fallback=f"Use the irregular comparative {result} {noun} than.",
-        ),
-        f"Use {result} {noun} than.",
-    )
-
-
 def quantity_adjective_superlative(n: int, sentence: str, base: str, result: str, comparative: str) -> dict[str, Any]:
-    """Practise irregular quantity adjectives with the and the quantity noun built separately."""
+    """Practise noun-free quantity superlatives; the noun stays outside the gap."""
     blocks = [block("b0", result), block("b1", base), block("b2", "-est", "suffix"), block("b3", "-er", "suffix"), block("b4", "the")]
     return make_question(
         "adjectives", n, sentence, base, "superlative", "Irregular forms", blocks, [["b4", "b0"]],
@@ -762,16 +755,22 @@ def adjective_bank() -> dict[str, Any]:
     questions.append(far_adjective_comparative(n, "The park is _____ the school is from my home.")); n += 1
     questions.append(far_adjective_superlative(n, "This is _____ shop from our school.")); n += 1
 
-    quantity_sets = [
-        ("little", "less", "least", "This bottle holds _____ that bottle.", "water", "This bottle has _____ water."),
-        ("little", "less", "least", "This bowl has _____ that bowl.", "rice", "This bowl has _____ rice."),
-        ("much", "more", "most", "This cup holds _____ that cup.", "tea", "This cup has _____ tea."),
-        ("much", "more", "most", "This plan gives us _____ the old plan.", "time", "This plan gives us _____ time."),
-        ("many", "more", "most", "This bag has _____ that bag.", "books", "This bag has _____ books."),
-        ("many", "more", "most", "Room B has _____ Room A.", "chairs", "Room B has _____ chairs."),
+    quantity_superlatives = [
+        ("little", "least", "less", "This bottle has _____ water."),
+        ("little", "least", "less", "This bowl has _____ rice."),
+        ("much", "most", "more", "This cup has _____ tea."),
+        ("much", "most", "more", "This plan gives us _____ time."),
+        ("many", "most", "more", "This bag has _____ books."),
+        ("many", "most", "more", "Room B has _____ chairs."),
     ]
-    for base, comparative, superlative, comp_sentence, noun, sup_sentence in quantity_sets:
-        questions.append(quantity_adjective_comparative(n, comp_sentence, base, comparative, superlative, noun)); n += 1
+    for base, superlative, comparative, sup_sentence in quantity_superlatives:
+        comp_base, comp_sentence = NOUN_FREE_COMPARATIVES[n]
+        if comp_base == "far":
+            questions.append(far_adjective_comparative(n, comp_sentence))
+        else:
+            forms = IRREGULAR_FORMS[comp_base]
+            questions.append(irregular_adjective_comparative(n, comp_sentence, comp_base, forms[0], forms[1]))
+        n += 1
         questions.append(quantity_adjective_superlative(n, sup_sentence, base, superlative, comparative)); n += 1
 
     assert n == 97 and len(questions) == 96
@@ -1104,6 +1103,30 @@ def validate_bank(bank: dict[str, Any]) -> dict[str, Any]:
         assert set(COMPLETE_CORE) <= set(labels), f"{q['id']}: missing complete core ingredients"
         assert q["base"] in labels, f"{q['id']}: base word is missing from its tray"
         assert set(IRREGULAR_FORMS.get(q["base"], ())) <= set(labels), f"{q['id']}: missing relevant irregular forms"
+        allowed_words = {q["base"], *CORE_STRUCTURES, *IRREGULAR_FORMS.get(q["base"], ())}
+        assert all(item["kind"] != "word" or item["label"] in allowed_words for item in q["blocks"]), f"{q['id']}: noun or unrelated word ingredient is not allowed"
+        base = q["base"].lower()
+        allowed_headwords = {base, *IRREGULAR_FORMS.get(base, ())}
+        for item in q["blocks"]:
+            if item["kind"] != "suffix":
+                continue
+            ending = item["label"].lower()
+            if ending in {"-er", "-est"}:
+                allowed_headwords.add(base + ending[1:])
+            elif ending in {"-r", "-st"} and base.endswith("e"):
+                allowed_headwords.add(base + ending[1:])
+            elif ending in {"-ier", "-iest"} and base.endswith("y"):
+                allowed_headwords.add(base[:-1] + ending[1:])
+            elif re.fullmatch(r"-[b-df-hj-np-tv-z](?:er|est)", ending) and ending[1] == base[-1]:
+                allowed_headwords.add(base + ending[1:])
+        for answer in q["answers"]:
+            words = answer.lower().split()
+            if q["degree"] == "comparative" and words[-1:] == ["than"]:
+                words.pop()
+            if words[:1] == ["the"]:
+                words.pop(0)
+            valid_headword = (len(words) == 1 and words[0] in allowed_headwords) or (len(words) == 2 and words[0] in {"more", "most"} and words[1] == base)
+            assert valid_headword, f"{q['id']}: accepted answer must contain no noun or extra lexical word: {answer}"
         remove_y_blocks = [item for item in q["blocks"] if item["id"] == "remove-y"]
         assert remove_y_blocks == [{"id": "remove-y", "label": "Remove y", "kind": "operation", "category": "ending", "operation": "remove-final-y"}], f"{q['id']}: missing or malformed Remove y operation"
         for item in q["blocks"]:

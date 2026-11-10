@@ -16,7 +16,7 @@ for (const module of manifest.modules.filter(item => item.available)) {
   const rules = {};
   for (const question of bank.questions) {
     const label = `${module.id}/${question.id}`;
-    assert.deepEqual(questionContextIssues(question), [], `${label}: gap, connector, suffix and feedback context`);
+    assert.deepEqual(questionContextIssues(question), [], `${label}: noun-free answers/ingredients, gap, connector, suffix and feedback context`);
     assert.equal(question.sentence.split('_____').length, 2, `${label}: one gap`);
     assert.ok(question.base && question.explanation && question.rule);
     assert.ok(question.degree in counts, `${label}: degree`);
@@ -52,4 +52,4 @@ for (const module of manifest.modules.filter(item => item.available)) {
   }
   console.log(`${module.id}: ${bank.questions.length} questions; degrees ${JSON.stringify(counts)}; rules ${JSON.stringify(rules)}; 3 mini-checks. PASS`);
 }
-console.log('All question stems, complete answers, required -er options, suffixes and reachable answer checks passed.');
+console.log('All noun-free answers/ingredients, question stems, complete answers, required -er options, suffixes and reachable answer checks passed.');

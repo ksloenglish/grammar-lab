@@ -645,7 +645,9 @@
         "adj-073",
         "adj-074",
         "adj-075",
-        "adj-076"
+        "adj-076",
+        "adj-085",
+        "adj-089"
       ],
       "lookupWord": "good",
       "partOfSpeech": "adj",
@@ -664,7 +666,9 @@
         "adj-077",
         "adj-078",
         "adj-079",
-        "adj-080"
+        "adj-080",
+        "adj-087",
+        "adj-091"
       ],
       "lookupWord": "bad",
       "partOfSpeech": "adj",
@@ -683,7 +687,9 @@
         "adj-081",
         "adj-082",
         "adj-083",
-        "adj-084"
+        "adj-084",
+        "adj-093",
+        "adj-095"
       ],
       "lookupWord": "far",
       "partOfSpeech": "adj",
@@ -699,9 +705,7 @@
     {
       "module": "adjectives",
       "questionIds": [
-        "adj-085",
         "adj-086",
-        "adj-087",
         "adj-088"
       ],
       "lookupWord": "little",
@@ -718,9 +722,7 @@
     {
       "module": "adjectives",
       "questionIds": [
-        "adj-089",
         "adj-090",
-        "adj-091",
         "adj-092"
       ],
       "lookupWord": "much",
@@ -737,9 +739,7 @@
     {
       "module": "adjectives",
       "questionIds": [
-        "adj-093",
         "adj-094",
-        "adj-095",
         "adj-096"
       ],
       "lookupWord": "many",
@@ -1414,5 +1414,6 @@
       ],
       "status": "verified"
     }
-  ]
+  ],
+  "nounFreeReplacementNote": "The six noun-containing adjective comparative answers were replaced using existing audited good (A1), bad (A1) and far (B1) adjective targets. Exact source matches are unchanged; question ID mappings were refreshed."
 }

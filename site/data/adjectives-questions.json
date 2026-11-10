@@ -10379,8 +10379,8 @@
     },
     {
       "id": "adj-085",
-      "sentence": "This bottle holds _____ that bottle.",
-      "base": "little",
+      "sentence": "Monday's school lunch was _____ Tuesday's school lunch.",
+      "base": "good",
       "degree": "comparative",
       "rule": "Irregular forms",
       "requiresArticle": false,
@@ -10388,84 +10388,78 @@
       "blocks": [
         {
           "id": "b0",
-          "label": "less",
+          "label": "better",
           "kind": "word",
           "category": "word"
         },
         {
           "id": "b1",
-          "label": "water",
-          "kind": "word",
-          "category": "word"
-        },
-        {
-          "id": "b2",
           "label": "than",
           "kind": "word",
           "category": "structure"
         },
         {
-          "id": "b3",
-          "label": "little",
+          "id": "b2",
+          "label": "good",
           "kind": "word",
           "category": "word"
         },
         {
-          "id": "b4",
+          "id": "b3",
           "label": "-er",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b5",
-          "label": "least",
+          "id": "b4",
+          "label": "best",
           "kind": "word",
           "category": "word"
         },
         {
-          "id": "b6",
+          "id": "b5",
           "label": "-est",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b7",
+          "id": "b6",
           "label": "-r",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b8",
+          "id": "b7",
           "label": "-st",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b9",
+          "id": "b8",
           "label": "-ier",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b10",
+          "id": "b9",
           "label": "-iest",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b11",
+          "id": "b10",
           "label": "more",
           "kind": "word",
           "category": "structure"
         },
         {
-          "id": "b12",
+          "id": "b11",
           "label": "most",
           "kind": "word",
           "category": "structure"
         },
         {
-          "id": "b13",
+          "id": "b12",
           "label": "the",
           "kind": "word",
           "category": "structure"
@@ -10479,39 +10473,38 @@
         }
       ],
       "answers": [
-        "less water than"
+        "better than"
       ],
       "correctSequences": [
         [
           "b0",
-          "b1",
-          "b2"
+          "b1"
         ]
       ],
       "feedback": [
         {
           "answers": [
-            "little water than"
+            "gooder than"
           ],
-          "message": "Little water than is not right here. Little changes its form. Use less water than in this gap. Use less water than to compare two things."
+          "message": "Gooder than is not right here. Good changes its form. Use better than in this gap. Use better than to compare two things."
         },
         {
           "answers": [
-            "littleer water than"
+            "best than"
           ],
-          "message": "Littleer water than is not right here. Little changes its form. Use less water than in this gap. Use less water than to compare two things."
+          "message": "Best than is not right here. Good changes its form. Use better than in this gap. Use better than to compare two things."
         },
         {
           "answers": [
-            "least water than"
+            "good than"
           ],
-          "message": "Least water than is not right here. Little changes its form. Use less water than in this gap. Use less water than to compare two things."
+          "message": "Good than is not right here. Good changes its form. Use better than in this gap. Use better than to compare two things."
         },
         {
-          "message": "Use less water than to compare two things."
+          "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Use less water than to compare two things. Little changes its form. Use less water than in this gap."
+      "explanation": "Use better than to compare two things. Good changes its form. Use better than in this gap."
     },
     {
       "id": "adj-086",
@@ -10644,8 +10637,8 @@
     },
     {
       "id": "adj-087",
-      "sentence": "This bowl has _____ that bowl.",
-      "base": "little",
+      "sentence": "The weather on Monday was _____ the weather on Sunday.",
+      "base": "bad",
       "degree": "comparative",
       "rule": "Irregular forms",
       "requiresArticle": false,
@@ -10653,84 +10646,78 @@
       "blocks": [
         {
           "id": "b0",
-          "label": "less",
+          "label": "worse",
           "kind": "word",
           "category": "word"
         },
         {
           "id": "b1",
-          "label": "rice",
-          "kind": "word",
-          "category": "word"
-        },
-        {
-          "id": "b2",
           "label": "than",
           "kind": "word",
           "category": "structure"
         },
         {
-          "id": "b3",
-          "label": "little",
+          "id": "b2",
+          "label": "bad",
           "kind": "word",
           "category": "word"
         },
         {
-          "id": "b4",
+          "id": "b3",
           "label": "-er",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b5",
-          "label": "least",
+          "id": "b4",
+          "label": "worst",
           "kind": "word",
           "category": "word"
         },
         {
-          "id": "b6",
+          "id": "b5",
           "label": "-est",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b7",
+          "id": "b6",
           "label": "-r",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b8",
+          "id": "b7",
           "label": "-st",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b9",
+          "id": "b8",
           "label": "-ier",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b10",
+          "id": "b9",
           "label": "-iest",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b11",
+          "id": "b10",
           "label": "more",
           "kind": "word",
           "category": "structure"
         },
         {
-          "id": "b12",
+          "id": "b11",
           "label": "most",
           "kind": "word",
           "category": "structure"
         },
         {
-          "id": "b13",
+          "id": "b12",
           "label": "the",
           "kind": "word",
           "category": "structure"
@@ -10744,39 +10731,38 @@
         }
       ],
       "answers": [
-        "less rice than"
+        "worse than"
       ],
       "correctSequences": [
         [
           "b0",
-          "b1",
-          "b2"
+          "b1"
         ]
       ],
       "feedback": [
         {
           "answers": [
-            "little rice than"
+            "bader than"
           ],
-          "message": "Little rice than is not right here. Little changes its form. Use less rice than in this gap. Use less rice than to compare two things."
+          "message": "Bader than is not right here. Bad changes its form. Use worse than in this gap. Use worse than to compare two things."
         },
         {
           "answers": [
-            "littleer rice than"
+            "worst than"
           ],
-          "message": "Littleer rice than is not right here. Little changes its form. Use less rice than in this gap. Use less rice than to compare two things."
+          "message": "Worst than is not right here. Bad changes its form. Use worse than in this gap. Use worse than to compare two things."
         },
         {
           "answers": [
-            "least rice than"
+            "bad than"
           ],
-          "message": "Least rice than is not right here. Little changes its form. Use less rice than in this gap. Use less rice than to compare two things."
+          "message": "Bad than is not right here. Bad changes its form. Use worse than in this gap. Use worse than to compare two things."
         },
         {
-          "message": "Use less rice than to compare two things."
+          "message": "Use worse than to compare two things."
         }
       ],
-      "explanation": "Use less rice than to compare two things. Little changes its form. Use less rice than in this gap."
+      "explanation": "Use worse than to compare two things. Bad changes its form. Use worse than in this gap."
     },
     {
       "id": "adj-088",
@@ -10909,8 +10895,8 @@
     },
     {
       "id": "adj-089",
-      "sentence": "This cup holds _____ that cup.",
-      "base": "much",
+      "sentence": "This cup is _____ the other cup for keeping tea hot.",
+      "base": "good",
       "degree": "comparative",
       "rule": "Irregular forms",
       "requiresArticle": false,
@@ -10918,72 +10904,78 @@
       "blocks": [
         {
           "id": "b0",
-          "label": "more",
-          "kind": "word",
-          "category": "structure"
-        },
-        {
-          "id": "b1",
-          "label": "tea",
+          "label": "better",
           "kind": "word",
           "category": "word"
         },
         {
-          "id": "b2",
+          "id": "b1",
           "label": "than",
           "kind": "word",
           "category": "structure"
         },
         {
-          "id": "b3",
-          "label": "much",
+          "id": "b2",
+          "label": "good",
           "kind": "word",
           "category": "word"
         },
         {
-          "id": "b4",
+          "id": "b3",
           "label": "-er",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b5",
-          "label": "most",
+          "id": "b4",
+          "label": "best",
           "kind": "word",
-          "category": "structure"
+          "category": "word"
         },
         {
-          "id": "b6",
+          "id": "b5",
           "label": "-est",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b7",
+          "id": "b6",
           "label": "-r",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b8",
+          "id": "b7",
           "label": "-st",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b9",
+          "id": "b8",
           "label": "-ier",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b10",
+          "id": "b9",
           "label": "-iest",
           "kind": "suffix",
           "category": "ending"
         },
         {
+          "id": "b10",
+          "label": "more",
+          "kind": "word",
+          "category": "structure"
+        },
+        {
           "id": "b11",
+          "label": "most",
+          "kind": "word",
+          "category": "structure"
+        },
+        {
+          "id": "b12",
           "label": "the",
           "kind": "word",
           "category": "structure"
@@ -10997,39 +10989,38 @@
         }
       ],
       "answers": [
-        "more tea than"
+        "better than"
       ],
       "correctSequences": [
         [
           "b0",
-          "b1",
-          "b2"
+          "b1"
         ]
       ],
       "feedback": [
         {
           "answers": [
-            "much tea than"
+            "gooder than"
           ],
-          "message": "Much tea than is not right here. Much changes its form. Use more tea than in this gap. Use more tea than to compare two things."
+          "message": "Gooder than is not right here. Good changes its form. Use better than in this gap. Use better than to compare two things."
         },
         {
           "answers": [
-            "mucher tea than"
+            "best than"
           ],
-          "message": "Mucher tea than is not right here. Much changes its form. Use more tea than in this gap. Use more tea than to compare two things."
+          "message": "Best than is not right here. Good changes its form. Use better than in this gap. Use better than to compare two things."
         },
         {
           "answers": [
-            "most tea than"
+            "good than"
           ],
-          "message": "Most tea than is not right here. Much changes its form. Use more tea than in this gap. Use more tea than to compare two things."
+          "message": "Good than is not right here. Good changes its form. Use better than in this gap. Use better than to compare two things."
         },
         {
-          "message": "Use more tea than to compare two things."
+          "message": "Use better than to compare two things."
         }
       ],
-      "explanation": "Use more tea than to compare two things. Much changes its form. Use more tea than in this gap."
+      "explanation": "Use better than to compare two things. Good changes its form. Use better than in this gap."
     },
     {
       "id": "adj-090",
@@ -11150,8 +11141,8 @@
     },
     {
       "id": "adj-091",
-      "sentence": "This plan gives us _____ the old plan.",
-      "base": "much",
+      "sentence": "The travel plan with a dirty hotel is _____ the plan with a clean hotel.",
+      "base": "bad",
       "degree": "comparative",
       "rule": "Irregular forms",
       "requiresArticle": false,
@@ -11159,72 +11150,78 @@
       "blocks": [
         {
           "id": "b0",
-          "label": "more",
-          "kind": "word",
-          "category": "structure"
-        },
-        {
-          "id": "b1",
-          "label": "time",
+          "label": "worse",
           "kind": "word",
           "category": "word"
         },
         {
-          "id": "b2",
+          "id": "b1",
           "label": "than",
           "kind": "word",
           "category": "structure"
         },
         {
-          "id": "b3",
-          "label": "much",
+          "id": "b2",
+          "label": "bad",
           "kind": "word",
           "category": "word"
         },
         {
-          "id": "b4",
+          "id": "b3",
           "label": "-er",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b5",
-          "label": "most",
+          "id": "b4",
+          "label": "worst",
           "kind": "word",
-          "category": "structure"
+          "category": "word"
         },
         {
-          "id": "b6",
+          "id": "b5",
           "label": "-est",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b7",
+          "id": "b6",
           "label": "-r",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b8",
+          "id": "b7",
           "label": "-st",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b9",
+          "id": "b8",
           "label": "-ier",
           "kind": "suffix",
           "category": "ending"
         },
         {
-          "id": "b10",
+          "id": "b9",
           "label": "-iest",
           "kind": "suffix",
           "category": "ending"
         },
         {
+          "id": "b10",
+          "label": "more",
+          "kind": "word",
+          "category": "structure"
+        },
+        {
           "id": "b11",
+          "label": "most",
+          "kind": "word",
+          "category": "structure"
+        },
+        {
+          "id": "b12",
           "label": "the",
           "kind": "word",
           "category": "structure"
@@ -11238,39 +11235,38 @@
         }
       ],
       "answers": [
-        "more time than"
+        "worse than"
       ],
       "correctSequences": [
         [
           "b0",
-          "b1",
-          "b2"
+          "b1"
         ]
       ],
       "feedback": [
         {
           "answers": [
-            "much time than"
+            "bader than"
           ],
-          "message": "Much time than is not right here. Much changes its form. Use more time than in this gap. Use more time than to compare two things."
+          "message": "Bader than is not right here. Bad changes its form. Use worse than in this gap. Use worse than to compare two things."
         },
         {
           "answers": [
-            "mucher time than"
+            "worst than"
           ],
-          "message": "Mucher time than is not right here. Much changes its form. Use more time than in this gap. Use more time than to compare two things."
+          "message": "Worst than is not right here. Bad changes its form. Use worse than in this gap. Use worse than to compare two things."
         },
         {
           "answers": [
-            "most time than"
+            "bad than"
           ],
-          "message": "Most time than is not right here. Much changes its form. Use more time than in this gap. Use more time than to compare two things."
+          "message": "Bad than is not right here. Bad changes its form. Use worse than in this gap. Use worse than to compare two things."
         },
         {
-          "message": "Use more time than to compare two things."
+          "message": "Use worse than to compare two things."
         }
       ],
-      "explanation": "Use more time than to compare two things. Much changes its form. Use more time than in this gap."
+      "explanation": "Use worse than to compare two things. Bad changes its form. Use worse than in this gap."
     },
     {
       "id": "adj-092",
@@ -11391,8 +11387,8 @@
     },
     {
       "id": "adj-093",
-      "sentence": "This bag has _____ that bag.",
-      "base": "many",
+      "sentence": "From my home, the library is _____ the swimming pool.",
+      "base": "far",
       "degree": "comparative",
       "rule": "Irregular forms",
       "requiresArticle": false,
@@ -11400,13 +11396,13 @@
       "blocks": [
         {
           "id": "b0",
-          "label": "more",
+          "label": "farther",
           "kind": "word",
-          "category": "structure"
+          "category": "word"
         },
         {
           "id": "b1",
-          "label": "books",
+          "label": "further",
           "kind": "word",
           "category": "word"
         },
@@ -11418,7 +11414,7 @@
         },
         {
           "id": "b3",
-          "label": "many",
+          "label": "far",
           "kind": "word",
           "category": "word"
         },
@@ -11430,9 +11426,9 @@
         },
         {
           "id": "b5",
-          "label": "most",
+          "label": "farthest",
           "kind": "word",
-          "category": "structure"
+          "category": "word"
         },
         {
           "id": "b6",
@@ -11466,9 +11462,27 @@
         },
         {
           "id": "b11",
+          "label": "more",
+          "kind": "word",
+          "category": "structure"
+        },
+        {
+          "id": "b12",
+          "label": "most",
+          "kind": "word",
+          "category": "structure"
+        },
+        {
+          "id": "b13",
           "label": "the",
           "kind": "word",
           "category": "structure"
+        },
+        {
+          "id": "b14",
+          "label": "furthest",
+          "kind": "word",
+          "category": "word"
         },
         {
           "id": "remove-y",
@@ -11479,11 +11493,15 @@
         }
       ],
       "answers": [
-        "more books than"
+        "farther than",
+        "further than"
       ],
       "correctSequences": [
         [
           "b0",
+          "b2"
+        ],
+        [
           "b1",
           "b2"
         ]
@@ -11491,27 +11509,27 @@
       "feedback": [
         {
           "answers": [
-            "many books than"
+            "farer than"
           ],
-          "message": "Many books than is not right here. Many changes its form. Use more books than in this gap. Use more books than to compare two things."
+          "message": "Farer than is not right here. Far changes its form. Use farther than or further than in this gap. Use farther than or further than to compare two things."
         },
         {
           "answers": [
-            "manyer books than"
+            "farthest than"
           ],
-          "message": "Manyer books than is not right here. Many changes its form. Use more books than in this gap. Use more books than to compare two things."
+          "message": "Farthest than is not right here. Far changes its form. Use farther than or further than in this gap. Use farther than or further than to compare two things."
         },
         {
           "answers": [
-            "most books than"
+            "far than"
           ],
-          "message": "Most books than is not right here. Many changes its form. Use more books than in this gap. Use more books than to compare two things."
+          "message": "Far than is not right here. Far changes its form. Use farther than or further than in this gap. Use farther than or further than to compare two things."
         },
         {
-          "message": "Use more books than to compare two things."
+          "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Use more books than to compare two things. Many changes its form. Use more books than in this gap."
+      "explanation": "Use farther than or further than to compare two things. Far changes its form. Use farther than or further than in this gap."
     },
     {
       "id": "adj-094",
@@ -11632,8 +11650,8 @@
     },
     {
       "id": "adj-095",
-      "sentence": "Room B has _____ Room A.",
-      "base": "many",
+      "sentence": "From the school gate, the sports hall is _____ the library.",
+      "base": "far",
       "degree": "comparative",
       "rule": "Irregular forms",
       "requiresArticle": false,
@@ -11641,13 +11659,13 @@
       "blocks": [
         {
           "id": "b0",
-          "label": "more",
+          "label": "farther",
           "kind": "word",
-          "category": "structure"
+          "category": "word"
         },
         {
           "id": "b1",
-          "label": "chairs",
+          "label": "further",
           "kind": "word",
           "category": "word"
         },
@@ -11659,7 +11677,7 @@
         },
         {
           "id": "b3",
-          "label": "many",
+          "label": "far",
           "kind": "word",
           "category": "word"
         },
@@ -11671,9 +11689,9 @@
         },
         {
           "id": "b5",
-          "label": "most",
+          "label": "farthest",
           "kind": "word",
-          "category": "structure"
+          "category": "word"
         },
         {
           "id": "b6",
@@ -11707,9 +11725,27 @@
         },
         {
           "id": "b11",
+          "label": "more",
+          "kind": "word",
+          "category": "structure"
+        },
+        {
+          "id": "b12",
+          "label": "most",
+          "kind": "word",
+          "category": "structure"
+        },
+        {
+          "id": "b13",
           "label": "the",
           "kind": "word",
           "category": "structure"
+        },
+        {
+          "id": "b14",
+          "label": "furthest",
+          "kind": "word",
+          "category": "word"
         },
         {
           "id": "remove-y",
@@ -11720,11 +11756,15 @@
         }
       ],
       "answers": [
-        "more chairs than"
+        "farther than",
+        "further than"
       ],
       "correctSequences": [
         [
           "b0",
+          "b2"
+        ],
+        [
           "b1",
           "b2"
         ]
@@ -11732,27 +11772,27 @@
       "feedback": [
         {
           "answers": [
-            "many chairs than"
+            "farer than"
           ],
-          "message": "Many chairs than is not right here. Many changes its form. Use more chairs than in this gap. Use more chairs than to compare two things."
+          "message": "Farer than is not right here. Far changes its form. Use farther than or further than in this gap. Use farther than or further than to compare two things."
         },
         {
           "answers": [
-            "manyer chairs than"
+            "farthest than"
           ],
-          "message": "Manyer chairs than is not right here. Many changes its form. Use more chairs than in this gap. Use more chairs than to compare two things."
+          "message": "Farthest than is not right here. Far changes its form. Use farther than or further than in this gap. Use farther than or further than to compare two things."
         },
         {
           "answers": [
-            "most chairs than"
+            "far than"
           ],
-          "message": "Most chairs than is not right here. Many changes its form. Use more chairs than in this gap. Use more chairs than to compare two things."
+          "message": "Far than is not right here. Far changes its form. Use farther than or further than in this gap. Use farther than or further than to compare two things."
         },
         {
-          "message": "Use more chairs than to compare two things."
+          "message": "Use farther than or further than to compare two things."
         }
       ],
-      "explanation": "Use more chairs than to compare two things. Many changes its form. Use more chairs than in this gap."
+      "explanation": "Use farther than or further than to compare two things. Far changes its form. Use farther than or further than in this gap."
     },
     {
       "id": "adj-096",

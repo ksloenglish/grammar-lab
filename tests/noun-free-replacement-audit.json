@@ -1,0 +1,83 @@
+{
+  "scope": "All accepted answers in both published assessment banks",
+  "changedQuestionIds": [
+    "adj-085",
+    "adj-087",
+    "adj-089",
+    "adj-091",
+    "adj-093",
+    "adj-095"
+  ],
+  "unchangedAdjectiveQuestions": 90,
+  "unchangedAdverbQuestions": 96,
+  "replacements": [
+    {
+      "id": "adj-085",
+      "old_sentence": "This bottle holds _____ that bottle.",
+      "old_answers": [
+        "less water than"
+      ],
+      "new_sentence": "Monday's school lunch was _____ Tuesday's school lunch.",
+      "new_answers": [
+        "better than"
+      ]
+    },
+    {
+      "id": "adj-087",
+      "old_sentence": "This bowl has _____ that bowl.",
+      "old_answers": [
+        "less rice than"
+      ],
+      "new_sentence": "The weather on Monday was _____ the weather on Sunday.",
+      "new_answers": [
+        "worse than"
+      ]
+    },
+    {
+      "id": "adj-089",
+      "old_sentence": "This cup holds _____ that cup.",
+      "old_answers": [
+        "more tea than"
+      ],
+      "new_sentence": "This cup is _____ the other cup for keeping tea hot.",
+      "new_answers": [
+        "better than"
+      ]
+    },
+    {
+      "id": "adj-091",
+      "old_sentence": "This plan gives us _____ the old plan.",
+      "old_answers": [
+        "more time than"
+      ],
+      "new_sentence": "The travel plan with a dirty hotel is _____ the plan with a clean hotel.",
+      "new_answers": [
+        "worse than"
+      ]
+    },
+    {
+      "id": "adj-093",
+      "old_sentence": "This bag has _____ that bag.",
+      "old_answers": [
+        "more books than"
+      ],
+      "new_sentence": "From my home, the library is _____ the swimming pool.",
+      "new_answers": [
+        "farther than",
+        "further than"
+      ]
+    },
+    {
+      "id": "adj-095",
+      "old_sentence": "Room B has _____ Room A.",
+      "old_answers": [
+        "more chairs than"
+      ],
+      "new_sentence": "From the school gate, the sports hall is _____ the library.",
+      "new_answers": [
+        "farther than",
+        "further than"
+      ]
+    }
+  ]
+}
