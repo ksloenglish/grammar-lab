@@ -4,6 +4,83 @@ import { assemble, isCorrect } from '../site/js/core.js';
 import { questionContextIssues } from '../site/js/question-context.js';
 import { adaptiveBlocks, prepareAdaptiveQuestion } from '../site/js/comparison-blocks.js';
 const read = path => JSON.parse(readFileSync(new URL(`../site/data/${path}`, import.meta.url), 'utf8'));
+const wordCount = text => text.trim().split(/\s+/u).filter(Boolean).length;
+const plain = (value, label) => {
+  assert.equal(typeof value, 'string', `${label}: plain-text string required`);
+  assert.ok(value.trim(), `${label}: nonempty text required`);
+  assert.ok(!/<\/?[a-z][^>]*>|```|\*\*|\]\(/i.test(value), `${label}: plain text, not HTML or Markdown`);
+};
+export function validateLearn(learn, moduleId = learn.module) {
+  assert.equal(learn.module, moduleId, `${moduleId}: Learn module identity`);
+  plain(learn.intro, `${moduleId}/intro`);
+  assert.ok(wordCount(learn.intro) <= 35, `${moduleId}/intro: ${wordCount(learn.intro)} words; maximum 35`);
+  for (const key of ['scopeNote', 'sourceNote']) if (Object.hasOwn(learn, key)) plain(learn[key], `${moduleId}/${key}`);
+  assert.ok(Array.isArray(learn.sections) && learn.sections.length, `${moduleId}: sections array required`);
+  if (['adjectives', 'adverbs'].includes(moduleId)) assert.equal(learn.sections.filter(section => section.extra !== true).length, 6, `${moduleId}: six core sections`);
+  const titles = new Set();
+  for (const [i, section] of learn.sections.entries()) {
+    const label = `${moduleId}/section-${i}`;
+    assert.ok(section && typeof section === 'object' && !Array.isArray(section), `${label}: section object`);
+    plain(section.title, `${label}/title`);
+    assert.ok(!/[\r\n]/u.test(section.title), `${label}: single-line title`);
+    assert.ok(!titles.has(section.title.toLowerCase()), `${label}: unique title`);
+    titles.add(section.title.toLowerCase());
+    plain(section.text, `${label}/text`);
+    if (Object.hasOwn(section, 'extra')) assert.equal(typeof section.extra, 'boolean', `${label}/extra: boolean required`);
+    const cap = section.extra === true ? 50 : 40;
+    assert.ok(wordCount(section.text) <= cap, `${label}/text: ${wordCount(section.text)} words; maximum ${cap}`);
+    if (Object.hasOwn(section, 'note')) plain(section.note, `${label}/note`);
+    for (const key of ['examples', 'recipes', 'forms', 'mistakes']) {
+      if (!Object.hasOwn(section, key)) continue;
+      assert.ok(Array.isArray(section[key]) && section[key].length, `${label}/${key}: nonempty array required`);
+      if (['examples', 'recipes'].includes(key)) section[key].forEach((text, n) => plain(text, `${label}/${key}-${n}`));
+      else {
+        const keys = key === 'forms' ? ['label', 'comparative', 'superlative'] : ['wrong', 'right'];
+        for (const [n, row] of section[key].entries()) {
+          assert.ok(row && typeof row === 'object' && !Array.isArray(row), `${label}/${key}-${n}: row object`);
+          keys.forEach(field => plain(row[field], `${label}/${key}-${n}/${field}`));
+        }
+        if (key === 'forms') assert.equal(new Set(section.forms.map(row => row.label.toLowerCase())).size, section.forms.length, `${label}: unique form labels`);
+      }
+    }
+    for (const recipe of section.recipes ?? []) {
+      assert.ok(!/\b[a-z]+y\s*\+\s*-i(?:er|est)\b/i.test(recipe), `${label}: a y-change recipe must explicitly include ×y before -ier/-iest`);
+    }
+  }
+  assert.ok(Array.isArray(learn.sources) && learn.sources.length, `${moduleId}: sources array required`);
+  for (const [i, source] of learn.sources.entries()) {
+    plain(source.title, `${moduleId}/source-${i}/title`);
+    plain(source.url, `${moduleId}/source-${i}/url`);
+    assert.ok(['http:', 'https:'].includes(new URL(source.url).protocol), `${moduleId}: navigable source URL`);
+  }
+  assert.ok(Array.isArray(learn.miniCheck), `${moduleId}: miniCheck array required`);
+  assert.equal(learn.miniCheck.length, 3, `${moduleId}: exactly three mini-checks`);
+  assert.equal(new Set(learn.miniCheck.map(check => check.sentence)).size, 3, `${moduleId}: unique mini-check stems`);
+  for (const [i, check] of learn.miniCheck.entries()) {
+    const label = `${moduleId}/mini-${i}`;
+    for (const key of ['sentence', 'answer', 'explanation']) plain(check[key], `${label}/${key}`);
+    assert.equal(check.sentence.split('_____').length, 2, `${label}: one gap`);
+    assert.ok(Array.isArray(check.options) && check.options.length >= 2, `${label}: options array required`);
+    check.options.forEach((option, n) => plain(option, `${label}/option-${n}`));
+    assert.equal(new Set(check.options).size, check.options.length, `${label}: unique options`);
+    assert.ok(check.options.includes(check.answer), `${label}: answer must be a listed option`);
+    assert.ok(!/\bthan\b/i.test(check.sentence), `${label}: stem must not supply than`);
+    const comparative = /\bthan\b/i.test(check.answer);
+    if (comparative) assert.ok(/\bthan$/i.test(check.answer) && check.answer.match(/\bthan\b/gi).length === 1, `${label}: one final than`);
+    else {
+      assert.ok(!/\bthe\b/i.test(check.sentence), `${label}: superlative stem must not supply the`);
+      if (moduleId === 'adjectives') assert.ok(/^the\s/i.test(check.answer), `${label}: adjective superlative requires the`);
+      if (moduleId === 'adverbs') {
+        const alternate = /^the\s/i.test(check.answer) ? check.answer.replace(/^the\s+/i, '') : `the ${check.answer}`;
+        assert.ok(!check.options.includes(alternate), `${label}: valid optional-the adverb form must not be a wrong option`);
+      }
+    }
+  }
+  const coreRecipes = learn.sections.filter(section => !section.extra).flatMap(section => section.recipes ?? []).join(' ');
+  if (['adjectives', 'adverbs'].includes(moduleId)) assert.match(coreRecipes, /×\s*y/u, `${moduleId}: core recipe must show explicit ×y`);
+  assert.ok(!/direct.{0,25}(?:recipe|accept)|(?:recipe|accept).{0,25}direct|(?:automatically|automatic)\s+(?:remove|removal|drop|delet)/i.test(JSON.stringify(learn)), `${moduleId}: no direct accepted recipe or automatic y removal teaching`);
+  return learn;
+}
 const manifest = read('modules.json');
 assert.equal(new Set(manifest.modules.map(item => item.id)).size, manifest.modules.length, 'Unique module IDs');
 for (const module of manifest.modules.filter(item => item.available)) {
@@ -84,15 +161,7 @@ for (const module of manifest.modules.filter(item => item.available)) {
   }
   assert.ok(Math.abs(counts.comparative - counts.superlative) <= 4, `${module.id}: degree balance`);
   assert.ok(Object.keys(rules).length >= 3, 'Rule variety');
-  assert.equal(learn.module, module.id);
-  assert.equal(learn.miniCheck.length, 3);
-  for (const check of learn.miniCheck) {
-    assert.ok(check.options.includes(check.answer));
-    assert.ok(!/\bthan\b/i.test(check.sentence), 'Mini-check stem must not supply than');
-    if (!/\bthan\b/i.test(check.answer)) assert.ok(!/\bthe\b/i.test(check.sentence), 'Superlative mini-check must not supply the');
-    assert.equal(new Set(check.options).size, check.options.length);
-    assert.ok(check.explanation);
-  }
+  validateLearn(learn, module.id);
   console.log(`${module.id}: ${bank.questions.length} questions; degrees ${JSON.stringify(counts)}; rules ${JSON.stringify(rules)}; 3 mini-checks. PASS`);
 }
 console.log('All noun-free answers/ingredients, question stems, complete authored trays, controlled operations, legacy recipes and every adaptive visible-answer reachability check passed.');

@@ -1,48 +1,186 @@
 {
   "module": "adverbs",
-  "intro": "An adverb tells us how an action happens. Use a comparative adverb to compare two actions. Use a superlative adverb for the top one in a group.",
+  "intro": "An adverb describes an action. A comparative compares two actions. A superlative compares one action with a group of three or more.",
+  "scopeNote": "Core rules match the experiments. Extra reading covers more textbook patterns.",
+  "sourceNote": "Based on teacher-provided Chapter 6, pages 32–35. Examples have been rewritten.",
   "sections": [
     {
-      "title": "Short adverbs: -er and -est",
-      "text": "Fast, hard, high, low and long take -er and -est: faster/fastest and harder/hardest. For late, add -r and -st: later/latest. For early, change y to i: earlier/earliest. In Grammar Lab, use Remove y only for a final y: early + Remove y + -ier → earlier.",
+      "title": "Compare actions: than and the",
+      "text": "Than connects the other action in a comparison. The usually comes before a superlative adverb, but it can be omitted in these examples.",
       "examples": [
-        "Ming ran faster than Tom.",
-        "The library opened earliest on Monday."
+        "Ming runs faster than Tom.",
+        "Of three runners, Ming runs (the) fastest."
+      ],
+      "note": "Than can be omitted when the other action is understood. In Lab gaps, comparative answers must include than. Brackets show optional the."
+    },
+    {
+      "title": "Short adverbs: endings and early",
+      "text": "Fast and hard add -er/-est. Late adds -r/-st. Early changes its final y: remove y, then add -ier/-iest. Choose ×y in both Lab forms.",
+      "forms": [
+        {
+          "label": "fast: add -er/-est",
+          "comparative": "faster",
+          "superlative": "(the) fastest"
+        },
+        {
+          "label": "hard: add -er/-est",
+          "comparative": "harder",
+          "superlative": "(the) hardest"
+        },
+        {
+          "label": "late: add -r/-st",
+          "comparative": "later",
+          "superlative": "(the) latest"
+        },
+        {
+          "label": "early: remove y; add -ier/-iest",
+          "comparative": "earlier",
+          "superlative": "(the) earliest"
+        }
+      ],
+      "examples": [
+        "Mei arrived earlier than Jun.",
+        "Among three pupils, Jun worked hardest."
       ]
     },
     {
       "title": "Most -ly adverbs: more and most",
-      "text": "Most adverbs ending in -ly use more and most: more carefully; most carefully. Do not add -er or -est to these adverbs. Early is different: earlier/earliest.",
-      "examples": [
-        "The teacher spoke more clearly than before.",
-        "Ming wrote most carefully."
+      "text": "Adverbs ending in -ly usually use more/most. Keep the base unchanged. Early is an exception. Never add -er/-est directly to loudly, slowly or carefully.",
+      "forms": [
+        {
+          "label": "carefully: keep the base",
+          "comparative": "more carefully",
+          "superlative": "(the) most carefully"
+        },
+        {
+          "label": "clearly: keep the base",
+          "comparative": "more clearly",
+          "superlative": "(the) most clearly"
+        }
       ],
-      "note": "Do not change -ly to -lier or -liest."
-    },
-    {
-      "title": "Irregular forms and far",
-      "text": "Well → better → best. Badly → worse → worst. For damage, more badly and most badly can also be right. For distance, use farther/farthest or further/furthest.",
       "examples": [
-        "Jia answered the question better than before.",
-        "The rain damaged the paper sign most badly."
+        "Mei writes more carefully than Jun.",
+        "Among three speakers, Jun spoke most clearly."
       ]
     },
     {
-      "title": "Common mistakes",
-      "text": "Use faster, not more fast. Use more easily, not easilier. Use one pattern only.",
+      "title": "Irregular forms: well, badly and far",
+      "text": "These adverbs change form. For distance, both farther/further and farthest/furthest are correct.",
+      "forms": [
+        {
+          "label": "well",
+          "comparative": "better",
+          "superlative": "(the) best"
+        },
+        {
+          "label": "badly",
+          "comparative": "worse",
+          "superlative": "(the) worst"
+        },
+        {
+          "label": "far",
+          "comparative": "farther / further",
+          "superlative": "(the) farthest / furthest"
+        }
+      ],
       "examples": [
-        "Our team finished faster than the other team.",
-        "Jia found the new bus stop more easily."
-      ]
+        "Jun played better than before.",
+        "Of three walkers, Mei walked furthest."
+      ],
+      "note": "Use good for people or things; use well for how someone does something. More badly/most badly can also describe damage."
     },
     {
-      "title": "Than, optional the, and hardly",
-      "text": "Use than after a comparative: more quickly than the other team. With a superlative adverb, the is often optional: She ran the fastest / She ran fastest. Hard means with effort. Hardly means almost not.",
+      "title": "Common mistakes: hard and hardly",
+      "text": "Use one comparison pattern, not two. Hard means with effort; hardly means almost not. They have different meanings.",
+      "mistakes": [
+        {
+          "wrong": "more faster",
+          "right": "faster"
+        },
+        {
+          "wrong": "carefullyer",
+          "right": "more carefully"
+        },
+        {
+          "wrong": "the most earliest",
+          "right": "the earliest"
+        }
+      ],
       "examples": [
-        "Tom worked harder than usual.",
-        "Of the runners, Ming ran the fastest.",
+        "I worked hard on my homework.",
         "I could hardly hear the teacher."
       ]
+    },
+    {
+      "title": "Build the whole phrase",
+      "text": "Select ×y after early and before -ier/-iest; y never disappears automatically. The base is first in the available tray, not always first in your answer. Choose the or more first when needed.",
+      "recipes": [
+        "early + ×y + -ier + than → earlier than",
+        "the + early + ×y + -iest → the earliest",
+        "more + carefully + than → more carefully than"
+      ],
+      "note": "The is optional in these adverb superlatives: early + ×y + -iest also builds earliest."
+    },
+    {
+      "title": "Less and least",
+      "extra": true,
+      "text": "With longer adverbs, less compares two actions at a lower level. Least shows the lowest level in a group of three or more.",
+      "examples": [
+        "Jun writes less carefully than Mei.",
+        "Of three pupils, Jun writes (the) least carefully."
+      ]
+    },
+    {
+      "title": "Stronger and softer comparisons",
+      "extra": true,
+      "text": "Before a comparative, much, far and a lot make the difference stronger. A bit, a little and slightly make it softer.",
+      "examples": [
+        "Mei runs much faster than Jun.",
+        "Jun arrived a little earlier than Mei."
+      ]
+    },
+    {
+      "title": "As and not as",
+      "extra": true,
+      "text": "Use as + base adverb + as for equal actions. Use not as + base adverb + as for a lower level. With these verbs, put does not/do not before the base verb.",
+      "examples": [
+        "Mei runs as fast as Tom.",
+        "Jun does not run as fast as Mei."
+      ]
+    },
+    {
+      "title": "Loud/loudly and slow/slowly",
+      "extra": true,
+      "text": "These word families offer two patterns. Louder/loudest come from loud; slower/slowest come from slow. Loudly and slowly keep -ly and use more/most.",
+      "forms": [
+        {
+          "label": "LOUD / LOUDLY",
+          "comparative": "louder or more loudly",
+          "superlative": "(the) loudest or (the) most loudly"
+        },
+        {
+          "label": "SLOW / SLOWLY",
+          "comparative": "slower or more slowly",
+          "superlative": "(the) slowest or (the) most slowly"
+        }
+      ],
+      "examples": [
+        "Jun spoke louder / more loudly than before.",
+        "Mei walked slower / more slowly than Jun."
+      ],
+      "note": "In experiments, the bases loudly and slowly use more/most only. Do not turn slowly into slower."
+    },
+    {
+      "title": "Matching comparisons and groups",
+      "extra": true,
+      "text": "Compare how actions are done. Use of/among for a group and in for a place or group. I do can stand for I run.",
+      "examples": [
+        "Ming runs faster than I do. (= I run)",
+        "Among her friends, Mei writes most carefully.",
+        "Of three runners, Ming runs fastest.",
+        "Mei works hardest in her class."
+      ],
+      "note": "Ming runs faster than me is also used in everyday English."
     }
   ],
   "miniCheck": [
@@ -54,7 +192,7 @@
         "more clearly"
       ],
       "answer": "more clearly than",
-      "explanation": "Clearly ends in -ly, so use more clearly than."
+      "explanation": "Clearly uses more clearly; than introduces the other action."
     },
     {
       "sentence": "Of three teams, our blue team played _____.",
@@ -64,7 +202,7 @@
         "more well"
       ],
       "answer": "the best",
-      "explanation": "Well is irregular: well → better → best. Best is also natural here; it is not offered as a wrong option."
+      "explanation": "Well changes to better/best. The best is correct; best is also natural here."
     },
     {
       "sentence": "Among three buses, Bus 2 arrived _____.",
@@ -74,7 +212,7 @@
         "earlyest"
       ],
       "answer": "the earliest",
-      "explanation": "Early changes y to i: early → earlier → earliest. Earliest is also natural here; it is not offered as a wrong option."
+      "explanation": "Early becomes earliest. In word blocks, choose early + ×y + -iest. The earliest and earliest are both natural here."
     }
   ],
   "sources": [

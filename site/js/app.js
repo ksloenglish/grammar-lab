@@ -167,11 +167,22 @@ async function setupView(module) {
   return `${questionHeading(module, 'EXPERIMENT SETUP', 'Ready to mix?' )}<div class="two-column"><section class="content-panel setup-card"><h2>${e(module.title)}</h2><p>Choose how many questions to try. The questions are chosen at random. No question appears twice in one experiment.</p>${preset ? '<p class="assignment-note">Teacher assignment: your module and question count are preselected.</p>' : ''}<fieldset class="trial-options"><legend>Number of questions</legend>${[10, 20, 30].map(n => `<label class="choice"><input type="radio" name="trial-count" value="${n}" ${selectedCount === n ? 'checked' : ''}><strong>${n}</strong><span>questions</span></label>`).join('')}</fieldset><div class="setup-summary"><span>${bank.questions.length} questions in this bank</span><span>First attempt = 1 mark</span></div>${actionButton('Start Experiment →', 'start', 'primary', `data-module="${e(module.id)}"`)}${saved ? `<p class="notice">You have an unfinished experiment. We will ask before starting a new one.</p>` : ''}</section><aside class="side-panel"><p class="eyebrow">HOW TO PLAY</p><h2>Build. Check. Learn.</h2><ol class="setup-steps"><li>Read the sentence and the base word in brackets.</li><li>Tap word blocks in order to add them to the end of your answer.</li><li>To change the order, tap a selected block to return it, then add it again.</li><li>Check your answer. Read the message and try again if needed.</li></ol><p>You get one mark if your first answer is correct. After a mistake, you can try again or see the answer.</p>${routeLink('Review the rules first', `learn/${module.id}`, 'secondary')}<p class="privacy-copy">${e(storageCopy())}</p></aside></div>`;
 }
 
+function learnSectionView(section, index) {
+  const body = `<p>${e(section.text)}</p>
+    ${section.forms?.length ? `<dl class="learn-form-list">${section.forms.map(form => `<div class="learn-form-row"><dt>${e(form.label)}</dt><dd><span class="learn-form-value"><small>Comparative</small><strong>${e(form.comparative)}</strong></span><span class="learn-form-value"><small>Superlative</small><strong>${e(form.superlative)}</strong></span></dd></div>`).join('')}</dl>` : ''}
+    ${section.recipes?.length ? `<ul class="learn-recipes" aria-label="Word-block recipes">${section.recipes.map(recipe => `<li><code>${e(recipe)}</code></li>`).join('')}</ul>` : ''}
+    ${section.mistakes?.length ? `<ul class="learn-mistakes" aria-label="Common errors and corrections">${section.mistakes.map(mistake => `<li><span class="learn-wrong"><b>Not</b> ${e(mistake.wrong)}</span><span class="learn-right"><b>Use</b> ${e(mistake.right)}</span></li>`).join('')}</ul>` : ''}
+    ${section.examples?.length ? `<ul class="example-list">${section.examples.map(example => `<li>${e(example)}</li>`).join('')}</ul>` : ''}
+    ${section.note ? `<p class="rule-note">${e(section.note)}</p>` : ''}`;
+  if (section.extra) return `<details class="learn-section learn-extra" id="rule-${index}"><summary><h2>${e(section.title)}</h2><span class="learn-extra-tag">Extra reading</span></summary><div class="learn-extra-content">${body}</div></details>`;
+  return `<section class="learn-section" id="rule-${index}"><span class="section-index">${String(index + 1).padStart(2, '0')} /</span><h2>${e(section.title)}</h2>${body}</section>`;
+}
+
 async function learnView(module) {
   const learn = await jsonFile(module.learn);
   const checks = load(`learn:${module.id}`, {});
-  return `${questionHeading(module, 'LEARN', 'Learn the rules.')}<p class="learn-intro">${e(learn.intro)}</p><div class="learn-layout"><div class="learn-sections">${learn.sections.map((section, i) => `<section class="learn-section" id="rule-${i}"><span class="section-index">${String(i + 1).padStart(2, '0')} /</span><h2>${e(section.title)}</h2><p>${e(section.text)}</p>${section.examples?.length ? `<ul class="example-list">${section.examples.map(example => `<li>${e(example)}</li>`).join('')}</ul>` : ''}${section.note ? `<p class="rule-note">${e(section.note)}</p>` : ''}</section>`).join('')}</div><aside class="learn-sidebar"><p class="eyebrow">LAB NOTES</p><h2>${e(module.shortTitle)}</h2><nav aria-label="Rules on this page">${learn.sections.map((section, i) => `<a href="#rule-${i}">${e(section.title)}</a>`).join('')}</nav>${routeLink('Try an experiment →', `setup/${module.id}`, 'primary')}<p>Other correct forms are accepted if they fit the sentence.</p></aside></div>
-  <section class="mini-check" aria-labelledby="mini-title"><p class="eyebrow">TRY A QUICK CHECK</p><h2 id="mini-title">A quick three-question check</h2><form id="mini-form" data-module="${e(module.id)}">${learn.miniCheck.map((question, i) => `<div class="mini-question"><fieldset><legend>${i + 1}. ${e(question.sentence)}</legend><div class="mini-options">${question.options.map(option => `<label><input type="radio" name="mini-${i}" value="${e(option)}" ${checks[i] === option ? 'checked' : ''} required><span>${e(option)}</span></label>`).join('')}</div></fieldset><p class="mini-feedback" id="mini-feedback-${i}" hidden></p></div>`).join('')}<div class="learn-check-actions"><button type="submit" class="button secondary">Check my answers</button>${routeLink('Start an Experiment →', `setup/${module.id}`, 'primary')}</div><p id="mini-result" role="status"></p></form></section><div class="learn-sources"><p>Grammar references: ${learn.sources.map(source => `<a href="${e(source.url)}" target="_blank" rel="noopener noreferrer">${e(source.title)}</a>`).join(' · ')}</p></div>`;
+  return `${questionHeading(module, 'LEARN', 'Learn the rules.')}<p class="learn-intro">${e(learn.intro)}</p>${learn.scopeNote ? `<p class="learn-scope-note">${e(learn.scopeNote)}</p>` : ''}<div class="learn-layout"><div class="learn-sections">${learn.sections.map(learnSectionView).join('')}</div><aside class="learn-sidebar"><p class="eyebrow">LAB NOTES</p><h2>${e(module.shortTitle)}</h2><nav aria-label="Rules on this page">${learn.sections.map((section, i) => `<a href="#rule-${i}">${section.extra ? '<span class="learn-nav-extra">Extra · </span>' : ''}${e(section.title)}</a>`).join('')}<a href="#mini-title">Quick check</a></nav>${routeLink('Try an experiment →', `setup/${module.id}`, 'primary')}<p>Use the blocks shown in your experiment. Extra reading does not add new word blocks.</p></aside></div>
+  <section class="mini-check" aria-labelledby="mini-title"><p class="eyebrow">TRY A QUICK CHECK</p><h2 id="mini-title">A quick three-question check</h2><form id="mini-form" data-module="${e(module.id)}">${learn.miniCheck.map((question, i) => `<div class="mini-question"><fieldset><legend>${i + 1}. ${e(question.sentence)}</legend><div class="mini-options">${question.options.map(option => `<label><input type="radio" name="mini-${i}" value="${e(option)}" ${checks[i] === option ? 'checked' : ''} required><span>${e(option)}</span></label>`).join('')}</div></fieldset><p class="mini-feedback" id="mini-feedback-${i}" hidden></p></div>`).join('')}<div class="learn-check-actions"><button type="submit" class="button secondary">Check my answers</button>${routeLink('Start an Experiment →', `setup/${module.id}`, 'primary')}</div><p id="mini-result" role="status"></p></form></section><div class="learn-sources">${learn.sourceNote ? `<p class="learn-source-note">${e(learn.sourceNote)}</p>` : ''}<p>Grammar references: ${learn.sources.map(source => `<a href="${e(source.url)}" target="_blank" rel="noopener noreferrer">${e(source.title)}</a>`).join(' · ')}</p></div>`;
 }
 
 function assemblyView(question, diagnostic = null, ids = session.assembly) {
@@ -380,7 +391,17 @@ document.addEventListener('click', event => {
   const anchor = event.target.closest('a[href^="#"]');
   if (anchor) {
     const target = document.getElementById(anchor.getAttribute('href').slice(1));
-    if (target) { event.preventDefault(); target.scrollIntoView({ block: 'start' }); if (target === app) app.focus({ preventScroll: true }); return; }
+    if (target) {
+      event.preventDefault();
+      if (target.matches('details.learn-extra')) target.open = true;
+      target.scrollIntoView({ block: 'start' });
+      const focusTarget = target.matches('details.learn-extra') ? target.querySelector('summary') : target;
+      if (target.closest('.learn-sections') || target.id === 'mini-title') {
+        if (!focusTarget.hasAttribute('tabindex') && focusTarget.tagName !== 'SUMMARY') focusTarget.setAttribute('tabindex', '-1');
+        focusTarget.focus({ preventScroll: true });
+      } else if (target === app) app.focus({ preventScroll: true });
+      return;
+    }
   }
   const button = event.target.closest('[data-action]');
   if (!button || button.disabled) return;

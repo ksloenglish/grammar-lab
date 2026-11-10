@@ -1,57 +1,207 @@
 {
   "module": "adjectives",
-  "intro": "Use a comparative to compare two things: tall → taller. Use a superlative to show the top one in a group: tall → tallest.",
+  "intro": "Adjectives describe people and things. Use a comparative for two; use a superlative for one in a group of three or more.",
+  "scopeNote": "Core rules match the experiments. Extra reading covers more textbook patterns.",
+  "sourceNote": "Based on teacher-provided Chapter 6, pages 32–35, with simplified explanations and original examples.",
   "sections": [
     {
-      "title": "Short adjectives: -er and -est",
-      "text": "For many short adjectives, add -er or -est: tall → taller → tallest. If the word ends in -e, add -r or -st: large → larger → largest. Double the last letter in short words such as big → bigger → biggest.",
+      "title": "Comparatives and superlatives",
+      "text": "Use than to introduce the other item: taller than. We usually use the in superlative patterns: the tallest.",
       "examples": [
-        "My bag is bigger than your bag.",
-        "This is the largest room in the school."
+        "Ming is taller than Ben.",
+        "Ming is the tallest in our class."
       ],
-      "note": "Do not double w, x or y."
+      "note": "In these Lab answers, include than for comparatives and the for superlatives."
     },
     {
-      "title": "Adjectives ending in -y",
-      "text": "For easy, busy, noisy, happy and heavy, change y to i: easy → easier → easiest. In Grammar Lab, use Remove y only for a final y: happy + Remove y + -ier → happier. But shy keeps y: shy → shyer → shyest.",
+      "title": "Short-word forms",
+      "text": "Many short adjectives add -er/-est. Words ending in e add -r/-st. For words like happy, remove y before -ier/-iest. For big and fat, double the final consonant.",
+      "forms": [
+        {
+          "label": "long: add -er/-est",
+          "comparative": "longer",
+          "superlative": "the longest"
+        },
+        {
+          "label": "safe: add -r/-st",
+          "comparative": "safer",
+          "superlative": "the safest"
+        },
+        {
+          "label": "happy: ×y, then -ier/-iest",
+          "comparative": "happier",
+          "superlative": "the happiest"
+        },
+        {
+          "label": "big: double g",
+          "comparative": "bigger",
+          "superlative": "the biggest"
+        }
+      ],
       "examples": [
-        "This question is easier than the last one.",
-        "The canteen is the noisiest place at school."
+        "Our kitchen is bigger than our bathroom.",
+        "This is the longest ruler in my pencil case."
+      ],
+      "note": "Do not double w, x or y. For shy in this Lab, keep y: shyer/shyest."
+    },
+    {
+      "title": "Longer words and two forms",
+      "text": "Longer adjectives usually use more/most. The four two-syllable words listed here allow both patterns. Both forms are correct; this does not mean every two-syllable adjective can take -er/-est.",
+      "forms": [
+        {
+          "label": "interesting: use more/most",
+          "comparative": "more interesting",
+          "superlative": "the most interesting"
+        },
+        {
+          "label": "clever: both patterns",
+          "comparative": "cleverer / more clever",
+          "superlative": "the cleverest / the most clever"
+        },
+        {
+          "label": "quiet: both patterns",
+          "comparative": "quieter / more quiet",
+          "superlative": "the quietest / the most quiet"
+        },
+        {
+          "label": "polite: both patterns",
+          "comparative": "politer / more polite",
+          "superlative": "the politest / the most polite"
+        },
+        {
+          "label": "common: both patterns",
+          "comparative": "commoner / more common",
+          "superlative": "the commonest / the most common"
+        }
+      ],
+      "examples": [
+        "This story is more interesting than the last one.",
+        "Our library is the quietest room in school."
       ]
     },
     {
-      "title": "Longer adjectives and two correct forms",
-      "text": "Use more and most with longer adjectives: more careful; the most interesting. With quiet, clever, narrow and simple, two forms can be right.",
-      "examples": [
-        "This map is more useful than the old map.",
-        "This is the simplest way home.",
-        "This is the most simple way home."
+      "title": "Irregular forms",
+      "text": "Some words change their forms. Do not add regular endings. For distance, both farther/farthest and further/furthest are correct.",
+      "forms": [
+        {
+          "label": "good: change the word",
+          "comparative": "better",
+          "superlative": "the best"
+        },
+        {
+          "label": "bad: change the word",
+          "comparative": "worse",
+          "superlative": "the worst"
+        },
+        {
+          "label": "far: distance, both forms",
+          "comparative": "farther / further",
+          "superlative": "the farthest / the furthest"
+        },
+        {
+          "label": "little: amount",
+          "comparative": "less",
+          "superlative": "the least"
+        },
+        {
+          "label": "much: amount",
+          "comparative": "more",
+          "superlative": "the most"
+        },
+        {
+          "label": "many: number",
+          "comparative": "more",
+          "superlative": "the most"
+        }
       ],
-      "note": "Both listed forms are accepted in this course."
-    },
-    {
-      "title": "Irregular forms and far",
-      "text": "Good → better → best. Bad → worse → worst. For distance, use farther/farthest or further/furthest. Both are correct.",
       "examples": [
-        "This bus route is better than the old route.",
-        "This is the farthest shop from our school."
-      ]
+        "My new drawing is better than my old one.",
+        "This shop is the farthest from our school."
+      ],
+      "note": "Much and little describe amounts; many describes numbers. In these questions, the noun is already in the sentence."
     },
     {
       "title": "Common mistakes",
-      "text": "Use one pattern only: easier, not more easier; the fastest, not the most fastest.",
+      "text": "Choose one pattern. Do not put more before an -er form or most before an -est form. Use the special forms for good and bad.",
+      "mistakes": [
+        {
+          "wrong": "more taller",
+          "right": "taller"
+        },
+        {
+          "wrong": "the most easiest",
+          "right": "the easiest"
+        },
+        {
+          "wrong": "more good",
+          "right": "better"
+        }
+      ],
       "examples": [
-        "The second question is easier than the first.",
-        "She chose the most interesting book."
+        "Ben is taller than his brother.",
+        "This is the easiest question in our homework."
       ]
     },
     {
-      "title": "Than, the, good and well",
-      "text": "Use than after a comparative: cleaner than the old desk. Use the before a superlative adjective and a noun: the cleanest desk. Use good before a noun. Use well to say how someone does something.",
+      "title": "Build with blocks",
+      "text": "Choose every needed block. ×y removes the final y; -ier/-iest do not remove it automatically. For big, choose the extra g before the ending: doubling is not automatic either.",
+      "recipes": [
+        "noisy + ×y + -ier + than → noisier than",
+        "the + big + g + -est → the biggest",
+        "the + noisy + ×y + -iest → the noisiest"
+      ],
       "examples": [
-        "The plan is good.",
-        "She explained the plan well."
+        "Our kitchen is noisier than our bedroom.",
+        "Our kitchen is the noisiest room at home."
       ]
+    },
+    {
+      "title": "Less and least",
+      "extra": true,
+      "text": "Less expensive means cheaper. The least expensive means the cheapest in a group. Use less/least before the adjective to show a lower level.",
+      "examples": [
+        "This pen is less expensive than that pen.",
+        "This is the least expensive pen in our school shop."
+      ]
+    },
+    {
+      "title": "Stronger and weaker comparisons",
+      "extra": true,
+      "text": "Much, far and a lot make a comparison stronger. A bit, a little and slightly make it weaker. Put them before the comparative.",
+      "examples": [
+        "My new bag is much heavier than my old bag.",
+        "This question is a little easier than the last one."
+      ]
+    },
+    {
+      "title": "As and not as",
+      "extra": true,
+      "text": "Use as + the base adjective + as for equal qualities. Not as ... as means a lower level, like less ... than. Do not change the adjective's form.",
+      "examples": [
+        "My ruler is as long as yours.",
+        "Our kitchen is not as quiet as our bedroom."
+      ]
+    },
+    {
+      "title": "Superlatives with groups",
+      "extra": true,
+      "text": "Use one of the + a plural noun; among/of for a group; in for a place/group; and have ever + a past participle (see → seen).",
+      "examples": [
+        "Ming is one of the tallest students.",
+        "Ming is the tallest among his friends.",
+        "Ming is the tallest in our class.",
+        "This is the best film I have ever seen."
+      ]
+    },
+    {
+      "title": "Make the comparison clear",
+      "extra": true,
+      "text": "Make clear which items you mean. Yours can mean your bag; my sister's hair names the other hair being compared.",
+      "examples": [
+        "My bag is heavier than yours.",
+        "My hair is longer than my sister's hair."
+      ],
+      "note": "Than can be left out when the comparison is already understood: Ming is tall, but Ben is taller. The Lab asks you to include it."
     }
   ],
   "miniCheck": [
@@ -63,7 +213,7 @@
         "larger"
       ],
       "answer": "larger than",
-      "explanation": "Large ends in -e, so add -r and then than: larger than."
+      "explanation": "Large ends in e, so add -r. Than introduces our classroom."
     },
     {
       "sentence": "Of three bags, our red bag is _____.",
@@ -73,7 +223,7 @@
         "the better"
       ],
       "answer": "the best",
-      "explanation": "Good is irregular: good → better → best. A superlative adjective before a noun phrase needs the: the best."
+      "explanation": "Good changes to best for a group of three. Use the best in this sentence."
     },
     {
       "sentence": "This is _____ place in our library.",
@@ -83,7 +233,7 @@
         "the quietiest"
       ],
       "answer": "the quietest",
-      "explanation": "Use the quietest. The most quiet is also correct, but it is not an option here."
+      "explanation": "Quiet adds -est here. The most quiet is also correct, but it is not an option."
     }
   ],
   "sources": [

@@ -929,124 +929,283 @@ def adverb_bank() -> dict[str, Any]:
 
 
 def learn_files() -> tuple[dict[str, Any], dict[str, Any]]:
-    adjective_learn = {
-        "module": "adjectives",
-        "intro": "Use a comparative to compare two things: tall → taller. Use a superlative to show the top one in a group: tall → tallest.",
-        "sections": [
-            {
-                "title": "Short adjectives: -er and -est",
-                "text": "For many short adjectives, add -er or -est: tall → taller → tallest. If the word ends in -e, add -r or -st: large → larger → largest. Double the last letter in short words such as big → bigger → biggest.",
-                "examples": ["My bag is bigger than your bag.", "This is the largest room in the school."],
-                "note": "Do not double w, x or y.",
-            },
-            {
-                "title": "Adjectives ending in -y",
-                "text": "For easy, busy, noisy, happy and heavy, change y to i: easy → easier → easiest. In Grammar Lab, use Remove y only for a final y: happy + Remove y + -ier → happier. But shy keeps y: shy → shyer → shyest.",
-                "examples": ["This question is easier than the last one.", "The canteen is the noisiest place at school."],
-            },
-            {
-                "title": "Longer adjectives and two correct forms",
-                "text": "Use more and most with longer adjectives: more careful; the most interesting. With quiet, clever, narrow and simple, two forms can be right.",
-                "examples": ["This map is more useful than the old map.", "This is the simplest way home.", "This is the most simple way home."],
-                "note": "Both listed forms are accepted in this course.",
-            },
-            {
-                "title": "Irregular forms and far",
-                "text": "Good → better → best. Bad → worse → worst. For distance, use farther/farthest or further/furthest. Both are correct.",
-                "examples": ["This bus route is better than the old route.", "This is the farthest shop from our school."],
-            },
-            {
-                "title": "Common mistakes",
-                "text": "Use one pattern only: easier, not more easier; the fastest, not the most fastest.",
-                "examples": ["The second question is easier than the first.", "She chose the most interesting book."],
-            },
-            {
-                "title": "Than, the, good and well",
-                "text": "Use than after a comparative: cleaner than the old desk. Use the before a superlative adjective and a noun: the cleanest desk. Use good before a noun. Use well to say how someone does something.",
-                "examples": ["The plan is good.", "She explained the plan well."],
-            },
-        ],
-        "miniCheck": [
-            {
-                "sentence": "Our school hall is _____ our classroom.",
-                "options": ["larger than", "largeer than", "larger"],
-                "answer": "larger than",
-                "explanation": "Large ends in -e, so add -r and then than: larger than.",
-            },
-            {
-                "sentence": "Of three bags, our red bag is _____.",
-                "options": ["the best", "the goodest", "the better"],
-                "answer": "the best",
-                "explanation": "Good is irregular: good → better → best. A superlative adjective before a noun phrase needs the: the best.",
-            },
-            {
-                "sentence": "This is _____ place in our library.",
-                "options": ["the quietest", "the quieter", "the quietiest"],
-                "answer": "the quietest",
-                "explanation": "Use the quietest. The most quiet is also correct, but it is not an option here.",
-            },
-        ],
-        "sources": [
-            {"title": "Cambridge Dictionary Grammar: Comparison: adjectives", "url": CAMBRIDGE_COMPARISON},
-            {"title": "Cambridge Dictionary Grammar: Farther, farthest or further, furthest?", "url": CAMBRIDGE_FAR},
-        ],
-    }
-    adverb_learn = {
-        "module": "adverbs",
-        "intro": "An adverb tells us how an action happens. Use a comparative adverb to compare two actions. Use a superlative adverb for the top one in a group.",
-        "sections": [
-            {
-                "title": "Short adverbs: -er and -est",
-                "text": "Fast, hard, high, low and long take -er and -est: faster/fastest and harder/hardest. For late, add -r and -st: later/latest. For early, change y to i: earlier/earliest. In Grammar Lab, use Remove y only for a final y: early + Remove y + -ier → earlier.",
-                "examples": ["Ming ran faster than Tom.", "The library opened earliest on Monday."],
-            },
-            {
-                "title": "Most -ly adverbs: more and most",
-                "text": "Most adverbs ending in -ly use more and most: more carefully; most carefully. Do not add -er or -est to these adverbs. Early is different: earlier/earliest.",
-                "examples": ["The teacher spoke more clearly than before.", "Ming wrote most carefully."],
-                "note": "Do not change -ly to -lier or -liest.",
-            },
-            {
-                "title": "Irregular forms and far",
-                "text": "Well → better → best. Badly → worse → worst. For damage, more badly and most badly can also be right. For distance, use farther/farthest or further/furthest.",
-                "examples": ["Jia answered the question better than before.", "The rain damaged the paper sign most badly."],
-            },
-            {
-                "title": "Common mistakes",
-                "text": "Use faster, not more fast. Use more easily, not easilier. Use one pattern only.",
-                "examples": ["Our team finished faster than the other team.", "Jia found the new bus stop more easily."],
-            },
-            {
-                "title": "Than, optional the, and hardly",
-                "text": "Use than after a comparative: more quickly than the other team. With a superlative adverb, the is often optional: She ran the fastest / She ran fastest. Hard means with effort. Hardly means almost not.",
-                "examples": ["Tom worked harder than usual.", "Of the runners, Ming ran the fastest.", "I could hardly hear the teacher."],
-            },
-        ],
-        "miniCheck": [
-            {
-                "sentence": "Our teacher spoke _____ before.",
-                "options": ["more clearly than", "clearer than", "more clearly"],
-                "answer": "more clearly than",
-                "explanation": "Clearly ends in -ly, so use more clearly than.",
-            },
-            {
-                "sentence": "Of three teams, our blue team played _____.",
-                "options": ["the best", "goodest", "more well"],
-                "answer": "the best",
-                "explanation": "Well is irregular: well → better → best. Best is also natural here; it is not offered as a wrong option.",
-            },
-            {
-                "sentence": "Among three buses, Bus 2 arrived _____.",
-                "options": ["the earliest", "the earlier", "earlyest"],
-                "answer": "the earliest",
-                "explanation": "Early changes y to i: early → earlier → earliest. Earliest is also natural here; it is not offered as a wrong option.",
-            },
-        ],
-        "sources": [
-            {"title": "EF English Grammar: Comparative and superlative adverbs", "url": EF_ADVERBS},
-            {"title": "Cambridge Dictionary Grammar: Farther, farthest or further, furthest?", "url": CAMBRIDGE_FAR},
-        ],
-    }
+    # S2 teaching copy follows the teacher-provided Chapter 6 pages 32–35.
+    adjective_learn = {'module': 'adjectives',
+     'intro': 'Adjectives describe people and things. Use a comparative for two; use a superlative for '
+              'one in a group of three or more.',
+     'scopeNote': 'Core rules match the experiments. Extra reading covers more textbook patterns.',
+     'sourceNote': 'Based on teacher-provided Chapter 6, pages 32–35, with simplified explanations and '
+                   'original examples.',
+     'sections': [{'title': 'Comparatives and superlatives',
+                   'text': 'Use than to introduce the other item: taller than. We usually use the in '
+                           'superlative patterns: the tallest.',
+                   'examples': ['Ming is taller than Ben.', 'Ming is the tallest in our class.'],
+                   'note': 'In these Lab answers, include than for comparatives and the for '
+                           'superlatives.'},
+                  {'title': 'Short-word forms',
+                   'text': 'Many short adjectives add -er/-est. Words ending in e add -r/-st. For '
+                           'words like happy, remove y before -ier/-iest. For big and fat, double the '
+                           'final consonant.',
+                   'forms': [{'label': 'long: add -er/-est',
+                              'comparative': 'longer',
+                              'superlative': 'the longest'},
+                             {'label': 'safe: add -r/-st',
+                              'comparative': 'safer',
+                              'superlative': 'the safest'},
+                             {'label': 'happy: ×y, then -ier/-iest',
+                              'comparative': 'happier',
+                              'superlative': 'the happiest'},
+                             {'label': 'big: double g',
+                              'comparative': 'bigger',
+                              'superlative': 'the biggest'}],
+                   'examples': ['Our kitchen is bigger than our bathroom.',
+                                'This is the longest ruler in my pencil case.'],
+                   'note': 'Do not double w, x or y. For shy in this Lab, keep y: shyer/shyest.'},
+                  {'title': 'Longer words and two forms',
+                   'text': 'Longer adjectives usually use more/most. The four two-syllable words '
+                           'listed here allow both patterns. Both forms are correct; this does not '
+                           'mean every two-syllable adjective can take -er/-est.',
+                   'forms': [{'label': 'interesting: use more/most',
+                              'comparative': 'more interesting',
+                              'superlative': 'the most interesting'},
+                             {'label': 'clever: both patterns',
+                              'comparative': 'cleverer / more clever',
+                              'superlative': 'the cleverest / the most clever'},
+                             {'label': 'quiet: both patterns',
+                              'comparative': 'quieter / more quiet',
+                              'superlative': 'the quietest / the most quiet'},
+                             {'label': 'polite: both patterns',
+                              'comparative': 'politer / more polite',
+                              'superlative': 'the politest / the most polite'},
+                             {'label': 'common: both patterns',
+                              'comparative': 'commoner / more common',
+                              'superlative': 'the commonest / the most common'}],
+                   'examples': ['This story is more interesting than the last one.',
+                                'Our library is the quietest room in school.']},
+                  {'title': 'Irregular forms',
+                   'text': 'Some words change their forms. Do not add regular endings. For distance, '
+                           'both farther/farthest and further/furthest are correct.',
+                   'forms': [{'label': 'good: change the word',
+                              'comparative': 'better',
+                              'superlative': 'the best'},
+                             {'label': 'bad: change the word',
+                              'comparative': 'worse',
+                              'superlative': 'the worst'},
+                             {'label': 'far: distance, both forms',
+                              'comparative': 'farther / further',
+                              'superlative': 'the farthest / the furthest'},
+                             {'label': 'little: amount',
+                              'comparative': 'less',
+                              'superlative': 'the least'},
+                             {'label': 'much: amount',
+                              'comparative': 'more',
+                              'superlative': 'the most'},
+                             {'label': 'many: number',
+                              'comparative': 'more',
+                              'superlative': 'the most'}],
+                   'examples': ['My new drawing is better than my old one.',
+                                'This shop is the farthest from our school.'],
+                   'note': 'Much and little describe amounts; many describes numbers. In these '
+                           'questions, the noun is already in the sentence.'},
+                  {'title': 'Common mistakes',
+                   'text': 'Choose one pattern. Do not put more before an -er form or most before an '
+                           '-est form. Use the special forms for good and bad.',
+                   'mistakes': [{'wrong': 'more taller', 'right': 'taller'},
+                                {'wrong': 'the most easiest', 'right': 'the easiest'},
+                                {'wrong': 'more good', 'right': 'better'}],
+                   'examples': ['Ben is taller than his brother.',
+                                'This is the easiest question in our homework.']},
+                  {'title': 'Build with blocks',
+                   'text': 'Choose every needed block. ×y removes the final y; -ier/-iest do not '
+                           'remove it automatically. For big, choose the extra g before the ending: '
+                           'doubling is not automatic either.',
+                   'recipes': ['noisy + ×y + -ier + than → noisier than',
+                               'the + big + g + -est → the biggest',
+                               'the + noisy + ×y + -iest → the noisiest'],
+                   'examples': ['Our kitchen is noisier than our bedroom.',
+                                'Our kitchen is the noisiest room at home.']},
+                  {'title': 'Less and least',
+                   'extra': True,
+                   'text': 'Less expensive means cheaper. The least expensive means the cheapest in a '
+                           'group. Use less/least before the adjective to show a lower level.',
+                   'examples': ['This pen is less expensive than that pen.',
+                                'This is the least expensive pen in our school shop.']},
+                  {'title': 'Stronger and weaker comparisons',
+                   'extra': True,
+                   'text': 'Much, far and a lot make a comparison stronger. A bit, a little and '
+                           'slightly make it weaker. Put them before the comparative.',
+                   'examples': ['My new bag is much heavier than my old bag.',
+                                'This question is a little easier than the last one.']},
+                  {'title': 'As and not as',
+                   'extra': True,
+                   'text': 'Use as + the base adjective + as for equal qualities. Not as ... as means '
+                           "a lower level, like less ... than. Do not change the adjective's form.",
+                   'examples': ['My ruler is as long as yours.',
+                                'Our kitchen is not as quiet as our bedroom.']},
+                  {'title': 'Superlatives with groups',
+                   'extra': True,
+                   'text': 'Use one of the + a plural noun; among/of for a group; in for a '
+                           'place/group; and have ever + a past participle (see → seen).',
+                   'examples': ['Ming is one of the tallest students.',
+                                'Ming is the tallest among his friends.',
+                                'Ming is the tallest in our class.',
+                                'This is the best film I have ever seen.']},
+                  {'title': 'Make the comparison clear',
+                   'extra': True,
+                   'text': "Make clear which items you mean. Yours can mean your bag; my sister's hair "
+                           'names the other hair being compared.',
+                   'examples': ['My bag is heavier than yours.',
+                                "My hair is longer than my sister's hair."],
+                   'note': 'Than can be left out when the comparison is already understood: Ming is '
+                           'tall, but Ben is taller. The Lab asks you to include it.'}],
+     'miniCheck': [{'sentence': 'Our school hall is _____ our classroom.',
+                    'options': ['larger than', 'largeer than', 'larger'],
+                    'answer': 'larger than',
+                    'explanation': 'Large ends in e, so add -r. Than introduces our classroom.'},
+                   {'sentence': 'Of three bags, our red bag is _____.',
+                    'options': ['the best', 'the goodest', 'the better'],
+                    'answer': 'the best',
+                    'explanation': 'Good changes to best for a group of three. Use the best in this '
+                                   'sentence.'},
+                   {'sentence': 'This is _____ place in our library.',
+                    'options': ['the quietest', 'the quieter', 'the quietiest'],
+                    'answer': 'the quietest',
+                    'explanation': 'Quiet adds -est here. The most quiet is also correct, but it is '
+                                   'not an option.'}],
+     'sources': [{'title': 'Cambridge Dictionary Grammar: Comparison: adjectives',
+                  'url': 'https://dictionary.cambridge.org/us/grammar/british-grammar/comparison-adjectives-bigger-biggest-more-interesting'},
+                 {'title': 'Cambridge Dictionary Grammar: Farther, farthest or further, furthest?',
+                  'url': 'https://dictionary.cambridge.org/us/grammar/british-grammar/farther-farthest-or-further-furthest'}]}
+
+    adverb_learn = {'module': 'adverbs',
+     'intro': 'An adverb describes an action. A comparative compares two actions. A superlative '
+              'compares one action with a group of three or more.',
+     'scopeNote': 'Core rules match the experiments. Extra reading covers more textbook patterns.',
+     'sourceNote': 'Based on teacher-provided Chapter 6, pages 32–35. Examples have been rewritten.',
+     'sections': [{'title': 'Compare actions: than and the',
+                   'text': 'Than connects the other action in a comparison. The usually comes before a '
+                           'superlative adverb, but it can be omitted in these examples.',
+                   'examples': ['Ming runs faster than Tom.',
+                                'Of three runners, Ming runs (the) fastest.'],
+                   'note': 'Than can be omitted when the other action is understood. In Lab gaps, '
+                           'comparative answers must include than. Brackets show optional the.'},
+                  {'title': 'Short adverbs: endings and early',
+                   'text': 'Fast and hard add -er/-est. Late adds -r/-st. Early changes its final y: '
+                           'remove y, then add -ier/-iest. Choose ×y in both Lab forms.',
+                   'forms': [{'label': 'fast: add -er/-est',
+                              'comparative': 'faster',
+                              'superlative': '(the) fastest'},
+                             {'label': 'hard: add -er/-est',
+                              'comparative': 'harder',
+                              'superlative': '(the) hardest'},
+                             {'label': 'late: add -r/-st',
+                              'comparative': 'later',
+                              'superlative': '(the) latest'},
+                             {'label': 'early: remove y; add -ier/-iest',
+                              'comparative': 'earlier',
+                              'superlative': '(the) earliest'}],
+                   'examples': ['Mei arrived earlier than Jun.',
+                                'Among three pupils, Jun worked hardest.']},
+                  {'title': 'Most -ly adverbs: more and most',
+                   'text': 'Adverbs ending in -ly usually use more/most. Keep the base unchanged. '
+                           'Early is an exception. Never add -er/-est directly to loudly, slowly or '
+                           'carefully.',
+                   'forms': [{'label': 'carefully: keep the base',
+                              'comparative': 'more carefully',
+                              'superlative': '(the) most carefully'},
+                             {'label': 'clearly: keep the base',
+                              'comparative': 'more clearly',
+                              'superlative': '(the) most clearly'}],
+                   'examples': ['Mei writes more carefully than Jun.',
+                                'Among three speakers, Jun spoke most clearly.']},
+                  {'title': 'Irregular forms: well, badly and far',
+                   'text': 'These adverbs change form. For distance, both farther/further and '
+                           'farthest/furthest are correct.',
+                   'forms': [{'label': 'well', 'comparative': 'better', 'superlative': '(the) best'},
+                             {'label': 'badly', 'comparative': 'worse', 'superlative': '(the) worst'},
+                             {'label': 'far',
+                              'comparative': 'farther / further',
+                              'superlative': '(the) farthest / furthest'}],
+                   'examples': ['Jun played better than before.',
+                                'Of three walkers, Mei walked furthest.'],
+                   'note': 'Use good for people or things; use well for how someone does something. '
+                           'More badly/most badly can also describe damage.'},
+                  {'title': 'Common mistakes: hard and hardly',
+                   'text': 'Use one comparison pattern, not two. Hard means with effort; hardly means '
+                           'almost not. They have different meanings.',
+                   'mistakes': [{'wrong': 'more faster', 'right': 'faster'},
+                                {'wrong': 'carefullyer', 'right': 'more carefully'},
+                                {'wrong': 'the most earliest', 'right': 'the earliest'}],
+                   'examples': ['I worked hard on my homework.', 'I could hardly hear the teacher.']},
+                  {'title': 'Build the whole phrase',
+                   'text': 'Select ×y after early and before -ier/-iest; y never disappears '
+                           'automatically. The base is first in the available tray, not always first '
+                           'in your answer. Choose the or more first when needed.',
+                   'recipes': ['early + ×y + -ier + than → earlier than',
+                               'the + early + ×y + -iest → the earliest',
+                               'more + carefully + than → more carefully than'],
+                   'note': 'The is optional in these adverb superlatives: early + ×y + -iest also '
+                           'builds earliest.'},
+                  {'title': 'Less and least',
+                   'extra': True,
+                   'text': 'With longer adverbs, less compares two actions at a lower level. Least '
+                           'shows the lowest level in a group of three or more.',
+                   'examples': ['Jun writes less carefully than Mei.',
+                                'Of three pupils, Jun writes (the) least carefully.']},
+                  {'title': 'Stronger and softer comparisons',
+                   'extra': True,
+                   'text': 'Before a comparative, much, far and a lot make the difference stronger. A '
+                           'bit, a little and slightly make it softer.',
+                   'examples': ['Mei runs much faster than Jun.',
+                                'Jun arrived a little earlier than Mei.']},
+                  {'title': 'As and not as',
+                   'extra': True,
+                   'text': 'Use as + base adverb + as for equal actions. Use not as + base adverb + as '
+                           'for a lower level. With these verbs, put does not/do not before the base '
+                           'verb.',
+                   'examples': ['Mei runs as fast as Tom.', 'Jun does not run as fast as Mei.']},
+                  {'title': 'Loud/loudly and slow/slowly',
+                   'extra': True,
+                   'text': 'These word families offer two patterns. Louder/loudest come from loud; '
+                           'slower/slowest come from slow. Loudly and slowly keep -ly and use '
+                           'more/most.',
+                   'forms': [{'label': 'LOUD / LOUDLY',
+                              'comparative': 'louder or more loudly',
+                              'superlative': '(the) loudest or (the) most loudly'},
+                             {'label': 'SLOW / SLOWLY',
+                              'comparative': 'slower or more slowly',
+                              'superlative': '(the) slowest or (the) most slowly'}],
+                   'examples': ['Jun spoke louder / more loudly than before.',
+                                'Mei walked slower / more slowly than Jun.'],
+                   'note': 'In experiments, the bases loudly and slowly use more/most only. Do not '
+                           'turn slowly into slower.'},
+                  {'title': 'Matching comparisons and groups',
+                   'extra': True,
+                   'text': 'Compare how actions are done. Use of/among for a group and in for a place '
+                           'or group. I do can stand for I run.',
+                   'examples': ['Ming runs faster than I do. (= I run)',
+                                'Among her friends, Mei writes most carefully.',
+                                'Of three runners, Ming runs fastest.',
+                                'Mei works hardest in her class.'],
+                   'note': 'Ming runs faster than me is also used in everyday English.'}],
+     'miniCheck': [{'sentence': 'Our teacher spoke _____ before.',
+                    'options': ['more clearly than', 'clearer than', 'more clearly'],
+                    'answer': 'more clearly than',
+                    'explanation': 'Clearly uses more clearly; than introduces the other action.'},
+                   {'sentence': 'Of three teams, our blue team played _____.',
+                    'options': ['the best', 'goodest', 'more well'],
+                    'answer': 'the best',
+                    'explanation': 'Well changes to better/best. The best is correct; best is also '
+                                   'natural here.'},
+                   {'sentence': 'Among three buses, Bus 2 arrived _____.',
+                    'options': ['the earliest', 'the earlier', 'earlyest'],
+                    'answer': 'the earliest',
+                    'explanation': 'Early becomes earliest. In word blocks, choose early + ×y + -iest. '
+                                   'The earliest and earliest are both natural here.'}],
+     'sources': [{'title': 'EF English Grammar: Comparative and superlative adverbs',
+                  'url': 'https://www.ef.com/wwen/english-resources/english-grammar/comparative-and-superlative-adverbs/'},
+                 {'title': 'Cambridge Dictionary Grammar: Farther, farthest or further, furthest?',
+                  'url': 'https://dictionary.cambridge.org/us/grammar/british-grammar/farther-farthest-or-further-furthest'}]}
     return adjective_learn, adverb_learn
 
 
@@ -1241,6 +1400,30 @@ def validate_bank(bank: dict[str, Any]) -> dict[str, Any]:
 
 
 def validate_learn(learn: dict[str, Any]) -> None:
+    def text(value: Any) -> bool:
+        return isinstance(value, str) and bool(value.strip())
+
+    assert text(learn.get("intro")) and len(learn["intro"].split()) <= 35, f"{learn['module']}: keep the introduction concise"
+    assert text(learn.get("scopeNote")) and text(learn.get("sourceNote")), f"{learn['module']}: identify coverage and textbook provenance"
+    assert isinstance(learn.get("sections"), list) and learn["sections"], f"{learn['module']}: Learn sections are required"
+    assert sum(not section.get("extra", False) for section in learn["sections"]) == 6, f"{learn['module']}: keep six short core rules"
+    for section in learn["sections"]:
+        assert text(section.get("title")) and text(section.get("text")), f"{learn['module']}: each rule needs a title and explanation"
+        assert isinstance(section.get("extra", False), bool), f"{learn['module']}: extra-reading flags must be boolean"
+        assert len(section["text"].split()) <= (50 if section.get("extra") else 40), f"{learn['module']}: rule explanations must be concise"
+        for field in ("examples", "recipes"):
+            if field in section:
+                assert isinstance(section[field], list) and all(text(value) for value in section[field]), f"{learn['module']}: {field} must contain plain text"
+        if "note" in section:
+            assert text(section["note"]), f"{learn['module']}: rule notes must be plain text"
+        if "forms" in section:
+            assert isinstance(section["forms"], list) and section["forms"], f"{learn['module']}: form rows must be a non-empty list"
+            assert all(isinstance(row, dict) and all(text(row.get(key)) for key in ("label", "comparative", "superlative")) for row in section["forms"]), f"{learn['module']}: form rows need a label and both degrees"
+        if "mistakes" in section:
+            assert isinstance(section["mistakes"], list) and section["mistakes"], f"{learn['module']}: mistake pairs must be a non-empty list"
+            assert all(isinstance(row, dict) and text(row.get("wrong")) and text(row.get("right")) and row["wrong"] != row["right"] for row in section["mistakes"]), f"{learn['module']}: clearly label different wrong and correct forms"
+        for recipe in section.get("recipes", []):
+            assert not re.search(r"\b[a-z]+y\s*\+\s*-i(?:er|est)\b", recipe, re.I), f"{learn['module']}: word-block y changes must explicitly include ×y"
     assert len(learn["miniCheck"]) == 3, f"{learn['module']}: must have exactly 3 mini checks"
     for check in learn["miniCheck"]:
         assert check["sentence"].count("_____") == 1
