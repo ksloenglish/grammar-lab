@@ -1,6 +1,6 @@
 # Release verification
 
-Latest published release: **v261110-185540**, deployed successfully on 10 November 2026 HKT by GitHub Actions run **42803207612**, for source commit **33b4f29**. The previous release evidence is retained below.
+Latest published release: **v261110-191134**, deployed successfully on 10 November 2026 HKT by GitHub Actions run **42805410191**, for source commit **2d72266**. The previous release evidence is retained below.
 
 The corrected application was successfully deployed and checked at https://ksloenglish.github.io/grammar-lab/ on 27 October 2026 (Hong Kong Time). The app release is **v261027-194643**. GitHub Actions run **40498668338** completed successfully for the final visual-change commit **b08d7f8**.
 
@@ -37,3 +37,5 @@ GitHub Actions run **42803207612** completed successfully for source commit **33
 At the teacher’s request, removed the highlighted yellow easy → eas → easier intermediate spelling strip from the Home demonstration only. Kept the easy + ×y + -ier ingredients, downward arrow, easier result and caption. The shared spelling-step renderer and all experiment feedback remain unchanged. Updated the permanent source and browser regressions to reject a Home spelling strip while requiring experiment spelling rendering. Updated current README, prompt, plan and outcomes so the strip is not regenerated.
 
 Local validation passed both question banks, all 34 Node regressions, the static build, JavaScript/Python syntax and git diff --check. The focused Home suite passed 114 desktop/mobile assertions; experiment spelling checks passed on Chromium 1440px and WebKit 360px, and all 41 visual-spacing checks passed.
+
+The Home-only removal was published successfully as **v261110-191134**, GitHub Actions run **42805410191**, source commit **2d72266**. The automatic version commit **c0144c8** was pulled. Live checks passed all 114 focused Home assertions and the experiment spelling suite on desktop Chromium and 360px WebKit. The public version returned HTTP 200 and matched the source; public Home markup omits the strip while experiment markup retains spelling feedback. Simplified desktop and mobile Home screenshots were visually inspected.
