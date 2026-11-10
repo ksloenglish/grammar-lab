@@ -1,5 +1,7 @@
 # Release verification
 
+Latest published release: **v261110-185540**, deployed successfully on 10 November 2026 HKT by GitHub Actions run **42803207612**, for source commit **33b4f29**. The previous release evidence is retained below.
+
 The corrected application was successfully deployed and checked at https://ksloenglish.github.io/grammar-lab/ on 27 October 2026 (Hong Kong Time). The app release is **v261027-194643**. GitHub Actions run **40498668338** completed successfully for the final visual-change commit **b08d7f8**.
 
 ## Content and assessment
@@ -28,4 +30,4 @@ Removed the sound control, its listeners, playback calls and Web Audio code. Top
 
 Local release checks passed: bank validation for both unchanged 96-question banks; all 34 Node regressions (including four permanent Home/silence checks); static build; affected JavaScript and Python syntax; git diff --check; 112 focused Home/mobile/silence browser assertions and 76 existing interaction assertions on Chromium and WebKit. The existing spelling, all-bank tile (2,430 labels per viewport), 41-check visual-spacing, colourful visual-journey and bank-update/storage suites also passed. Desktop and phone Home demos and mobile navigation were visually inspected; reduced motion and leave confirmation remained functional. Browser-test prerequisites were restored in the sandbox before completing browser checks.
 
-Publication evidence is recorded below after successful GitHub Pages deployment and live checks.
+GitHub Actions run **42803207612** completed successfully for source commit **33b4f29**. The workflow version commit **7b9dd2d** was pulled without rewriting history. The live release is **v261110-185540**. Public-site tests passed all 112 focused Home/UI/silence assertions and 76 interaction assertions on desktop Chromium and 360px WebKit, plus the spelling-operation suite. The public index, version, CSS, application/effects modules and both question banks returned HTTP 200 and matched the versioned local build byte for byte.
