@@ -128,23 +128,31 @@ def complete_ingredients(blocks: list[dict[str, Any]], base: str) -> None:
 
 
 def with_remove_y_sequences(blocks: list[dict[str, Any]], base: str, sequences: list[list[str]]) -> list[list[str]]:
-    """Put explicit final-y deletion before each retained direct spelling sequence."""
+    """Remove implicit y transforms and replace direct recipes with explicit deletion."""
     if not base.endswith("y"):
         return sequences
+    for item in blocks:
+        if item["kind"] == "suffix" and item["label"] in {"-ier", "-iest"}:
+            transforms = item.get("transforms", {})
+            if transforms.get(base) == base[:-1] + item["label"][1:]:
+                del transforms[base]
     by_id = {item["id"]: item for item in blocks}
     completed: list[list[str]] = []
     for sequence in sequences:
-        deletion_sequences: list[list[str]] = []
+        explicit_sequence: list[str] = []
         for index, block_id in enumerate(sequence[:-1]):
+            explicit_sequence.append(block_id)
             next_id = sequence[index + 1]
             if (
-                by_id[block_id]["label"] == base
+                by_id[block_id]["kind"] == "word"
+                and by_id[block_id]["label"] == base
                 and by_id[next_id]["kind"] == "suffix"
                 and by_id[next_id]["label"] in {"-ier", "-iest"}
             ):
-                deletion_sequences.append(sequence[: index + 1] + ["remove-y"] + sequence[index + 1 :])
-        completed.extend(deletion_sequences)
-        completed.append(sequence)
+                explicit_sequence.append("remove-y")
+        explicit_sequence.extend(sequence[-1:])
+        if explicit_sequence not in completed:
+            completed.append(explicit_sequence)
     return completed
 
 
@@ -159,7 +167,10 @@ def assemble(blocks: list[dict[str, Any]], sequence: list[str]) -> str:
                 raise ValueError(f"Suffix {block_id} has no preceding word")
             base = pieces[-1]
             suffix = item["label"].removeprefix("-")
-            pieces[-1] = item.get("transforms", {}).get(base, base + suffix)
+            if base.endswith("y") and item["label"] in {"-ier", "-iest"}:
+                pieces[-1] = base + suffix
+            else:
+                pieces[-1] = item.get("transforms", {}).get(base, base + suffix)
         elif item["kind"] == "operation":
             if not pieces:
                 raise ValueError(f"Operation {block_id} has no preceding word")
@@ -1158,6 +1169,12 @@ def validate_bank(bank: dict[str, Any]) -> dict[str, Any]:
             if item["kind"] != "suffix":
                 continue
             ending = item["label"].lower()
+            if base.endswith("y"):
+                for source, result in item.get("transforms", {}).items():
+                    assert source in {base, base[:-1]}, f"{q['id']}: suffix transform must use the base or explicit yless stem"
+                    if source == base[:-1]:
+                        assert ending in {"-ier", "-iest"}, f"{q['id']}: yless stem transform requires -ier or -iest"
+                    assert result == source + ending[1:], f"{q['id']}: suffix transform must not implicitly remove final y"
             if ending in {"-er", "-est"}:
                 allowed_headwords.add(base + ending[1:])
             elif ending in {"-r", "-st"} and base.endswith("e"):
@@ -1183,23 +1200,24 @@ def validate_bank(bank: dict[str, Any]) -> dict[str, Any]:
         for sequence in q["correctSequences"]:
             assert sequence, f"{q['id']}: empty correct sequence"
             assert set(sequence) <= set(ids), f"{q['id']}: sequence references unavailable block"
+            assert len(sequence) == len(set(sequence)), f"{q['id']}: a block cannot be used twice"
             if "remove-y" in sequence:
                 operation_index = sequence.index("remove-y")
                 assert q["base"].endswith("y") and 0 < operation_index < len(sequence) - 1, f"{q['id']}: Remove y must sit between a y-ending base and suffix"
-                assert by_id[sequence[operation_index - 1]]["label"] == q["base"], f"{q['id']}: Remove y must follow the base"
-                assert by_id[sequence[operation_index + 1]]["label"] in {"-ier", "-iest"}, f"{q['id']}: Remove y must precede -ier or -iest"
+                preceding = by_id[sequence[operation_index - 1]]
+                following = by_id[sequence[operation_index + 1]]
+                assert preceding["kind"] == "word" and preceding["label"] == q["base"], f"{q['id']}: Remove y must follow the original base word"
+                assert following["kind"] == "suffix" and following["label"] in {"-ier", "-iest"}, f"{q['id']}: Remove y must immediately precede -ier or -iest"
+            for index, block_id in enumerate(sequence):
+                item = by_id[block_id]
+                if item["kind"] == "suffix" and item["label"] in {"-ier", "-iest"}:
+                    assert base.endswith("y") and index >= 2, f"{q['id']}: accepted -ier/-iest requires explicit final-y removal"
+                    operation = by_id[sequence[index - 1]]
+                    original = by_id[sequence[index - 2]]
+                    assert operation["kind"] == "operation" and operation.get("operation") == "remove-final-y", f"{q['id']}: Remove y must immediately precede the y-change suffix"
+                    assert original["kind"] == "word" and original["label"] == q["base"], f"{q['id']}: final-y removal must immediately follow the original base word"
             answer = assemble(q["blocks"], sequence)
             built.append(answer)
-        for sequence in q["correctSequences"]:
-            for index, block_id in enumerate(sequence[:-1]):
-                if (
-                    q["base"].endswith("y")
-                    and by_id[block_id]["label"] == q["base"]
-                    and by_id[sequence[index + 1]]["label"] in {"-ier", "-iest"}
-                ):
-                    explicit_sequence = sequence[: index + 1] + ["remove-y"] + sequence[index + 1 :]
-                    assert explicit_sequence in q["correctSequences"], f"{q['id']}: missing explicit final-y deletion sequence"
-                    assert q["correctSequences"].index(explicit_sequence) < q["correctSequences"].index(sequence), f"{q['id']}: explicit final-y deletion must be canonical"
         assert set(q["answers"]) == set(built), f"{q['id']}: answer not constructible"
         if q["degree"] == "comparative":
             assert all(answer.lower().count("than") == 1 for answer in q["answers"]), f"{q['id']}: each comparative answer must build one than"

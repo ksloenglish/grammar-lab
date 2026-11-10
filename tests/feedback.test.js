@@ -62,7 +62,7 @@ test('runtime explanations agree with all 192 authored rules, even in frozen leg
   }
 });
 
-test('all old and visible recipes, far alternatives and optional-the adverbs are accepted', () => {
+test('all explicit and visible recipes, far alternatives and optional-the adverbs are accepted', () => {
   let recipes = 0;
   for (const source of all) {
     const question = prepareAdaptiveQuestion(source);
@@ -76,7 +76,7 @@ test('all old and visible recipes, far alternatives and optional-the adverbs are
       recipes++;
     }
   }
-  assert.ok(recipes > 300);
+  assert.ok(recipes >= all.reduce((count, question) => count + question.answers.length, 0));
   for (const degree of ['comparative', 'superlative']) {
     const question = get('far', degree, 'adverbs');
     for (const answer of question.answers) assert.equal(diagnoseAnswer(question, answer).code, 'correct');

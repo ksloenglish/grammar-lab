@@ -3,7 +3,7 @@ import { load, save, remove, storageAvailable, saveBest, validSession, archiveOu
 import { QUESTION_SCHEMA, questionContextIssues } from './question-context.js';
 import { labScene, beakerMeter, sparkParticles, reportConfetti, spellingStepsMarkup } from './effects.js';
 import { renderIngredients, blockDisplayLabel } from './ingredients.js';
-import { upgradeAdaptiveSession } from './comparison-blocks.js';
+import { upgradeAdaptiveSession, prepareAdaptiveQuestion, checkedExplicitYRecipe } from './comparison-blocks.js';
 import { correctExplanation, diagnoseAnswer } from './feedback.js';
 import { VERSION } from '../version.js';
 
@@ -174,10 +174,10 @@ async function learnView(module) {
   <section class="mini-check" aria-labelledby="mini-title"><p class="eyebrow">TRY A QUICK CHECK</p><h2 id="mini-title">A quick three-question check</h2><form id="mini-form" data-module="${e(module.id)}">${learn.miniCheck.map((question, i) => `<div class="mini-question"><fieldset><legend>${i + 1}. ${e(question.sentence)}</legend><div class="mini-options">${question.options.map(option => `<label><input type="radio" name="mini-${i}" value="${e(option)}" ${checks[i] === option ? 'checked' : ''} required><span>${e(option)}</span></label>`).join('')}</div></fieldset><p class="mini-feedback" id="mini-feedback-${i}" hidden></p></div>`).join('')}<div class="learn-check-actions"><button type="submit" class="button secondary">Check my answers</button>${routeLink('Start an Experiment →', `setup/${module.id}`, 'primary')}</div><p id="mini-result" role="status"></p></form></section><div class="learn-sources"><p>Grammar references: ${learn.sources.map(source => `<a href="${e(source.url)}" target="_blank" rel="noopener noreferrer">${e(source.title)}</a>`).join(' · ')}</p></div>`;
 }
 
-function assemblyView(question, diagnostic = null) {
+function assemblyView(question, diagnostic = null, ids = session.assembly) {
   const locked = session.status !== 'building';
   const problemIds = new Set(diagnostic?.problemBlockIds ?? []);
-  return session.assembly.map(id => {
+  return ids.map(id => {
     const block = question.blocks.find(item => item.id === id);
     const operationClass = block.operation === 'remove-final-y' ? ' remove-y' : block.operation === 'double-final-consonant' ? ' double-consonant' : '';
     const returnLabel = block.operation === 'double-final-consonant' ? `doubled ${blockDisplayLabel(block)}` : block.operation === 'remove-final-y' ? 'final-y removal block' : block.label;
@@ -207,7 +207,9 @@ function trialView() {
   const building = session.status === 'building';
   const completed = ['correct', 'revealed'].includes(session.status);
   const wrong = session.status === 'wrong';
-  const assembled = assemble(question, session.assembly);
+  const checkedRecipe = checkedExplicitYRecipe(session);
+  const displayIds = checkedRecipe ?? session.assembly;
+  const assembled = assemble(question, displayIds);
   const diagnostic = wrong ? diagnoseAnswer(question, assembled.text, session.assembly) : null;
   const feedbackMessage = wrong ? diagnostic.message : correctExplanation(question);
   const progress = session.results.length / session.count * 100;
@@ -217,15 +219,15 @@ function trialView() {
   return `<div class="experiment-bar"><div class="trial-meta"><p class="eyebrow">${session.practice ? 'REVISION ROUND' : 'EXPERIMENT'} / ${e(module.shortTitle)}</p><strong>Question ${session.index + 1} of ${session.count}</strong></div><div class="score-display"><span>Score</span><strong>${session.score}<small> / ${session.count}</small></strong></div>${actionButton('End Experiment', 'end', 'ghost end-button')}</div><div class="progress-track" role="progressbar" aria-label="Completed questions" aria-valuenow="${session.results.length}" aria-valuemin="0" aria-valuemax="${session.count}"><div class="progress-fill" style="width:${progress}%"></div></div>
   ${session.practice ? '<p class="practice-notice">This practice has its own score. Your first result and best score will not change.</p>' : ''}
   <section class="trial-card"><div class="trial-label"><span>${e(question.degree)} · ${e(question.rule)}</span></div><h1 class="sentence">${gapSentence(question.sentence, question.base)}</h1></section>
-  <div class="workbench ${session.status === 'correct' ? 'reaction-success' : ''}"><section class="chamber-panel"><div class="panel-label"><h2>Build your answer</h2><span>01 / BUILD</span></div><div class="assembly-zone" id="assembly-zone" data-zone="assembly" aria-label="Answer blocks in order">${session.assembly.length ? assemblyView(question, diagnostic) : '<p class="tray-placeholder">Tap word blocks to build your answer</p>'}</div>${spellingStepsMarkup(assembled.parts, e)}<div class="answer-preview ${session.status === 'correct' ? 'success-glow' : ''}${wrong ? ' is-incorrect' : ''}${justFused ? ' just-fused' : ''}"><span class="answer-label">YOUR ANSWER</span><strong id="assembled-answer">${preview}</strong>${wrong ? `<span class="answer-issue-tag">${e(diagnostic.title)}</span>` : ''}${session.status === 'correct' ? sparkParticles() : ''}</div>
+  <div class="workbench ${session.status === 'correct' ? 'reaction-success' : ''}"><section class="chamber-panel"><div class="panel-label"><h2>Build your answer</h2><span>01 / BUILD</span></div>${checkedRecipe ? '<p class="mark-note">Previously checked answer, shown with the updated spelling blocks.</p>' : ''}<div class="assembly-zone" id="assembly-zone" data-zone="assembly" aria-label="${checkedRecipe ? 'Canonical spelling blocks for the previously checked answer' : 'Answer blocks in order'}">${displayIds.length ? assemblyView(question, diagnostic, displayIds) : '<p class="tray-placeholder">Tap word blocks to build your answer</p>'}</div>${spellingStepsMarkup(assembled.parts, e)}<div class="answer-preview ${session.status === 'correct' ? 'success-glow' : ''}${wrong ? ' is-incorrect' : ''}${justFused ? ' just-fused' : ''}"><span class="answer-label">${checkedRecipe ? 'PREVIOUSLY CHECKED ANSWER' : 'YOUR ANSWER'}</span><strong id="assembled-answer">${preview}</strong>${wrong ? `<span class="answer-issue-tag">${e(diagnostic.title)}</span>` : ''}${session.status === 'correct' ? sparkParticles() : ''}</div>
   ${!building ? `<div class="reaction ${wrong ? 'error' : 'success'}" role="region" aria-label="Question feedback"${wrong ? ` data-feedback-code="${e(diagnostic.code)}"` : ''}><span class="reaction-icon" aria-hidden="true">${wrong ? '✗' : session.status === 'revealed' ? '→' : '✓'}</span><div class="reaction-text"><h3>${wrong ? e(diagnostic.title) : session.status === 'revealed' ? 'The correct answer' : 'Correct. Well done!'}</h3><p class="feedback-message">${e(feedbackMessage)}</p>${session.status === 'revealed' ? `<p>Correct answer: <strong>${question.answers.map(e).join(' / ')}</strong></p><p class="correct-recipe">${correctRecipeView(question)}</p>` : ''}${session.status === 'correct' ? `<p class="mark-note">${session.attempts === 1 ? '+1 mark for a correct first answer.' : 'Good try. No mark this time: only your first answer counts.'}</p>` : ''}</div></div>` : ''}
   <div class="trial-actions">${building ? `${actionButton('Check answer →', 'submit', 'primary', session.assembly.length ? '' : 'disabled')}${actionButton('Clear answer', 'clear', 'ghost', session.assembly.length ? '' : 'disabled')}` : wrong ? `<div class="feedback-actions">${actionButton('Retry', 'retry')}${actionButton('Give Up', 'give-up', 'secondary')}</div>` : completed ? actionButton(session.index + 1 === session.count ? 'View Lab Report →' : 'Next question →', 'next') : ''}</div></section>
-  <section class="tray-panel"><div class="panel-label"><h2>Word blocks</h2><span>02 / SELECT</span></div><p class="tray-help">Tap to add. Tap your answer blocks to remove.</p><div class="reagent-tray" id="reagent-tray" data-zone="tray">${renderIngredients(question, session.trayOrder, session.assembly, building, e)}</div><p class="keyboard-help sr-only">Keyboard: Tab to a block, then Enter or Space to add or return it.</p></section></div>`;
+  <section class="tray-panel"><div class="panel-label"><h2>Word blocks</h2><span>02 / SELECT</span></div><p class="tray-help">Tap to add. Tap your answer blocks to remove.</p><div class="reagent-tray" id="reagent-tray" data-zone="tray">${renderIngredients(question, session.trayOrder, displayIds, building, e)}</div><p class="keyboard-help sr-only">Keyboard: Tab to a block, then Enter or Space to add or return it.</p></section></div>`;
 }
 
 function reportView() {
   if (!report) report = load('last-report');
-  if (!report || report.schema !== QUESTION_SCHEMA || !moduleById(report.moduleId) || report.results?.length !== report.count || report.questions.some(question => questionContextIssues(question).length)) return '<section class="error-panel"><h1>No lab report yet</h1><p>Complete an experiment to see your results.</p>' + routeLink('Back to Home', 'home') + '</section>';
+  if (!report || report.schema !== QUESTION_SCHEMA || !moduleById(report.moduleId) || report.results?.length !== report.count || report.questions.some(question => questionContextIssues(prepareAdaptiveQuestion(question)).length)) return '<section class="error-panel"><h1>No lab report yet</h1><p>Complete an experiment to see your results.</p>' + routeLink('Back to Home', 'home') + '</section>';
   const module = moduleById(report.moduleId);
   const breakdown = ruleBreakdown(report);
   const wrongCount = wrongQuestions(report).length;

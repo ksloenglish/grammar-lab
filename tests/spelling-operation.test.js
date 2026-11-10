@@ -10,17 +10,19 @@ for (const moduleId of ['adjectives', 'adverbs']) {
   });
 }
 for (const [moduleId, base] of [['adjectives', 'happy'], ['adverbs', 'early']]) {
-  test(`${base}: explicit removal and direct y-ending alternatives remain correct`, () => {
+  test(`${base}: only explicit final-y removal produces a correct comparison`, () => {
     const question = bank(moduleId).find(question => question.base === base && question.degree === 'comparative');
     const operation = question.blocks.find(block => block.kind === 'operation');
     const explicit = question.correctSequences.find(sequence => sequence.includes(operation.id));
-    const direct = question.correctSequences.find(sequence => !sequence.includes(operation.id));
-    assert.ok(explicit && direct);
-    for (const sequence of [explicit, direct]) {
-      const result = assemble(question, sequence);
-      assert.ok(isCorrect(question, result.text));
-      assert.equal(result.parts.find(part => part.spellingChanges?.length).spellingChanges[0].before, base);
-    }
+    assert.ok(explicit);
+    assert.ok(question.correctSequences.every(sequence => sequence.includes(operation.id)));
+    const result = assemble(question, explicit);
+    assert.ok(isCorrect(question, result.text));
+    assert.equal(result.parts.find(part => part.spellingChanges?.length).spellingChanges[0].before, base);
+    const direct = assemble(question, explicit.filter(id => id !== operation.id));
+    assert.equal(direct.text, `${base}ier than`);
+    assert.equal(isCorrect(question, direct.text), false);
+    assert.ok(direct.parts.every(part => !part.spellingChanges?.length));
     const firstTwo = explicit.slice(0, explicit.indexOf(operation.id) + 1);
     assert.equal(assemble(question, firstTwo).text, base.slice(0, -1));
   });

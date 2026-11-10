@@ -21,8 +21,8 @@ BASE = os.environ.get("GRAMMAR_TEST_URL", "http://127.0.0.1:3000/").rstrip("/") 
 OUT = ROOT / "test-results" / "tap-only-ui"
 RESULTS: list[str] = []
 BANK_HASHES = {
-    "adjectives": "7cfe6a3aed8303709dde4777b1283bdebafe23007e4e477d29f18a0913f8ad54",
-    "adverbs": "91f4f0cbaffee97300592110953273c3263985aab097df04aa3e25f6eb227f09",
+    "adjectives": "516f52b2b43cfa3703ca796046df233addded217daf8cf0087a33f26d74d9194",
+    "adverbs": "98880152a7ffeb45c0ba0c569ea7cfccb8f02f564d2b295880b2b283e6166389",
 }
 # Reuse the existing strict text-range/clipping audit, without executing its main.
 _spec = importlib.util.spec_from_file_location("home_ui_metrics", ROOT / "tests/home-ui-check.py")
@@ -38,11 +38,29 @@ def check(condition, message):
 
 
 def without_explanations(bank):
-    # Only the direct question.explanation field is allowed to change. Keep
-    # feedback, blocks, recipes, answers, metadata and question order intact.
+    # Never ignore ingredient/recipe data in the served bank fingerprint.
     value = json.loads(json.dumps(bank))
     for question in value["questions"]:
         del question["explanation"]
+    return value
+
+
+def sanctioned_head(bank):
+    value = without_explanations(bank)
+    for question in value['questions']:
+        base = question['base']
+        if not base.endswith('y'):
+            continue
+        legacy = False
+        for block in question['blocks']:
+            if (block['kind'] != 'suffix' or block['label'] not in ['-ier', '-iest']
+                    or block.get('transforms', {}).get(base) != base[:-1] + block['label'][1:]):
+                continue
+            del block['transforms'][base]
+            legacy = True
+        if legacy:
+            operations = {b['id'] for b in question['blocks'] if b.get('operation') == 'remove-final-y'}
+            question['correctSequences'] = [seq for seq in question['correctSequences'] if operations.intersection(seq)]
     return value
 
 
@@ -50,9 +68,9 @@ def bank_identity(page, module, expected, tag):
     current = page.evaluate("async module => (await (await fetch(`./data/${module}-questions.json`)).json())", module)
     head = json.loads(subprocess.check_output(["git", "show", f"HEAD:site/data/{module}-questions.json"], cwd=ROOT))
     stripped = without_explanations(current)
-    check(stripped == without_explanations(head), f"{tag}: served {module} bank differs from git HEAD only in question explanations")
+    check(stripped == sanctioned_head(head), f"{tag}: served {module} bank permits only explanation/exact base-y-map/direct implicit-y-recipe changes from HEAD")
     canonical = json.dumps(stripped, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()
-    check(hashlib.sha256(canonical).hexdigest() == expected, f"{tag}: every non-explanation {module} bank field matches the pinned pre-feedback baseline")
+    check(hashlib.sha256(canonical).hexdigest() == expected, f"{tag}: every non-explanation {module} bank field matches the pinned explicit-y baseline")
     check(all(isinstance(q["explanation"], str) and q["explanation"].strip() for q in current["questions"]),
           f"{tag}: all {module} explanations remain nonempty strings")
 

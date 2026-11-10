@@ -1,5 +1,5 @@
 import { QUESTION_SCHEMA } from './question-context.js';
-import { isControlledDoublingBlock, prepareAdaptiveQuestion } from './comparison-blocks.js';
+import { isControlledDoublingBlock, prepareAdaptiveQuestion, joinComparisonSuffix } from './comparison-blocks.js';
 import { correctExplanation, diagnoseAnswer } from './feedback.js';
 
 export function normalise(value) {
@@ -48,12 +48,8 @@ export function assemble(question, ids) {
       }
     } else if (block.kind === 'suffix' && parts.length && !parts.at(-1).orphan) {
       const previous = parts.at(-1);
-      const before = previous.text;
-      previous.text = block.transforms?.[previous.text] ?? (previous.text + block.label.replace(/^-/, ''));
+      previous.text = joinComparisonSuffix(previous.text, block);
       previous.ids.push(id);
-      if (['-ier', '-iest'].includes(block.label) && /y$/i.test(before) && previous.text.startsWith(before.slice(0, -1)) && !previous.text.startsWith(before)) {
-        previous.spellingChanges = [...(previous.spellingChanges ?? []), { before, after: before.slice(0, -1) }];
-      }
     } else {
       parts.push({ text: block.label, ids: [id], orphan: block.kind === 'suffix' });
     }

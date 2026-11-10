@@ -1,5 +1,6 @@
 import { isCorrect } from './core.js';
 import { QUESTION_SCHEMA, questionContextIssues } from './question-context.js';
+import { prepareAdaptiveQuestion } from './comparison-blocks.js';
 
 const PREFIX = 'kslo-grammar-lab:';
 let available = true;
@@ -32,7 +33,7 @@ export function archiveOutdatedWork() {
   for (const key of ['session', 'last-report']) {
     const value = load(key);
     if (!value) continue;
-    if (value.schema !== QUESTION_SCHEMA || value.questions?.some(question => questionContextIssues(question).length)) {
+    if (value.schema !== QUESTION_SCHEMA || !Array.isArray(value.questions) || value.questions.some(question => questionContextIssues(prepareAdaptiveQuestion(question)).length)) {
       // Preserve the previous work in this browser; never alter the independent best-score key.
       if (save(`archive:${key}`, value)) remove(key);
       changed = true;
@@ -56,7 +57,7 @@ export function validSession(value, moduleIds) {
     if (!value || value.schema !== QUESTION_SCHEMA || !moduleIds.includes(value.moduleId)) return false;
     if (!Array.isArray(value.questions) || value.count !== value.questions.length || value.count < 1 || value.count > 30) return false;
     if (!value.questions.every(question => question && typeof question.id === 'string' && typeof question.sentence === 'string' && Array.isArray(question.blocks) && question.blocks.length && Array.isArray(question.answers) && question.answers.length && question.answers.every(answer => typeof answer === 'string'))) return false;
-    if (value.questions.some(question => questionContextIssues(question).length)) return false;
+    if (value.questions.some(question => questionContextIssues(prepareAdaptiveQuestion(question)).length)) return false;
     if (new Set(value.questions.map(question => question.id)).size !== value.count) return false;
     if (!Number.isInteger(value.index) || value.index < 0 || value.index >= value.count) return false;
     if (!Array.isArray(value.results) || !Array.isArray(value.assembly) || !Array.isArray(value.trayOrder)) return false;

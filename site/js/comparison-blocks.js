@@ -12,6 +12,70 @@ export const IRREGULAR_COMPARISON_FORMS = Object.freeze({
 });
 const normalise = value => String(value ?? '').trim().replace(/\s+/g, ' ').toLowerCase();
 const DOUBLING_ID = 'double-final-consonant';
+
+// A y-ending word keeps its y unless a separate operation already removed it.
+// Ignore even legacy/malicious transforms for these literal suffix joins.
+export function joinComparisonSuffix(text, block) {
+  if (['-ier', '-iest'].includes(block.label) && /y$/i.test(text)) return text + block.label.slice(1);
+  return block.transforms?.[text] ?? (text + block.label.replace(/^-/, ''));
+}
+
+export function normaliseExplicitYQuestion(question) {
+  if (!question || !Array.isArray(question.blocks) || question.blocks.some(block => !block || typeof block !== 'object')) return question;
+  const prepared = { ...question, blocks: question.blocks.map(block => ({ ...block,
+    ...(block.transforms && typeof block.transforms === 'object' && !Array.isArray(block.transforms) ? { transforms: { ...block.transforms } } : {}) })) };
+  if (Array.isArray(question.correctSequences)) prepared.correctSequences = question.correctSequences.map(sequence => Array.isArray(sequence) ? [...sequence] : sequence);
+  if (typeof question.base !== 'string' || !/^[a-z]+y$/i.test(question.base)) return prepared;
+  const sanctioned = new Set();
+  for (const block of prepared.blocks) {
+    if (block.kind !== 'suffix' || !['-ier', '-iest'].includes(block.label) || !block.transforms
+      || Array.isArray(block.transforms) || typeof block.transforms !== 'object') continue;
+    if (Object.hasOwn(block.transforms, question.base) && block.transforms[question.base] === question.base.slice(0, -1) + block.label.slice(1)) {
+      delete block.transforms[question.base];
+      if (!Object.keys(block.transforms).length) delete block.transforms;
+      sanctioned.add(block.id);
+    }
+  }
+  if (!sanctioned.size || !Array.isArray(prepared.correctSequences)
+    || prepared.correctSequences.some(sequence => !Array.isArray(sequence))) return prepared;
+  const lookup = new Map(prepared.blocks.map(block => [block.id, block]));
+  const operation = prepared.blocks.find(block => block.kind === 'operation' && block.operation === 'remove-final-y'
+    && block.label === 'Remove y' && block.transforms === undefined);
+  if (!operation || new Set(lookup.keys()).size !== prepared.blocks.length) return prepared;
+  prepared.correctSequences = prepared.correctSequences.filter(sequence => {
+    if (sequence.some(id => !lookup.has(id)) || new Set(sequence).size !== sequence.length) return true;
+    const index = sequence.findIndex((id, i) => sanctioned.has(id) && lookup.get(sequence[i - 1])?.kind === 'word'
+      && lookup.get(sequence[i - 1]).label === question.base);
+    if (index < 0) return true;
+    const ending = lookup.get(sequence[index]);
+    const labels = sequence.map(id => lookup.get(id).label);
+    const head = question.base.slice(0, -1) + ending.label.slice(1);
+    const expectedLabels = question.degree === 'comparative' ? [question.base, ending.label, 'than'] : labels[0] === 'the' ? ['the', question.base, ending.label] : [question.base, ending.label];
+    const expectedAnswer = question.degree === 'comparative' ? head + ' than' : labels[0] === 'the' ? 'the ' + head : head;
+    if (JSON.stringify(labels) !== JSON.stringify(expectedLabels) || !Array.isArray(question.answers)
+      || !question.answers.some(answer => normalise(answer) === normalise(expectedAnswer))) return true;
+    const explicit = [...sequence.slice(0, index), operation.id, ...sequence.slice(index)];
+    // Only remove the generator's old duplicate when its explicit twin exists.
+    return !prepared.correctSequences.some(recipe => JSON.stringify(recipe) === JSON.stringify(explicit));
+  });
+  return prepared;
+}
+
+// View-only canonical representation: never change the student's saved IDs or result.
+export function checkedExplicitYRecipe(session) {
+  if (session?.status !== 'correct' || !Array.isArray(session.assembly)) return null;
+  const question = session.questions?.[session.index];
+  if (!question || typeof question.base !== 'string' || !/y$/i.test(question.base)) return null;
+  const lookup = new Map(question.blocks.map(block => [block.id, block]));
+  for (const recipe of question.correctSequences ?? []) {
+    const index = recipe.findIndex(id => lookup.get(id)?.operation === 'remove-final-y');
+    if (index < 1 || lookup.get(recipe[index - 1])?.label !== question.base
+      || !['-ier', '-iest'].includes(lookup.get(recipe[index + 1])?.label)) continue;
+    if (JSON.stringify(recipe.filter((id, i) => i !== index)) === JSON.stringify(session.assembly)) return [...recipe];
+  }
+  return null;
+}
+
 const currentIrregularForms = (base, degree) => {
   const key = normalise(base);
   const forms = Object.hasOwn(IRREGULAR_COMPARISON_FORMS, key) ? IRREGULAR_COMPARISON_FORMS[key] : [];
@@ -42,6 +106,7 @@ export function prepareAdaptiveQuestion(question) {
   // Do not repair corrupt snapshots; keep them rejectable by shared validation.
   if (!question || !Array.isArray(question.blocks) || question.blocks.some(block => !block || typeof block !== 'object')
     || (question.correctSequences !== undefined && (!Array.isArray(question.correctSequences) || question.correctSequences.some(sequence => !Array.isArray(sequence))))) return question;
+  question = normaliseExplicitYQuestion(question);
   const prepared = { ...question, blocks: [...question.blocks] };
   const consonant = doublingConsonant(question);
   if (!consonant) {

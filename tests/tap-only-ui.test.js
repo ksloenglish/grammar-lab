@@ -115,18 +115,34 @@ test('phone selected blocks do not regress to full-width rows', () => {
   }
 });
 
-test('feedback revision changes only explanations in both pinned banks and keeps schema 2', () => {
+test('explicit-y revision preserves all bank identity except sanctioned metadata and explanations, with schema 2', () => {
   const hashes = {
-    adjectives: '7cfe6a3aed8303709dde4777b1283bdebafe23007e4e477d29f18a0913f8ad54',
-    adverbs: '91f4f0cbaffee97300592110953273c3263985aab097df04aa3e25f6eb227f09'
+    adjectives: '516f52b2b43cfa3703ca796046df233addded217daf8cf0087a33f26d74d9194',
+    adverbs: '98880152a7ffeb45c0ba0c569ea7cfccb8f02f564d2b295880b2b283e6166389'
   };
   const withoutExplanations = value => ({ ...value, questions: value.questions.map(({ explanation, ...question }) => question) });
+  const sanctionedHead = value => {
+    const result = structuredClone(withoutExplanations(value));
+    for (const question of result.questions) {
+      if (!/y$/i.test(question.base)) continue;
+      let legacy = false;
+      for (const block of question.blocks) {
+        if (block.kind !== 'suffix' || !['-ier', '-iest'].includes(block.label)
+          || block.transforms?.[question.base] !== question.base.slice(0, -1) + block.label.slice(1)) continue;
+        delete block.transforms[question.base];
+        legacy = true;
+      }
+      if (legacy) question.correctSequences = question.correctSequences.filter(sequence => sequence.some(id =>
+        question.blocks.find(block => block.id === id)?.operation === 'remove-final-y'));
+    }
+    return result;
+  };
   const canonical = value => JSON.stringify(value, (_, item) => item && typeof item === 'object' && !Array.isArray(item)
     ? Object.fromEntries(Object.keys(item).sort().map(key => [key, item[key]])) : item);
   for (const [moduleId, hash] of Object.entries(hashes)) {
     const current = JSON.parse(source(`data/${moduleId}-questions.json`));
     const head = JSON.parse(execFileSync('git', ['show', `HEAD:site/data/${moduleId}-questions.json`], { cwd: new URL('../', import.meta.url), encoding: 'utf8' }));
-    assert.deepEqual(withoutExplanations(current), withoutExplanations(head), `${moduleId}: only question.explanation may differ from HEAD`);
+    assert.deepEqual(withoutExplanations(current), sanctionedHead(head), `${moduleId}: only explanations, exact legacy base-y maps and direct implicit-y recipes may differ from HEAD`);
     assert.equal(createHash('sha256').update(canonical(withoutExplanations(current))).digest('hex'), hash, `${moduleId}: pinned identity of all other fields`);
     assert.ok(current.questions.every(question => typeof question.explanation === 'string' && question.explanation.trim()));
     assert.equal(bank(moduleId).length, 96);

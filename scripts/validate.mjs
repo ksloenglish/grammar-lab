@@ -52,6 +52,29 @@ for (const module of manifest.modules.filter(item => item.available)) {
       assert.ok(prepared.correctSequences.some(sequence => sequence.every(id => visibleIds.has(id))
         && assemble(prepared, sequence).text.toLowerCase() === answer.toLowerCase()), `${label}: adaptive choices cannot construct accepted alternative ${answer}`);
     }
+    if (/y$/i.test(question.base) && prepared.correctSequences.some(sequence => sequence.some(id =>
+      prepared.blocks.find(block => block.id === id)?.operation === 'remove-final-y'))) {
+      const operation = prepared.blocks.find(block => block.operation === 'remove-final-y');
+      for (const sequence of prepared.correctSequences) {
+        assert.ok(sequence.includes(operation.id), `${label}: every accepted y-change recipe requires explicit ×y`);
+        const direct = sequence.filter(id => id !== operation.id);
+        const literal = assemble(prepared, direct);
+        assert.ok(!isCorrect(prepared, literal.text), `${label}: omitting ×y must not produce an accepted answer`);
+        assert.ok(literal.parts.some(part => part.text.includes(question.base)), `${label}: omitting ×y must retain the final y`);
+        assert.ok(literal.parts.every(part => !part.spellingChanges?.length), `${label}: no spelling trace without an operation`);
+        const invalidRecipe = structuredClone(question);
+        invalidRecipe.correctSequences = [direct];
+        assert.ok(questionContextIssues(invalidRecipe).length, `${label}: strict context rejects accepted recipes without ×y`);
+      }
+      for (const ending of ['-ier', '-iest']) {
+        const suffix = prepared.blocks.find(block => block.kind === 'suffix' && block.label === ending);
+        assert.ok(!Object.hasOwn(suffix.transforms ?? {}, question.base), `${label}: ${ending} cannot silently transform the base`);
+        const invalidTransform = structuredClone(question);
+        const poisoned = invalidTransform.blocks.find(block => block.id === suffix.id);
+        poisoned.transforms = { ...poisoned.transforms, [question.base]: question.base.slice(0, -1) + ending.slice(1) };
+        assert.ok(questionContextIssues(invalidTransform).length, `${label}: strict context rejects implicit base-y transform`);
+      }
+    }
     const used = new Set(question.correctSequences.flat());
     const distractors = question.blocks.filter(block => !used.has(block.id));
     assert.equal(question.ingredientMode, 'complete', `${label}: complete ingredient tray`);

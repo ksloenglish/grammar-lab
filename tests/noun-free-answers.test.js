@@ -139,11 +139,11 @@ test('all optional-the adverb superlatives and far alternatives remain accepted'
   }
 });
 
-test('direct suffix and explicit final-y deletion alternatives remain noun-free', () => {
+test('final-y change recipes require explicit removal and remain noun-free', () => {
   for (const moduleId of ['adjectives', 'adverbs']) {
     for (const question of bank(moduleId).filter(question => /y$/.test(question.base) && question.rule === 'Spelling changes')) {
       assert.ok(question.correctSequences.some(sequence => sequence.includes('remove-y')), question.id);
-      assert.ok(question.correctSequences.some(sequence => !sequence.includes('remove-y')), question.id);
+      assert.ok(question.correctSequences.every(sequence => sequence.includes('remove-y')), question.id);
       assert.deepEqual(questionContextIssues(question), [], question.id);
       for (const sequence of question.correctSequences) assert.ok(question.answers.includes(assemble(question, sequence).text), question.id);
     }

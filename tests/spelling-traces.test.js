@@ -28,3 +28,11 @@ test('final-y deletion still crosses out only the removed y', () => {
   assert.match(markup, /class="spelling-word">happ<\/span>/);
   assert.match(markup, /class="spelling-word completed">happier<\/span>/);
 });
+
+test('noisy plus -iest keeps y and cannot display a deletion strip without the operation', () => {
+  const question = questions.find(item => item.base === 'noisy' && item.degree === 'superlative');
+  const ids = ['noisy', '-iest'].map(label => question.blocks.find(block => block.label === label).id);
+  const answer = assemble(question, ids);
+  assert.equal(answer.text, 'noisyiest');
+  assert.equal(spellingStepsMarkup(answer.parts, escape), '');
+});

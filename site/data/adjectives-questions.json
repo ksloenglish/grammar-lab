@@ -3657,9 +3657,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "easy": "easier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -3678,9 +3676,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "easy": "easiest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -3735,11 +3731,6 @@
           "remove-y",
           "b1",
           "b2"
-        ],
-        [
-          "b0",
-          "b1",
-          "b2"
         ]
       ],
       "feedback": [
@@ -3787,9 +3778,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "easy": "easiest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -3802,9 +3791,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "easy": "easier"
-          }
+          "transforms": {}
         },
         {
           "id": "b4",
@@ -3865,11 +3852,6 @@
           "b0",
           "remove-y",
           "b1"
-        ],
-        [
-          "b5",
-          "b0",
-          "b1"
         ]
       ],
       "feedback": [
@@ -3917,9 +3899,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "busy": "busier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -3938,9 +3918,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "busy": "busiest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -3995,11 +3973,6 @@
           "remove-y",
           "b1",
           "b2"
-        ],
-        [
-          "b0",
-          "b1",
-          "b2"
         ]
       ],
       "feedback": [
@@ -4047,9 +4020,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "busy": "busiest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4062,9 +4033,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "busy": "busier"
-          }
+          "transforms": {}
         },
         {
           "id": "b4",
@@ -4125,11 +4094,6 @@
           "b0",
           "remove-y",
           "b1"
-        ],
-        [
-          "b5",
-          "b0",
-          "b1"
         ]
       ],
       "feedback": [
@@ -4177,9 +4141,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "noisy": "noisier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4198,9 +4160,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "noisy": "noisiest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -4255,11 +4215,6 @@
           "remove-y",
           "b1",
           "b2"
-        ],
-        [
-          "b0",
-          "b1",
-          "b2"
         ]
       ],
       "feedback": [
@@ -4307,9 +4262,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "noisy": "noisiest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4322,9 +4275,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "noisy": "noisier"
-          }
+          "transforms": {}
         },
         {
           "id": "b4",
@@ -4385,11 +4336,6 @@
           "b0",
           "remove-y",
           "b1"
-        ],
-        [
-          "b5",
-          "b0",
-          "b1"
         ]
       ],
       "feedback": [
@@ -4437,9 +4383,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "happy": "happier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4458,9 +4402,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "happy": "happiest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -4515,11 +4457,6 @@
           "remove-y",
           "b1",
           "b2"
-        ],
-        [
-          "b0",
-          "b1",
-          "b2"
         ]
       ],
       "feedback": [
@@ -4567,9 +4504,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "happy": "happiest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4582,9 +4517,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "happy": "happier"
-          }
+          "transforms": {}
         },
         {
           "id": "b4",
@@ -4645,11 +4578,6 @@
           "b0",
           "remove-y",
           "b1"
-        ],
-        [
-          "b5",
-          "b0",
-          "b1"
         ]
       ],
       "feedback": [
@@ -4697,9 +4625,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "heavy": "heavier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4718,9 +4644,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "heavy": "heaviest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -4775,11 +4699,6 @@
           "remove-y",
           "b1",
           "b2"
-        ],
-        [
-          "b0",
-          "b1",
-          "b2"
         ]
       ],
       "feedback": [
@@ -4827,9 +4746,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "heavy": "heaviest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4842,9 +4759,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "heavy": "heavier"
-          }
+          "transforms": {}
         },
         {
           "id": "b4",
@@ -4904,11 +4819,6 @@
           "b5",
           "b0",
           "remove-y",
-          "b1"
-        ],
-        [
-          "b5",
-          "b0",
           "b1"
         ]
       ],

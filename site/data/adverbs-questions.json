@@ -4359,9 +4359,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4380,9 +4378,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -4435,11 +4431,6 @@
         [
           "b0",
           "remove-y",
-          "b1",
-          "b2"
-        ],
-        [
-          "b0",
           "b1",
           "b2"
         ]
@@ -4489,9 +4480,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4510,9 +4499,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -4570,17 +4557,8 @@
           "b1"
         ],
         [
-          "b2",
-          "b0",
-          "b1"
-        ],
-        [
           "b0",
           "remove-y",
-          "b1"
-        ],
-        [
-          "b0",
           "b1"
         ]
       ],
@@ -4629,9 +4607,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4650,9 +4626,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -4705,11 +4679,6 @@
         [
           "b0",
           "remove-y",
-          "b1",
-          "b2"
-        ],
-        [
-          "b0",
           "b1",
           "b2"
         ]
@@ -4759,9 +4728,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4780,9 +4747,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -4840,17 +4805,8 @@
           "b1"
         ],
         [
-          "b2",
-          "b0",
-          "b1"
-        ],
-        [
           "b0",
           "remove-y",
-          "b1"
-        ],
-        [
-          "b0",
           "b1"
         ]
       ],
@@ -4899,9 +4855,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -4920,9 +4874,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -4975,11 +4927,6 @@
         [
           "b0",
           "remove-y",
-          "b1",
-          "b2"
-        ],
-        [
-          "b0",
           "b1",
           "b2"
         ]
@@ -5029,9 +4976,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -5050,9 +4995,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -5110,17 +5053,8 @@
           "b1"
         ],
         [
-          "b2",
-          "b0",
-          "b1"
-        ],
-        [
           "b0",
           "remove-y",
-          "b1"
-        ],
-        [
-          "b0",
           "b1"
         ]
       ],
@@ -5169,9 +5103,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -5190,9 +5122,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -5245,11 +5175,6 @@
         [
           "b0",
           "remove-y",
-          "b1",
-          "b2"
-        ],
-        [
-          "b0",
           "b1",
           "b2"
         ]
@@ -5299,9 +5224,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -5320,9 +5243,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -5380,17 +5301,8 @@
           "b1"
         ],
         [
-          "b2",
-          "b0",
-          "b1"
-        ],
-        [
           "b0",
           "remove-y",
-          "b1"
-        ],
-        [
-          "b0",
           "b1"
         ]
       ],
@@ -5439,9 +5351,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -5460,9 +5370,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -5515,11 +5423,6 @@
         [
           "b0",
           "remove-y",
-          "b1",
-          "b2"
-        ],
-        [
-          "b0",
           "b1",
           "b2"
         ]
@@ -5569,9 +5472,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -5590,9 +5491,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -5650,17 +5549,8 @@
           "b1"
         ],
         [
-          "b2",
-          "b0",
-          "b1"
-        ],
-        [
           "b0",
           "remove-y",
-          "b1"
-        ],
-        [
-          "b0",
           "b1"
         ]
       ],
@@ -5709,9 +5599,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -5730,9 +5618,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -5787,11 +5673,6 @@
           "remove-y",
           "b1",
           "b2"
-        ],
-        [
-          "b0",
-          "b1",
-          "b2"
         ]
       ],
       "feedback": [
@@ -5839,9 +5720,7 @@
           "label": "-iest",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earliest"
-          }
+          "transforms": {}
         },
         {
           "id": "b2",
@@ -5860,9 +5739,7 @@
           "label": "-ier",
           "kind": "suffix",
           "category": "ending",
-          "transforms": {
-            "early": "earlier"
-          }
+          "transforms": {}
         },
         {
           "id": "b5",
@@ -5920,17 +5797,8 @@
           "b1"
         ],
         [
-          "b2",
-          "b0",
-          "b1"
-        ],
-        [
           "b0",
           "remove-y",
-          "b1"
-        ],
-        [
-          "b0",
           "b1"
         ]
       ],

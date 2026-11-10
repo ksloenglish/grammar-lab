@@ -40,7 +40,7 @@ function legitimateTransform(question, block, from, to) {
   const ending = block.label;
   if (block.kind !== 'suffix') return false;
   if (['-ier', '-iest'].includes(ending) && /y$/i.test(base)) {
-    return [base, base.slice(0, -1)].includes(from) && to === base.slice(0, -1) + ending.slice(1);
+    return from === base.slice(0, -1) && to === base.slice(0, -1) + ending.slice(1);
   }
   if (from !== base) return false;
   if (['-er', '-est'].includes(ending)) return to === base + ending.slice(1);
@@ -131,6 +131,7 @@ export function questionContextIssues(question) {
       if (previous?.operation === 'double-final-consonant' && !['-er', '-est'].includes(ending.label)) issues.push('A doubled base takes -er or -est, not a combined doubling ending');
       if (['-r', '-st'].includes(ending.label) && !word.label.endsWith('e')) issues.push(`The ${ending.label} ending requires a base ending in e, not ${word.label}`);
       if (['-ier', '-iest'].includes(ending.label) && !word.label.endsWith('y')) issues.push(`The ${ending.label} ending requires a base ending in y, not ${word.label}`);
+      if (['-ier', '-iest'].includes(ending.label) && previous?.operation !== 'remove-final-y') issues.push(`Accepted ${ending.label} sequence must immediately follow Remove y`);
     }
   }
   const accepted = new Set(question.answers.map(answer => String(answer).trim().toLowerCase()));

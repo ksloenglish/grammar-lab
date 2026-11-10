@@ -1,4 +1,4 @@
-import { adaptiveBlocks, doublingConsonant, isControlledDoublingBlock, prepareAdaptiveQuestion, IRREGULAR_COMPARISON_FORMS } from './comparison-blocks.js';
+import { adaptiveBlocks, doublingConsonant, isControlledDoublingBlock, prepareAdaptiveQuestion, joinComparisonSuffix, IRREGULAR_COMPARISON_FORMS } from './comparison-blocks.js';
 
 // No scoring, DOM, storage or core dependency. Return plain text; the view escapes it.
 const normalise = value => String(value ?? '').trim().replace(/\s+/g, ' ').toLowerCase();
@@ -77,7 +77,7 @@ function trace(question, ids) {
         previous.ids.push(id);
       } else parts.push({ text: `[${block.label}]`, ids: [id], orphan: true });
     } else if (block.kind === 'suffix' && previous && !previous.orphan) {
-      previous.text = block.transforms?.[previous.text] ?? previous.text + block.label.replace(/^-/, '');
+      previous.text = joinComparisonSuffix(previous.text, block);
       previous.ids.push(id);
     } else parts.push({ text: block.label, ids: [id], orphan: block.kind === 'suffix' });
   }
@@ -218,6 +218,15 @@ export function diagnoseAnswer(source, answer, ids = []) {
   if (/\[[a-z]\]/i.test(answer)) return result('invalid-doubling-operation', 'Extra letter in the wrong place',
     'Put the extra letter straight after the base word, before -er or -est. Only double the final consonant when the word needs it.', chosen.filter(block => block.operation === 'double-final-consonant').map(block => block.id));
   for (const part of parts) {
+    for (let i = 1; i < part.ids.length; i++) {
+      const ending = lookup.get(part.ids[i]);
+      const previous = lookup.get(part.ids[i - 1]);
+      if (ending?.kind === 'suffix' && ['-ier', '-iest'].includes(ending.label)
+        && previous?.kind === 'word' && /y$/i.test(previous.label)) {
+        return result('missing-y-operation', 'Missing ×y',
+          `Add ×y after ${previous.label} and before ${ending.label} to remove the final y.`, part.ids, ['×y']);
+      }
+    }
     const first = lookup.get(part.ids[0]);
     if (first?.kind === 'word' && ['more', 'most', 'the', 'than'].includes(normalise(first.label))
       && !info.irregular.includes(normalise(first.label))
